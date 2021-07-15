@@ -34,7 +34,7 @@
       <h3>Fui creado con la idea de ayudar en los hospitales. </h3>
       <div class="parrafo--hero"> 
         <p>Me enseñaron a identificar características en los personas con COVID-19 para saber si los pacientes tienen más posibilidades de darse de alta o de fallecer por esta enfermedad.</p>
-      </div><a class="button--green" href="./model.html">Comienza aqu&iacute;<span class="material-icons">arrow_forward</span></a>
+      </div><a class="button--green" href="./model.html">Comienza aqu&iacute;<i class="material-icons">arrow_forward</i></a>
       <div class="covid-line--light"><i class="icon--covid-gray"></i></div>
     </section>
     <section class="modelo" id="modelo">
@@ -45,7 +45,7 @@
         <p class="modelo__parrafo1">Sobre todo si tienes muchos y tienes que decidir si alguno necesita m&aacute;s atenci&oacute;n, recursos o una cama en UCI.</p>
         <p class="modelo__parrafo2">De hecho, en diferentes estudios se ha visto que los programas como yo llegan a ser más confiables que algunas escalas que usas como APACHE, qSOFA o CURB-65... por mencionar algunas.</p>
         <p class="modelo__parrafo3">¡Empieza a utilizar la herramienta!</p>
-      </div><a class="button--green" href="./model.html">Entrar al modelo<span class="material-icons">arrow_forward</span></a>
+      </div><a class="button--green" href="./model.html">Entrar al modelo<i class="material-icons">arrow_forward</i></a>
       <div class="covid-line--light"><i class="icon--covid-gray"></i></div>
     </section>
     <section class="entrenamiento" id="entrenamiento"> 
@@ -53,12 +53,73 @@
         <p class="informacion__parrafo1">Se parte de la <span>comunidad</span> de usuarios que ayudan a mejorar las predicciones del modelo.</p>
         <p class="informacion__parrafo2">¡Tu contribución, acelera exponencialmente la recolección de datos que sirven para <span>entrenar</span> a la red neuronal y <span>mejorar</span> la calidad de sus predicciones!</p>
         <p class="informacion__parrafo3"><strong>Para <span>contribuir</span>, solo debes entrar al entrenamiento</strong></p>
-        <p class="informacion__parrafo4">No te preocupes, el proceso es el mismo a cuando utilizas el modelo para recibir predicciones.</p><a class="button--green" href="./entrenamiento.html">Iniciar Entrenamiento<span class="material-icons">arrow_forward</span></a>
+        <p class="informacion__parrafo4">No te preocupes, el proceso es el mismo a cuando utilizas el modelo para recibir predicciones.</p><a class="button--green" href="./entrenamiento.html">Iniciar Entrenamiento<i class="material-icons">arrow_forward</i></a>
       </div>
       <div class="entrenamiento__title"> 
         <h2>Ayuda a <span>Alaisa</span> a mejorar en sus predicciones</h2>
       </div>
       <div class="covid-line--light"><i class="icon--covid-gray"></i></div>
+    </section>
+    <section class="desarrollador" id="metricas">
+      <h2>Un <span>modelo</span> <br> efectivo y <span>preciso.</span></h2>
+      <p>Conoce los resultados de las pruebas de rendimiento hechas por los desarrolladores de Alaisa</p>
+      <div class="container--table">
+        <table class="desarrollador__tabla"> 
+          <thead> 
+            <tr>
+              <th> </th>
+              <th>precision</th>
+              <th>recall</th>
+              <th>f1-score</th>
+              <th>support</th>
+            </tr>
+          </thead>
+          <tbody> 
+            <tr> 
+              <th>0.0</th>
+              <td>0.92</td>
+              <td>0.96</td>
+              <td>0.94</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <th>1.0</th>
+              <td>0.96</td>
+              <td>0.92</td>
+              <td>0.94</td>
+              <td>24</td>
+            </tr>
+            <tr> 
+              <th>ACC*</th>
+              <td></td>
+              <td></td>
+              <td>0.94</td>
+              <td>48</td>
+            </tr>
+            <tr> 
+              <th>MCAVG*</th>
+              <td>0.94</td>
+              <td>0.94</td>
+              <td>0.94</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <th>WAVG*</th>
+              <td>0.94</td>
+              <td>0.94</td>
+              <td>0.94</td>
+              <td>48</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="container--side-table-info">
+          <p><strong>*ACC</strong> = Accuracy</p>
+          <p><strong>*MCAVG</strong> = Macro Average</p>
+          <p><strong>*WAVG</strong> = Weight Average</p>
+        </div>
+      </div>
+      <p>Fecha de la ultima actualización:</p>
+      <div class="fecha"><span>30 de jun 2021</span></div>
     </section>
     <footer>
       <figure><img src="assets/icons/imagotipo_alaisa.svg" alt="alaisa logo"></figure>

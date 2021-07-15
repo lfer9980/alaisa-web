@@ -1,0 +1,50 @@
+section.desarrollador#metricas
+	h2 Un #[span modelo] #[br] efectivo y #[span preciso.]
+	p Conoce los resultados de las pruebas de rendimiento hechas por los desarrolladores de Alaisa
+	.container--table
+		table.desarrollador__tabla 
+			thead 
+				tr
+					th 
+					th precision
+					th recall
+					th f1-score
+					th support
+			tbody 
+				tr 
+					th 0.0
+					td 0.92
+					td 0.96
+					td 0.94
+					td 24
+				tr
+					th 1.0
+					td 0.96
+					td 0.92
+					td 0.94
+					td 24
+				tr 
+					th ACC*
+					td
+					td
+					td 0.94
+					td 48
+				tr 
+					th MCAVG*
+					td 0.94
+					td 0.94
+					td 0.94
+					td 48
+				tr
+					th WAVG*
+					td 0.94
+					td 0.94
+					td 0.94
+					td 48
+		.container--side-table-info
+			p #[strong *ACC] = Accuracy
+			p #[strong *MCAVG] = Macro Average
+			p #[strong *WAVG] = Weight Average
+	p Fecha de la ultima actualización:
+	.fecha
+		span 30 de jun 2021
