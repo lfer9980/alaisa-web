@@ -1,0 +1,7 @@
+mixin breadcrumbs(a1, bread1, a2, bread2, a3, bread3)
+	a(href="index.html") Inicio 
+	a(href="./"+a1)=bread1 
+	if a2 && bread2 
+		a(href="./"+a2)=bread2 
+	if a3 && bread3
+		a(href="./"+a3)=bread3
