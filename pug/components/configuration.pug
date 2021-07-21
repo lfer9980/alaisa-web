@@ -5,3 +5,7 @@ mixin breadcrumbs(a1, bread1, a2, bread2, a3, bread3)
 		a(href="./"+a2)=bread2 
 	if a3 && bread3
 		a(href="./"+a3)=bread3
+
+mixin buttons-ancla--verde(text,href)
+	a.button--green(href="./"+href)= text
+		i.material-icons arrow_forward

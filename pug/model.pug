@@ -15,10 +15,9 @@ block contents
 			p Soy una herramienta para que, junto con tu #[span criterio médico], puedas saber la tendencia del desenlace de tu paciente y puedas actuar a partir de eso. Espero poder #[span ayudarte] y que al mismo tiempo me ayudes a mí a #[span aprender] más.#[br]Así, yo voy a poder ayudar a más pacientes y médicos que me necesiten.
 		h4.modelo__parrafo2 Es un placer para mí estar a tus órdenes.
 		form(action="") 
-			label(for="checkbox-terminos") 
-				input(type="checkbox", name="checkbox-terminos") 
-				span He leído y acepto los #[a(href="#")  términos y condiciones]
-		a.button--green(href="./model.html") Comenzar
-			i.material-icons arrow_forward
+		label(for="checkbox-terminos") 
+			input(type="checkbox", name="checkbox-terminos") 
+			span He leído y acepto los #[a(href="#")  términos y condiciones]
+		+buttons-ancla--verde("Comenzar", "model.html")
 		a(href="#") Aviso de privacidad
 
