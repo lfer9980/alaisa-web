@@ -1,13 +1,14 @@
 extend components/template.pug
 block title 
-	title ALAISA | predicción 
-block contents
+	title ALAISA | Entrenamiento 
+block contents 
 	section.breadcrumbs 
-		+breadcrumbs("model.html","Modelo", "#", "forms")
+		+breadcrumbs("entrenamiento.html","Entrenamiento", "#", "Forms")
 	section.wrapper--form 
 		h3.formulario__title Datos generales del paciente
-		form(action="" method="POST")
+		form(action="" method="")
 			input(type="hidden", name="crsf_token", value="IjIwODgxMTA5OWQ0ZTY4MTViZjA3NzQ4ODE2NGM5MjJhNjk5NmZiMjgi.YPmILA.d7uZz5gjU9rSdRUK_N125zIZP04")
+			+input-select-place("desenlace","Desenlace del paciente", "Defunción", "Alta")
 			each name, index in gralText.name
 				+input-text(name, gralText.text[index], "")
 			+input-select-place(gralSelect.name[0], gralSelect.text[0], gralSelect.value[0], gralSelect.value[1])
@@ -32,4 +33,4 @@ block contents
 				input(type="checkbox", name="aviso", id="aviso", value="y" required)
 				span.input-checkbox(for="aviso") He leído y acepto los términos y condiciones del aviso legal.
 			
-			input(type="submit", id="guardar", name="guardar", value="Predecir")
+			input(type="submit", id="guardar", name="guardar", value="Enviar contribución")

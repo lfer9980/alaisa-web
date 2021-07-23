@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".../css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>ALAISA | Entrenamiento </title>
+  </head>
+  <body> 
+    <header class="header"> <i class="material-icons">menu</i>
+      <figure class="header__logo"><img src="assets/icons/logo_tipografico_alaisa.svg" alt="logo principal alaisa"></figure>
+      <nav class="container-header-menu--desktop">
+        <ul class="header__menu">
+          <li class="menu__texto--principal"><a href="#">Inicio </a></li>
+          <li class="menu__texto--principal"><a href="#">Modelo</a></li>
+          <li class="menu__texto--principal"><a href="#">Entrenamiento</a></li>
+          <li class="menu__texto--principal"><a href="#">Rendimiento</a></li>
+          <li class="menu__texto--principal"><a href="#">Donativos</a></li>
+          <li class="menu__texto--principal"><a href="#">Contacto </a></li>
+        </ul>
+        <ul class="header__menu--secundario">
+          <li class="menu__texto--secundario"><a href="#">Aviso de privacidad</a></li>
+          <li class="menu__texto--secundario"><a href="#">Acerca de </a></li>
+        </ul>
+      </nav>
+      <nav class="container-header-menu--mobile">
+        <ul class="header__menu">
+          <li class="menu__texto--principal"><a href="#">Inicio </a></li>
+          <li class="menu__texto--principal"><a href="#">Modelo Alaisa</a></li>
+          <li class="menu__texto--principal"><a href="#">Entrenamiento</a></li>
+          <li class="menu__texto--principal"><a href="#">Estadisticas de Rendimiento</a></li>
+          <li class="menu__texto--principal"><a href="#">Donativos</a></li>
+          <li class="menu__texto--principal"><a href="#">Contacto desarrolladores</a></li>
+        </ul>
+        <ul class="header__menu--secundario">
+          <li class="menu__texto--secundario"><a href="#">Aviso de privacidad</a></li>
+          <li class="menu__texto--secundario"><a href="#">Acerca de </a></li>
+        </ul>
+      </nav><img src="assets/icons/isotipo_alaisa.svg" alt=" imagen virus Alaisa">
+    </header>
+    <section class="breadcrumbs"> <a href="index.html">Inicio </a><a href="./entrenamiento.html">Entrenamiento</a><a href="./#">Forms</a>
+    </section>
+    <section class="wrapper--form"> 
+      <h3 class="formulario__title">Datos generales del paciente</h3>
+      <form action="" method="">
+        <input type="hidden" name="crsf_token" value="IjIwODgxMTA5OWQ0ZTY4MTViZjA3NzQ4ODE2NGM5MjJhNjk5NmZiMjgi.YPmILA.d7uZz5gjU9rSdRUK_N125zIZP04">
+        <div class="input-select"><span class="input__title">Desenlace del paciente</span>
+          <select name="desenlace" id="desenlace">
+            <option selected="selected" value="0">Defunción</option>
+            <option value="1">Alta</option>
+          </select>
+        </div>
+        <label class="input" for="eih"><span class="input__title">Dia EIH</span>
+          <input type="text" id="eih" name="eih" placeholder="" required="required"/>
+        </label>
+        <label class="input" for="edad"><span class="input__title">Edad</span>
+          <input type="text" id="edad" name="edad" placeholder="" required="required"/>
+        </label>
+        <div class="input-select"><span class="input__title">Sexo</span>
+          <select name="sexo" id="sexo">
+            <option selected="selected" value="0">masculino</option>
+            <option value="1">femenino</option>
+          </select>
+        </div>
+        <h4 class="formulario__title">Variables fisiológicas</h4>
+        <label class="input" for="p_sistolica"><span class="input__title">Presión arterial sistólica</span>
+          <input type="text" id="p_sistolica" name="p_sistolica" placeholder="mmHg" required="required"/>
+        </label>
+        <label class="input" for="p_diastolica"><span class="input__title">Presión arterial diastólica</span>
+          <input type="text" id="p_diastolica" name="p_diastolica" placeholder="mmHg" required="required"/>
+        </label>
+        <label class="input" for="f_cardiaca"><span class="input__title">Frecuencia cardíaca</span>
+          <input type="text" id="f_cardiaca" name="f_cardiaca" placeholder="lpm" required="required"/>
+        </label>
+        <label class="input" for="s_oxigeno"><span class="input__title">Saturación de oxígeno</span>
+          <input type="text" id="s_oxigeno" name="s_oxigeno" placeholder="%" required="required"/>
+        </label>
+        <label class="input" for="f_respiratoria"><span class="input__title">Frecuencia respiratoria</span>
+          <input type="text" id="f_respiratoria" name="f_respiratoria" placeholder="rpm" required="required"/>
+        </label>
+        <label class="input" for="temperatura"><span class="input__title">Temperatura</span>
+          <input type="text" id="temperatura" name="temperatura" placeholder="°C" required="required"/>
+        </label>
+        <h4 class="formulario__title">Historia Clínica</h4>
+        <div class="input-select"><span class="input__title">Sobrepeso</span>
+          <select name="sobrepeso" id="sobrepeso">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Obesidad</span>
+          <select name="obesidad" id="obesidad">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Diabetes mellitus</span>
+          <select name="dm" id="dm">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Hipertension Arterial Sistemica</span>
+          <select name="has" id="has">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Enfermedad Pulmonar Obstructiva Crónica</span>
+          <select name="epoc" id="epoc">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Enfermedad Renal Crónica</span>
+          <select name="erc" id="erc">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Cáncer</span>
+          <select name="cancer" id="cancer">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Fiebre &gt;38ºC</span>
+          <select name="fiebre" id="fiebre">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Disnea</span>
+          <select name="disnea" id="disnea">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Oxígeno suplementario</span>
+          <select name="ox_suplementario" id="ox_suplementario">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Ventilación mecánica</span>
+          <select name="ven_mecanica" id="ven_mecanica">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Estado hemodinámico</span>
+          <select name="est_hemodinamico" id="est_hemodinamico">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Requerimiento de aminas</span>
+          <select name="req_aminas" id="req_aminas">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Manejo farmacológico [Sintomático (AINES, salicilatos, etc.).]</span>
+          <select name="mf_sintomatico" id="mf_sintomatico">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Manejo farmacológico [Antibiótico]</span>
+          <select name="mf_antibiotico" id="mf_antibiotico">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Manejo farmacológico [Antivirales]</span>
+          <select name="mf_antivirales" id="mf_antivirales">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Manejo farmacológico [Otros]</span>
+          <select name="mf_otros" id="mf_otros">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <h4 class="formulario__title">Farmacología</h4>
+        <div class="input-select"><span class="input__title">AINE</span>
+          <select name="aine" id="aine">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Paracetamol</span>
+          <select name="paracetamol" id="paracetamol">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Insulina</span>
+          <select name="insulina" id="insulina">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Antihipertensivos</span>
+          <select name="antihipertensivos" id="antihipertensivos">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Estatinas</span>
+          <select name="estatinas" id="estatinas">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Antivirales</span>
+          <select name="antivirales" id="antivirales">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">ASA</span>
+          <select name="asa" id="asa">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Rivaroxaban</span>
+          <select name="rivaroxaban" id="rivaroxaban">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Enoxaparina</span>
+          <select name="enoxaparina" id="enoxaparina">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Apixaban</span>
+          <select name="apixaban" id="apixaban">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Clopidogrel</span>
+          <select name="clopidogrel" id="clopidogrel">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Fondaparinux</span>
+          <select name="fondaparinux" id="fondaparinux">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Tigeciclina</span>
+          <select name="tigeciclina" id="tigeciclina">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Azitromicina</span>
+          <select name="azitromicina" id="azitromicina">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Ampicilina</span>
+          <select name="ampicilina" id="ampicilina">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Colistina</span>
+          <select name="colistina" id="colistina">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">TMP-SMX</span>
+          <select name="tmp_smx" id="tmp_smx">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Metronidazol</span>
+          <select name="metronidazol" id="metronidazol">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Vacomicina</span>
+          <select name="vacomicina" id="vacomicina">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Ceftriaxona</span>
+          <select name="ceftriaxona" id="ceftriaxona">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Cefepime</span>
+          <select name="cefepime" id="cefepime">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Ceftazidima/Avibactam</span>
+          <select name="ceftazidima_avibactam" id="ceftazidima_avibactam">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Ertapenem</span>
+          <select name="ertapenem" id="ertapenem">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Meropenem</span>
+          <select name="meropenem" id="meropenem">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Imipenem</span>
+          <select name="imipenem" id="imipenem">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Ciprofloxacino</span>
+          <select name="ciprofloxacino" id="ciprofloxacino">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Levofloxacino</span>
+          <select name="levofloxacino" id="levofloxacino">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Tazocin (Piper-tazo)</span>
+          <select name="tazocin" id="tazocin">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Linezolid</span>
+          <select name="linezolid" id="linezolid">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Ivermectina</span>
+          <select name="hidroxicloroquina" id="hidroxicloroquina">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Hidroxicloroquina</span>
+          <select name="fluticasona" id="fluticasona">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Fluticasona</span>
+          <select name="betametasona" id="betametasona">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Dexametasona</span>
+          <select name="metilprednisolona" id="metilprednisolona">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Betametasona</span>
+          <select name="prednisona" id="prednisona">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Metilprednisolona</span>
+          <select name="hidrocortisona" id="hidrocortisona">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Prednisona</span>
+          <select name="tocilizumab" id="tocilizumab">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Hidrocortisona</span>
+          <select name="dexametasona" id="dexametasona">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Tocilizumab</span>
+          <select name="ruxolitinib" id="ruxolitinib">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Ruxolitinib</span>
+          <select name="baricitinib" id="baricitinib">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Baricitinib</span>
+          <select name="oxolamina_guaifenesina" id="oxolamina_guaifenesina">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Oxolamina y Guaifenesina</span>
+          <select name="arbistin_carbocisteína" id="arbistin_carbocisteína">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">ARBISTIN (carbocisteína)</span>
+          <select name="salmeterol" id="salmeterol">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Salmeterol</span>
+          <select name="salbutamol" id="salbutamol">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <div class="input-select"><span class="input__title">Salbutamol</span>
+          <select name="ambroxol" id="ambroxol">
+            <option selected="selected" value="0">No</option>
+            <option value="1">Si</option>
+          </select>
+        </div>
+        <h4 class="formulario__title">Química Sanguinea</h4>
+        <label class="input" for="ph"><span class="input__title">pH</span>
+          <input type="text" id="ph" name="ph" placeholder="" required="required"/>
+        </label>
+        <label class="input" for="pa_oxigeno"><span class="input__title">Presión alveolar de oxígeno - PaO2</span>
+          <input type="text" id="pa_oxigeno" name="pa_oxigeno" placeholder="mmHg" required="required"/>
+        </label>
+        <label class="input" for="pa_dioxido"><span class="input__title">Presión alveolar de dióxido de carbono - PaCO2</span>
+          <input type="text" id="pa_dioxido" name="pa_dioxido" placeholder="mmHg" required="required"/>
+        </label>
+        <label class="input" for="hco3"><span class="input__title">HCO3</span>
+          <input type="text" id="hco3" name="hco3" placeholder="mEq/L" required="required"/>
+        </label>
+        <label class="input" for="lactato"><span class="input__title">Lactato</span>
+          <input type="text" id="lactato" name="lactato" placeholder="mmol/L" required="required"/>
+        </label>
+        <label class="input" for="hemoglobina"><span class="input__title">Hemoglobina</span>
+          <input type="text" id="hemoglobina" name="hemoglobina" placeholder="g/dL" required="required"/>
+        </label>
+        <label class="input" for="hematocrito"><span class="input__title">Hematocrito</span>
+          <input type="text" id="hematocrito" name="hematocrito" placeholder="%" required="required"/>
+        </label>
+        <label class="input" for="leucocitos"><span class="input__title">Leucocitos</span>
+          <input type="text" id="leucocitos" name="leucocitos" placeholder="1000/mm3" required="required"/>
+        </label>
+        <label class="input" for="neutrófilos"><span class="input__title">Neutrófilos</span>
+          <input type="text" id="neutrófilos" name="neutrófilos" placeholder="10^3/μ" required="required"/>
+        </label>
+        <label class="input" for="linfocitos"><span class="input__title">Linfocitos</span>
+          <input type="text" id="linfocitos" name="linfocitos" placeholder="10^3/μ" required="required"/>
+        </label>
+        <label class="input" for="plaquetas"><span class="input__title">Plaquetas</span>
+          <input type="text" id="plaquetas" name="plaquetas" placeholder="10^3/μ" required="required"/>
+        </label>
+        <label class="input" for="cloro"><span class="input__title">Cloro</span>
+          <input type="text" id="cloro" name="cloro" placeholder="mEq/L" required="required"/>
+        </label>
+        <label class="input" for="potasio"><span class="input__title">Potasio</span>
+          <input type="text" id="potasio" name="potasio" placeholder="mEq/L" required="required"/>
+        </label>
+        <label class="input" for="magnesio"><span class="input__title">Magnesio</span>
+          <input type="text" id="magnesio" name="magnesio" placeholder="mEq/L" required="required"/>
+        </label>
+        <label class="input" for="calcio"><span class="input__title">Calcio</span>
+          <input type="text" id="calcio" name="calcio" placeholder="mEq/L" required="required"/>
+        </label>
+        <label class="input" for="fosforo"><span class="input__title">Fósforo</span>
+          <input type="text" id="fosforo" name="fosforo" placeholder="mEq/L" required="required"/>
+        </label>
+        <label class="input" for="a_urico"><span class="input__title">Ácido úrico</span>
+          <input type="text" id="a_urico" name="a_urico" placeholder="mg/dL" required="required"/>
+        </label>
+        <label class="input" for="bun"><span class="input__title">BUN</span>
+          <input type="text" id="bun" name="bun" placeholder="mg/dL" required="required"/>
+        </label>
+        <label class="input" for="creatinina"><span class="input__title">Creatinina</span>
+          <input type="text" id="creatinina" name="creatinina" placeholder="mg/dL" required="required"/>
+        </label>
+        <label class="input" for="glucosa"><span class="input__title">Glucosa</span>
+          <input type="text" id="glucosa" name="glucosa" placeholder="mg/dL" required="required"/>
+        </label>
+        <label class="input" for="urea"><span class="input__title">Urea</span>
+          <input type="text" id="urea" name="urea" placeholder="mmol/L" required="required"/>
+        </label>
+        <label class="input" for="b_total"><span class="input__title">Bilirrubina total</span>
+          <input type="text" id="b_total" name="b_total" placeholder="mg/dL" required="required"/>
+        </label>
+        <label class="input" for="b_directa"><span class="input__title">Bilirrubina directa</span>
+          <input type="text" id="b_directa" name="b_directa" placeholder="mg/dL" required="required"/>
+        </label>
+        <label class="input" for="b_indirecta"><span class="input__title">Bilirrubina indirecta</span>
+          <input type="text" id="b_indirecta" name="b_indirecta" placeholder="mg/dL" required="required"/>
+        </label>
+        <label class="input" for="albumina"><span class="input__title">Albúmina</span>
+          <input type="text" id="albumina" name="albumina" placeholder="gr/dL" required="required"/>
+        </label>
+        <label class="input" for="f_alcalina"><span class="input__title">Fosfatasa alcalina</span>
+          <input type="text" id="f_alcalina" name="f_alcalina" placeholder="UI/L" required="required"/>
+        </label>
+        <label class="input" for="tgp"><span class="input__title">TGP</span>
+          <input type="text" id="tgp" name="tgp" placeholder="UI/L" required="required"/>
+        </label>
+        <label class="input" for="tgo"><span class="input__title">TGO</span>
+          <input type="text" id="tgo" name="tgo" placeholder="UI/L" required="required"/>
+        </label>
+        <label class="input" for="hht"><span class="input__title">GGT</span>
+          <input type="text" id="hht" name="hht" placeholder="UI/L" required="required"/>
+        </label>
+        <label class="input" for="pcr"><span class="input__title">PCR</span>
+          <input type="text" id="pcr" name="pcr" placeholder="" required="required"/>
+        </label>
+        <label class="input" for="vsg"><span class="input__title">VSG</span>
+          <input type="text" id="vsg" name="vsg" placeholder="mg/dL" required="required"/>
+        </label>
+        <label class="input" for="tp"><span class="input__title">TP</span>
+          <input type="text" id="tp" name="tp" placeholder="mm/hr" required="required"/>
+        </label>
+        <label class="input" for="ttp"><span class="input__title">TTP</span>
+          <input type="text" id="ttp" name="ttp" placeholder="seg" required="required"/>
+        </label>
+        <label class="input" for="inr"><span class="input__title">INR</span>
+          <input type="text" id="inr" name="inr" placeholder="seg" required="required"/>
+        </label>
+        <label class="input" for="dimerod"><span class="input__title">Dímero D</span>
+          <input type="text" id="dimerod" name="dimerod" placeholder="" required="required"/>
+        </label>
+        <label for="aviso">
+          <input type="checkbox" name="aviso" id="aviso" value="y" required><span class="input-checkbox" for="aviso">He leído y acepto los términos y condiciones del aviso legal.</span>
+        </label>
+        <input type="submit" id="guardar" name="guardar" value="Enviar contribución">
+      </form>
+    </section>
+  </body>
+</html>
