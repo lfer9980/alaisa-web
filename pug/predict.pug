@@ -1,0 +1,32 @@
+extend components/template.pug
+block title 
+	title ALAISA | predicción 
+block contents
+	section.breadcrumbs 
+		+breadcrumbs("model.html","Modelo", "#", "forms")
+	section.wrapper--form 
+		h3.formulario__title Datos generales del paciente
+		form(action="" method="POST")
+			input(type="hidden", name="crsf_token", value="IjIwODgxMTA5OWQ0ZTY4MTViZjA3NzQ4ODE2NGM5MjJhNjk5NmZiMjgi.YPmILA.d7uZz5gjU9rSdRUK_N125zIZP04")
+			each name, index in gralText.name
+				+input-text(name, gralText.text[index], "")
+
+			+input-select-place(gralSelect.name[0], gralSelect.text[0], gralSelect.value[0], gralSelect.value[1])
+			
+			each name, index in fisioText.name 
+				+input-text(name, fisioText.text[index], fisioText.unit[index])
+			
+			each name, index in historySelect.name
+				+input-select-place(name, historySelect.text[index], historySelect.opt[0], historySelect.opt[1])
+
+			each name, index in medSelect.name
+				+input-select-place(name, medSelect.text[index], medSelect.opt[0], medSelect.opt[1])
+
+			each name, index in quimicaText.name
+				+input-text(name, quimicaText.text[index], quimicaText.unit[index])
+
+			label(for="aviso")
+				input(type="checkbox", name="aviso", id="aviso", value="y" required)
+				span.input-checkbox(for="aviso") He leído y acepto los términos y condiciones del aviso legal.
+			
+			input(type="submit", id="guardar", name="guardar", value="Predecir")
