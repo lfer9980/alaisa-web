@@ -1,0 +1,12 @@
+include components/configuration.pug
+doctype html
+html(lang="es")
+	include components/main/head.pug
+	block title 
+		title CARGANDO...
+	body 
+		.wrapper--progress 
+			figure.alaisa__isotipo--blue 
+				img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
+			h4.progress__title Espera un momento...
+			progress(id="progress", class="charging-bar", max="100" value="50") 50%  

@@ -1,0 +1,15 @@
+extend components/template.pug
+block title 
+	title ALAISA | GRACIAS 
+block contents 
+	section.breadcrumbs 
+		+breadcrumbs("add.html","Entrenamiento", "#","Finalizar")
+	section.wrapper--gracias 
+		figure.alaisa__isotipo--blue 
+			img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
+		p.resultados__title ¡Muchas gracias!
+		h4.resultados__parrafo Con tu contribución, lograremos grandes cosas...
+		+buttons-ancla--verde("Hacer otra contribución", "add.html")
+		a(href="index.html") Regresar al inicio
+	include components/main/footer.pug
+

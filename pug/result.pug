@@ -1,0 +1,15 @@
+extend components/template.pug
+block title 
+	title ALAISA | Resultado 
+block contents 
+	section.breadcrumbs 
+		+breadcrumbs("model.html","Modelo", "#","Resultado")
+	section.wrapper--resultado
+		figure.alaisa__isotipo--blue 
+			img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
+		h2.title--resultados La predicción para el paciente ingresado es:
+		p.resultado-text RESULTADO
+		h4.resultado__parrafo Gracias por utilizar nuestro servicio, es un placer ayudar.
+		+buttons-ancla--verde("Hacer otra predicción", "predict.html")
+		a(href="index.html") Regresar al inicio
+	include components/main/footer.pug
