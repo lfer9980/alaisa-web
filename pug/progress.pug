@@ -2,8 +2,10 @@ include components/configuration.pug
 doctype html
 html(lang="es")
 	include components/main/head.pug
-	block title 
-		title CARGANDO...
+		block css 
+			link(rel="stylesheet", href=".../css/progress.css")
+		block title 
+			title CARGANDO...
 	body 
 		.wrapper--progress 
 			figure.alaisa__isotipo--blue 

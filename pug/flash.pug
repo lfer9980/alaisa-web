@@ -2,6 +2,8 @@ include components/configuration.pug
 doctype html
 html(lang="es")
 	include components/main/head.pug
+		block css
+			link(rel="stylesheet", href=".../css/flash.css")
 	body
 		.wrapper--message 
 			i.material-icons close
