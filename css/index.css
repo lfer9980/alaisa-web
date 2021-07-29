@@ -27,12 +27,8 @@ html {
   width: 100vw;
   height: 50px;
   padding: 0 20px;
+  font-family: "Roboto Condensed", sans-serif;
   background-color: #011526;
-}
-@media (prefers-color-scheme: dark) {
-  .header {
-    background-color: #0D0D0D;
-  }
 }
 .header__logo {
   width: 156px;
@@ -41,8 +37,52 @@ html {
 .header__logo img {
   width: 100%;
 }
-.header nav {
+.header__nav--desktop {
   display: none;
+}
+.header__nav--mobile {
+  display: none;
+  margin-top: 95px;
+}
+.header__nav--mobile .header__menu {
+  margin-bottom: 45px;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+.header__menu {
+  list-style: none;
+  border-left: 2px solid rgba(255, 255, 255, 0.6);
+}
+.header__menu li {
+  margin: 0 0 25px 20px;
+}
+.header__menu li:nth-of-type(6) {
+  margin-bottom: 0;
+}
+.header__menu li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #FFF;
+}
+.header__menu a:hover {
+  color: #8DAEF2;
+}
+.header__menu--secondary {
+  list-style: none;
+  margin-left: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-style: italic;
+}
+.header__menu--secondary li {
+  margin-bottom: 5px;
+}
+.header__menu--secondary li a {
+  color: #8DAEF2;
+}
+.header__menu--secondary li a:hover {
+  color: #FFF;
 }
 .header .burger-menu {
   font-size: 30px;
@@ -51,23 +91,41 @@ html {
   color: #FFF;
   background-color: #03658C;
 }
-@media (prefers-color-scheme: dark) {
-  .header .burger-menu {
-    color: #DFE7F2;
-    background-color: #012E40;
-  }
-}
-.header .alaisa__imagotipo--white {
+.header .imagotipo {
   display: none;
+  width: 100%;
+  margin-bottom: 84px;
+}
+.header .imagotipo img {
+  width: 98px;
+  height: 98px;
 }
 
-/* .header.is-active {
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100vh;
-} */
+.is-active {
+  top: 0;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #03658C;
+}
+.is-active .header__logo {
+  display: none;
+}
+.is-active .header__nav--mobile {
+  display: flex;
+  flex-direction: column;
+}
+.is-active .burger-menu {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.is-active .imagotipo {
+  display: flex;
+  justify-content: flex-end;
+}
 
 /*# sourceMappingURL=index.css.map */

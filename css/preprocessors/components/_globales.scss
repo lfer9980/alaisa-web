@@ -39,6 +39,19 @@ $green300: #3CBB5A;
 $green200: #5EBB74;
 
 
+$breakpoints: ( phone: 375px, 
+            	tablet: 768px, 
+            	desktop: 1024px) !default;
+
+
+$media-expressions: (screen: "screen", 
+                    handheld: "handheld",
+                    retina2x: 
+                    ("(-webkit-min-device-pixel-ratio: 2)", 
+                    "(min-resolution: 192dpi)")) !default;
+
+
+
 @mixin dark-mode {
 	@media (prefers-color-scheme: dark) {
 		@content;
