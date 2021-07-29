@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 /* fuentes principales */
-$Fuente1: 'Roboto Condensed', sans-serif;
-$Fuente2: 'Source Sans Pro', sans-serif;
+$fuente1: 'Roboto Condensed', sans-serif;
+$fuente2: 'Source Sans Pro', sans-serif;
 
 /* paletas de color */
 
@@ -39,4 +39,32 @@ $green300: #3CBB5A;
 $green200: #5EBB74;
 
 
+@mixin dark-mode {
+	@media (prefers-color-scheme: dark) {
+		@content;
+	}
+}
+
+@mixin button--green($value, $size, $color) {
+	font-family: $fuente1;
+	font-style: Bold;
+	font-size: $size;
+	color: $white;
+	background-color: $color;	
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	font-family: $fuente2;
+	scroll-behavior: smooth;
+}
+
+.button-theme {
+	display: none;
+}
 
