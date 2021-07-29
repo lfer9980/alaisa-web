@@ -1,0 +1,48 @@
+.header {
+	display: flex;
+	flex-wrap: nowrap;
+	position: absolute;
+	top: 15px;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	height: 50px;
+	padding: 0 20px;
+	background-color: $blue600;
+	@include dark-mode {
+		background-color: $dark600;
+	}
+	&__logo {
+		width: 156px;
+		height: auto;
+		img {
+			width: 100%;
+		}
+	}
+	nav {
+		display: none;
+	}
+	.burger-menu {
+		font-size: 30px;
+		padding: 5px;
+		border-radius: 50%;
+		color:$white;
+		background-color: $blue500;
+		@include dark-mode {
+			color: $blue200;
+			background-color: $dark500;
+		}
+	}
+	.alaisa__imagotipo--white {
+		display: none;
+	}
+}
+
+/* .header.is-active {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+} */
