@@ -76,6 +76,13 @@ html {
 	font-family: $fuente2;
 	scroll-behavior: smooth;
 }
+body {
+	background-color: $blue600;
+}
+main {	
+	width: 100%;
+	height: auto;
+}
 
 .button-theme {
 	display: none;

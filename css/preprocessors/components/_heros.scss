@@ -1,0 +1,108 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	padding-top: 90px;
+	color: $white;
+	&__title {
+		max-width: 326px;
+		padding: 0 20px;
+		position: relative;
+		h1 {
+			font-family: $fuente1;
+			font-size: 3.79rem;
+			font-weight: bold;
+			line-height: 120%;
+		}
+		span {
+			color: $blue400;
+		}
+	}
+	&__saludo {
+		display: flex;
+		width: 100vw;
+		position: relative;
+		height: 45px;
+		margin: 20px 0;
+		place-items: center;
+		background-color: $blue500;
+		h2 {
+			width: 100%;
+			font-family: $fuente1;
+			font-size: 2.843rem;
+			text-align: center;
+		}
+	}
+	&__subtitle {
+		margin-bottom: 13px;
+		h3 {	
+			position: relative;
+			text-align: center;
+			font-size: 2.1rem;
+			padding: 0 55px;
+		}
+	}
+	&__parrafo--button {
+		margin: 0 20px;
+		height: auto;
+		padding: 20px;
+		border-radius: 10px;
+		background: rgb(3,101,140);
+		background: linear-gradient(180deg, rgba(3,101,140,0.3) 0%, rgba(3,101,140,0) 100%);
+		p {
+			font-size: 1.6rem;
+			text-align: center;
+			line-height: 140%;
+		}
+	}
+	.button--green {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		height: 40px;
+		margin: 20px 20px 10px 20px;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+		background-color: $green500;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: inherit;
+			font-family: $fuente1;
+			font-size: 2.133rem;
+			font-weight: bold;
+			text-decoration: none;
+			color: $white;
+		}
+		i {
+			position: absolute;
+			right: 40px;
+		}
+	}
+	.arrow-drop-down {
+		margin: 0 auto;
+		text-align: center;
+		font-size: 28px;
+	}
+}
+.hero::before {
+	content: "";
+	background-image: url('../assets/img/2x/mobile_gray@2x.png');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.15;
+}
+
+.button--green:hover {
+	background-color: $green600;
+}
