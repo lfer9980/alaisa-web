@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	justify-content: center;
 	position: relative;
 	width: 100vw;
 	height: 100vh;
@@ -58,39 +59,8 @@
 			line-height: 140%;
 		}
 	}
-	.button--green {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: relative;
-		height: 40px;
-		margin: 20px 20px 10px 20px;
-		border-radius: 8px;
-		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
-		background-color: $green500;
-		a {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			height: inherit;
-			font-family: $fuente1;
-			font-size: 2.133rem;
-			font-weight: bold;
-			text-decoration: none;
-			color: $white;
-		}
-		i {
-			position: absolute;
-			right: 40px;
-		}
-	}
-	.arrow-drop-down {
-		margin: 0 auto;
-		text-align: center;
-		font-size: 28px;
-	}
 }
+
 .hero::before {
 	content: "";
 	background-image: url('../assets/img/2x/mobile_gray@2x.png');
