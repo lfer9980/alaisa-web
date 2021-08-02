@@ -1,0 +1,72 @@
+.entrenamiento {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	color: $white;
+	h2 > span {
+		color: $blue400;
+	}
+	p > span {
+		color: $blue400;
+	}
+	div > p {
+		position: relative;
+		line-height: 140%;
+	}
+	&__title {
+		margin: 90px 0 15px 0;
+		padding: 0 20px;
+		font-family: $fuente1;
+		h2 {
+			font-size: 3.79rem;
+			line-height: 120%;
+		}
+	}
+	&__parrafo--one {
+		margin-bottom: 20px;
+		padding: 0 60px;
+		p {
+			font-size: 1.8rem;
+			font-weight: bold;
+		}
+	}
+	&__parrafo--two {
+		margin-bottom: 20px;
+		padding: 0 60px;
+		p {
+			font-size: 1.6rem;
+		}
+	}
+	&__parrafo--three {
+		margin-bottom: 15px;
+		padding: 0 20px;
+		p {
+			font-family: $fuente1;
+			font-size: 2.1rem;
+			font-weight: bold;
+		}
+	}
+	&__parrafo--four {
+		padding: 0 20px;
+		p {
+			font-size: 1.2rem;
+		}
+	}
+
+}
+
+.entrenamiento::before {
+	content: "";
+	background-image: url('../assets/img/2x/mobile_gray@2x.png');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.15;
+}
