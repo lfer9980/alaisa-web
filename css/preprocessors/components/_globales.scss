@@ -121,3 +121,20 @@ main {
 	text-align: center;
 	font-size: 24px;
 }
+
+.fecha {
+	position: relative;
+	margin-top: 10px;
+	font-weight: bold;
+	p {
+		margin-bottom: 5px;
+		font-size: 1.8rem;
+		color: $blue300;
+	}
+	&__main {
+		padding: 5px 0;
+		font-family: $fuente1;
+		font-size: 1.8rem;
+		background-color: $blue500;
+	}
+}
