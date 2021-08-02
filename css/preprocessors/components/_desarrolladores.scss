@@ -1,0 +1,93 @@
+.desarrollador {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	color: $white;
+	h2 > span {
+		color: $blue400;
+	}
+	p > span {
+		color: $blue400;
+	}
+	div > p {
+		position: relative;
+		line-height: 140%;
+	}
+	&__title {
+		position: relative;
+		margin: 90px 0 20px 0;
+		padding: 0 20px;
+		text-align: left;
+		font-family: $fuente1;
+		h2 {
+			font-size: 3.79rem;
+		}
+	}
+	&__subtitle {
+		padding: 0 60px;
+		margin-bottom: 15px;
+		p {
+			font-family: $fuente1;
+			font-size: 1.8rem;
+			font-weight: 500;
+		}
+	}
+	&__table {
+		position: relative;
+		margin: 0 20px;
+		font-size: 1.6rem;
+		.wrapper--tabla {
+			width: 100%;
+			padding: 5px 5px;
+			border-radius: 8px;
+			border-collapse: separate;
+			border-spacing: 0 10px;
+			background-color: $blue500;
+			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+			thead tr th {
+				font-family: $fuente1;
+			}
+			tbody tr > th {
+				text-align: right;
+			}
+		}
+		.wrapper--side-info {
+			text-align: left;
+			margin-top: 10px;
+			p {
+				font-weight: 100;
+			}
+		}
+	}
+	.fecha {
+		position: relative;
+		margin-top: 10px;
+		font-weight: bold;
+		p {
+			margin-bottom: 5px;
+			font-size: 1.8rem;
+			color: $blue300;
+		}
+		&__main {
+			padding: 5px 0;
+			font-family: $fuente1;
+			font-size: 1.8rem;
+			background-color: $blue500;
+		}
+	}
+}
+.desarrollador::before {
+	content: "";
+	background-image: url('../assets/img/2x/quirofano-mobile@2x-80.jpg');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.50;
+}

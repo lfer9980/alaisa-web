@@ -42,23 +42,72 @@
       </div>
     </header>
     <main>
-      <section class="entrenamiento" id="entrenamiento"> 
-        <div class="entrenamiento__title"> 
-          <h2>Ayuda a <span>Alaisa</span> a mejorar en sus predicciones</h2>
+      <section class="desarrollador" id="metricas">
+        <div class="desarrollador__title">
+          <h2>Un <span>modelo</span> <br> efectivo y <span>preciso.</span></h2>
         </div>
-        <div class="entrenamiento__parrafo--one">
-          <p>Se parte de la <span>comunidad</span> de usuarios que ayudan a mejorar las predicciones del modelo.</p>
+        <div class="desarrollador__subtitle">
+          <p>Conoce los resultados de las pruebas de rendimiento hechas por los desarrolladores de Alaisa</p>
         </div>
-        <div class="entrenamiento__parrafo--two">
-          <p>¡Tu contribución, acelera exponencialmente la recolección de datos que sirven para <span>entrenar</span> a la red neuronal y <span>mejorar</span> la calidad de sus predicciones!</p>
+        <div class="desarrollador__table">
+          <table class="wrapper--tabla">
+            <thead> 
+              <tr>
+                <th> </th>
+                <th>precision</th>
+                <th>recall</th>
+                <th>f1-score</th>
+                <th>support</th>
+              </tr>
+            </thead>
+            <tbody> 
+              <tr> 
+                <th>0.0</th>
+                <td>0.92</td>
+                <td>0.96</td>
+                <td>0.94</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <th>1.0</th>
+                <td>0.96</td>
+                <td>0.92</td>
+                <td>0.94</td>
+                <td>24</td>
+              </tr>
+              <tr> 
+                <th>ACC*</th>
+                <td></td>
+                <td></td>
+                <td>0.94</td>
+                <td>48</td>
+              </tr>
+              <tr> 
+                <th>MCAVG*</th>
+                <td>0.94</td>
+                <td>0.94</td>
+                <td>0.94</td>
+                <td>48</td>
+              </tr>
+              <tr>
+                <th>WAVG*</th>
+                <td>0.94</td>
+                <td>0.94</td>
+                <td>0.94</td>
+                <td>48</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="wrapper--side-info">
+            <p><b>*ACC</b> = Accuracy</p>
+            <p><b>*MCAVG</b> = Macro Average</p>
+            <p><b>*WAVG</b> = Weight Average</p>
+          </div>
         </div>
-        <div class="entrenamiento__parrafo--three">
-          <p>Para <span>contribuir</span>, solo debes entrar al entrenamiento</p>
-        </div>
-        <div class="entrenamiento__parrafo--four">
-          <p>No te preocupes, el proceso es el mismo a cuando utilizas el modelo para recibir predicciones.</p>
-        </div>
-        <div class="button--green"> <a href="./entrenamiento.html">iniciar Entrenamiento</a><i class="material-icons">arrow_forward</i></div><i class="material-icons arrow-drop-down">arrow_drop_down</i>
+        <div class="fecha">
+          <p>Fecha de la ultima actualización:</p>
+          <div class="fecha__main"><span>30 de jun 2021</span></div>
+        </div><i class="material-icons arrow-drop-down">arrow_drop_down</i>
         <div class="covid-line--light"><i class="icon--covid-gray"></i></div>
       </section>
     </main>
