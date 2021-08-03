@@ -1,0 +1,106 @@
+.contacto {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: auto;
+	text-align: center;
+	color: $white;
+	h2 > span {
+		color: $blue400;
+	}
+	p > span {
+		color: $blue400;
+	}
+	div > p {
+		position: relative;
+		line-height: 140%;
+	}
+	&__title {
+		margin-top: 90px;
+		padding: 0 20px;
+		font-family: $fuente1;
+		h2 {
+			text-align: left;
+			font-size: 3.79rem;
+			line-height: 120%;
+		}
+	}
+	.card {
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-top: 15px;
+		article {
+			display: flex;
+			align-items: center;
+			width: 85%;
+			padding: 10px 10px 10px 20px;
+			text-align: left;
+			background-color: $blue500;
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+		}
+		&__info {
+			display: flex;
+			flex-direction: column;
+			&__title {
+				p {
+					font-family: $fuente1;
+					font-size: 2.1rem;
+					font-weight: bold;
+				}
+			}
+			&__parrafo {
+				p {
+					margin-top: 5px;
+					font-size: 1.2rem;
+					line-height: 120%;
+				}
+			}
+			&__correo {
+				margin-top: 5px;
+				a {
+					font-family: $fuente1;
+					font-size: 1.1rem;
+					font-weight: bold;
+					text-decoration: none;
+					color: $blue300;
+				}
+			}
+			&__redes {
+				display: flex;
+				margin-top: 10px;
+				img {
+					width: 30px;
+					height: 30px;
+					margin-right: 25px;
+				}
+			}
+		}
+
+		&__info__image {
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+			border-radius: 50%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+}
+.contacto::before {
+	content: "";
+	background-image: url('../assets/img/2x/cama-mobile@2x-80.jpg');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.15;
+}
