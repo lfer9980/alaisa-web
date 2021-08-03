@@ -1,22 +1,26 @@
-section#donativos
-	h2 #[span Ay&uacute;danos] a crear m&aacute;s cosas #[span incre&iacute;bles]...
-	p.donativos__parrafo1 Puedes ayudarnos much&iacute;simo, aportando a trav&eacute;s de:
-	article.container--donativos
-		figure.container--logos-donativos
-			img.coffee__image(src="./assets/icons/coffee_logo.png", alt="Logo de Buy Me a Coffee")
-		.container--coffee
-			p.donativos__title ¡Inv&iacute;tanos un caf&eacute;!
-			p.donativos__parrafo Tus aportaciones ser&aacute;n de gran ayuda, gente como t&uacute; es capaz de cambiar al mundo...
-			a.button--coffee(href="#") Donar
-	article.container--donativos
-		figure.container--logos-donativos 
-			img.patreon__image(src="./assets/icons/patreon_logo.png", alt="Logo de patreon")
-		.container--patreon
-			p.donativos__title Ap&oacute;yanos a trav&eacute;s de Patreon
-			p.donativos__parrafo ¿No te gusta Buy me a coffee? no te preocupes, puedes hacerlo a trav&eacute;s de Patreon
-			a.button--patreon(href="#") Donar
-	p.donativos__parrafo2 Si no puedes donar no te preocupes, la labor que haces cada d&iacute;a como personal de salud es la que hace la diferencia #[br] #[b ¡Ustedes son los Héroes!]
-	p.donativos__parrafo3 Estamos muy agradecidos por tu apoyo. 
+section.donativos#donativos
+	.donativos__title 
+		h2 #[span Ay&uacute;danos] a crear m&aacute;s cosas #[span incre&iacute;bles]...
+	.donativos__parrafo1: p Puedes ayudarnos much&iacute;simo, aportando a trav&eacute;s de:
+	.donativos--wrapper.one
+		article.coffee
+			figure.donativos__image
+				img(src="./assets/icons/coffee_logo.png", alt="Logo de Buy Me a Coffee")
+			.donativos__main
+				p.main__title ¡Inv&iacute;tanos un caf&eacute;!
+				p.main__parrafo Tus aportaciones ser&aacute;n de gran ayuda, gente como t&uacute; es capaz de cambiar al mundo...
+				.button--coffee: a(href="#")  Donar
+	.donativos--wrapper.two
+		article.patreon
+			.donativos__main
+				p.main__title Patreon
+				p.main__parrafo ¿No te gusta Buy me a coffee? no te preocupes, puedes hacerlo a trav&eacute;s de Patreon
+				.button--patreon: a(href="#")  Donar
+			figure.donativos__image
+				img(src="./assets/icons/patreon_logo.png", alt="Logo de patreon")
+	.donativos__parrafo2: p Estamos muy agradecidos por tu apoyo. 
+	.donativos__parrafo3: p Si no puedes donar no te preocupes, la labor que haces cada d&iacute;a como personal de salud es la que hace la diferencia #[br] #[b ¡Ustedes son los Héroes!]
+	i.material-icons.arrow-drop-down arrow_drop_down
 	.covid-line--light
 		i.icon--covid-gray
 
