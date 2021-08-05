@@ -793,4 +793,53 @@ main {
   opacity: 0.5;
 }
 
+footer {
+  width: 100vw;
+  height: auto;
+  padding: 10px 20px;
+  color: #FFF;
+}
+footer .footer__main {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+footer .footer__main figure {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  margin-right: 10px;
+}
+footer .footer__main figure img {
+  width: 100%;
+}
+footer .footer__main .footer__main__container {
+  width: 80%;
+  margin-bottom: 5px;
+}
+footer .footer__main .footer__main__container h4 {
+  margin-bottom: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2rem;
+}
+footer .footer__main .footer__main__container p {
+  font-weight: lighter;
+  line-height: 140%;
+}
+footer .footer__secondary {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+footer .footer__secondary .footer__fecha {
+  text-align: left;
+}
+footer .footer__secondary .footer__links {
+  text-align: right;
+  list-style: none;
+}
+footer .footer__secondary .footer__links li a {
+  color: #5C8EF2;
+}
+
 /*# sourceMappingURL=index.css.map */
