@@ -3,7 +3,7 @@
 body {
 	background-color: $blue600;
 }
-.model {
+.training {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -44,17 +44,17 @@ body {
 		&__parrafo1 {
 			position: relative;
 			display: flex;
-			justify-content: flex-end;
+			justify-content: flex-start;
 			height: auto;
 			margin-bottom: 20px;
 			p {
 				max-width: 100%;
-				margin-left: 20px;
-				padding: 5px 20px 5px 5px;
+				margin-right: 20px;
+				padding: 5px 5px 5px 20px;
 				line-height: 140%;
 				font-size: 1.6rem;
-				border-top-left-radius: 8px;
-				border-bottom-left-radius: 8px;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
 				box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 				background-color: rgba(3, 101, 140, 0.75);
 				span {
@@ -67,7 +67,7 @@ body {
 			margin-bottom: 20px;
 			h4 {
 				font-family: $fuente1;
-				font-size: 2.1rem;
+				font-size: 1.6rem;
 			}
 		}
 		form {
@@ -122,9 +122,9 @@ body {
 .light {
 	background-color: $blue500;
 }
-.model::before {
+.training::before {
 	content: "";
-	background-image: url('../assets/img/2x/esteto-mobile@2x-80.jpg');
+	background-image: url('../assets/img/2x/virus-mobile@2x-80.jpg');
 	background-size: cover;
 	position: fixed;
 	top: 0;

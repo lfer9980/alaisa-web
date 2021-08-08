@@ -256,7 +256,7 @@ body {
   background-color: #011526;
 }
 
-.model {
+.training {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -266,87 +266,87 @@ body {
   height: auto;
   text-align: center;
 }
-.model__main {
+.training__main {
   position: relative;
   color: #FFF;
 }
-.model__main .alaisa__isotipo {
+.training__main .alaisa__isotipo {
   margin: 0 auto;
   width: 90px;
   height: 90px;
 }
-.model__main .alaisa__isotipo img {
+.training__main .alaisa__isotipo img {
   width: 100%;
 }
-.model__main__title {
+.training__main__title {
   margin: 15px 0;
   padding: 0 20px;
 }
-.model__main__title h2 {
+.training__main__title h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 3.79rem;
 }
-.model__main__subtitle {
+.training__main__subtitle {
   margin-bottom: 20px;
   padding: 0 20px;
 }
-.model__main__subtitle p {
+.training__main__subtitle p {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 140%;
 }
-.model__main__parrafo1 {
+.training__main__parrafo1 {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   height: auto;
   margin-bottom: 20px;
 }
-.model__main__parrafo1 p {
+.training__main__parrafo1 p {
   max-width: 100%;
-  margin-left: 20px;
-  padding: 5px 20px 5px 5px;
+  margin-right: 20px;
+  padding: 5px 5px 5px 20px;
   line-height: 140%;
   font-size: 1.6rem;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
   background-color: rgba(3, 101, 140, 0.75);
 }
-.model__main__parrafo1 p span {
+.training__main__parrafo1 p span {
   font-weight: bold;
 }
-.model__main__parrafo2 {
+.training__main__parrafo2 {
   padding: 0 20px;
   margin-bottom: 20px;
 }
-.model__main__parrafo2 h4 {
+.training__main__parrafo2 h4 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 2.1rem;
+  font-size: 1.6rem;
 }
-.model__main form {
+.training__main form {
   padding: 0 20px;
 }
-.model__main form .content-input {
+.training__main form .content-input {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.model__main form .content-input input {
+.training__main form .content-input input {
   margin-right: 5px;
 }
-.model__main form .content-input span {
+.training__main form .content-input span {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
 }
-.model__main form .content-input span a {
+.training__main form .content-input span a {
   color: #8DAEF2;
 }
-.model__main__priv {
+.training__main__priv {
   margin: 20px 0 20px 0;
 }
-.model__main__priv a {
+.training__main__priv a {
   font-size: 1.2rem;
   color: #8DAEF2;
 }
@@ -377,9 +377,9 @@ body {
   background-color: #03658C;
 }
 
-.model::before {
+.training::before {
   content: "";
-  background-image: url("../assets/img/2x/esteto-mobile@2x-80.jpg");
+  background-image: url("../assets/img/2x/virus-mobile@2x-80.jpg");
   background-size: cover;
   position: fixed;
   top: 0;
@@ -389,4 +389,4 @@ body {
   opacity: 0.5;
 }
 
-/*# sourceMappingURL=model.css.map */
+/*# sourceMappingURL=entrenamiento.css.map */
