@@ -60,8 +60,7 @@
 		}
 	}
 }
-
-.hero::before {
+body::before {
 	content: "";
 	background-image: url('../assets/img/2x/mobile_gray@2x.png');
 	background-size: cover;

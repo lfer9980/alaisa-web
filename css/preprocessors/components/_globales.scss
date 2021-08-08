@@ -76,12 +76,21 @@ html {
 	font-family: $fuente2;
 	scroll-behavior: smooth;
 }
-body {
-	background-color: $blue600;
-}
+
 main {	
 	width: 100%;
 	height: auto;
+}
+
+h2 > span {
+	color: $blue400;
+}
+p > span {
+	color: $blue400;
+}
+div > p {
+	position: relative;
+	line-height: 140%;
 }
 
 .button-theme {
@@ -125,16 +134,21 @@ main {
 .fecha {
 	position: relative;
 	margin-top: 10px;
+	font-family: $fuente1;
 	font-weight: bold;
 	p {
 		margin-bottom: 5px;
+		padding: 0 20px;
 		font-size: 1.8rem;
-		color: $blue300;
+		color: $blue400;
 	}
 	&__main {
 		padding: 5px 0;
-		font-family: $fuente1;
 		font-size: 1.8rem;
 		background-color: $blue500;
+		span {
+			color: $white;
+		}
 	}
 }
+

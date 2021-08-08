@@ -7,16 +7,6 @@
 	height: 100vh;
 	text-align: center;
 	color: $white;
-	h2 > span {
-		color: $blue400;
-	}
-	p > span {
-		color: $blue400;
-	}
-	div > p {
-		position: relative;
-		line-height: 140%;
-	}
 	&__title {
 		margin: 90px 0 5px 0;
 		padding: 0 20px;

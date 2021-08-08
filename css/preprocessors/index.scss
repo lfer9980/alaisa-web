@@ -1,4 +1,7 @@
 @import 'components/globales';
+body {
+	background-color: $blue600;
+}
 @import 'components/headers';
 @import 'components/heros';
 @import 'components/modelos';
@@ -6,4 +9,4 @@
 @import 'components/desarrolladores';
 @import 'components/donativos';
 @import 'components/contactos';
-@import 'components/footers'
+@import 'components/footers';

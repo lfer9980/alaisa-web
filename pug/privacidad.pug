@@ -4,21 +4,25 @@ block css
 block title 
 	title ALAISA | privacidad 
 block contents
-	section.title--privacidad
-		h2 Tu privacidad es muy #[span importante] y nosotros lo sabemos.
-	section.wrapper--privacidad
-		h4.privacidad__subtitle--main Consulta nuestro aviso de privacidad
-		p.privacidad__parrafo Hospital Central Universitario, con domicilio en No. 3302, calle Rosales, Roma Sur, C. P. 31350, Chihuahua, México, teléfono (614)-180-0800, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:
-		h5.privacidad__subtitle ¿Para qué fines utilizaremos sus datos personales?
-		p.privacidad__parrafo Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:
-			ul.parrafo__lista
-				li.lista__item--privacidad Respuesta a mensajes del formulario de contacto.
-				li.lista__item--privacidad Prestación de cualquier servicio solicitado.
-				li.lista__item--privacidad Registro epidemiológico.
-				li.lista__item--privacidad Investigación científica con fines estadísticos.
-		h5.privacidad__subtitle ¿Dónde puedo consultar el aviso de privacidad integral?
-		p.privacidad__subtitle Para conocer mayor información sobre los términos y condiciones en que serán tratados sus datos personales, como los terceros con quienes compartimos su información personal y la forma en que podrá ejercer sus derechos ARCO, puede consultar el aviso de privacidad integral con una petición vía correo electrónico:
-		h4.privacidad__parrafo--principal Última actualización de este aviso de privacidad: 
+	main.privacidad
+		.privacidad__title
+			h2 Tu privacidad es muy #[span importante] y nosotros lo sabemos.
+		section.privacidad__main
+			h4.privacidad__main__subtitle--main Consulta nuestro aviso de privacidad
+			p.privacidad__main__parrafo Hospital Central Universitario, con domicilio en No. 3302, calle Rosales, Roma Sur, C. P. 31350, Chihuahua, México, teléfono (614)-180-0800, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:
+			h5.privacidad__main__subtitle ¿Para qué fines utilizaremos sus datos personales?
+			p.privacidad__main__parrafo Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:
+			ul.privacidad__main__list
+				li Respuesta a mensajes del formulario de contacto.
+				li Prestación de cualquier servicio solicitado.
+				li Registro epidemiológico.
+				li Investigación científica con fines estadísticos.
+			h5.privacidad__main__subtitle ¿Dónde puedo consultar el aviso de privacidad integral?
+			p.privacidad__main__parrafo Para conocer mayor información sobre los términos y condiciones en que serán tratados sus datos personales, como los terceros con quienes compartimos su información personal y la forma en que podrá ejercer sus derechos ARCO, puede consultar el aviso de privacidad integral con una petición vía correo electrónico:
+			a.mail(href="#") proyectocovidcuu@gmail.com 
 		.fecha 
-			p.fecha__texto 30 de jun 2021
+			p Última actualización de este aviso de privacidad: 
+			.fecha__main
+				span 30 de jun 2021
+block footer 
 	include components/main/footer.pug

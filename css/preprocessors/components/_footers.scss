@@ -1,8 +1,10 @@
 footer {
+	position: relative;
 	width: 100vw;
 	height: auto;
 	padding: 10px 20px;
 	color: $white;
+	background-color: $blue600;
 	.footer__main {
 		display: flex;
 		flex-wrap: nowrap;
