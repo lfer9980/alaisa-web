@@ -1,0 +1,130 @@
+@import 'components/globales';
+@import 'components/headers';
+body {
+	background-color: $blue600;
+}
+.model {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: auto;
+	text-align: center;
+
+	&__main {
+		position: relative;
+		color: $white;
+		.alaisa__isotipo { 
+			margin: 0 auto;
+			width: 90px;
+			height: 90px;
+			img {
+				width: 100%;
+			}
+		}
+		&__title {
+			margin: 15px 0;
+			padding: 0 20px;
+			h2 {
+				font-family: $fuente1;
+				font-size: 3.79rem;
+			}
+		}
+		&__subtitle {
+			margin-bottom: 20px;
+			padding: 0 20px;
+			p {
+				font-size: 1.8rem;
+				font-weight: bold;
+				line-height: 140%;
+			}
+		}
+		&__parrafo1 {
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			height: auto;
+			margin-bottom: 20px;
+			p {
+				max-width: 100%;
+				margin-left: 20px;
+				padding: 5px 20px 5px 5px;
+				line-height: 140%;
+				font-size: 1.6rem;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+				box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+				background-color: rgba(3, 101, 140, 0.75);
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+		&__parrafo2 {
+			padding: 0 20px;
+			margin-bottom: 20px;
+			h4 {
+				font-family: $fuente1;
+				font-size: 2.1rem;
+			}
+		}
+		form {
+			padding: 0 20px;
+			.content-input {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				input {
+					margin-right: 5px;
+				}
+				span {
+					font-family: $fuente1;
+					font-size: 1.4rem;
+					font-weight: 500;
+					a {
+						color: $blue300;
+					}
+				}
+			}
+		}
+		&__priv {
+			margin: 20px 0 20px 0;
+			a {
+				font-size: 1.2rem;
+				color: $blue300;
+			}
+		}
+	}
+}
+.back-button {
+	display: flex;
+	position: fixed;
+	top: 95px;
+	left: 20px;
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: $white;
+	i {
+		font-size: 28px;
+	}
+}
+.light {
+	background-color: $blue500;
+}
+.model::before {
+	content: "";
+	background-image: url('../assets/img/2x/esteto-mobile@2x-80.jpg');
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.50;
+}

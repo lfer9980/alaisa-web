@@ -4,22 +4,22 @@ block css
 block title 
 	title ALAISA | modelo
 block contents
-	section.breadcrumbs 
-		+breadcrumbs("model.html", "Modelo")
-	section.wrapper--acerca
-		.back-button--light
-			i.material-icons arrow_back
-		figure.alaisa__isotipo--blue 
-			img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
-		h2.title--modelo ¡Comencemos!
-		p.modelo__subtitle Recuerda que yo no doy diagnósticos ni tratamientos. 
-		.modelo__parrafo1 
-			p Soy una herramienta para que, junto con tu #[span criterio médico], puedas saber la tendencia del desenlace de tu paciente y puedas actuar a partir de eso. Espero poder #[span ayudarte] y que al mismo tiempo me ayudes a mí a #[span aprender] más.#[br]Así, yo voy a poder ayudar a más pacientes y médicos que me necesiten.
-		h4.modelo__parrafo2 Es un placer para mí estar a tus órdenes.
-		form(action="") 
-			label(for="checkbox-terminos") 
-				input(type="checkbox", name="checkbox-terminos") 
-				span He leído y acepto los #[a(href="#")  términos y condiciones]
-		+buttons-ancla--verde("Comenzar", "predict.html")
-		a(href="#") Aviso de privacidad
+	.back-button.light
+		i.material-icons arrow_back
+	main.model
+		.breadcrumbs
+			+breadcrumbs("model.html", "Modelo")
+		section.model__main
+			figure.alaisa__isotipo
+				img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
+			.model__main__title: h2 ¡Comencemos!
+			.model__main__subtitle: p Recuerda que yo no doy diagnósticos ni tratamientos. 
+			.model__main__parrafo1: p Soy una herramienta para que, junto con tu #[span criterio médico], puedas saber la tendencia del desenlace de tu paciente y puedas actuar a partir de eso. Espero poder #[span ayudarte] y que al mismo tiempo me ayudes a mí a #[span aprender] más.#[br]Así, yo voy a poder ayudar a más pacientes y médicos que me necesiten.
+			.model__main__parrafo2: h4 Es un placer para mí estar a tus órdenes.
+			form(action="") 
+				label.content-input(for="checkbox-terminos")
+					input(type="checkbox", name="checkbox-terminos" id="checkbox-terminos") 
+					span He leído y acepto los #[a(href="#")  términos y condiciones]
+			+buttons-ancla--verde("Comenzar", "predict.html")
+			.model__main__priv: a(href="#") Aviso de privacidad
 
