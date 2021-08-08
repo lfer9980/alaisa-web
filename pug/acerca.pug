@@ -4,13 +4,14 @@ block css
 block title 
 	title ALAISA | acerca de 
 block contents
-	section.wrapper--acerca 
-		h2.title--acerca ¿Qué es Alaisa?
-		p.acerca__parrafo  ALAISA es un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2 a través de un modelo de predicción de desenlace de Machine learning
-		p.acerca__parrafo--primary Puedes encontrar la documentación sobre el concepto base para crear “alaisa” en el siguiente enlace:
-		.link-container
-			a(href="#").acerca__link Algoritmos y Covid 19
-		figure.acerca__image-logo 
-			img(src="assets/icons/imagotipo_alaisa.svg", alt="")
-			img(src="assets/icons/logo_tipografico_alaisa.svg", alt="")
+	main.acerca 
+		.acerca__title: h2 ¿Qué es #[span Alaisa]? 
+		.acerca__main
+			p.acerca__main__parrafo  ALAISA es un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2 a través de un modelo de predicción de desenlace de Machine learning
+			p.acerca__main__parrafo--primary Puedes encontrar la documentación sobre el concepto base para crear “Alaisa” en el siguiente enlace:
+			a.acerca__main__link(href="#") Algoritmos y Covid 19
+			figure.acerca__main__logo
+				img(src="assets/icons/imagotipo_alaisa.svg", alt="")
+				img(src="assets/icons/logo_tipografico_alaisa.svg", alt="")
+block footer
 	include components/main/footer.pug
