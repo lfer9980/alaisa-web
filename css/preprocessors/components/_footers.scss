@@ -42,8 +42,12 @@ footer {
 		.footer__links {
 			text-align: right;
 			list-style: none;
-			li a {
-				color: $blue400;
+			li 
+			{
+				padding-bottom: 5px;
+				a {
+					color: $blue400;
+				}
 			}
 		}
 	}

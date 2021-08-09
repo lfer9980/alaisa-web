@@ -3,15 +3,17 @@ block css
 	link(rel="stylesheet", href="css/result.css")
 block title 
 	title ALAISA | Resultado 
-block contents 
-	section.breadcrumbs 
-		+breadcrumbs("model.html","Modelo", "#","Resultado")
-	section.wrapper--resultado
-		figure.alaisa__isotipo--blue 
-			img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
-		h2.title--resultados La predicción para el paciente ingresado es:
-		p.resultado-text RESULTADO
-		h4.resultado__parrafo Gracias por utilizar nuestro servicio, es un placer ayudar.
-		+buttons-ancla--verde("Hacer otra predicción", "predict.html")
-		a(href="index.html") Regresar al inicio
+block contents
+	main.result
+		.breadcrumbs 
+			+breadcrumbs("model.html","Modelo", "#","Resultado")
+		section.result__main
+			figure.alaisa__isotipo 
+				img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
+			.result__main__title: h2 La predicción para el paciente ingresado es:
+			.result__main__result: span RESULTADO
+			.result__main__parrafo: p Gracias por utilizar nuestro servicio, es un placer ayudar.
+			+buttons-ancla--verde("Hacer otra predicción", "predict.html")
+			.result__main__back: a(href="index.html") Regresar al inicio
+block footer	
 	include components/main/footer.pug
