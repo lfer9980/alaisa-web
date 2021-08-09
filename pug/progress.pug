@@ -7,8 +7,8 @@ html(lang="es")
 		block title 
 			title CARGANDO...
 	body 
-		.wrapper--progress 
-			figure.alaisa__isotipo--blue 
+		main.progress
+			figure.alaisa__isotipo
 				img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
-			h4.progress__title Espera un momento...
-			progress(id="progress", class="charging-bar", max="100" value="50") 50%  
+			.progress__title: h4 Espera un momento...
+			.progress__bar: progress(id="progress", class="charging-bar", max="100" value="75") 75%  
