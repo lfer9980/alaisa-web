@@ -1,0 +1,156 @@
+.donativos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	color: $white;
+	&__title {
+		margin: 90px 0 5px 0;
+		padding: 0 20px;
+		font-family: $fuente1;
+		text-align: right;
+		h2 {
+			padding-left: 20px;
+			font-size: 3.79rem;
+			line-height: 120%;
+		}
+	}
+	&__parrafo1 {
+		font-family: $fuente1;
+		padding: 0 60px;
+		p {
+			font-size: 1.8rem;
+			font-weight: bold;
+			line-height: 120%;
+		}
+	}
+	&--wrapper {
+		position: relative;
+		display: flex;
+		width: 100vw;
+		height: auto;
+		margin-top: 10px;
+		article {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-width: 300px;
+			max-width: 85%;
+			padding: 0 20px;
+			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+			background-color: $blue500;
+		}
+		.donativos__image {
+			width: 100px;
+			height: 100px;
+			margin: 10px 0;
+			border-radius: 50%;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+		.coffee {
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+		}
+		.patreon {
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+		}
+	}
+
+	.two {
+		justify-content: flex-end;
+		margin-top: 15px;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 160px;
+	}
+	.main__title {
+		font-family: $fuente1;
+		font-size: 2.1rem;
+		font-weight: bold;
+		text-align: center;
+	}
+	.main__parrafo {
+		padding: 0 5px;
+		font-size: 1.2rem;
+	}
+	.button--coffee {
+		width: 130px;
+		height: 20px;
+		margin-top: 10px;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+		background-color: #FFDD00;
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			list-style: none;
+			text-decoration: none;
+			font-family: $fuente1;
+			font-size: 1.6rem;
+			font-weight: bold;
+			color: $white;
+		}
+	}
+	.button--patreon {
+		width: 130px;
+		height: 20px;
+		margin-top: 10px;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+		background-color: #F76754;
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			list-style: none;
+			text-decoration: none;
+			font-family: $fuente1;
+			font-size: 1.6rem;
+			font-weight: bold;
+			color: $white;
+		}
+	}
+	&__parrafo2 {
+		margin-top: 15px;
+		padding: 0 20px;	
+		p {
+			font-size: 1.8rem;
+			font-weight: bold;
+			color: $blue300;
+		}
+	}
+	&__parrafo3 {
+		margin-top: 10px;
+		padding: 0 20px;
+		p {
+			font-size: 1.2rem;
+		}
+	}
+
+}
+
+.donativos::before {
+	content: "";
+	background-image: url('../assets/img/2x/mobile_gray@2x.png');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.15;
+}

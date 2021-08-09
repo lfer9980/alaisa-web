@@ -1,0 +1,71 @@
+@import 'components/globales';
+@import 'components/headers';
+@import 'components/footers';
+.acerca {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: auto;
+	text-align: center;
+	background-color: $white;
+	&__title {
+		position: relative;
+		margin: 90px 0 15px 0;
+		padding: 0 20px;
+		font-family: $fuente1;
+		h2 {
+			font-size: 3.79rem;
+			line-height: 120%;
+		}
+	}
+	&__main {
+		position: relative;
+		padding: 0 20px;
+		&__parrafo {
+			margin-bottom: 15px;
+			font-size: 1.6rem;
+			line-height: 140%;
+		}
+		&__parrafo--primary {
+			margin: 15px 0;
+			font-family: $fuente1;
+			font-size: 1.8rem;
+			font-weight: bold;
+			line-height: 140%;
+		}
+		&__link {
+			display: block;
+			margin-bottom: 15px;
+			font-family: $fuente1;
+			font-size: 1.8rem;
+			font-weight: bold;
+			color: $blue400;
+		}
+		&__logo {
+			display: block;
+			width: 218px;
+			height:auto;
+			margin: 20px auto 60px auto;
+			img:nth-of-type(1) {
+				width: 100px;
+			}
+			img:nth-of-type(2) {
+				width: 100%;
+			}
+		}
+	}
+}
+.acerca::before {
+	content: "";
+	background-image: url('../assets/img/2x/mobile_gray@2x.png');
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.15;
+}

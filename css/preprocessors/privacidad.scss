@@ -1,0 +1,85 @@
+@import 'components/globales';
+@import 'components/headers';
+@import 'components/footers';
+.privacidad {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: auto;
+	text-align: center;
+	background-color: $white;
+	&__title {
+		margin: 90px 0 15px 0;
+		padding: 0 20px;
+		font-family: $fuente1;
+		h2 {
+			font-size: 3.79rem;
+			line-height: 120%;
+		}
+	}
+	&__main {
+		padding: 0 20px;
+		&__subtitle--main {
+			margin-bottom: 10px;
+			font-family: $fuente1;
+			font-weight: bold;
+			font-size: 2.1rem;
+			color: $blue500;
+		}
+		&__subtitle {
+			margin-bottom: 10px;
+			font-family: $fuente1;
+			font-weight: 400;
+			font-size: 1.8rem;
+			color: $blue500;
+		}
+		&__parrafo {
+			margin-bottom: 15px;
+			font-size: 1.6rem;
+			line-height: 140%;
+		}
+		&__list {
+			display: inline-flex;
+			width: 100%;
+			justify-content: left;
+			margin-bottom: 15px;
+			flex-direction: column;
+			font-size: 1.4rem;
+			list-style: none;
+			li {
+				text-align: left;
+				color: $blue400;
+			}
+			li::before {
+				content: "►";
+				padding-right: 5px;
+			}
+		}
+		.mail {
+			display: block;
+			margin-bottom: 15px;
+			font-family: $fuente1;
+			font-size: 1.8rem;
+			font-weight: bold;
+			color: $blue600;
+		}
+	}
+	.fecha {
+		margin-bottom: 50px;
+	}
+}
+
+.privacidad::before {
+	content: "";
+	background-image: url('../assets/img/2x/mobile_gray@2x.png');
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.15;
+}

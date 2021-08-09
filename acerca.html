@@ -4,62 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".../css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/acerca.css">
     <title>ALAISA | acerca de </title>
   </head>
-  <body> 
-    <header class="header"> <i class="material-icons">menu</i>
-      <figure class="header__logo"><img src="assets/icons/logo_tipografico_alaisa.svg" alt="logo principal alaisa"></figure>
-      <nav class="container-header-menu--desktop">
-        <ul class="header__menu">
-          <li class="menu__texto--principal"><a href="#">Inicio </a></li>
-          <li class="menu__texto--principal"><a href="#">Modelo</a></li>
-          <li class="menu__texto--principal"><a href="#">Entrenamiento</a></li>
-          <li class="menu__texto--principal"><a href="#">Rendimiento</a></li>
-          <li class="menu__texto--principal"><a href="#">Donativos</a></li>
-          <li class="menu__texto--principal"><a href="#">Contacto </a></li>
-        </ul>
-        <ul class="header__menu--secundario">
-          <li class="menu__texto--secundario"><a href="#">Aviso de privacidad</a></li>
-          <li class="menu__texto--secundario"><a href="#">Acerca de </a></li>
-        </ul>
-      </nav>
-      <nav class="container-header-menu--mobile">
-        <ul class="header__menu">
-          <li class="menu__texto--principal"><a href="#">Inicio </a></li>
-          <li class="menu__texto--principal"><a href="#">Modelo Alaisa</a></li>
-          <li class="menu__texto--principal"><a href="#">Entrenamiento</a></li>
-          <li class="menu__texto--principal"><a href="#">Estadisticas de Rendimiento</a></li>
-          <li class="menu__texto--principal"><a href="#">Donativos</a></li>
-          <li class="menu__texto--principal"><a href="#">Contacto desarrolladores</a></li>
-        </ul>
-        <ul class="header__menu--secundario">
-          <li class="menu__texto--secundario"><a href="#">Aviso de privacidad</a></li>
-          <li class="menu__texto--secundario"><a href="#">Acerca de </a></li>
-        </ul>
-      </nav><img src="assets/icons/isotipo_alaisa.svg" alt=" imagen virus Alaisa">
+  <body> <i class="material-icons button-theme">dark_mode</i>
+    <header>
+      <div class="header--up">
+        <figure class="header--up__logo"><img src="assets/icons/logo_tipografico_alaisa.svg" alt="logo principal alaisa"></figure>
+        <nav class="header--up__nav--desktop">
+          <ul class="header__menu">
+            <li><a href="#">Inicio </a></li>
+            <li><a href="#">Modelo</a></li>
+            <li><a href="#">Entrenamiento</a></li>
+            <li><a href="#">Rendimiento</a></li>
+            <li><a href="#">Donativos</a></li>
+            <li><a href="#">Contacto </a></li>
+          </ul>
+        </nav><i class="material-icons burger-menu" id="burger-menu">menu</i>
+      </div>
+      <div class="header">
+        <nav class="header__nav--mobile">
+          <ul class="header__menu">
+            <li><a href="#">Inicio </a></li>
+            <li><a href="#">Modelo Alaisa</a></li>
+            <li><a href="#">Entrenamiento</a></li>
+            <li><a href="#">Estadisticas de Rendimiento</a></li>
+            <li><a href="#">Donativos</a></li>
+            <li><a href="#">Contacto desarrolladores</a></li>
+          </ul>
+          <ul class="header__menu--secondary">
+            <li><a href="#">Aviso de privacidad</a></li>
+            <li><a href="#">Acerca de </a></li>
+          </ul>
+        </nav><i class="material-icons burger-menu" id="burger-menu">menu</i>
+        <div class="imagotipo"><img src="assets/icons/isotipo_alaisa.svg" alt=" imagen virus Alaisa"></div>
+      </div>
     </header>
-    <section class="wrapper--acerca"> 
-      <h2 class="title--acerca">¿Qué es Alaisa?</h2>
-      <p class="acerca__parrafo"> ALAISA es un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2 a través de un modelo de predicción de desenlace de Machine learning</p>
-      <p class="acerca__parrafo--primary">Puedes encontrar la documentación sobre el concepto base para crear “alaisa” en el siguiente enlace:</p>
-      <div class="link-container"><a class="acerca__link" href="#">Algoritmos y Covid 19</a></div>
-      <figure class="acerca__image-logo"> <img src="assets/icons/imagotipo_alaisa.svg" alt=""><img src="assets/icons/logo_tipografico_alaisa.svg" alt=""></figure>
-    </section>
+    <main class="acerca"> 
+      <div class="acerca__title">
+        <h2>¿Qué es <span>Alaisa</span>? </h2>
+      </div>
+      <div class="acerca__main">
+        <p class="acerca__main__parrafo"> ALAISA es un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2 a través de un modelo de predicción de desenlace de Machine learning</p>
+        <p class="acerca__main__parrafo--primary">Puedes encontrar la documentación sobre el concepto base para crear “Alaisa” en el siguiente enlace:</p><a class="acerca__main__link" href="#">Algoritmos y Covid 19</a>
+        <figure class="acerca__main__logo"><img src="assets/icons/imagotipo_alaisa.svg" alt=""><img src="assets/icons/logo_tipografico_alaisa.svg" alt=""></figure>
+      </div>
+    </main>
     <footer>
-      <figure><img src="assets/icons/imagotipo_alaisa.svg" alt="alaisa logo"></figure>
       <div class="footer__main">
-        <h4 class="footer__main__title">Modelo Neuronal Alaisa </h4>
-        <p class="footer__main__parrafo">Un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2.</p>
+        <figure><img src="assets/icons/imagotipo_alaisa.svg" alt="alaisa logo"></figure>
+        <div class="footer__main__container">
+          <h4>Modelo neuronal Alaisa </h4>
+          <p>Un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2.</p>
+        </div>
       </div>
-      <div class="footer__fecha"> 
-        <p>Chihuahua, Chih. 2021</p>
+      <div class="footer__secondary">
+        <div class="footer__fecha"> 
+          <p>Chihuahua, Chih. 2021</p>
+        </div>
+        <ul class="footer__links">
+          <li><a href="#"> Acerca de</a></li>
+          <li><a href="#"> Aviso de Privacidad</a></li>
+        </ul>
       </div>
-      <ul> 
-        <li class="footer__link"><a href="#"> Acerca de</a></li>
-        <li class="footer__link"><a href="#"> Aviso de Privacidad </a></li>
-      </ul>
     </footer>
   </body>
 </html>

@@ -1,0 +1,59 @@
+@import 'components/globales';
+.progress {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	.alaisa__isotipo {
+		position: relative;
+		width: 150px;
+		height: 150px;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+	&__title {
+		position: relative;
+		margin-top: 15px;
+		h4 {
+			font-family: $fuente1;
+			font-size: 2.1rem;
+			font-weight: bold;
+			color: $blue400;
+		}
+	}
+	&__bar {
+		position: relative;
+		margin-top: 15px;
+		progress[value] {
+			width: 257px;
+			height: 30px;
+			border: 1px solid $gray400;
+			border-radius: 8px;
+			box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.2);
+			overflow: hidden;
+			appearance: none;
+		}
+		progress[value]::-webkit-progress-bar {
+			background-color: $white;
+		}
+		progress[value]::-webkit-progress-value {
+			background-color: $green400;
+		}
+	}
+}
+.progress::before {
+	content: "";
+	background-image: url('../assets/img/2x/mobile_gray@2x.png');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

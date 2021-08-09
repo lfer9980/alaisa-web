@@ -4,57 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".../css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/entrenamiento.css">
     <title>ALAISA | Entrenamiento</title>
   </head>
-  <body> 
-    <header class="header"> <i class="material-icons">menu</i>
-      <figure class="header__logo"><img src="assets/icons/logo_tipografico_alaisa.svg" alt="logo principal alaisa"></figure>
-      <nav class="container-header-menu--desktop">
-        <ul class="header__menu">
-          <li class="menu__texto--principal"><a href="#">Inicio </a></li>
-          <li class="menu__texto--principal"><a href="#">Modelo</a></li>
-          <li class="menu__texto--principal"><a href="#">Entrenamiento</a></li>
-          <li class="menu__texto--principal"><a href="#">Rendimiento</a></li>
-          <li class="menu__texto--principal"><a href="#">Donativos</a></li>
-          <li class="menu__texto--principal"><a href="#">Contacto </a></li>
-        </ul>
-        <ul class="header__menu--secundario">
-          <li class="menu__texto--secundario"><a href="#">Aviso de privacidad</a></li>
-          <li class="menu__texto--secundario"><a href="#">Acerca de </a></li>
-        </ul>
-      </nav>
-      <nav class="container-header-menu--mobile">
-        <ul class="header__menu">
-          <li class="menu__texto--principal"><a href="#">Inicio </a></li>
-          <li class="menu__texto--principal"><a href="#">Modelo Alaisa</a></li>
-          <li class="menu__texto--principal"><a href="#">Entrenamiento</a></li>
-          <li class="menu__texto--principal"><a href="#">Estadisticas de Rendimiento</a></li>
-          <li class="menu__texto--principal"><a href="#">Donativos</a></li>
-          <li class="menu__texto--principal"><a href="#">Contacto desarrolladores</a></li>
-        </ul>
-        <ul class="header__menu--secundario">
-          <li class="menu__texto--secundario"><a href="#">Aviso de privacidad</a></li>
-          <li class="menu__texto--secundario"><a href="#">Acerca de </a></li>
-        </ul>
-      </nav><img src="assets/icons/isotipo_alaisa.svg" alt=" imagen virus Alaisa">
-    </header>
-    <section class="breadcrumbs"> <a href="index.html">Inicio </a><a href="./entrenamiento.html">Entrenamiento</a>
-    </section>
-    <section class="wrapper--acerca">
-      <div class="back-button--light"><i class="material-icons">arrow_back</i></div>
-      <figure class="alaisa__isotipo--blue"> <img src="/assets/icons/isotipo_alaisa.svg" alt="Virus ALAISA"></figure>
-      <h2 class="title--entrenamiento">Tu contribución nos ayuda a <span>mejorar</span> y ser más <span>precisos</span></h2>
-      <div class="entrenamiento__parrafo1"> 
-        <p>El proceso es identico a cuando utilizas el modelo para recibir predicciones. Los <span>datos</span> que ingreses durante el <span>entrenamiento</span> serán la base para que el modelo <span>identifique</span> eficientemente los patrones que determinan el desenlace de tu paciente durante la <span>predicción</span>.</p>
+  <body> <i class="material-icons button-theme">dark_mode</i>
+    <header>
+      <div class="header--up">
+        <figure class="header--up__logo"><img src="assets/icons/logo_tipografico_alaisa.svg" alt="logo principal alaisa"></figure>
+        <nav class="header--up__nav--desktop">
+          <ul class="header__menu">
+            <li><a href="#">Inicio </a></li>
+            <li><a href="#">Modelo</a></li>
+            <li><a href="#">Entrenamiento</a></li>
+            <li><a href="#">Rendimiento</a></li>
+            <li><a href="#">Donativos</a></li>
+            <li><a href="#">Contacto </a></li>
+          </ul>
+        </nav><i class="material-icons burger-menu" id="burger-menu">menu</i>
       </div>
-      <h4 class="modelo__parrafo2">Estamos muy agradecidos contigo, tu ayuda hace la diferencia.</h4>
-      <form action=""> 
-        <label for="checkbox-terminos"> 
-          <input type="checkbox" name="checkbox-terminos"><span>He leído y acepto los <a href="#"> términos y condiciones</a></span>
-        </label>
-      </form><a class="button--green" href="./add.html">Comenzar<i class="material-icons">arrow_forward</i></a><a href="#">Aviso de privacidad</a>
-    </section>
+      <div class="header">
+        <nav class="header__nav--mobile">
+          <ul class="header__menu">
+            <li><a href="#">Inicio </a></li>
+            <li><a href="#">Modelo Alaisa</a></li>
+            <li><a href="#">Entrenamiento</a></li>
+            <li><a href="#">Estadisticas de Rendimiento</a></li>
+            <li><a href="#">Donativos</a></li>
+            <li><a href="#">Contacto desarrolladores</a></li>
+          </ul>
+          <ul class="header__menu--secondary">
+            <li><a href="#">Aviso de privacidad</a></li>
+            <li><a href="#">Acerca de </a></li>
+          </ul>
+        </nav><i class="material-icons burger-menu" id="burger-menu">menu</i>
+        <div class="imagotipo"><img src="assets/icons/isotipo_alaisa.svg" alt=" imagen virus Alaisa"></div>
+      </div>
+    </header>
+    <div class="back-button light"><a href=""> <i class="material-icons">arrow_back</i></a></div>
+    <main class="training">
+      <div class="breadcrumbs"> 
+        <nav class="breadcrumbs__nav"><a href="index.html">Inicio </a><a href="./entrenamiento.html">Entrenamiento</a>
+        </nav>
+      </div>
+      <section class="training__main">
+        <figure class="alaisa__isotipo"><img src="/assets/icons/isotipo_alaisa.svg" alt="Virus ALAISA"></figure>
+        <div class="training__main__title">
+          <h2>Tu contribución nos ayuda a <span>mejorar</span> y ser más <span>precisos</span></h2>
+        </div>
+        <div class="training__main__parrafo1">
+          <p>El proceso es identico a cuando utilizas el modelo para recibir predicciones. Los <span>datos</span> que ingreses durante el <span>entrenamiento</span> serán la base para que el modelo <span>identifique</span> eficientemente los patrones que determinan el desenlace de tu paciente durante la <span>predicción</span>.</p>
+        </div>
+        <div class="training__main__parrafo2">
+          <h4>Estamos muy agradecidos contigo, tu ayuda hace la diferencia.</h4>
+        </div>
+        <form action=""> 
+          <label class="content-input" for="checkbox-terminos">
+            <input type="checkbox" name="checkbox-terminos" id="checkbox-terminos"><span>He leído y acepto los <a href="#"> términos y condiciones</a></span>
+          </label>
+        </form>
+        <div class="button--green"> <a href="./add.html">Comenzar</a><i class="material-icons">arrow_forward</i></div>
+        <div class="training__main__priv"><a href="#">Aviso de privacidad</a></div>
+      </section>
+    </main>
   </body>
 </html>

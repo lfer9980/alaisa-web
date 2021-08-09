@@ -294,24 +294,26 @@
 mixin input-text(id, text, placeholder)
 	label.input(for=id)
 		span.input__title=text 
-		input(type="text", id=id, name=id, placeholder=placeholder required)
+		input.input__select(type="text", id=id, name=id, placeholder=placeholder required)
 
 mixin input-select-place(id, text, opt1, opt2)
-	.input-select
+	label.input(for=id)
 		span.input__title=text
-		select(name=id, id=id)
+		select.input-select__place(name=id, id=id)
 			option(selected value="0")=opt1
 			option(value="1")=opt2
 
 
 mixin breadcrumbs(a1, bread1, a2, bread2, a3, bread3)
-	a(href="index.html") Inicio 
-	a(href="./"+a1)=bread1 
-	if a2 && bread2 
-		a(href="./"+a2)=bread2 
-	if a3 && bread3
-		a(href="./"+a3)=bread3
+	nav.breadcrumbs__nav
+		a(href="index.html") Inicio 
+		a(href="./"+a1)=bread1 
+		if a2 && bread2 
+			a(href="./"+a2)=bread2 
+		if a3 && bread3
+			a(href="./"+a3)=bread3
 
 mixin buttons-ancla--verde(text,href)
-	a.button--green(href="./"+href)= text
+	.button--green 
+		a(href="./"+href)= text
 		i.material-icons arrow_forward
