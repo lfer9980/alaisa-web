@@ -1,0 +1,61 @@
+@import 'components/globales';
+@import 'components/headers';
+@import 'components/footers';
+.gracias {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: auto;
+	text-align: center;
+	&__main {
+		position: relative;
+		.alaisa__isotipo { 
+			margin: 0 auto;
+			width: 90px;
+			height: 90px;
+			img {
+				width: 100%;
+			}
+		}
+		&__title {
+			margin-top: 25px;
+			padding: 0 20px;
+			h2 {
+				font-family: $fuente1;
+				font-size: 5.1rem;
+				color: $blue500;
+			}
+		}
+		&__parrafo {
+				margin: 70px 0;
+				padding: 0 20px;
+			p {
+				font-size: 2.1rem;
+				font-weight: bold;
+			}
+		}
+		&__back {
+				margin: 20px 0 60px;
+				padding: 0 20px;
+			a {
+				font-size: 1.6rem;
+				font-weight: bold;
+				color: $blue400;
+			}
+		}
+	}
+}
+.gracias::before {
+	content: "";
+	background-image: url('../assets/img/2x/mobile_gray@2x.png');
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.15;
+}
