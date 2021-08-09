@@ -294,12 +294,12 @@
 mixin input-text(id, text, placeholder)
 	label.input(for=id)
 		span.input__title=text 
-		input(type="text", id=id, name=id, placeholder=placeholder required)
+		input.input__select(type="text", id=id, name=id, placeholder=placeholder required)
 
 mixin input-select-place(id, text, opt1, opt2)
-	.input-select
+	label.input(for=id)
 		span.input__title=text
-		select(name=id, id=id)
+		select.input-select__place(name=id, id=id)
 			option(selected value="0")=opt1
 			option(value="1")=opt2
 
