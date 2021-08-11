@@ -184,3 +184,31 @@ div > p {
 		}
 	}
 }
+
+@include tablet {
+	.button--green {
+		height: 50px;
+		width: 466px;
+		margin: 0 auto 45px auto;
+		a {
+			font-size: 2.843rem;
+		}
+		i {
+			font-size: 2.843rem;
+		}
+	}
+	.arrow-drop-down {
+		font-size: 37px;
+	}
+}
+@include desktop {
+	.button--green {
+		margin: 0 auto 40px auto;
+	}
+	.arrow-drop-down {
+		display: none;
+	}
+}
+@include large {
+
+}

@@ -2,14 +2,14 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: center;
 	position: relative;
-	width: 100vw;
+	justify-content: center;
+	width: 100%;
 	height: 100vh;
 	padding-top: 90px;
 	color: $white;
 	&__title {
-		max-width: 326px;
+		width: 100%;
 		padding: 0 20px;
 		position: relative;
 		h1 {
@@ -60,7 +60,7 @@
 		}
 	}
 }
-body::before {
+.hero::before {
 	content: "";
 	background-image: url('../assets/img/2x/mobile_gray@2x.png');
 	background-size: cover;
@@ -74,4 +74,82 @@ body::before {
 
 .button--green:hover {
 	background-color: $green600;
+}
+
+@include tablet {
+	.hero {
+		width: 100%;
+		padding-top: 135px;
+		&__title {
+			padding: 0 30px;
+			margin-bottom: 50px;
+			h1 {
+				font-size: 6.734rem;
+			}
+		}
+		&__saludo {
+			height: 90px;
+			margin: 0 0 25px 0;
+			h2 {
+				font-size: 5.052rem;
+			}
+		}
+		&__subtitle {
+			h3 {
+				width: 65%;
+				margin: 0 auto;
+				padding: 0 0 25px 0;
+				font-size: 3.79rem;
+			}
+		}
+		&__parrafo--button {
+			margin: 0 30px 44px 30px;
+			p {
+				font-size: 2.4rem;
+			}
+		}
+	}
+	.hero::before {
+		background-image: url('../assets/img/2x/tablet_gray@2x.png');
+	}
+}
+
+@include desktop {
+	.hero {
+		width: 100%;
+		padding-top: 104px;
+		&__title {
+			max-width: 65%;
+			margin-bottom: 25px;
+			padding: 0 0 0 42px;
+		}
+		&__saludo {
+			height: 60px;
+			h2 {
+				font-size: 3.79rem;
+			}
+		}
+		&__subtitle {
+			h3 {
+				font-size: 2.843rem;
+			}
+		}
+		&__parrafo--button {
+			width: 850px;
+			margin: 0 auto 15px auto;
+			background: none;
+			padding: 0;
+		}
+	}
+	.hero::before {
+		background-image: url('../assets/img/2x/desktop_gray@2x.png');	
+	}
+}
+
+@include large {
+	.hero {
+		&__title {
+			max-width: 80%;
+		}
+	}
 }

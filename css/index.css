@@ -120,6 +120,32 @@ div > p {
   display: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .button--green {
+    height: 50px;
+    width: 466px;
+    margin: 0 auto 45px auto;
+  }
+  .button--green a {
+    font-size: 2.843rem;
+  }
+  .button--green i {
+    font-size: 2.843rem;
+  }
+
+  .arrow-drop-down {
+    font-size: 37px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .button--green {
+    margin: 0 auto 40px auto;
+  }
+
+  .arrow-drop-down {
+    display: none;
+  }
+}
 body {
   background-color: #011526;
 }
@@ -352,7 +378,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -360,7 +385,7 @@ body {
   color: #FFF;
 }
 .hero__title {
-  max-width: 326px;
+  width: 100%;
   padding: 0 20px;
   position: relative;
 }
@@ -411,7 +436,7 @@ body {
   line-height: 140%;
 }
 
-body::before {
+.hero::before {
   content: "";
   background-image: url("../assets/img/2x/mobile_gray@2x.png");
   background-size: cover;
@@ -427,6 +452,72 @@ body::before {
   background-color: #00801F;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero {
+    width: 100%;
+    padding-top: 135px;
+  }
+  .hero__title {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .hero__title h1 {
+    font-size: 6.734rem;
+  }
+  .hero__saludo {
+    height: 90px;
+    margin: 0 0 25px 0;
+  }
+  .hero__saludo h2 {
+    font-size: 5.052rem;
+  }
+  .hero__subtitle h3 {
+    width: 65%;
+    margin: 0 auto;
+    padding: 0 0 25px 0;
+    font-size: 3.79rem;
+  }
+  .hero__parrafo--button {
+    margin: 0 30px 44px 30px;
+  }
+  .hero__parrafo--button p {
+    font-size: 2.4rem;
+  }
+
+  .hero::before {
+    background-image: url("../assets/img/2x/tablet_gray@2x.png");
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero {
+    width: 100%;
+    padding-top: 104px;
+  }
+  .hero__title {
+    max-width: 65%;
+    margin-bottom: 25px;
+    padding: 0 0 0 42px;
+  }
+  .hero__saludo {
+    height: 60px;
+  }
+  .hero__saludo h2 {
+    font-size: 3.79rem;
+  }
+  .hero__subtitle h3 {
+    font-size: 2.843rem;
+  }
+  .hero__parrafo--button {
+    width: 850px;
+    margin: 0 auto 15px auto;
+    background: none;
+    padding: 0;
+  }
+
+  .hero::before {
+    background-image: url("../assets/img/2x/desktop_gray@2x.png");
+  }
+}
 .modelo {
   display: flex;
   flex-direction: column;
