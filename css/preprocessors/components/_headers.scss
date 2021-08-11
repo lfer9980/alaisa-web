@@ -23,7 +23,25 @@
 	}
 	&__nav--desktop {
 		display: none;
-	}
+		width: 75%;
+		.header__menu--desktop {
+				display: flex;
+				width: 100%;
+				justify-content: space-around;
+				li {
+					list-style: none;
+					a {
+						font-family: $fuente1;
+						font-size: 2.13rem;
+						text-decoration: none;
+						color: $white;
+					}
+					a:hover {
+						color: $blue400;
+					}
+				}
+			}
+		}
 	.burger-menu {
 		font-size: 30px;
 		padding: 5px;
@@ -47,31 +65,29 @@
 		display: none;
 		flex-direction: column;
 		margin-top: 95px;
-		.header__menu {
+		.header__menu--mobile {
 			margin-bottom: 45px;
 			font-size: 2.1rem;
 			font-weight: bold;
-		}
+			list-style: none;
+			border-left: 2px  solid rgba($color: $white, $alpha: 0.6);
+			li {
+				margin: 0 0 25px 20px;
+			}
+			li:nth-of-type(6) {
+				margin-bottom: 0;
+			}
+			li a{
+				display: block;
+				width: 100%;
+				text-decoration: none;
+				color: $white;
+			}
+			a:hover {
+				color: $blue300;
+			}
+		}	
 	}
-	&__menu{
-		list-style: none;
-		border-left: 2px  solid rgba($color: $white, $alpha: 0.6);
-		li {
-			margin: 0 0 25px 20px;
-		}
-		li:nth-of-type(6) {
-			margin-bottom: 0;
-		}
-		li a{
-			display: block;
-			width: 100%;
-			text-decoration: none;
-			color: $white;
-		}
-		a:hover {
-			color: $blue300;
-		}
-	}	
 	&__menu--secondary {
 		list-style: none;
 		margin-left: 20px;
@@ -132,3 +148,82 @@
 	}
 }
 
+@include tablet {
+	.header--up {
+		top: 30px;
+		height: 75px;
+		padding: 0 55px;
+		&__logo {
+			width: 243px;
+		}
+		.burger-menu {
+			font-size: 37.5px;
+			padding: 6.25px;
+		}
+	}
+	
+	.header {
+		padding: 0 30px;
+		&__nav--mobile {
+			margin-top: 131px;
+			.header__menu--mobile {
+				margin: 0 0 50px 50px;
+				font-size: 3.79rem;
+				border-left: 4px  solid rgba($color: $white, $alpha: 0.6);
+				li {
+					margin: 0 0 40px 50px;
+				}
+			}	
+		}
+		&__menu--secondary {
+			margin-left: 100px;
+			font-size: 2.843rem;
+			li {
+				margin-bottom: 10px;
+			}
+		}
+		.burger-menu {
+			right: 55px;
+			top: 55px;
+			padding: 6.25px;
+			font-size: 37.5px;
+		}
+		.imagotipo {
+			margin-bottom: 0px;
+			img {
+				width: 222px;
+				height: 222px;
+			}
+		}
+	}
+}
+
+@include desktop {
+	.header--up {
+		top: 0;
+		height: 75px;
+		padding: 0 42px;
+		&__logo {
+			width: 172px;
+		}
+		&__nav--desktop {
+			display: flex;
+		}
+		.burger-menu {
+			display: none;
+		}
+	}
+	.header {
+		.burger-menu {
+			display: none;
+		}
+	}
+}
+
+@include large {
+	.header--up {
+		&__nav--desktop {
+			width: 80%;
+			}
+	}
+}

@@ -38,19 +38,24 @@ $green400: #00BB2D;
 $green300: #3CBB5A;
 $green200: #5EBB74;
 
+/* media queries */
+@mixin tablet {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
 
-$breakpoints: ( phone: 375px, 
-            	tablet: 768px, 
-            	desktop: 1024px) !default;
+@mixin desktop {
+	@media only screen and (min-width: 1024px) {
+		@content;
+	}
+}
 
-
-$media-expressions: (screen: "screen", 
-                    handheld: "handheld",
-                    retina2x: 
-                    ("(-webkit-min-device-pixel-ratio: 2)", 
-                    "(min-resolution: 192dpi)")) !default;
-
-
+@mixin large {
+	@media only screen and (min-width: 1280px) {
+		@content;
+	}
+}
 
 @mixin dark-mode {
 	@media (prefers-color-scheme: dark) {
