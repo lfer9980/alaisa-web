@@ -1,14 +1,17 @@
 .modelo {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-items: center;
+	align-content: center;
 	position: relative;
 	width: 100vw;
 	height: 100vh;
+	padding-top: 90px;
 	color: $white;
 	&__title {
 		position: relative;
-		margin: 90px 20px 15px 20px;
+		padding: 0 20px;
+		margin-bottom: 15px;
 		text-align: center;
 		h2 {
 			font-family: $fuente1;
@@ -19,44 +22,45 @@
 			color: $blue300;
 		}
 	}
-	&__parrafo {
-		position: relative;
-		display: flex;
-		width: 100vw;
-		height: auto;
-		p {
-			min-width: 296px;
-			max-width: 85vw;
-			padding: 5px 20px;
-			font-size: 1.8rem;
-			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
-			background-color: rgba(3, 101, 140, 0.5);
+	&__main {
+		&__parrafo {
+			position: relative;
+			display: flex;
+			height: auto;
+			margin-bottom: 20px;
+			p {
+				min-width: 296px;
+				max-width: 78vw;
+				padding: 5px 20px;
+				font-size: 1.8rem;
+				box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+				background-color: rgba(3, 101, 140, 0.5);
+			}
+		}	
+		.one p {
+			line-height: 120%;
+			font-weight: bold;
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
 		}
-	}	
-	.one p {
-		line-height: 120%;
-		font-weight: bold;
-		border-top-right-radius: 8px;
-		border-bottom-right-radius: 8px;
-	}
-	.two {
-		margin-top: 15px;
-		position: relative;
-		justify-content: flex-end;
-		text-align: right;
-		p {
-			line-height: 140%;
-			border-top-left-radius: 8px;
-			border-bottom-left-radius: 8px;
+		.two {
+			position: relative;
+			justify-content: flex-end;
+			text-align: right;
+			p {
+				line-height: 140%;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+			}
+		}	
+		&__subtitle {
+			position: relative;
+			margin-top: 20px;
+			font-family: $fuente1;
+			font-size: 2.133rem;
+			font-weight: bold;
+			text-align: center;
 		}
-	}
-	&__subtitle {
-		position: relative;
-		margin-top: 20px;
-		font-family: $fuente1;
-		font-size: 2.133rem;
-		font-weight: bold;
-		text-align: center;
 	}
 }
 
@@ -70,4 +74,101 @@
 	bottom: 0;
 	left: 0;
 	opacity: 0.50;
+}
+
+@include tablet {
+	.modelo {
+		padding-top: 165px;
+		&__title {
+			padding: 0 30px;
+			margin-bottom: 30px;
+			h2 {
+				font-size: 6.734rem;
+			}
+		}
+		&__main {
+			&__parrafo {
+				margin-bottom: 30px;
+				p {
+					max-width: 90vw;
+					padding: 20px 30px;
+					font-size: 2.843rem;
+				}
+			}	
+			&__subtitle {
+				margin:0 0 20px 0;
+				font-size: 3.79rem;
+			}
+		}
+	}
+	.modelo::before {
+		background-image: url('../assets/img/2x/medicos_tablet@2x-80.jpg');
+	}
+}
+
+@include desktop {
+	.modelo {
+		flex-direction: row;
+		align-items: center;
+		padding-top: 100px;
+		&__title {
+			width: 50%;
+			margin:0 0 0 42px;
+			padding: 0;
+			h2 {
+				font-size: 5.017rem;
+			}
+		}
+		&__main {
+			width: 50%;
+			margin: 0 42px 0 32px;
+			&__parrafo {
+				margin-bottom: 20px;
+				p {
+					padding: 10px 20px;
+					border-radius: 0;
+					text-align: center;
+					font-size: 2.138rem;
+				}
+			}
+			.one p {
+				border-radius: 0;
+			}	
+			.two {
+				margin-top: 20px;
+				p {
+					border-radius: 0;
+				}
+			}
+			&__subtitle {
+				margin: 20px;
+				font-family: $fuente1;
+				font-size: 2.843rem;
+			}
+		}
+	}
+	.modelo::before {
+		background-image: url('../assets/img/2x/medicos_desktop@2x-80.jpg');
+	}
+}
+@include large {
+	.modelo {
+		&__title {
+			h2 {
+				font-size: 6.734rem;
+			}
+		}
+		&__main {
+			&__parrafo {
+				margin-bottom: 30px;
+				p {
+					padding: 20px;
+					font-size: 2.4rem;
+				}
+			}
+			&__subtitle {
+				font-size: 3.79rem;
+			}
+		}
+	}
 }
