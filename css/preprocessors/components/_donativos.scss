@@ -1,12 +1,4 @@
 .donativos {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	text-align: center;
-	color: $white;
 	&__title {
 		margin: 90px 0 5px 0;
 		padding: 0 20px;
@@ -144,13 +136,6 @@
 }
 
 .donativos::before {
-	content: "";
 	background-image: url('../assets/img/2x/mobile_gray@2x.png');
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	opacity: 0.15;
 }

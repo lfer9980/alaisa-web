@@ -1,12 +1,4 @@
 .contacto {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-	width: 100vw;
-	height: auto;
-	text-align: center;
-	color: $white;
 	&__title {
 		position: relative;
 		margin-top: 90px;
@@ -95,13 +87,6 @@
 
 }
 .contacto::before {
-	content: "";
 	background-image: url('../assets/img/2x/cama-mobile@2x-80.jpg');
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	opacity: 0.5;
 }

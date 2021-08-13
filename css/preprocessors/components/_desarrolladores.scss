@@ -1,12 +1,4 @@
 .desarrollador {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	text-align: center;
-	color: $white;
 	&__title {
 		position: relative;
 		margin: 90px 0 20px 0;
@@ -55,13 +47,6 @@
 	}
 }
 .desarrollador::before {
-	content: "";
 	background-image: url('../assets/img/2x/quirofano-mobile@2x-80.jpg');
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	opacity: 0.50;
 }

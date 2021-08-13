@@ -1,13 +1,4 @@
 .modelo {
-	display: flex;
-	flex-direction: column;
-	justify-items: center;
-	align-content: center;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	padding-top: 90px;
-	color: $white;
 	&__title {
 		position: relative;
 		padding: 0 20px;
@@ -65,14 +56,7 @@
 }
 
 .modelo::before {
-	content: "";
 	background-image: url('../assets/img/2x/medicos-mobile@2x-80.jpg');
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	opacity: 0.50;
 }
 

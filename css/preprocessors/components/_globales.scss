@@ -71,6 +71,8 @@ $green200: #5EBB74;
 	background-color: $color;	
 }
 
+
+/* estilos globales */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -100,6 +102,28 @@ div > p {
 
 .button-theme {
 	display: none;
+}
+
+/* contenedor general */
+.wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-content: center;
+	width: 100%;
+	height: 100vh;
+	padding-top: 90px;
+	color: $white;
+}
+.wrapper::before {
+	content: "";
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .button--green {
@@ -186,7 +210,11 @@ div > p {
 	}
 }
 
+
 @include tablet {
+	.wrapper {
+		padding-top: 165px;
+	}
 	.button--green {
 		height: 50px;
 		width: 466px;
@@ -203,6 +231,9 @@ div > p {
 	}
 }
 @include desktop {
+	.wrapper {
+		padding-top: 100px;
+	}
 	.button--green {
 		margin: 0 auto 30px auto;
 	}
@@ -211,5 +242,7 @@ div > p {
 	}
 }
 @include large {
-
+	.wrapper {
+		padding-top: 95px;
+	}
 }

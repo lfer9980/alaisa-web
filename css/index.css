@@ -3,6 +3,7 @@
 /* fuentes principales */
 /* paletas de color */
 /* media queries */
+/* estilos globales */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,6 +36,29 @@ div > p {
 
 .button-theme {
   display: none;
+}
+
+/* contenedor general */
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 90px;
+  color: #FFF;
+}
+
+.wrapper::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .button--green {
@@ -122,6 +146,10 @@ div > p {
 }
 
 @media only screen and (min-width: 768px) {
+  .wrapper {
+    padding-top: 165px;
+  }
+
   .button--green {
     height: 50px;
     width: 466px;
@@ -139,12 +167,21 @@ div > p {
   }
 }
 @media only screen and (min-width: 1024px) {
+  .wrapper {
+    padding-top: 100px;
+  }
+
   .button--green {
     margin: 0 auto 30px auto;
   }
 
   .arrow-drop-down {
     display: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    padding-top: 95px;
   }
 }
 body {
@@ -375,18 +412,6 @@ body {
     width: 80%;
   }
 }
-.hero {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  position: relative;
-  justify-items: center;
-  align-content: center;
-  width: 100%;
-  height: 100vh;
-  padding-top: 90px;
-  color: #FFF;
-}
 .hero__title {
   max-width: 78%;
   padding: 0 20px;
@@ -441,14 +466,7 @@ body {
 }
 
 .hero::before {
-  content: "";
   background-image: url("../assets/img/2x/mobile_gray@2x.png");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   opacity: 0.15;
 }
 
@@ -550,17 +568,6 @@ body {
     font-size: 2.4rem;
   }
 }
-.modelo {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-content: center;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 90px;
-  color: #FFF;
-}
 .modelo__title {
   position: relative;
   padding: 0 20px;
@@ -615,14 +622,7 @@ body {
 }
 
 .modelo::before {
-  content: "";
   background-image: url("../assets/img/2x/medicos-mobile@2x-80.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   opacity: 0.5;
 }
 
@@ -716,16 +716,7 @@ body {
   }
 }
 .entrenamiento {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-content: center;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 90px;
   text-align: center;
-  color: #FFF;
 }
 .entrenamiento__title {
   padding: 0 20px;
@@ -768,14 +759,7 @@ body {
 }
 
 .entrenamiento::before {
-  content: "";
   background-image: url("../assets/img/2x/mobile_gray@2x.png");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   opacity: 0.15;
 }
 
@@ -939,16 +923,6 @@ body {
     font-size: 1.8rem;
   }
 }
-.desarrollador {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  color: #FFF;
-}
 .desarrollador__title {
   position: relative;
   margin: 90px 0 20px 0;
@@ -997,27 +971,10 @@ body {
 }
 
 .desarrollador::before {
-  content: "";
   background-image: url("../assets/img/2x/quirofano-mobile@2x-80.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   opacity: 0.5;
 }
 
-.donativos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  color: #FFF;
-}
 .donativos__title {
   margin: 90px 0 5px 0;
   padding: 0 20px;
@@ -1151,27 +1108,10 @@ body {
 }
 
 .donativos::before {
-  content: "";
   background-image: url("../assets/img/2x/mobile_gray@2x.png");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   opacity: 0.15;
 }
 
-.contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  width: 100vw;
-  height: auto;
-  text-align: center;
-  color: #FFF;
-}
 .contacto__title {
   position: relative;
   margin-top: 90px;
@@ -1255,14 +1195,7 @@ body {
 }
 
 .contacto::before {
-  content: "";
   background-image: url("../assets/img/2x/cama-mobile@2x-80.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   opacity: 0.5;
 }
 

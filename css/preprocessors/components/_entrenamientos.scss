@@ -1,14 +1,5 @@
 .entrenamiento {
-	display: flex;
-	flex-direction: column;
-	justify-items: center;
-	align-content: center;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	padding-top: 90px;
 	text-align: center;
-	color: $white;
 	&__title {
 		padding: 0 20px;
 		margin-bottom: 15px;
@@ -53,14 +44,7 @@
 }
 
 .entrenamiento::before {
-	content: "";
 	background-image: url('../assets/img/2x/mobile_gray@2x.png');
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	opacity: 0.15;
 }
 
