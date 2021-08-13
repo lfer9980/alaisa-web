@@ -111,7 +111,7 @@ div > p {
 	flex-direction: column;
 	justify-items: center;
 	align-content: center;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	padding-top: 90px;
 	color: $white;
@@ -228,6 +228,17 @@ div > p {
 	}
 	.arrow-drop-down {
 		font-size: 37px;
+	}
+	.fecha {
+		p {
+			margin-bottom: 10px;
+			font-size: 2.1rem;
+			color: $white;
+		}
+		&__main {
+			padding: 10px 0;
+			font-size: 2.843rem;
+		}
 	}
 }
 @include desktop {
