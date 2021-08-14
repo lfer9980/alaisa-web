@@ -1407,10 +1407,13 @@ body {
     font-size: 3.79rem;
   }
 }
+.contacto {
+  height: auto;
+}
 .contacto__title {
   position: relative;
-  margin-top: 90px;
   padding: 0 20px;
+  margin-bottom: 15px;
   font-family: "Roboto Condensed", sans-serif;
 }
 .contacto__title h2 {
@@ -1418,59 +1421,63 @@ body {
   font-size: 3.79rem;
   line-height: 120%;
 }
-.contacto .card {
+.contacto__cards {
   position: relative;
   width: 100%;
-  height: auto;
-  margin-top: 15px;
 }
-.contacto .card article {
+.contacto__cards .card {
   display: flex;
   align-items: center;
-  width: 85%;
-  padding: 5px 20px 5px 20px;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 15px;
   text-align: left;
-  background-color: #03658C;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+  background-color: #03658C;
 }
-.contacto .card__info {
-  display: flex;
-  flex-direction: column;
+.contacto__cards .card__info {
+  display: block;
   width: 65%;
-  padding-left: 8px;
 }
-.contacto .card__info__title p {
+.contacto__cards .card__info__title {
+  margin-bottom: 5px;
+}
+.contacto__cards .card__info__title p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 2.1rem;
   font-weight: bold;
 }
-.contacto .card__info__parrafo p {
-  margin-top: 5px;
+.contacto__cards .card__info__parrafo {
+  margin-bottom: 5px;
+  padding-right: 5px;
+}
+.contacto__cards .card__info__parrafo p {
   font-size: 1.2rem;
   line-height: 120%;
 }
-.contacto .card__info__correo {
-  margin-top: 5px;
+.contacto__cards .card__info__correo {
+  margin-bottom: 10px;
 }
-.contacto .card__info__correo a {
+.contacto__cards .card__info__correo a {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
   text-decoration: none;
   color: #8DAEF2;
 }
-.contacto .card__info__redes {
+.contacto__cards .card__info__redes {
   display: flex;
-  margin-top: 10px;
 }
-.contacto .card__info__redes img {
+.contacto__cards .card__info__redes img {
   width: 30px;
   height: 30px;
   margin-right: 25px;
 }
-.contacto .card__info__image {
+.contacto__cards .card__image {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1480,12 +1487,12 @@ body {
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
   overflow: hidden;
 }
-.contacto .card__info__image img {
+.contacto__cards .card__image img {
   width: 100%;
   align-self: center;
   justify-self: center;
 }
-.contacto .card:nth-of-type(3) {
+.contacto__cards article:last-of-type {
   margin-bottom: 30px;
 }
 
@@ -1494,6 +1501,129 @@ body {
   opacity: 0.5;
 }
 
+@media only screen and (min-width: 768px) {
+  .contacto {
+    height: auto;
+    padding-top: 125px;
+  }
+  .contacto__title {
+    width: 560px;
+    padding: 0 30px;
+  }
+  .contacto__title h2 {
+    font-size: 6.734rem;
+  }
+  .contacto__cards .card {
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  .contacto__cards .card__info {
+    margin-right: 15px;
+  }
+  .contacto__cards .card__info__title p {
+    font-size: 2.843rem;
+  }
+  .contacto__cards .card__info__parrafo {
+    margin-bottom: 10px;
+  }
+  .contacto__cards .card__info__parrafo p {
+    font-size: 2.1328rem;
+  }
+  .contacto__cards .card__info__correo {
+    margin-bottom: 15px;
+  }
+  .contacto__cards .card__info__correo a {
+    font-size: 1.8rem;
+  }
+  .contacto__cards .card__info__redes {
+    justify-content: center;
+  }
+  .contacto__cards .card__info__redes img {
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+  }
+  .contacto__cards .card__image {
+    width: 160px;
+    height: 150px;
+  }
+  .contacto__cards article:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .contacto::before {
+    background-image: url("../assets/img/2x/cama-tablet@2x-80.jpg");
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contacto {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .contacto__title {
+    position: sticky;
+    top: 100px;
+    left: 0;
+    width: 400px;
+  }
+  .contacto__title h2 {
+    font-size: 5.0517rem;
+  }
+  .contacto__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto__cards .card {
+    margin: 0 42px 0 0;
+    align-self: flex-end;
+    max-width: 580px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  .contacto__cards .card__info {
+    margin-right: 15px;
+  }
+  .contacto__cards .card__info__title p {
+    font-size: 2.843rem;
+  }
+  .contacto__cards .card__info__parrafo p {
+    font-size: 1.8rem;
+  }
+  .contacto__cards .card__info__correo {
+    margin-bottom: 20px;
+  }
+  .contacto__cards .card__info__redes img {
+    width: 60px;
+    height: 60px;
+    margin-right: 45px;
+  }
+  .contacto__cards .card__image {
+    width: 180px;
+    height: 170px;
+  }
+  .contacto__cards article:last-of-type {
+    margin-bottom: 100px;
+  }
+
+  .contacto::before {
+    background-image: url("../assets/img/2x/cama-desktop@2x-80.jpg");
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contacto__title {
+    top: 95px;
+    width: 600px;
+  }
+  .contacto__title h2 {
+    font-size: 6.734rem;
+  }
+}
 footer {
   position: relative;
   width: 100vw;
