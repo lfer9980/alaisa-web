@@ -1,5 +1,6 @@
 .contacto {
 	height: auto;
+	padding-bottom: 30px;
 	&__title {
 		position: relative;
 		padding: 0 20px;
@@ -81,8 +82,8 @@
 				}	
 			}
 		}
-		article:last-of-type {
-			margin-bottom: 30px;
+		.card:last-of-type {
+			margin-bottom: 0;
 		}
 	}
 }	
@@ -95,6 +96,7 @@
 	.contacto {
 		height: auto;
 		padding-top: 125px;
+		padding-bottom: 60px;
 		&__title {
 			width: 560px;
 			padding: 0 30px;
@@ -143,8 +145,8 @@
 					height: 150px;
 				}
 			}
-			article:last-of-type {
-				margin-bottom: 60px;
+			.card:last-of-type {
+				margin-bottom: 0;
 			}
 		}
 	}	
@@ -160,10 +162,12 @@
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: flex-end;
+		padding-bottom: 100px;
 		&__title {
 			position: sticky;
 			top: 100px;
 			left: 0;
+			bottom: 100px;
 			width: 400px;
 			h2 {
 				font-size: 5.0517rem;
@@ -206,8 +210,8 @@
 					height: 170px;
 				}
 			}
-			article:last-of-type {
-				margin-bottom: 100px;
+			.card:last-of-type {
+				margin-bottom: 0;
 			}
 		}		
 	}

@@ -1,11 +1,10 @@
-footer {
-	position: relative;
-	width: 100vw;
+.footer {
+	width: 100%;
 	height: auto;
 	padding: 10px 20px;
 	color: $white;
 	background-color: $blue600;
-	.footer__main {
+	&__main {
 		display: flex;
 		flex-wrap: nowrap;
 		width: 100%;
@@ -18,7 +17,7 @@ footer {
 				width: 100%;
 			}
 		}
-		.footer__main__container {
+		&__container {
 			width: 80%;
 			margin-bottom: 5px;
 			h4 {
@@ -32,12 +31,13 @@ footer {
 			}
 		}
 	}		
-	.footer__secondary {
+	&__secondary {
 		display: flex;
 		align-items: flex-end;
 		justify-content:space-between;
 		.footer__fecha {
 			text-align: left;
+			font-weight: bold;
 		}	
 		.footer__links {
 			text-align: right;
@@ -47,6 +47,108 @@ footer {
 				padding-bottom: 5px;
 				a {
 					color: $blue400;
+				}
+			}
+		}
+	}
+}
+@include tablet {
+	.footer {
+		padding: 30px;
+		&__main {
+			figure {
+				width: 100px;
+				margin-right: 15px;
+			}
+			&__container { 
+				margin-bottom: 10px;
+				h4 {
+					font-size: 2.1rem;
+				}
+				p {
+					font-size: 1.6rem;
+				}
+			}
+		}
+		&__secondary {
+			.footer__fecha {
+				font-size: 1.8rem;
+			}	
+			.footer__links {
+				li 
+				{
+					padding-bottom: 10px;
+					a {
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include desktop {
+	.footer {
+		padding: 25px 42px;
+		&__main {
+			figure {
+				width: 100px;
+				margin-right: 15px;
+			}
+			&__container { 
+				margin-bottom: 10px;
+				h4 {
+					font-size: 2.1rem;
+				}
+				p {
+					font-size: 1.6rem;
+				}
+			}
+		}
+		&__secondary {
+			.footer__fecha {
+				font-size: 1.8rem;
+			}	
+			.footer__links {
+				li 
+				{
+					padding-bottom: 10px;
+					a {
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include large {
+	.footer {
+		&__main {
+			figure {
+				width: 150px;
+				margin-right: 35px;
+			}
+			&__container { 
+				h4 {
+					font-size: 2.843rem;
+				}
+				p {
+					font-size: 2.1rem;
+				}
+			}
+		}
+		&__secondary {
+			.footer__fecha {
+				font-size: 1.8rem;
+			}	
+			.footer__links {
+				li 
+				{
+					a {
+						font-size: 1.8rem;
+						font-weight: bold;
+					}
 				}
 			}
 		}
