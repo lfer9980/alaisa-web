@@ -957,6 +957,7 @@ header .header.is-active .imagotipo {
   font-family: "Roboto Condensed", sans-serif;
 }
 .desarrollador__title h2 {
+  text-align: center;
   font-size: 3.79rem;
 }
 .desarrollador__subtitle {

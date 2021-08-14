@@ -89,7 +89,7 @@
 
 @include desktop {
 	.footer {
-		padding: 25px 42px;
+		padding: 15px 42px;
 		&__main {
 			figure {
 				width: 100px;
@@ -107,7 +107,7 @@
 		}
 		&__secondary {
 			.footer__fecha {
-				font-size: 1.8rem;
+				font-size: 16rem;
 			}	
 			.footer__links {
 				li 
@@ -129,15 +129,8 @@
 				width: 150px;
 				margin-right: 35px;
 			}
-			&__container { 
-				h4 {
-					font-size: 2.843rem;
-				}
-				p {
-					font-size: 2.1rem;
-				}
-			}
 		}
+		
 		&__secondary {
 			.footer__fecha {
 				font-size: 1.8rem;

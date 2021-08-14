@@ -17,7 +17,6 @@ html {
 }
 
 main {
-  width: 100%;
   height: auto;
 }
 
@@ -45,7 +44,7 @@ div > p {
   flex-direction: column;
   justify-items: center;
   align-content: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding-top: 90px;
   color: #FFF;
@@ -119,8 +118,9 @@ div > p {
 }
 
 .breadcrumbs {
+  display: inline-block;
   margin: 75px 0 5px 0;
-  padding: 0 20px;
+  padding-left: 20px;
 }
 .breadcrumbs__nav {
   position: relative;
@@ -133,7 +133,7 @@ div > p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
-  color: #5C8EF2;
+  color: #FFF;
   cursor: pointer;
 }
 .breadcrumbs__nav a::after {
@@ -148,6 +148,17 @@ div > p {
 @media only screen and (min-width: 768px) {
   .wrapper {
     padding-top: 165px;
+  }
+
+  .breadcrumbs {
+    margin-top: 125px;
+    padding-left: 30px;
+  }
+  .breadcrumbs__nav a {
+    font-size: 2.1rem;
+  }
+  .breadcrumbs__nav a::after {
+    font-size: 2rem;
   }
 
   .button--green {
@@ -181,6 +192,12 @@ div > p {
     padding-top: 100px;
   }
 
+  .breadcrumbs {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-left: 42px;
+  }
+
   .button--green {
     margin: 0 auto 30px auto;
   }
@@ -194,114 +211,116 @@ div > p {
     padding-top: 95px;
   }
 }
-.header--up {
+header {
+  width: 100vw;
+}
+header .header--up {
   display: flex;
   position: fixed;
   top: 15px;
   z-index: 1;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   padding: 0 20px;
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
   font-family: "Roboto Condensed", sans-serif;
   background-color: #011526;
 }
-.header--up__logo {
+header .header--up__logo {
   display: flex;
   align-items: center;
   width: 160px;
   height: auto;
   align-self: center;
 }
-.header--up__logo img {
+header .header--up__logo img {
   width: 100%;
 }
-.header--up__nav--desktop {
+header .header--up__nav--desktop {
   display: none;
   width: 75%;
 }
-.header--up__nav--desktop .header__menu--desktop {
+header .header--up__nav--desktop .header__menu--desktop {
   display: flex;
   width: 100%;
   justify-content: space-around;
 }
-.header--up__nav--desktop .header__menu--desktop li {
+header .header--up__nav--desktop .header__menu--desktop li {
   list-style: none;
 }
-.header--up__nav--desktop .header__menu--desktop li a {
+header .header--up__nav--desktop .header__menu--desktop li a {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 2.13rem;
   text-decoration: none;
   color: #FFF;
 }
-.header--up__nav--desktop .header__menu--desktop li a:hover {
+header .header--up__nav--desktop .header__menu--desktop li a:hover {
   color: #5C8EF2;
 }
-.header--up .burger-menu {
+header .header--up .burger-menu {
   font-size: 30px;
   padding: 5px;
   border-radius: 50%;
   color: #FFF;
   background-color: #03658C;
 }
-
-.header {
+header .header {
   display: hidden;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
   padding: 0 20px;
+  width: 100%;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #03658C;
   opacity: 0;
   transition: 0.3s;
 }
-.header__nav--mobile {
+header .header__nav--mobile {
   display: none;
   flex-direction: column;
   margin-top: 95px;
 }
-.header__nav--mobile .header__menu--mobile {
+header .header__nav--mobile .header__menu--mobile {
   margin-bottom: 45px;
   font-size: 2.1rem;
   font-weight: bold;
   list-style: none;
   border-left: 2px solid rgba(255, 255, 255, 0.6);
 }
-.header__nav--mobile .header__menu--mobile li {
+header .header__nav--mobile .header__menu--mobile li {
   margin: 0 0 25px 20px;
 }
-.header__nav--mobile .header__menu--mobile li:nth-of-type(6) {
+header .header__nav--mobile .header__menu--mobile li:nth-of-type(6) {
   margin-bottom: 0;
 }
-.header__nav--mobile .header__menu--mobile li a {
+header .header__nav--mobile .header__menu--mobile li a {
   display: block;
   width: 100%;
   text-decoration: none;
   color: #FFF;
 }
-.header__nav--mobile .header__menu--mobile a:hover {
+header .header__nav--mobile .header__menu--mobile a:hover {
   color: #8DAEF2;
 }
-.header__menu--secondary {
+header .header__menu--secondary {
   list-style: none;
   margin-left: 20px;
   font-size: 1.6rem;
   font-weight: bold;
   font-style: italic;
 }
-.header__menu--secondary li {
+header .header__menu--secondary li {
   margin-bottom: 5px;
 }
-.header__menu--secondary li a {
+header .header__menu--secondary li a {
   color: #8DAEF2;
 }
-.header__menu--secondary li a:hover {
+header .header__menu--secondary li a:hover {
   color: #FFF;
 }
-.header .burger-menu {
+header .header .burger-menu {
   display: none;
   position: absolute;
   right: 20px;
@@ -312,115 +331,110 @@ div > p {
   color: #FFF;
   background-color: #03658C;
 }
-.header .imagotipo {
+header .header .imagotipo {
   display: none;
   justify-content: flex-end;
   width: 100%;
   margin-bottom: 84px;
 }
-.header .imagotipo img {
+header .header .imagotipo img {
   width: 98px;
   height: 98px;
 }
-
-.header--up.is-active {
+header .header--up.is-active {
   display: none;
 }
-
-.header.is-active {
+header .header.is-active {
   position: fixed;
   top: 0;
   bottom: 0;
   z-index: 2;
   opacity: 1;
 }
-.header.is-active .header__nav--mobile {
+header .header.is-active .header__nav--mobile {
   display: flex;
 }
-.header.is-active .burger-menu {
+header .header.is-active .burger-menu {
   display: block;
 }
-.header.is-active .imagotipo {
+header .header.is-active .imagotipo {
   display: flex;
 }
 
 @media only screen and (min-width: 768px) {
-  .header--up {
+  header .header--up {
     top: 30px;
     height: 75px;
     padding: 0 55px;
   }
-  .header--up__logo {
+  header .header--up__logo {
     width: 243px;
   }
-  .header--up .burger-menu {
+  header .header--up .burger-menu {
     font-size: 37.5px;
     padding: 6.25px;
   }
-
-  .header {
+  header .header {
     padding: 0 30px;
   }
-  .header__nav--mobile {
+  header .header__nav--mobile {
     margin-top: 131px;
   }
-  .header__nav--mobile .header__menu--mobile {
+  header .header__nav--mobile .header__menu--mobile {
     margin: 0 0 50px 50px;
     font-size: 3.79rem;
     border-left: 4px solid rgba(255, 255, 255, 0.6);
   }
-  .header__nav--mobile .header__menu--mobile li {
+  header .header__nav--mobile .header__menu--mobile li {
     margin: 0 0 40px 50px;
   }
-  .header__menu--secondary {
+  header .header__menu--secondary {
     margin-left: 100px;
     font-size: 2.843rem;
   }
-  .header__menu--secondary li {
+  header .header__menu--secondary li {
     margin-bottom: 10px;
   }
-  .header .burger-menu {
+  header .header .burger-menu {
     right: 55px;
     top: 55px;
     padding: 6.25px;
     font-size: 37.5px;
   }
-  .header .imagotipo {
+  header .header .imagotipo {
     margin-bottom: 0px;
   }
-  .header .imagotipo img {
+  header .header .imagotipo img {
     width: 222px;
     height: 222px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .header--up {
+  header .header--up {
     top: 0;
     height: 75px;
     padding: 0 42px;
   }
-  .header--up__logo {
+  header .header--up__logo {
     width: 172px;
   }
-  .header--up__nav--desktop {
+  header .header--up__nav--desktop {
     display: flex;
   }
-  .header--up .burger-menu {
+  header .header--up .burger-menu {
     display: none;
   }
-
-  .header .burger-menu {
+  header .header .burger-menu {
     display: none;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .header--up__nav--desktop {
+  header .header--up__nav--desktop {
     width: 80%;
   }
 }
 .footer {
   position: relative;
-  width: 100%;
   height: auto;
   padding: 10px 20px;
   color: #FFF;
@@ -502,7 +516,7 @@ div > p {
 }
 @media only screen and (min-width: 1024px) {
   .footer {
-    padding: 25px 42px;
+    padding: 15px 42px;
   }
   .footer__main figure {
     width: 100px;
@@ -518,7 +532,7 @@ div > p {
     font-size: 1.6rem;
   }
   .footer__secondary .footer__fecha {
-    font-size: 1.8rem;
+    font-size: 16rem;
   }
   .footer__secondary .footer__links li {
     padding-bottom: 10px;
@@ -531,12 +545,6 @@ div > p {
   .footer__main figure {
     width: 150px;
     margin-right: 35px;
-  }
-  .footer__main__container h4 {
-    font-size: 2.843rem;
-  }
-  .footer__main__container p {
-    font-size: 2.1rem;
   }
   .footer__secondary .footer__fecha {
     font-size: 1.8rem;
@@ -552,7 +560,6 @@ div > p {
   flex-direction: column;
   justify-items: center;
   align-content: center;
-  width: 100vw;
   height: auto;
   text-align: center;
   padding-top: 90px;
