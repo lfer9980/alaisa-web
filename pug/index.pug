@@ -1,11 +1,10 @@
 extend components/template.pug
 block css 
 	link(rel="stylesheet", href="css/index.css")
-	link(rel="stylesheet", href="css/queries/index-tablet.css", media="screen and (min-width=767px)")
 block title
 	title ALAISA | homepage
 block contents
-	main.index
+	main
 		include components/index/hero-index.pug
 		include components/index/modelo-index.pug
 		include components/index/entrenamiento-index.pug

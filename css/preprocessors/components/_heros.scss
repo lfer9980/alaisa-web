@@ -1,8 +1,7 @@
 .hero {
 	&__title {
-		max-width: 78%;
-		padding: 0 20px;
 		position: relative;
+		padding: 0 20px;
 		margin-bottom: 20px;
 		h1 {
 			font-family: $fuente1;
@@ -16,7 +15,6 @@
 	}
 	&__saludo {
 		display: flex;
-		width: 100vw;
 		position: relative;
 		height: 45px;
 		margin-bottom: 20px;
