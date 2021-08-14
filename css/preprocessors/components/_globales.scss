@@ -87,6 +87,7 @@ html {
 main {	
 	width: 100%;
 	height: auto;
+	overflow-x: hidden;
 }
 
 h2 > span {
@@ -184,8 +185,10 @@ div > p {
 }
 
 .breadcrumbs {
+	display: inline-block;
+	width: 100vw;
 	margin: 75px 0 5px 0;
-	padding: 0 20px;
+	padding-left: 20px;
 	&__nav {
 		position: relative;
 		display: flex;
@@ -196,7 +199,7 @@ div > p {
 			font-family: $fuente1;
 			font-size: 1.4rem;
 			font-weight: bold;
-			color: $blue400;
+			color: $white;
 			cursor: pointer;
 		}
 		a::after {
@@ -214,6 +217,18 @@ div > p {
 @include tablet {
 	.wrapper {
 		padding-top: 165px;
+	}
+	.breadcrumbs {
+		margin-top: 125px;
+		padding-left: 30px;
+		&__nav {
+			a {
+				font-size: 2.1rem;
+			}
+			a::after {
+				font-size: 2rem;
+			}
+		}
 	}
 	.button--green {
 		height: 50px;
@@ -244,6 +259,11 @@ div > p {
 @include desktop {
 	.wrapper {
 		padding-top: 100px;
+	}
+	.breadcrumbs {
+		margin-top: 100px;
+		margin-bottom: 20px;
+		padding-left: 42px;
 	}
 	.button--green {
 		margin: 0 auto 30px auto;

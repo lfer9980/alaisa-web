@@ -4,13 +4,13 @@ block css
 block title 
 	title ALAISA | modelo
 block contents
-	.back-button.light
-		a(href="#") 
-			i.material-icons arrow_back
 	main.model
 		.breadcrumbs
 			+breadcrumbs("model.html", "Modelo")
 		section.model__main
+			.back-button.light
+				a(href="#") 
+					i.material-icons arrow_back
 			figure.alaisa__isotipo
 				img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
 			.model__main__title: h2 ¡Comencemos!
