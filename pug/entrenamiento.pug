@@ -4,13 +4,13 @@ block css
 block title 
 	title ALAISA | Entrenamiento
 block contents
-	.back-button.light
-		a(href="") 
-			i.material-icons arrow_back
 	main.training
 		.breadcrumbs 
 			+breadcrumbs("entrenamiento.html", "Entrenamiento")
 		section.training__main
+			.back-button.light
+				a(href="") 
+					i.material-icons arrow_back
 			figure.alaisa__isotipo
 				img(src="/assets/icons/isotipo_alaisa.svg", alt="Virus ALAISA")
 			.training__main__title: h2 Tu contribución nos ayuda a #[span mejorar] y ser más #[span precisos]
