@@ -1102,20 +1102,24 @@ body {
     font-size: 2.1rem;
   }
 }
+.donativos {
+  text-align: center;
+}
 .donativos__title {
-  margin: 90px 0 5px 0;
+  position: relative;
   padding: 0 20px;
+  margin-bottom: 20px;
   font-family: "Roboto Condensed", sans-serif;
   text-align: right;
 }
 .donativos__title h2 {
-  padding-left: 20px;
   font-size: 3.79rem;
   line-height: 120%;
 }
 .donativos__parrafo1 {
   font-family: "Roboto Condensed", sans-serif;
-  padding: 0 60px;
+  padding: 0 70px;
+  margin-bottom: 10px;
 }
 .donativos__parrafo1 p {
   font-size: 1.8rem;
@@ -1125,61 +1129,38 @@ body {
 .donativos--wrapper {
   position: relative;
   display: flex;
-  width: 100vw;
+  flex-direction: column;
+  width: 100%;
   height: auto;
-  margin-top: 10px;
 }
 .donativos--wrapper article {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-width: 300px;
-  max-width: 85%;
-  padding: 0 20px;
+  justify-content: space-between;
+  width: 85%;
+  padding: 10px 20px;
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
   background-color: #03658C;
 }
-.donativos--wrapper .donativos__image {
-  width: 100px;
-  height: 100px;
-  margin: 10px 0;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.donativos--wrapper .donativos__image img {
-  width: 100%;
-}
-.donativos--wrapper .coffee {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-.donativos--wrapper .patreon {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-.donativos .two {
-  justify-content: flex-end;
-  margin-top: 15px;
-}
-.donativos__main {
+.donativos--wrapper article .donativos__main {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 160px;
+  width: 70%;
+  margin: 0 5px;
 }
-.donativos .main__title {
+.donativos--wrapper article .main__title {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 2.1rem;
   font-weight: bold;
   text-align: center;
 }
-.donativos .main__parrafo {
-  padding: 0 5px;
+.donativos--wrapper article .main__parrafo {
   font-size: 1.2rem;
 }
-.donativos .button--coffee {
+.donativos--wrapper article .button--coffee {
   width: 130px;
   height: 20px;
   margin-top: 10px;
@@ -1187,7 +1168,7 @@ body {
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
   background-color: #FFDD00;
 }
-.donativos .button--coffee a {
+.donativos--wrapper article .button--coffee a {
   display: block;
   width: 100%;
   height: 100%;
@@ -1198,7 +1179,10 @@ body {
   font-weight: bold;
   color: #FFF;
 }
-.donativos .button--patreon {
+.donativos--wrapper article .button--coffee:hover {
+  background-color: #B9A314;
+}
+.donativos--wrapper article .button--patreon {
   width: 130px;
   height: 20px;
   margin-top: 10px;
@@ -1206,7 +1190,7 @@ body {
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
   background-color: #F76754;
 }
-.donativos .button--patreon a {
+.donativos--wrapper article .button--patreon a {
   display: block;
   width: 100%;
   height: 100%;
@@ -1216,6 +1200,28 @@ body {
   font-size: 1.6rem;
   font-weight: bold;
   color: #FFF;
+}
+.donativos--wrapper article .button--patreon:hover {
+  background-color: #BC5042;
+}
+.donativos--wrapper article:nth-of-type(1) {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.donativos--wrapper article:nth-of-type(2) {
+  margin-top: 15px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  align-self: flex-end;
+}
+.donativos--wrapper .donativos__image {
+  width: 30%;
+  height: auto;
+}
+.donativos--wrapper .donativos__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 .donativos__parrafo2 {
   margin-top: 15px;
@@ -1239,6 +1245,168 @@ body {
   opacity: 0.15;
 }
 
+@media only screen and (min-width: 768px) {
+  .donativos__title {
+    padding: 0 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .donativos__title h2 {
+    padding: 0;
+    font-size: 6.734rem;
+  }
+  .donativos__parrafo1 {
+    padding: 0 30px;
+    margin-bottom: 20px;
+  }
+  .donativos__parrafo1 p {
+    font-size: 2.843rem;
+  }
+  .donativos--wrapper article {
+    padding: 10px 20px;
+    width: 70%;
+  }
+  .donativos--wrapper article .donativos__image {
+    width: 150px;
+    height: 150px;
+  }
+  .donativos--wrapper article .main__title {
+    font-size: 3.79rem;
+  }
+  .donativos--wrapper article .main__parrafo {
+    padding: 0 5px;
+    font-size: 2.1rem;
+  }
+  .donativos--wrapper article .button--coffee {
+    width: 220px;
+    height: 30px;
+    margin-top: 15px;
+  }
+  .donativos--wrapper article .button--coffee a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    color: #0D0D0D;
+  }
+  .donativos--wrapper article .button--patreon {
+    width: 220px;
+    height: 30px;
+    margin-top: 15px;
+  }
+  .donativos--wrapper article .button--patreon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+  }
+  .donativos--wrapper article:nth-of-type(2) {
+    margin: 30px 0;
+  }
+  .donativos__parrafo2 {
+    margin-top: 15px;
+    padding: 0 20px;
+  }
+  .donativos__parrafo2 p {
+    font-size: 3.78rem;
+    font-weight: bold;
+    color: #8DAEF2;
+  }
+  .donativos__parrafo3 {
+    display: none;
+  }
+
+  .donativos::before {
+    background-image: url("../assets/img/2x/tablet_gray@2x.png");
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .donativos__title {
+    padding: 0 42px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .donativos__title h2 {
+    padding: 0;
+    font-size: 5.057rem;
+  }
+  .donativos__parrafo1 p {
+    font-size: 2.132rem;
+  }
+  .donativos--wrapper {
+    flex-direction: row;
+    padding: 0 42px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .donativos--wrapper article {
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .donativos--wrapper article .donativos__image {
+    width: 120px;
+    height: 120px;
+  }
+  .donativos--wrapper article .main__title {
+    padding-bottom: 10px;
+    font-size: 2.843rem;
+  }
+  .donativos--wrapper article .main__parrafo {
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+  .donativos--wrapper article:nth-of-type(2) {
+    margin: 0 0 0 30px;
+    justify-self: baseline;
+  }
+  .donativos__parrafo2 {
+    margin-top: 30px;
+    padding: 0 42px;
+  }
+  .donativos__parrafo2 p {
+    font-size: 2.843rem;
+  }
+  .donativos__parrafo3 {
+    display: block;
+  }
+  .donativos__parrafo3 p {
+    font-size: 1.8rem;
+  }
+
+  .desktop::before {
+    background-image: url("../assets/img/2x/desktop_gray@2x.png");
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .donativos__title {
+    margin: 0 auto 20px auto;
+  }
+  .donativos__title h2 {
+    font-size: 6.734rem;
+  }
+  .donativos__parrafo1 {
+    margin-bottom: 40px;
+  }
+  .donativos__parrafo1 p {
+    font-size: 2.843rem;
+  }
+  .donativos--wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .donativos--wrapper article {
+    width: 45%;
+  }
+  .donativos--wrapper article .donativos__image {
+    width: 150px;
+    height: 150px;
+  }
+  .donativos--wrapper article .main__title {
+    font-size: 3.79rem;
+  }
+}
 .contacto__title {
   position: relative;
   margin-top: 90px;
