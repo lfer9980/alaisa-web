@@ -1,18 +1,22 @@
 @import 'components/globales';
 @import 'components/headers';
+.breadcrumbs {
+	a {
+		color: $blue500;
+	}
+}
 .add {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
 	justify-content: center;
 	position: relative;
-	width: 100vw;
 	height: auto;
 	&__main {
 		position: relative;
 		&__title {
 			padding: 0 20px;
-			margin:5px 0 15px 0;
+			margin: 10px 0;
+			text-align: center;
 			h3 {
 				font-family: $fuente1;
 				font-size: 2.1rem;
@@ -28,6 +32,7 @@
 				font-family: $fuente1;
 				font-size: 2.1rem;
 				margin: 20px 0 15px 0;
+				text-align: center;
 			}
 			.input {
 				margin-bottom: 15px;
@@ -40,6 +45,9 @@
 					text-align: center;
 					color: $blue500;
 				}
+				.input-select__place {
+					width: 100%;
+				}
 			}
 			.input__title {
 				display: block;
@@ -48,7 +56,7 @@
 			}
 			.input__select {
 				display: block;
-				width: 80vw;
+				width: 90%;
 				height: 25px;
 				padding: 0 10px;
 				font-weight: 700;
@@ -67,7 +75,7 @@
 			}
 			.input-select__place {
 				display: block;
-				width: 50vw;
+				width: 50%;
 				height: 25px;
 				padding: 0 10px;
 				font-weight: 700;
@@ -119,4 +127,98 @@
 	bottom: 0;
 	left: 0;
 	opacity: 0.15;
+}
+
+@include tablet {
+	.add {
+		&__main {
+			width: 79%;
+			margin: 20px auto 40px auto;
+			padding: 35px 50px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+			background-color: rgba($color: #CEE8F2, $alpha: 0.5);
+			&__title {
+				padding:0;
+				margin: 0 0 15px 0;
+				text-align: left;
+				h3 {
+					font-size: 2.843rem;
+				}
+			}
+			.formulario {
+				padding: 0;
+				&__title {
+					font-size: 2.843rem;
+					margin: 25px 0 17px 0;
+					text-align: left;
+				}
+				.input {
+					margin-bottom: 20px;
+				}
+				.input:nth-of-type(1) {
+					margin: 0 auto 15px auto;
+					width: 50%;
+					.input__title {
+						font-size: 2.1rem;
+					}
+				}
+				.input__title {
+					font-size: 1.8rem;
+				}
+				.input__select {
+					width: 75%;
+					height: 30px;
+					font-size: 1.6rem;
+				}
+				.input-select__place {
+					height: 30px;
+					font-size: 1.6rem;
+				}
+				.content-input {
+					margin: 20px 0 0 0;
+					justify-content: center;
+					input {
+						margin-right: 15px;
+					}
+					span {
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+	}
+	.add::before {
+		background-image: url('../assets/img/2x/tablet_gray@2x.png');
+		opacity: 0.30;
+	}
+}
+
+@include desktop {
+	.add {
+		&__main {
+			width: 50%;
+			padding: 20px 30px;
+			background-color: rgba($color: #CEE8F2, $alpha: 0.8);
+			&__title {
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			.formulario {
+				&__title {
+					text-align: center;
+				}
+				.input__select {
+					width: 100%;
+				}
+				.input__title {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+	.add::before {
+		background-image: url('../assets/img/2x/desktop_gray@2x.png');
+		opacity: 1;
+	}
 }

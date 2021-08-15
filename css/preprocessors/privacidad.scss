@@ -1,19 +1,19 @@
 @import 'components/globales';
 @import 'components/headers';
-@import 'components/footers';
+
 .privacidad {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	position: relative;
-	width: 100vw;
+	justify-items: center;
+	align-content: center;
 	height: auto;
 	text-align: center;
+	padding-top: 90px;
 	background-color: $white;
 	&__title {
-		margin: 90px 0 15px 0;
+		position: relative;
 		padding: 0 20px;
+		margin-bottom: 15px;
 		font-family: $fuente1;
 		h2 {
 			font-size: 3.79rem;
@@ -21,6 +21,7 @@
 		}
 	}
 	&__main {
+		position: relative;
 		padding: 0 20px;
 		&__subtitle--main {
 			margin-bottom: 10px;
@@ -61,14 +62,22 @@
 		.mail {
 			display: block;
 			margin-bottom: 15px;
-			font-family: $fuente1;
-			font-size: 1.8rem;
-			font-weight: bold;
-			color: $blue600;
+			a {
+				font-family: $fuente1;
+				font-size: 1.8rem;	
+				font-weight: bold;
+				color: $blue600;
+			}
+			a:hover {
+				color: $blue400;
+			}
 		}
 	}
 	.fecha {
 		margin-bottom: 50px;
+		p {
+			color: $dark600;
+		}
 	}
 }
 
@@ -83,3 +92,79 @@
 	left: 0;
 	opacity: 0.15;
 }
+
+@include tablet {
+	.privacidad {
+		padding-top: 165px; 
+		&__title {
+			padding: 0 30px;
+			margin-bottom: 20px;
+			h2 { 
+				font-size: 5.052rem;
+			}
+		}
+		&__main {
+			padding: 0 30px;
+			&__subtitle--main {
+				margin-bottom: 15px;
+				font-size: 2.843rem;
+			}
+			&__parrafo {
+				margin-bottom: 15px;
+				font-size: 2.1rem;
+			}
+			&__subtitle {
+				font-size: 2.843rem;
+			}
+			&__list {
+				margin-bottom: 15px;
+				font-size: 2.1rem;
+				li {
+					margin-bottom: 5px;
+				}
+			}
+			.mail {
+				margin-bottom: 30px;
+				a {
+					font-size: 2.843rem;
+				}
+			}
+		}
+		.fecha {
+			margin-bottom: 60px;
+		}
+	}
+	.privacidad::before {
+		background-image: url('../assets/img/2x/tablet_gray@2x.png');
+	}
+}
+
+@include desktop {
+	.privacidad {
+		padding-top: 100px;
+		&__title {
+			padding: 0 42px;
+			h2 {
+				padding: 0 42px;
+			}
+		}
+		&__main {
+			padding: 0 42px;
+			&__subtitle--main {
+				margin-bottom: 25px;
+			}
+			&__parrafo {
+				text-align: left;
+			}
+			&__subtitle {
+				margin-bottom: 25px;
+			}
+		}
+	}
+	.privacidad::before {
+		background-image: url('../assets/img/2x/desktop_gray@2x.png');
+	}
+}
+
+
+@import 'components/footers';

@@ -2,19 +2,19 @@
 @import 'components/headers';
 @import 'components/footers';
 .acerca {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	position: relative;
-	width: 100vw;
+	justify-items: center;
+	align-content: center;
 	height: auto;
 	text-align: center;
+	padding-top: 90px;
 	background-color: $white;
 	&__title {
 		position: relative;
-		margin: 90px 0 15px 0;
 		padding: 0 20px;
+		margin-bottom: 15px;
 		font-family: $fuente1;
 		h2 {
 			font-size: 3.79rem;
@@ -42,7 +42,14 @@
 			font-family: $fuente1;
 			font-size: 1.8rem;
 			font-weight: bold;
-			color: $blue400;
+			a {
+				color: $blue600;
+			}
+		}
+		&__link {
+			a:hover {
+				color: $blue400;
+			}
 		}
 		&__logo {
 			display: block;
@@ -51,6 +58,7 @@
 			margin: 20px auto 60px auto;
 			img:nth-of-type(1) {
 				width: 100px;
+				margin-bottom: 20px;
 			}
 			img:nth-of-type(2) {
 				width: 100%;
@@ -68,4 +76,67 @@
 	bottom: 0;
 	left: 0;
 	opacity: 0.15;
+}
+
+@include tablet {
+	.acerca {
+		padding-top: 165px;
+		&__title {
+			padding: 0 30px;
+			margin-bottom: 35px;
+			h2 {
+				font-size: 6.734rem;
+			}
+		}
+		&__main {
+			padding: 0 30px;
+			&__parrafo {
+				margin-bottom: 35px;
+				p {
+					font-size: 2.4rem;
+				}
+			}
+			&__parrafo--primary {
+				margin-bottom: 30px;
+				p {
+					font-size: 2.843rem;
+				}
+			}	
+			&__link {
+				margin-bottom: 40px;
+				a {
+					font-size: 2.843rem;
+				}
+			}
+			&__logo {
+				width: 400px;
+				img:nth-of-type(1) {
+					width: 200px;
+					margin-bottom: 25px;
+				}
+
+			}
+		}
+	}
+	.acerca::before {
+		background-image: url('../assets/img/2x/tablet_gray@2x.png');
+	}
+}
+
+@include desktop {
+	.acerca {
+		padding-top: 100px;
+		&__title {
+			padding: 0 42px;
+		}
+	}
+	.acerca::before {
+		background-image: url('../assets/img/2x/desktop_gray@2x.png');
+	}
+}
+
+@include large { 
+	.acerca {
+		padding-top: 95px;
+	}
 }

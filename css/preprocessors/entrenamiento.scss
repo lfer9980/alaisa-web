@@ -9,15 +9,13 @@ body {
 	flex-wrap: nowrap;
 	justify-content: center;
 	position: relative;
-	width: 100vw;
 	height: auto;
 	text-align: center;
-
 	&__main {
 		position: relative;
 		color: $white;
 		.alaisa__isotipo { 
-			margin: 0 auto;
+			margin: 0 auto 15px auto;
 			width: 90px;
 			height: 90px;
 			img {
@@ -25,7 +23,7 @@ body {
 			}
 		}
 		&__title {
-			margin: 15px 0;
+			margin-bottom: 15px;
 			padding: 0 20px;
 			h2 {
 				font-family: $fuente1;
@@ -90,7 +88,7 @@ body {
 			}
 		}
 		&__priv {
-			margin: 20px 0 20px 0;
+			margin: 20px 0;
 			a {
 				font-size: 1.2rem;
 				color: $blue300;
@@ -99,7 +97,7 @@ body {
 	}
 }
 .back-button {
-	position: fixed;
+	position: sticky;
 	top: 95px;
 	left: 20px;
 	z-index: 1;
@@ -121,6 +119,7 @@ body {
 }
 .light {
 	background-color: $blue500;
+	opacity: 75%;
 }
 .training::before {
 	content: "";
@@ -132,4 +131,154 @@ body {
 	bottom: 0;
 	left: 0;
 	opacity: 0.50;
+}
+
+@include tablet {
+	.training {
+		&__main {
+			.alaisa__isotipo { 
+				display: none;
+				margin: 0 auto 20px auto;
+				width: 200px;
+				height: 200px;
+			}
+			&__title {
+				padding: 0 30px;
+				margin: 85px 0 20px 0;
+				h2 {
+					font-size: 6.734rem;
+				}
+			}
+			&__subtitle {
+				padding: 0 80px;
+				margin-bottom: 10px;
+				p {
+					font-size: 2.843rem;	
+				}
+			}
+			&__parrafo1 {
+				margin-bottom: 20px;
+				p {
+					display: inline-block;
+					margin: 0 81px;
+					padding: 20px 30px;
+					font-size: 2.1rem;
+					border-radius: 8px;
+				}
+			}
+			&__parrafo2 {
+				padding: 0 30px;
+				margin-bottom: 30px;
+				h4 {
+					font-size: 2.843rem;
+				}
+			}
+			form {
+				padding: 0 30px;
+				margin-bottom: 15px;
+				.content-input {
+					input {
+						margin-right: 15px;
+					}
+					span {
+						font-size: 2.1rem;
+					}
+				}
+			}
+			&__priv {
+				margin: 0;
+				a {
+					font-size: 1.8rem;
+					color: $blue300;
+				}
+			}
+		}
+	}
+	.back-button {
+		position: fixed;
+		top: 165px;
+		left: 30px;
+		width: 50px;
+		height: 50px;
+		a {
+			i {
+				font-size: 40px;
+			}
+		}
+	}
+	.light {
+		opacity: 1;
+	}
+	.training::before {
+		background-image: url('../assets/img/2x/virus-tablet@2x-80.jpg');
+		opacity: 0.30;
+	}
+}
+
+@include desktop {
+	.training {
+		padding-bottom: 20px;
+		&__main {
+			display: inline-block;
+			max-width: 786px;
+			margin: 0 auto;
+			padding: 20px;
+			border-radius: 8px;
+			background: rgba($color: #011526, $alpha: 0.80);
+			.alaisa__isotipo { 
+				display: none;
+			}
+			&__title {
+				padding: 0 30px;
+				margin: 0 0 25px 0;
+				h2 {
+					font-size: 5.0517rem;
+				}
+			}
+			&__subtitle {
+				padding: 0;
+				margin-bottom: 20px;
+				p {
+					font-size: 2.13rem;	
+				}
+			}
+			&__parrafo1 {
+				p {
+					background-color: rgba(3, 101, 140, 0.4);
+				}
+			}
+			&__parrafo2 {
+				padding: 0;
+				margin-bottom: 25px;
+				h4 {
+					font-size: 2.843rem;
+				}
+			}
+			form {
+				padding: 0;
+				margin-bottom: 20px;
+				.content-input {
+					input {
+						margin-right: 10px;
+					}
+					span {
+						font-size: 1.6rem;
+					}
+				}
+			}
+			&__priv {
+				margin: 0;
+				a {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+	.back-button {
+		display: none;
+	}
+	.training::before {
+		background-image: url('../assets/img/2x/virus-desktop@2x-80.jpg');
+		opacity: 1;
+	}
 }

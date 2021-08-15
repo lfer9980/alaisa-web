@@ -1,29 +1,23 @@
 .desarrollador {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
 	text-align: center;
-	color: $white;
 	&__title {
 		position: relative;
-		margin: 90px 0 20px 0;
 		padding: 0 20px;
+		margin-bottom: 20px;
 		text-align: left;
 		font-family: $fuente1;
 		h2 {
+			text-align: center;
 			font-size: 3.79rem;
 		}
 	}
 	&__subtitle {
-		padding: 0 60px;
+		padding: 0 50px;
 		margin-bottom: 15px;
 		p {
 			font-family: $fuente1;
 			font-size: 1.8rem;
-			font-weight: 500;
+			font-weight: 600;
 		}
 	}
 	&__table {
@@ -32,7 +26,7 @@
 		font-size: 1.6rem;
 		.wrapper--tabla {
 			width: 100%;
-			padding: 5px 5px;
+			padding: 5px;
 			border-radius: 8px;
 			border-collapse: separate;
 			border-spacing: 0 10px;
@@ -47,7 +41,7 @@
 		}
 		.wrapper--side-info {
 			text-align: left;
-			margin-top: 10px;
+			margin-top: 5px;
 			p {
 				font-weight: 100;
 			}
@@ -55,13 +49,136 @@
 	}
 }
 .desarrollador::before {
-	content: "";
 	background-image: url('../assets/img/2x/quirofano-mobile@2x-80.jpg');
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	opacity: 0.50;
+}
+
+@include tablet {
+	.desarrollador {
+		&__title {
+			padding: 0 30px;
+			h2 {
+				font-size: 8.976rem;
+			}
+		}
+		&__subtitle {
+			p {
+				font-size: 2.843rem;
+				font-weight: 500;
+			}
+		}
+		&__table {
+			margin: 0 80px;
+			font-size: 2.1rem;
+			.wrapper--tabla {
+				padding: 10px;
+				border-spacing: 0 15px;
+				thead tr th {
+					font-size: 2.8rem;
+				}
+			}
+			.wrapper--side-info {
+				margin-top: 5px;
+				p {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+	.desarrollador::before {
+		background-image: url('../assets/img/2x/quirofano-tablet@2x-80.jpg');
+	}
+}
+
+
+@include desktop {
+	.desarrollador {
+		&__title {
+			padding: 0 42px;
+			margin-bottom: 10px;
+			h2 {
+				font-size: 5.075rem;
+			}
+		}
+		&__subtitle {
+			p {
+				font-size: 2.1rem;
+			}
+		}
+		&__table {
+			display: flex;
+			width: 786px;
+			flex-direction: row-reverse;
+			font-size: 1.8rem;
+			margin: 0 auto 10px;
+			.wrapper--tabla {
+				padding: 5px;
+				border-spacing: 0 10px;
+				thead tr th {
+					font-size: 2.1rem;
+				}
+			}
+			.wrapper--side-info {
+				writing-mode: vertical-lr;
+			}
+		}
+		.fecha {
+			width: 786px;
+			margin: 0 auto;	
+			p {
+				margin-bottom: 5px;
+				padding: 0;
+				font-size: 1.8rem;
+			}
+			&__main {
+				padding: 5px 0;
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+
+
+@include large {
+	.desarrollador {
+		&__title {
+			padding: 0 42px;
+			margin-bottom: 10px;
+			h2 {
+				font-size: 6.734rem;
+			}
+		}
+		&__subtitle {
+			p {
+				font-size: 2.843rem;
+			}
+		}
+		&__table {
+			font-size: 2.1rem;
+			margin: 0 auto 10px;
+			.wrapper--tabla {
+				padding: 10px;
+				border-spacing: 0 15px;
+				thead tr th {
+					font-size: 2.843rem;
+				}
+			}
+			.wrapper--side-info {
+				writing-mode: vertical-lr;
+			}
+		}
+		.fecha {
+			width: 786px;
+			margin: 0 auto;	
+			p {
+				margin-bottom: 10px;
+				padding: 0;
+				font-size: 2.1rem;
+			}
+			&__main {
+				padding: 5px 0;
+				font-size: 2.1rem;
+			}
+		}
+	}
 }

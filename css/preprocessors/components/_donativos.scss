@@ -1,26 +1,20 @@
 .donativos {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
 	text-align: center;
-	color: $white;
 	&__title {
-		margin: 90px 0 5px 0;
+		position: relative;
 		padding: 0 20px;
+		margin-bottom: 20px;
 		font-family: $fuente1;
 		text-align: right;
 		h2 {
-			padding-left: 20px;
 			font-size: 3.79rem;
 			line-height: 120%;
 		}
 	}
 	&__parrafo1 {
 		font-family: $fuente1;
-		padding: 0 60px;
+		padding: 0 70px;
+		margin-bottom: 10px;
 		p {
 			font-size: 1.8rem;
 			font-weight: bold;
@@ -30,98 +24,98 @@
 	&--wrapper {
 		position: relative;
 		display: flex;
-		width: 100vw;
+		flex-direction: column;
+		width: 100%;
 		height: auto;
-		margin-top: 10px;
 		article {
 			display: flex;
 			align-items: center;
-			justify-content: center;
-			min-width: 300px;
-			max-width: 85%;
-			padding: 0 20px;
+			justify-content: space-between;
+			width: 85%;
+			padding: 10px 20px;
 			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 			background-color: $blue500;
-		}
-		.donativos__image {
-			width: 100px;
-			height: 100px;
-			margin: 10px 0;
-			border-radius: 50%;
-			overflow: hidden;
-			img {
-				width: 100%;
+			.donativos__main {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+				width: 70%;
+				margin: 0 5px;
+			}
+			.main__title {
+				font-family: $fuente1;
+				font-size: 2.1rem;
+				font-weight: bold;
+				text-align: center;
+			}
+			.main__parrafo {
+				font-size: 1.2rem;
+			}
+			.button--coffee {
+				width: 130px;
+				height: 20px;
+				margin-top: 10px;
+				border-radius: 8px;
+				box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+				background-color: #FFDD00;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					list-style: none;
+					text-decoration: none;
+					font-family: $fuente1;
+					font-size: 1.6rem;
+					font-weight: bold;
+					color: $white;
+				}
+			}
+			.button--coffee:hover {
+				background-color: #B9A314;
+			}
+			.button--patreon {
+				width: 130px;
+				height: 20px;
+				margin-top: 10px;
+				border-radius: 8px;
+				box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+				background-color: #F76754;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					list-style: none;
+					text-decoration: none;
+					font-family: $fuente1;
+					font-size: 1.6rem;
+					font-weight: bold;
+					color: $white;
+				}
+			}
+			.button--patreon:hover {
+				background-color: #BC5042;
 			}
 		}
-		.coffee {
+		article:nth-of-type(1) {
 			border-top-right-radius: 8px;
 			border-bottom-right-radius: 8px;
 		}
-		.patreon {
+		article:nth-of-type(2) {
+			margin-top: 15px;
 			border-top-left-radius: 8px;
 			border-bottom-left-radius: 8px;
+			align-self: flex-end;
 		}
-	}
-
-	.two {
-		justify-content: flex-end;
-		margin-top: 15px;
-	}
-
-	&__main {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
-		width: 160px;
-	}
-	.main__title {
-		font-family: $fuente1;
-		font-size: 2.1rem;
-		font-weight: bold;
-		text-align: center;
-	}
-	.main__parrafo {
-		padding: 0 5px;
-		font-size: 1.2rem;
-	}
-	.button--coffee {
-		width: 130px;
-		height: 20px;
-		margin-top: 10px;
-		border-radius: 8px;
-		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
-		background-color: #FFDD00;
-		a {
-			display: block;
-			width: 100%;
-			height: 100%;
-			list-style: none;
-			text-decoration: none;
-			font-family: $fuente1;
-			font-size: 1.6rem;
-			font-weight: bold;
-			color: $white;
-		}
-	}
-	.button--patreon {
-		width: 130px;
-		height: 20px;
-		margin-top: 10px;
-		border-radius: 8px;
-		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
-		background-color: #F76754;
-		a {
-			display: block;
-			width: 100%;
-			height: 100%;
-			list-style: none;
-			text-decoration: none;
-			font-family: $fuente1;
-			font-size: 1.6rem;
-			font-weight: bold;
-			color: $white;
+		.donativos__image {
+			width: 30%;
+			height: auto;
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
 		}
 	}
 	&__parrafo2 {
@@ -142,15 +136,183 @@
 	}
 
 }
-
 .donativos::before {
-	content: "";
 	background-image: url('../assets/img/2x/mobile_gray@2x.png');
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	opacity: 0.15;
+}
+
+
+@include tablet {
+	.donativos {
+		&__title {
+			padding: 0 30px;
+			margin-bottom: 30px;
+			text-align: center;
+			h2 {
+				padding: 0;
+				font-size: 6.734rem;
+			}
+		}
+		&__parrafo1 {
+			padding: 0 30px;
+			margin-bottom: 20px;
+			p {
+				font-size: 2.843rem;
+			}
+		}
+		&--wrapper {
+			article {
+				padding: 10px 20px;
+				width: 70%;
+				.donativos__image {
+					width: 150px;
+					height: 150px;
+				}
+				.main__title {
+					font-size: 3.79rem;
+				}
+				.main__parrafo {
+					padding: 0 5px;
+					font-size: 2.1rem;
+				}
+				.button--coffee {
+					width: 220px;
+					height: 30px;
+					margin-top: 15px;
+					a {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						font-size: 2.1rem;
+						color: $dark600;
+					}
+				}
+				.button--patreon {
+					width: 220px;
+					height: 30px;
+					margin-top: 15px;
+					a {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						font-size: 2.1rem;
+					}
+				}
+			}
+			article:nth-of-type(2) {
+				margin: 30px 0;
+			}
+		}
+	
+		&__parrafo2 {
+			margin-top: 15px;
+			padding: 0 20px;	
+			p {
+				font-size: 3.78rem;
+				font-weight: bold;
+				color: $blue300;
+			}
+		}
+		&__parrafo3 {
+			display: none;
+		}
+	}
+	.donativos::before {
+		background-image: url('../assets/img/2x/tablet_gray@2x.png');
+	}
+}
+
+
+@include desktop {
+	.donativos {
+		&__title {
+			padding: 0 42px;
+			margin-bottom: 20px;
+			text-align: center;
+			h2 {
+				padding: 0;
+				font-size: 5.057rem;
+			}
+		}
+		&__parrafo1 {
+			p {
+				font-size: 2.132rem;
+			}
+		}
+		&--wrapper {
+			flex-direction: row;
+			padding: 0 42px;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			article {
+				width: 50%;
+				height: 100%;
+				border-radius: 8px;
+				.donativos__image {
+					width: 120px;
+					height: 120px;
+				}
+				.main__title {
+					padding-bottom: 10px;
+					font-size: 2.843rem;
+				}
+				.main__parrafo {
+					padding: 10px;
+					font-size: 1.8rem;
+				}
+			}
+			article:nth-of-type(2) {
+				margin: 0 0 0 30px; 
+				justify-self: baseline;
+			}
+		}
+	&__parrafo2 {
+		margin-top: 30px;
+		padding: 0 42px;	
+		p {
+			font-size: 2.843rem;
+		}
+	}
+	&__parrafo3 {
+		display: block;
+		p {
+			font-size: 1.8rem;
+		}
+	}
+	}
+	.desktop::before {
+		background-image: url('../assets/img/2x/desktop_gray@2x.png');
+	}
+}
+
+@include large {
+	.donativos {
+		&__title {	
+			margin: 0 auto 20px auto;
+			h2 {
+				font-size: 6.734rem;
+			}
+		}
+		&__parrafo1 {
+			margin-bottom: 40px;
+			p {
+				font-size: 2.843rem;
+			}
+		}
+		&--wrapper {
+			justify-content: space-between;
+			width: 100%;
+			article {
+				width: 45%;
+				.donativos__image {
+					width: 150px;
+					height: 150px;
+				}
+				.main__title {
+					font-size: 3.79rem;
+				}
+			}	
+		}
+	}
 }
