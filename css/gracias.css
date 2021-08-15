@@ -89,6 +89,10 @@ div > p {
   right: 40px;
 }
 
+.button--green:hover {
+  background-color: #00801F;
+}
+
 .arrow-drop-down {
   position: absolute;
   bottom: 10px;
@@ -143,6 +147,9 @@ div > p {
 }
 .breadcrumbs__nav a:last-child::after {
   display: none;
+}
+.breadcrumbs a:hover {
+  color: #5C8EF2;
 }
 
 @media only screen and (min-width: 768px) {
