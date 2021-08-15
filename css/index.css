@@ -540,7 +540,7 @@ header .header.is-active .imagotipo {
     padding-top: 104px;
   }
   .hero__title {
-    max-width: 700px;
+    max-width: 1000px;
     margin-bottom: 20px;
     padding: 0 0 0 42px;
   }
@@ -561,7 +561,7 @@ header .header.is-active .imagotipo {
     font-size: 2.843rem;
   }
   .hero__parrafo--button {
-    max-width: 750px;
+    max-width: 850px;
     padding: 0;
     margin: 0 auto 15px auto;
     background: none;
@@ -585,7 +585,7 @@ header .header.is-active .imagotipo {
     font-size: 2.843rem;
   }
   .hero__parrafo--button {
-    max-width: 850px;
+    max-width: 950px;
   }
   .hero__parrafo--button p {
     font-size: 2.4rem;
@@ -1617,8 +1617,8 @@ header .header.is-active .imagotipo {
     margin-bottom: 20px;
   }
   .contacto__cards .card__info__redes img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-right: 45px;
   }
   .contacto__cards .card__image {
@@ -1725,7 +1725,7 @@ header .header.is-active .imagotipo {
 }
 @media only screen and (min-width: 1024px) {
   .footer {
-    padding: 25px 42px;
+    padding: 15px 42px;
   }
   .footer__main figure {
     width: 100px;
@@ -1741,7 +1741,7 @@ header .header.is-active .imagotipo {
     font-size: 1.6rem;
   }
   .footer__secondary .footer__fecha {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .footer__secondary .footer__links li {
     padding-bottom: 10px;
@@ -1754,12 +1754,6 @@ header .header.is-active .imagotipo {
   .footer__main figure {
     width: 150px;
     margin-right: 35px;
-  }
-  .footer__main__container h4 {
-    font-size: 2.843rem;
-  }
-  .footer__main__container p {
-    font-size: 2.1rem;
   }
   .footer__secondary .footer__fecha {
     font-size: 1.8rem;

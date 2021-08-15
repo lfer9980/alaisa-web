@@ -153,6 +153,9 @@ div > p {
 		right: 40px;
 	}
 }
+.button--green:hover {
+	background-color: $green600;
+}
 
 .arrow-drop-down {
 	position: absolute;
@@ -207,6 +210,9 @@ div > p {
 		a:last-child::after {
 			display: none;
 		}
+	}
+	a:hover {
+		color: $blue400;
 	}
 }
 
