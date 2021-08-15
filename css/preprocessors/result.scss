@@ -1,10 +1,14 @@
 @import 'components/globales';
 @import 'components/headers';
 @import 'components/footers';
+.breadcrumbs {
+	a {
+		color: $blue500;
+	}
+}
 .result {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
 	justify-content: center;
 	position: relative;
 	height: auto;
@@ -25,7 +29,7 @@
 			h2 {
 				font-family: $fuente1;
 				font-size: 2.8rem;
-				color: $blue500;
+				color: $dark600;
 			}
 		}
 		&__result {
@@ -66,4 +70,81 @@
 	bottom: 0;
 	left: 0;
 	opacity: 0.15;
+}
+
+@include tablet {
+	.result {
+		&__main {
+			.alaisa__isotipo { 
+				width: 200px;
+				height: 200px;
+			}
+			&__title {
+				margin: 40px 0 20px 0;
+				padding: 0 30px;
+				h2 {
+					font-size: 5.052rem;
+				}
+			}
+			&__result {
+					margin: 0 0 40px 0;
+					padding: 0 30px;
+				span {
+					font-size: 8.976rem;
+				}
+			}
+			&__parrafo {
+					margin-bottom: 100px;
+					padding: 0 30px;
+				p {
+					font-size: 2.843rem;
+				}
+			}
+			&__back {
+					padding: 0 30px;
+				a {
+					font-size: 2.1rem;
+				}
+			}
+		}
+	}
+	.result::before {
+		background-image: url('../assets/img/2x/tablet_gray@2x.png');
+		opacity: 0.30;
+	}
+}
+
+@include desktop {
+	.result {
+		&__main {
+			.alaisa__isotipo { 
+				width: 100px;
+				height: 100px;
+			}
+			&__title {
+				padding: 0 42px;
+				h2 {
+					font-size: 3.789rem;
+				}
+			}
+			&__result {
+					margin: 0 0 20px 0;
+					padding: 0 42px;
+				span {
+					font-size: 8.976rem;
+				}
+			}
+			&__parrafo {
+					margin-bottom: 40px;
+					padding: 0 42px;
+			}
+			&__back {
+					padding: 0 42px;
+			}
+		}
+	}
+	.result::before {
+		background-image: url('../assets/img/2x/desktop_gray@2x.png');
+		opacity: 0.50;
+	}
 }
