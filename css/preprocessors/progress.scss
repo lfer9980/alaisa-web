@@ -2,7 +2,6 @@
 .progress {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
 	justify-content: center;
 	position: relative;
 	height: 100vh;
@@ -23,7 +22,7 @@
 			font-family: $fuente1;
 			font-size: 2.1rem;
 			font-weight: bold;
-			color: $blue400;
+			color: $dark600;
 		}
 	}
 	&__bar {
@@ -55,4 +54,54 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+
+@include tablet {
+	.progress {
+		.alaisa__isotipo {
+			width: 264px;
+			height: 264px;
+		}
+		&__title {
+			margin-top: 35px;
+			h4 {
+				font-size: 3.79rem;
+			}
+		}
+		&__bar {
+			margin-top: 35px;
+			progress[value] {
+				width: 466px;
+				height: 40px;
+			}
+		}
+	}
+	.progress::before {
+		background-image: url('../assets/img/2x/tablet_gray@2x.png');
+	}
+}
+
+@include desktop {
+	.progress {
+		.alaisa__isotipo {
+			width: 150px;
+			height: 150px;
+		}
+		&__title {
+			margin-top: 15px;
+			h4 {
+				font-size: 2.1rem;
+			}
+		}
+		&__bar {
+			margin-top: 15px;
+			progress[value] {
+				width: 257px;
+				height: 30px;
+			}
+		}
+	}
+	.progress::before {
+		background-image: url('../assets/img/2x/desktop_gray@2x.png');
+	}
 }
