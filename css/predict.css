@@ -544,6 +544,10 @@ header .header.is-active .imagotipo {
   color: white;
   background-color: #00A327;
 }
+.predict__main .formulario__button:hover {
+  cursor: pointer;
+  background-color: #00801F;
+}
 
 .predict::before {
   content: "";

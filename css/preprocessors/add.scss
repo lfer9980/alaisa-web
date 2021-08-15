@@ -114,6 +114,10 @@
 				color: white;
 				background-color: $green500;
 			}
+			&__button:hover {
+				cursor: pointer;
+				background-color: $green600;
+			}
 		}
 	}
 }
