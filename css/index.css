@@ -1083,6 +1083,10 @@ header .header.is-active .imagotipo {
     padding: 5px 0;
     font-size: 1.6rem;
   }
+
+  .desarrollador::before {
+    background-image: url("../assets/img/2x/quirofano-desktop@2x-80.jpg");
+  }
 }
 @media only screen and (min-width: 1280px) {
   .desarrollador__title {
@@ -1501,6 +1505,8 @@ header .header.is-active .imagotipo {
   width: 30px;
   height: 30px;
   margin-right: 25px;
+  border-radius: 14px;
+  background-color: #FFF;
 }
 .contacto__cards .card__image {
   display: flex;
