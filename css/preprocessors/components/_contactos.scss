@@ -56,6 +56,9 @@
 						text-decoration: none;
 						color: $blue300;
 					}
+					a:hover {
+						color: $blue400;
+					}
 				}
 				&__redes {
 					display: flex;
