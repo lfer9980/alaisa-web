@@ -70,7 +70,13 @@ div > p {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
   color: #FFF;
-  background-color: #00A327;
+  background-color: #00BB2D;
+}
+@media (prefers-color-scheme: dark) {
+  .button--green {
+    box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+    background-color: #00A327;
+  }
 }
 .button--green a {
   display: flex;
@@ -90,7 +96,12 @@ div > p {
 }
 
 .button--green:hover {
-  background-color: #00801F;
+  background-color: #5EBB74;
+}
+@media (prefers-color-scheme: dark) {
+  .button--green:hover {
+    background-color: #00801F;
+  }
 }
 
 .arrow-drop-down {
@@ -116,6 +127,11 @@ div > p {
   padding: 5px 0;
   font-size: 1.8rem;
   background-color: #03658C;
+}
+@media (prefers-color-scheme: dark) {
+  .fecha__main {
+    background-color: #545454;
+  }
 }
 .fecha__main span {
   color: #FFF;
@@ -226,14 +242,24 @@ div > p {
   height: 100vh;
   text-align: center;
 }
+@media (prefers-color-scheme: dark) {
+  .progress {
+    background-color: #0D0D0D;
+  }
+}
 .progress .alaisa__isotipo {
   position: relative;
   width: 150px;
   height: 150px;
   margin: 0 auto;
+  background-image: url("../assets/icons/isotipo_alaisa.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.progress .alaisa__isotipo img {
-  width: 100%;
+@media (prefers-color-scheme: dark) {
+  .progress .alaisa__isotipo {
+    background-image: url("../assets/icons/isotipo_alaisa--white.svg");
+  }
 }
 .progress__title {
   position: relative;
@@ -244,6 +270,11 @@ div > p {
   font-size: 2.1rem;
   font-weight: bold;
   color: #0D0D0D;
+}
+@media (prefers-color-scheme: dark) {
+  .progress__title h4 {
+    color: #DFE7F2;
+  }
 }
 .progress__bar {
   position: relative;
@@ -258,11 +289,24 @@ div > p {
   overflow: hidden;
   appearance: none;
 }
+@media (prefers-color-scheme: dark) {
+  .progress__bar progress[value] {
+    box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+    background-color: rgba(20, 20, 20, 0.5);
+  }
+}
 .progress__bar progress[value]::-webkit-progress-bar {
   background-color: #FFF;
 }
 .progress__bar progress[value]::-webkit-progress-value {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   background-color: #00BB2D;
+}
+@media (prefers-color-scheme: dark) {
+  .progress__bar progress[value]::-webkit-progress-value {
+    background-color: #00A327;
+  }
 }
 
 .progress::before {
