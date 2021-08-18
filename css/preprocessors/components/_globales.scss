@@ -135,7 +135,11 @@ div > p {
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 	color: $white;
-	background-color: $green500;
+	background-color: $green400;
+	@include dark-mode {
+		box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+		background-color: $green500;
+	}
 	a {
 		display: flex;
 		align-items: center;
@@ -154,7 +158,10 @@ div > p {
 	}
 }
 .button--green:hover {
-	background-color: $green600;
+	background-color: $green200;
+	@include dark-mode {
+		background-color: $green600;
+	}
 }
 
 .arrow-drop-down {
@@ -179,6 +186,9 @@ div > p {
 		padding: 5px 0;
 		font-size: 1.8rem;
 		background-color: $blue500;
+		@include dark-mode {
+			background-color: $gray600;
+		}
 		span {
 			color: $white;
 		}

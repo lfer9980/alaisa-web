@@ -16,7 +16,7 @@
 		margin-bottom: 15px;
 		p {
 			font-family: $fuente1;
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 			font-weight: 600;
 		}
 	}
@@ -30,8 +30,12 @@
 			border-radius: 8px;
 			border-collapse: separate;
 			border-spacing: 0 10px;
-			background-color: $blue500;
 			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+			background-color: $blue500;
+			@include dark-mode {
+				box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+				background-color: $gray900;
+			}
 			thead tr th {
 				font-family: $fuente1;
 			}
@@ -41,7 +45,7 @@
 		}
 		.wrapper--side-info {
 			text-align: left;
-			margin-top: 5px;
+			margin-block-start: 5px;
 			p {
 				font-weight: 100;
 			}
@@ -63,7 +67,7 @@
 		}
 		&__subtitle {
 			p {
-				font-size: 2.843rem;
+				font-size: 2.1rem;
 				font-weight: 500;
 			}
 		}
@@ -78,8 +82,8 @@
 				}
 			}
 			.wrapper--side-info {
-				margin-top: 5px;
 				p {
+					margin-block-start: 5px;
 					font-size: 1.8rem;
 				}
 			}
@@ -120,6 +124,7 @@
 			}
 			.wrapper--side-info {
 				writing-mode: vertical-lr;
+				margin-block-end: 10px;
 			}
 		}
 		.fecha {
@@ -165,9 +170,6 @@
 				thead tr th {
 					font-size: 2.843rem;
 				}
-			}
-			.wrapper--side-info {
-				writing-mode: vertical-lr;
 			}
 		}
 		.fecha {

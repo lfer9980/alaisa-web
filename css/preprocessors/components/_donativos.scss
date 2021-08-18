@@ -35,6 +35,10 @@
 			padding: 10px 20px;
 			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 			background-color: $blue500;
+			@include dark-mode {
+				box-shadow: 0 4px 4px rgba(175, 175, 175, 0.3);
+				background-color: $gray900;
+			}
 			.donativos__main {
 				display: flex;
 				flex-direction: column;
@@ -69,7 +73,7 @@
 					font-family: $fuente1;
 					font-size: 1.6rem;
 					font-weight: bold;
-					color: $white;
+					color: $dark600;
 				}
 			}
 			.button--coffee:hover {
@@ -184,7 +188,6 @@
 						justify-content: center;
 						align-items: center;
 						font-size: 2.1rem;
-						color: $dark600;
 					}
 				}
 				.button--patreon {
@@ -208,9 +211,8 @@
 			margin-top: 15px;
 			padding: 0 20px;	
 			p {
-				font-size: 3.78rem;
+				font-size: 2.843rem;
 				font-weight: bold;
-				color: $blue300;
 			}
 		}
 		&__parrafo3 {

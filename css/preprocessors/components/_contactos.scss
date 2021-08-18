@@ -1,6 +1,6 @@
 .contacto {
 	height: auto;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 	&__title {
 		position: relative;
 		padding: 0 20px;
@@ -28,6 +28,9 @@
 			border-bottom-right-radius: 8px;
 			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 			background-color: $blue500;
+			@include dark-mode {
+				background-color: $gray900;
+			}
 			&__info {
 				display: block;
 				width: 65%;
@@ -54,10 +57,10 @@
 						font-size: 1.1rem;
 						font-weight: bold;
 						text-decoration: none;
-						color: $blue300;
+						color: $blue400;
 					}
 					a:hover {
-						color: $blue400;
+						color: $blue200;
 					}
 				}
 				&__redes {
@@ -66,8 +69,6 @@
 						width: 30px;
 						height: 30px;
 						margin-right: 25px;
-						border-radius: 14px;
-						background-color: $white;
 					}
 				}
 			}

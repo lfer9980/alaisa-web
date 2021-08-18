@@ -13,6 +13,9 @@ header {
 		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 		font-family: $fuente1;
 		background-color: $blue600;
+		@include dark-mode {
+			background-color: $dark600;
+		}
 		&__logo {
 			display: flex;
 			align-items: center;
@@ -49,7 +52,10 @@ header {
 			padding: 5px;
 			border-radius: 50%;
 			color:$white;
-			background-color: $blue500;
+				background-color: $blue500;
+			@include dark-mode {
+				background-color: $dark500;
+			}
 		}
 	}
 	.header {
@@ -60,6 +66,9 @@ header {
 		width: 100%;
 		font-family: $fuente1;
 		background-color: $blue500;
+		@include dark-mode {
+			background-color: $dark500;
+		}
 		opacity: 0;
 		transition: .3s;
 		&__nav--mobile {
@@ -71,7 +80,7 @@ header {
 				font-size: 2.1rem;
 				font-weight: bold;
 				list-style: none;
-				border-left: 2px  solid rgba($color: $white, $alpha: 0.6);
+				border-left: 2px  solid $white;
 				li {
 					margin: 0 0 25px 20px;
 				}
@@ -115,6 +124,9 @@ header {
 			font-size: 30px;
 			color:$white;
 			background-color: $blue500;
+			@include dark-mode {
+				background-color: $dark500;
+			}
 		}
 		.imagotipo {
 			display: none;
@@ -172,7 +184,6 @@ header {
 				.header__menu--mobile {
 					margin: 0 0 50px 50px;
 					font-size: 3.79rem;
-					border-left: 4px  solid rgba($color: $white, $alpha: 0.6);
 					li {
 						margin: 0 0 40px 50px;
 					}

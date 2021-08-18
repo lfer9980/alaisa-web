@@ -10,7 +10,7 @@
 			line-height: 120%;
 		}
 		span {
-			color: $blue300;
+			color: $blue400;
 		}
 	}
 	&__main {
@@ -23,9 +23,13 @@
 				min-width: 296px;
 				max-width: 78vw;
 				padding: 5px 20px;
-				font-size: 1.8rem;
+				font-size: 1.6rem;
 				box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 				background-color: rgba(3, 101, 140, 0.5);
+				@include dark-mode {
+					box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+					background-color: rgba(20, 20, 20, 0.5);
+				}
 			}
 		}	
 		.one p {

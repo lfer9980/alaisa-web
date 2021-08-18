@@ -20,6 +20,9 @@
 		margin-bottom: 20px;
 		place-items: center;
 		background-color: $blue500;
+		@include dark-mode {
+			background-color: $gray900;
+		}
 		h2 {
 			width: 100%;
 			font-family: $fuente1;
@@ -34,6 +37,9 @@
 			text-align: center;
 			font-size: 2.1rem;
 			padding: 0 55px;
+			@include dark-mode {
+				color: $blue300;
+			}
 		}
 	}
 	&__parrafo--button {
@@ -43,6 +49,10 @@
 		border-radius: 10px;
 		background: rgb(3,101,140);
 		background: linear-gradient(180deg, rgba(3,101,140,0.3) 0%, rgba(3,101,140,0) 100%);
+		@include dark-mode {
+			background: rgb(175,175,175);
+			background: linear-gradient(180deg, rgba(175,175,175,0.3) 0%, rgba(175,175,175,0) 100%);
+		}
 		p {
 			font-size: 1.6rem;
 			text-align: center;
@@ -53,10 +63,6 @@
 .hero::before {
 	background-image: url('../assets/img/2x/mobile_gray@2x.png');
 	opacity: 0.15;
-}
-
-.button--green:hover {
-	background-color: $green600;
 }
 
 @include tablet {
