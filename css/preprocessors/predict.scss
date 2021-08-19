@@ -3,6 +3,9 @@
 .breadcrumbs {
 	a {
 		color: $blue500;
+		@include dark-mode {
+			color: $dark300;
+		}
 	}
 }
 .predict {
@@ -11,6 +14,9 @@
 	justify-content: center;
 	position: relative;
 	height: auto;
+	@include dark-mode {
+		background-color: $dark600;
+	}
 	&__main {
 		position: relative;
 		&__title {
@@ -21,6 +27,9 @@
 				font-family: $fuente1;
 				font-size: 2.1rem;
 				color: $dark600;
+				@include dark-mode {
+					color: $white;
+				}
 			}
 		}
 		.formulario {
@@ -28,6 +37,9 @@
 			flex-direction: column;
 			padding: 0 20px;
 			color: $dark600;
+			@include dark-mode {
+				color: $white;
+			}
 			&__title {
 				font-family: $fuente1;
 				font-size: 2.1rem;
@@ -52,6 +64,11 @@
 				border-radius: 4px;
 				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 				color: $dark600;
+				@include dark-mode {
+					border: 1px solid $gray600;
+					color: $white;
+					background-color: $gray900;
+				}
 			}
 			.input__select:focus {
 				box-shadow: 0 4px 4px rgba(3, 101, 140, 0.30);
@@ -60,6 +77,9 @@
 				font-weight: 200;
 				font-style: italic;
 				color: $blue500;
+				@include dark-mode {
+					color: $blue400;
+				}
 			}
 			.input-select__place {
 				display: block;
@@ -71,6 +91,11 @@
 				border-radius: 4px;
 				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 				color: $blue500;
+				@include dark-mode {
+					color: $blue400;
+					border: 1px solid $gray600;
+					background-color: $gray900;
+				}
 			}
 			.content-input {
 				display: flex;
@@ -82,7 +107,7 @@
 				}
 				span {
 					font-family: $fuente1;
-					font-size: 1.2rem;
+					font-size: 1.6rem;
 					font-weight: 500;
 					a {
 						color: $blue300;
@@ -99,12 +124,20 @@
 				font-family: $fuente1;
 				font-size: 2.1rem;
 				font-weight: bold;
+				box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 				color: white;
-				background-color: $green500;
+				background-color: $green400;
+				@include dark-mode {
+					box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+					background-color: $green500;
+				}
 			}
 			&__button:hover {
 				cursor: pointer;
-				background-color: $green600;
+				background-color: $green200;
+				@include dark-mode {
+					background-color: $green600;
+				}
 			}
 		}
 	}
@@ -130,6 +163,9 @@
 			border-radius: 8px;
 			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 			background-color: rgba($color: #CEE8F2, $alpha: 0.5);
+			@include dark-mode {
+				background-color: rgba($color: #141414, $alpha: 0.8);
+			}
 			&__title {
 				padding:0;
 				margin: 0 0 15px 0;
@@ -185,6 +221,9 @@
 			width: 50%;
 			padding: 20px 30px;
 			background-color: rgba($color: #CEE8F2, $alpha: 0.8);
+			@include dark-mode {
+				background-color: rgba($color: #141414, $alpha: 0.9);
+			}
 			&__title {
 				margin-bottom: 20px;
 				text-align: center;
