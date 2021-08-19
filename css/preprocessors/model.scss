@@ -20,8 +20,11 @@ body {
 			margin: 0 auto 15px auto;
 			width: 90px;
 			height: 90px;
-			img {
-				width: 100%;
+			background-image: url("../assets/icons/isotipo_alaisa.svg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			@include dark-mode {
+				background-image: url("../assets/icons/isotipo_alaisa--white.svg");
 			}
 		}
 		&__title {

@@ -500,9 +500,14 @@ body {
   margin: 0 auto 15px auto;
   width: 90px;
   height: 90px;
+  background-image: url("../assets/icons/isotipo_alaisa.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.model__main .alaisa__isotipo img {
-  width: 100%;
+@media (prefers-color-scheme: dark) {
+  .model__main .alaisa__isotipo {
+    background-image: url("../assets/icons/isotipo_alaisa--white.svg");
+  }
 }
 .model__main__title {
   margin-bottom: 15px;
