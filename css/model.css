@@ -70,7 +70,13 @@ div > p {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
   color: #FFF;
-  background-color: #00A327;
+  background-color: #00BB2D;
+}
+@media (prefers-color-scheme: dark) {
+  .button--green {
+    box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+    background-color: #00A327;
+  }
 }
 .button--green a {
   display: flex;
@@ -90,7 +96,12 @@ div > p {
 }
 
 .button--green:hover {
-  background-color: #00801F;
+  background-color: #5EBB74;
+}
+@media (prefers-color-scheme: dark) {
+  .button--green:hover {
+    background-color: #00801F;
+  }
 }
 
 .arrow-drop-down {
@@ -116,6 +127,11 @@ div > p {
   padding: 5px 0;
   font-size: 1.8rem;
   background-color: #03658C;
+}
+@media (prefers-color-scheme: dark) {
+  .fecha__main {
+    background-color: #545454;
+  }
 }
 .fecha__main span {
   color: #FFF;
@@ -235,6 +251,11 @@ header .header--up {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #011526;
 }
+@media (prefers-color-scheme: dark) {
+  header .header--up {
+    background-color: #0D0D0D;
+  }
+}
 header .header--up__logo {
   display: flex;
   align-items: center;
@@ -273,6 +294,11 @@ header .header--up .burger-menu {
   color: #FFF;
   background-color: #03658C;
 }
+@media (prefers-color-scheme: dark) {
+  header .header--up .burger-menu {
+    background-color: #012E40;
+  }
+}
 header .header {
   display: hidden;
   align-items: center;
@@ -284,6 +310,11 @@ header .header {
   opacity: 0;
   transition: 0.3s;
 }
+@media (prefers-color-scheme: dark) {
+  header .header {
+    background-color: #012E40;
+  }
+}
 header .header__nav--mobile {
   display: none;
   flex-direction: column;
@@ -294,7 +325,7 @@ header .header__nav--mobile .header__menu--mobile {
   font-size: 2.1rem;
   font-weight: bold;
   list-style: none;
-  border-left: 2px solid rgba(255, 255, 255, 0.6);
+  border-left: 2px solid #FFF;
 }
 header .header__nav--mobile .header__menu--mobile li {
   margin: 0 0 25px 20px;
@@ -337,6 +368,11 @@ header .header .burger-menu {
   font-size: 30px;
   color: #FFF;
   background-color: #03658C;
+}
+@media (prefers-color-scheme: dark) {
+  header .header .burger-menu {
+    background-color: #012E40;
+  }
 }
 header .header .imagotipo {
   display: none;
@@ -390,7 +426,6 @@ header .header.is-active .imagotipo {
   header .header__nav--mobile .header__menu--mobile {
     margin: 0 0 50px 50px;
     font-size: 3.79rem;
-    border-left: 4px solid rgba(255, 255, 255, 0.6);
   }
   header .header__nav--mobile .header__menu--mobile li {
     margin: 0 0 40px 50px;
@@ -442,6 +477,11 @@ header .header.is-active .imagotipo {
 }
 body {
   background-color: #011526;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0D0D0D;
+  }
 }
 
 .model {
@@ -498,6 +538,12 @@ body {
   border-bottom-left-radius: 8px;
   box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
   background-color: rgba(3, 101, 140, 0.75);
+}
+@media (prefers-color-scheme: dark) {
+  .model__main__parrafo1 p {
+    box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+    background-color: rgba(14, 14, 14, 0.75);
+  }
 }
 .model__main__parrafo1 p span {
   font-weight: bold;
@@ -562,6 +608,11 @@ body {
 .light {
   background-color: #03658C;
   opacity: 75%;
+}
+@media (prefers-color-scheme: dark) {
+  .light {
+    background-color: #012E40;
+  }
 }
 
 .model::before {
@@ -628,7 +679,6 @@ body {
   }
   .model__main__priv a {
     font-size: 1.8rem;
-    color: #8DAEF2;
   }
 
   .back-button {
@@ -663,9 +713,18 @@ body {
     border-radius: 8px;
     background: rgba(1, 21, 38, 0.8);
   }
+}
+@media only screen and (min-width: 1024px) and (prefers-color-scheme: dark) {
+  .model__main {
+    background: rgba(20, 20, 20, 0.8);
+  }
+}
+@media only screen and (min-width: 1024px) {
   .model__main .alaisa__isotipo {
     display: none;
   }
+}
+@media only screen and (min-width: 1024px) {
   .model__main__title {
     padding: 0 30px;
     margin-bottom: 5px;
@@ -673,6 +732,8 @@ body {
   .model__main__title h2 {
     font-size: 6.734rem;
   }
+}
+@media only screen and (min-width: 1024px) {
   .model__main__subtitle {
     padding: 0;
     margin-bottom: 20px;
@@ -680,9 +741,19 @@ body {
   .model__main__subtitle p {
     font-size: 2.13rem;
   }
+}
+@media only screen and (min-width: 1024px) {
   .model__main__parrafo1 p {
     background-color: rgba(3, 101, 140, 0.4);
   }
+}
+@media only screen and (min-width: 1024px) and (prefers-color-scheme: dark) {
+  .model__main__parrafo1 p {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
   .model__main__parrafo2 {
     padding: 0;
     margin-bottom: 25px;
@@ -690,6 +761,8 @@ body {
   .model__main__parrafo2 h4 {
     font-size: 2.843rem;
   }
+}
+@media only screen and (min-width: 1024px) {
   .model__main form {
     padding: 0;
     margin-bottom: 20px;
@@ -700,17 +773,21 @@ body {
   .model__main form .content-input span {
     font-size: 1.6rem;
   }
+}
+@media only screen and (min-width: 1024px) {
   .model__main__priv {
     margin: 0;
   }
   .model__main__priv a {
     font-size: 1.8rem;
   }
-
+}
+@media only screen and (min-width: 1024px) {
   .back-button {
     display: none;
   }
-
+}
+@media only screen and (min-width: 1024px) {
   .model::before {
     background-image: url("../assets/img/2x/esteto-desktop@2x-80.jpg");
     opacity: 1;
