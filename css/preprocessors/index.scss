@@ -1,6 +1,9 @@
 @import 'components/globales';
 body {
 	background-color: $blue600;
+	@include dark-mode{
+		background-color: $dark600;
+	}
 }
 @import 'components/headers';
 @import 'components/heros';

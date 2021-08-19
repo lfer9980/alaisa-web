@@ -2,6 +2,9 @@
 @import 'components/headers';
 body {
 	background-color: $blue600;
+	@include dark-mode {
+		background-color: $dark600;
+	}
 }
 .training {
 	display: flex;
@@ -18,8 +21,11 @@ body {
 			margin: 0 auto 15px auto;
 			width: 90px;
 			height: 90px;
-			img {
-				width: 100%;
+			background-image: url("../assets/icons/isotipo_alaisa.svg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			@include dark-mode {
+				background-image: url("../assets/icons/isotipo_alaisa--white.svg");
 			}
 		}
 		&__title {
@@ -55,6 +61,10 @@ body {
 				border-bottom-right-radius: 8px;
 				box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 				background-color: rgba(3, 101, 140, 0.75);
+				@include dark-mode {
+					box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+					background-color: rgba(14, 14, 14, 0.75);
+				}
 				span {
 					font-weight: bold;
 				}
@@ -119,6 +129,9 @@ body {
 }
 .light {
 	background-color: $blue500;
+	@include dark-mode {
+		background-color: $dark500;
+	}
 	opacity: 75%;
 }
 .training::before {
@@ -225,6 +238,9 @@ body {
 			padding: 20px;
 			border-radius: 8px;
 			background: rgba($color: #011526, $alpha: 0.80);
+			@include dark-mode {
+				background: rgba($color: #141414, $alpha: 0.80);
+			}
 			.alaisa__isotipo { 
 				display: none;
 			}
@@ -245,7 +261,11 @@ body {
 			&__parrafo1 {
 				p {
 					background-color: rgba(3, 101, 140, 0.4);
-				}
+				@include dark-mode {
+					background-color: transparent;
+					box-shadow: none;
+					}
+				}		
 			}
 			&__parrafo2 {
 				padding: 0;

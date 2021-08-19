@@ -6,6 +6,13 @@
 		color: $blue500;
 	}
 }
+@include dark-mode {
+	.breadcrumbs {
+		a {
+			color: $dark300;
+		}
+	}
+}
 .result {
 	display: flex;
 	flex-direction: column;
@@ -13,16 +20,22 @@
 	position: relative;
 	height: auto;
 	text-align: center;
+	@include dark-mode {
+		background-color: $dark600;
+	}
 	&__main {
 		position: relative;
 		.alaisa__isotipo { 
 			margin: 0 auto;
 			width: 90px;
 			height: 90px;
-			img {
-				width: 100%;
+			background-image: url("../assets/icons/isotipo_alaisa.svg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			@include dark-mode {
+				background-image: url("../assets/icons/isotipo_alaisa--white.svg");
 			}
-		}
+		}	
 		&__title {
 			margin: 15px 0;
 			padding: 0 20px;
@@ -30,6 +43,9 @@
 				font-family: $fuente1;
 				font-size: 2.8rem;
 				color: $dark600;
+				@include dark-mode {
+					color: $blue400;
+				}
 			}
 		}
 		&__result {
@@ -40,6 +56,9 @@
 				font-size: 5.52rem;
 				font-weight: bold;
 				color: $blue500;
+				@include dark-mode {
+					color: $white;
+				}
 			}
 		}
 		&__parrafo {
@@ -47,6 +66,9 @@
 				padding: 0 20px;
 			p {
 				font-size: 2.1rem;
+				@include dark-mode {
+					color: $white;
+				}
 			}
 		}
 		&__back {

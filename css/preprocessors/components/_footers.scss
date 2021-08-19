@@ -4,6 +4,9 @@
 	padding: 10px 20px;
 	color: $white;
 	background-color: $blue600;
+	@include dark-mode {
+		background-color: $gray900;
+	}
 	&__main {
 		display: flex;
 		flex-wrap: nowrap;

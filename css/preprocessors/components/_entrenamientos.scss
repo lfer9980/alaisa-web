@@ -14,7 +14,7 @@
 			margin-bottom: 20px;
 			padding: 0 60px;
 			p {
-				font-size: 1.8rem;
+				font-size: 1.6rem;
 				font-weight: bold;
 			}
 		}
@@ -30,7 +30,7 @@
 			padding: 0 20px;
 			p {
 				font-family: $fuente1;
-				font-size: 2.1rem;
+				font-size: 1.8rem;
 				font-weight: bold;
 			}
 		}
@@ -110,6 +110,10 @@
 			border-left: 1px solid $white;
 			background: rgb(1,46,64);
 			background: linear-gradient(90deg, rgba(1,46,64,1) 0%, rgba(1,21,38,1) 100%);
+			@include dark-mode {
+				background: rgb(20,20,20);
+				background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(20,20,20,1) 100%);
+			}
 			h2 {
 				font-size: 5.017rem;
 			}
@@ -167,8 +171,6 @@
 			padding: 0;
 			margin-right: 42px;
 			border-left: 1px solid $white;
-			background: rgb(1,46,64);
-			background: linear-gradient(90deg, rgba(1,46,64,1) 0%, rgba(1,21,38,1) 100%);
 			h2 {
 				font-size: 6.739rem;
 			}

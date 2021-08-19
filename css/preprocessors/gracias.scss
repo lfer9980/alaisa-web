@@ -4,6 +4,9 @@
 .breadcrumbs {
 	a {
 		color: $blue500;
+		@include dark-mode {
+			color: $blue300;
+		}
 	}
 }
 .gracias {
@@ -13,14 +16,21 @@
 	position: relative;
 	height: auto;
 	text-align: center;
+	@include dark-mode {
+		color: $white;
+		background-color: $dark600;
+	}
 	&__main {
 		position: relative;
 		.alaisa__isotipo { 
 			margin: 0 auto;
 			width: 90px;
 			height: 90px;
-			img {
-				width: 100%;
+			background-image: url("../assets/icons/isotipo_alaisa.svg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			@include dark-mode {
+				background-image: url("../assets/icons/isotipo_alaisa--white.svg");
 			}
 		}
 		&__title {
@@ -30,6 +40,9 @@
 				font-family: $fuente1;
 				font-size: 5.1rem;
 				color: $blue500;
+				@include dark-mode {
+					color: $blue400;
+				}
 			}
 		}
 		&__parrafo {
