@@ -157,6 +157,8 @@ header {
 @include tablet {
 	header {
 		.burger-menu {
+			right: 55px;
+			top: 55px;
 			font-size: 37.5px;
 			padding: 6.25px;
 		}
@@ -167,7 +169,6 @@ header {
 			&__logo {
 				width: 243px;
 			}
-
 		}
 		
 		.header {
@@ -189,12 +190,6 @@ header {
 					margin-bottom: 10px;
 				}
 			}
-			.burger-menu {
-				right: 55px;
-				top: 55px;
-				padding: 6.25px;
-				font-size: 37.5px;
-			}
 			.imagotipo {
 				margin-bottom: 0px;
 				img {
@@ -208,6 +203,9 @@ header {
 
 @include desktop {
 	header {
+		.burger-menu {
+			display: none;
+		}
 		.header--up {
 			top: 0;
 			height: 75px;

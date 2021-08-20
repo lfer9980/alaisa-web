@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="icono Alaisa" href="assets/icons/isotipo_alaisa--title.svg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ALAISA | homepage</title>
   </head>
   <body> <i class="material-icons button-theme">dark_mode</i>
@@ -14,25 +14,25 @@
       <div class="header--up"><a href="index.html">
           <figure class="header--up__logo"><img src="assets/icons/logo_tipografico_alaisa.svg" alt="logo principal alaisa"></figure></a>
         <nav class="header--up__nav--desktop">
-          <ul class="header__menu--desktop">
-            <li><a href="index.html#hero">Inicio </a></li>
+          <ul class="header__menu--desktop" id="myMenu">
+            <li data-menuanchor="1"><a href="#1">Inicio </a></li>
             <li><a href="model.html">Modelo</a></li>
             <li><a href="entrenamiento.html">Entrenamiento</a></li>
-            <li><a href="index.html#metricas">Rendimiento</a></li>
-            <li><a href="index.html#donativos">Donativos</a></li>
-            <li><a href="index.html#contacto">Contacto 	</a></li>
+            <li data-menuanchor="4"><a href="#4">Rendimiento</a></li>
+            <li data-menuanchor="5"><a href="#5">Donativos</a></li>
+            <li data-menuanchor="6"><a href="#6">Contacto 	</a></li>
           </ul>
         </nav>
       </div>
       <div class="header">
-        <nav class="header__nav--mobile">
-          <ul class="header__menu--mobile">
-            <li><a class="nav-item" href="index.html#hero">Inicio </a></li>
+        <nav class="header__nav--mobile"> 
+          <ul class="header__menu--mobile" id="myMenu">
+            <li data-menuanchor="1"><a class="nav-item" href="#1">Inicio </a></li>
             <li><a class="nav-item" href="model.html">Modelo Alaisa</a></li>
             <li><a class="nav-item" href="entrenamiento.html">Entrenamiento</a></li>
-            <li><a class="nav-item" href="index.html#metricas">Estadisticas de Rendimiento</a></li>
-            <li><a class="nav-item" href="index.html#donativos">Donativos</a></li>
-            <li><a class="nav-item" href="index.html#contacto">Contacto desarrolladores</a></li>
+            <li data-menuanchor="4"><a class="nav-item" href="#4">Estadisticas de Rendimiento</a></li>
+            <li data-menuanchor="5"><a class="nav-item" href="#5">Donativos</a></li>
+            <li data-menuanchor="6"><a class="nav-item" href="#6">Contacto desarrolladores</a></li>
           </ul>
           <ul class="header__menu--secondary">
             <li><a class="nav-item" href="privacidad.html">Aviso de privacidad</a></li>
@@ -42,8 +42,8 @@
         <div class="imagotipo"><img src="assets/icons/isotipo_alaisa--white.svg" alt=" imagen virus Alaisa"></div>
       </div>
     </header>
-    <main>
-      <section class="hero wrapper" id="hero">
+    <div id="fullpage">
+      <div class="hero wrapper section" data-anchor="1" id="hero">
         <div class="hero__title"> 
           <h1>Evaluación <br> <span>efectiva</span> del COVID-19 con tecnología en <span>CUU</span>.</h1>
         </div>
@@ -57,8 +57,8 @@
           <p>Me enseñaron a identificar características en los personas con <strong> COVID-19</strong> para saber si los pacientes tienen más posibilidades de darse de alta o de fallecer por esta enfermedad.</p>
         </div>
         <div class="button--green"> <a href="./model.html">Comienza aquí</a><i class="material-icons">arrow_forward</i></div><i class="material-icons arrow-drop-down">arrow_drop_down</i>
-      </section>
-      <section class="modelo wrapper" id="modelo">
+      </div>
+      <div class="modelo wrapper section" id="modelo">
         <div class="modelo__title"> 
           <h2><span>Alaisa</span> puede ayudarte a tomar <span>mejores</span> decisiones para el paciente</h2>
         </div>
@@ -75,8 +75,8 @@
           <div class="button--green"> <a href="./model.html">Entrar al modelo</a><i class="material-icons">arrow_forward</i></div>
         </div><i class="material-icons arrow-drop-down">arrow_drop_down</i>
         <div class="covid-line--light"><i class="icon--covid-gray"></i></div>
-      </section>
-      <section class="entrenamiento wrapper" id="entrenamiento"> 
+      </div>
+      <div class="entrenamiento wrapper section" id="entrenamiento"> 
         <div class="entrenamiento__title"> 
           <h2>Ayuda a <span>Alaisa</span> a mejorar en sus predicciones</h2>
         </div>
@@ -96,8 +96,8 @@
           <div class="button--green"> <a href="./entrenamiento.html">iniciar Entrenamiento</a><i class="material-icons">arrow_forward</i></div>
         </div><i class="material-icons arrow-drop-down">arrow_drop_down</i>
         <div class="covid-line--light"><i class="icon--covid-gray"></i></div>
-      </section>
-      <section class="desarrollador wrapper" id="metricas">
+      </div>
+      <div class="desarrollador wrapper section" id="metricas">
         <div class="desarrollador__title">
           <h2>Un <span>modelo</span> efectivo y <span>preciso.</span></h2>
         </div>
@@ -164,8 +164,8 @@
           <div class="fecha__main"><span>30 de jun 2021</span></div>
         </div><i class="material-icons arrow-drop-down">arrow_drop_down</i>
         <div class="covid-line--light"><i class="icon--covid-gray"></i></div>
-      </section>
-      <section class="donativos wrapper" id="donativos">
+      </div>
+      <div class="donativos wrapper section" id="donativos">
         <div class="donativos__title"> 
           <h2><span>Ay&uacute;danos</span> a crear m&aacute;s cosas <span>incre&iacute;bles</span>...</h2>
         </div>
@@ -197,8 +197,8 @@
           <p>Si no puedes donar no te preocupes, la labor que haces cada d&iacute;a como personal de salud es la que hace la diferencia <br> <b>¡Ustedes son los Héroes!</b></p>
         </div><i class="material-icons arrow-drop-down">arrow_drop_down</i>
         <div class="covid-line--light"><i class="icon--covid-gray"></i></div>
-      </section>
-      <section class="contacto wrapper" id="contacto">
+      </div>
+      <div class="contacto wrapper section fp-auto-height" id="contacto">
         <div class="contacto__title">
           <h2>Conoce a los <span>contribuidores</span> de este proyecto:</h2>
         </div>
@@ -229,27 +229,80 @@
             </div>
             <div class="card__image"><img src="./assets/img/2x/luis-dev.jpg" alt="imagen del desarrollador"></div>
           </article>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__main">
-        <figure><img src="assets/icons/imagotipo_alaisa--white.svg" alt="alaisa logo"></figure>
-        <div class="footer__main__container">
-          <h4>Modelo neuronal Alaisa </h4>
-          <p>Un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2.</p>
+          <article class="card">
+            <div class="card__info"> 
+              <div class="card__info__title">
+                <p> Luis Fernández</p>
+              </div>
+              <div class="card__info__parrafo">
+                <p>Diseñador de la interfaz y Frontend.</p>
+              </div>
+              <div class="card__info__correo"><a href="mailto:luis.fer9980@gmail.com">luis.fer9980@gmail.com</a></div>
+              <div class="card__info__redes"><a href="www.linkedin.com/in/lfer9980"><img src="./assets/icons/linkedin_logo.svg" alt="Linkedin"></a><a href="https://github.com/lfer9980"><img src="./assets/icons/github_logo.svg" alt="github"></a></div>
+            </div>
+            <div class="card__image"><img src="./assets/img/2x/luis-dev.jpg" alt="imagen del desarrollador"></div>
+          </article>
+          <article class="card">
+            <div class="card__info"> 
+              <div class="card__info__title">
+                <p> Luis Fernández</p>
+              </div>
+              <div class="card__info__parrafo">
+                <p>Diseñador de la interfaz y Frontend.</p>
+              </div>
+              <div class="card__info__correo"><a href="mailto:luis.fer9980@gmail.com">luis.fer9980@gmail.com</a></div>
+              <div class="card__info__redes"><a href="www.linkedin.com/in/lfer9980"><img src="./assets/icons/linkedin_logo.svg" alt="Linkedin"></a><a href="https://github.com/lfer9980"><img src="./assets/icons/github_logo.svg" alt="github"></a></div>
+            </div>
+            <div class="card__image"><img src="./assets/img/2x/luis-dev.jpg" alt="imagen del desarrollador"></div>
+          </article>
+          <article class="card">
+            <div class="card__info"> 
+              <div class="card__info__title">
+                <p> Luis Fernández</p>
+              </div>
+              <div class="card__info__parrafo">
+                <p>Diseñador de la interfaz y Frontend.</p>
+              </div>
+              <div class="card__info__correo"><a href="mailto:luis.fer9980@gmail.com">luis.fer9980@gmail.com</a></div>
+              <div class="card__info__redes"><a href="www.linkedin.com/in/lfer9980"><img src="./assets/icons/linkedin_logo.svg" alt="Linkedin"></a><a href="https://github.com/lfer9980"><img src="./assets/icons/github_logo.svg" alt="github"></a></div>
+            </div>
+            <div class="card__image"><img src="./assets/img/2x/luis-dev.jpg" alt="imagen del desarrollador"></div>
+          </article>
+          <article class="card">
+            <div class="card__info"> 
+              <div class="card__info__title">
+                <p> Luis Fernández</p>
+              </div>
+              <div class="card__info__parrafo">
+                <p>Diseñador de la interfaz y Frontend.</p>
+              </div>
+              <div class="card__info__correo"><a href="mailto:luis.fer9980@gmail.com">luis.fer9980@gmail.com</a></div>
+              <div class="card__info__redes"><a href="www.linkedin.com/in/lfer9980"><img src="./assets/icons/linkedin_logo.svg" alt="Linkedin"></a><a href="https://github.com/lfer9980"><img src="./assets/icons/github_logo.svg" alt="github"></a></div>
+            </div>
+            <div class="card__image"><img src="./assets/img/2x/luis-dev.jpg" alt="imagen del desarrollador"></div>
+          </article>
         </div>
       </div>
-      <div class="footer__secondary">
-        <div class="footer__fecha"> 
-          <p>Chihuahua, Chih. 2021</p>
+      <footer class="footer section fp-auto-height">
+        <div class="footer__main">
+          <figure><img src="assets/icons/imagotipo_alaisa--white.svg" alt="alaisa logo"></figure>
+          <div class="footer__main__container">
+            <h4>Modelo neuronal Alaisa </h4>
+            <p>Un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2.</p>
+          </div>
         </div>
-        <ul class="footer__links">
-          <li><a href="acerca.html"> Acerca de</a></li>
-          <li><a href="privacidad.html"> Aviso de Privacidad</a></li>
-        </ul>
-      </div>
-    </footer>
+        <div class="footer__secondary">
+          <div class="footer__fecha"> 
+            <p>Chihuahua, Chih. 2021</p>
+          </div>
+          <ul class="footer__links">
+            <li><a href="acerca.html"> Acerca de</a></li>
+            <li><a href="privacidad.html"> Aviso de Privacidad</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script async src="js/burgerButton.js"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js" integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/initFullPage.js"> </script>
   </body>
-  <script async src="js/burgerButton.js"> </script>
 </html>

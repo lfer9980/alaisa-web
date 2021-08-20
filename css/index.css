@@ -405,6 +405,8 @@ header .header.is-active .imagotipo {
 
 @media only screen and (min-width: 768px) {
   header .burger-menu {
+    right: 55px;
+    top: 55px;
     font-size: 37.5px;
     padding: 6.25px;
   }
@@ -436,12 +438,6 @@ header .header.is-active .imagotipo {
   header .header__menu--secondary li {
     margin-bottom: 10px;
   }
-  header .header .burger-menu {
-    right: 55px;
-    top: 55px;
-    padding: 6.25px;
-    font-size: 37.5px;
-  }
   header .header .imagotipo {
     margin-bottom: 0px;
   }
@@ -451,6 +447,9 @@ header .header.is-active .imagotipo {
   }
 }
 @media only screen and (min-width: 1024px) {
+  header .burger-menu {
+    display: none;
+  }
   header .header--up {
     top: 0;
     height: 75px;

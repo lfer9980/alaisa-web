@@ -5,23 +5,23 @@ header
 			figure.header--up__logo
 				img(src='assets/icons/logo_tipografico_alaisa.svg', alt="logo principal alaisa")
 		nav.header--up__nav--desktop
-			ul.header__menu--desktop
-				li: a(href="index.html#hero") Inicio 
+			ul.header__menu--desktop#myMenu
+				li(data-menuanchor="1"): a(href="#1") Inicio 
 				li: a(href="model.html") Modelo
 				li: a(href="entrenamiento.html") Entrenamiento
-				li: a(href="index.html#metricas") Rendimiento
-				li: a(href="index.html#donativos") Donativos
-				li: a(href="index.html#contacto") Contacto 	
+				li(data-menuanchor="4"): a(href="#4") Rendimiento
+				li(data-menuanchor="5"): a(href="#5") Donativos
+				li(data-menuanchor="6"): a(href="#6") Contacto 	
 
 	.header
-		nav.header__nav--mobile
-			ul.header__menu--mobile
-				li: a.nav-item(href="index.html#hero") Inicio 
+		nav.header__nav--mobile 
+			ul.header__menu--mobile#myMenu
+				li(data-menuanchor="1"): a.nav-item(href="#1") Inicio 
 				li: a.nav-item(href="model.html") Modelo Alaisa
 				li: a.nav-item(href="entrenamiento.html") Entrenamiento
-				li: a.nav-item(href="index.html#metricas") Estadisticas de Rendimiento
-				li: a.nav-item(href="index.html#donativos") Donativos
-				li: a.nav-item(href="index.html#contacto") Contacto desarrolladores
+				li(data-menuanchor="4"): a.nav-item(href="#4") Estadisticas de Rendimiento
+				li(data-menuanchor="5"): a.nav-item(href="#5") Donativos
+				li(data-menuanchor="6"): a.nav-item(href="#6") Contacto desarrolladores
 			ul.header__menu--secondary
 				li: a.nav-item(href="privacidad.html") Aviso de privacidad
 				li: a.nav-item(href="acerca.html") Acerca de 
