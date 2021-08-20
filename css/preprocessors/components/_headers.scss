@@ -1,5 +1,21 @@
 header {
 	width: 100vw;
+	position: relative;
+	.burger-menu {
+		position: fixed;
+		z-index: 3;
+		right: 20px;
+		top: 20px;
+		padding: 5px;
+		border-radius: 50%;
+		font-size: 30px;
+		color: $white;
+		background-color: $blue500;
+		cursor: pointer;
+		@include dark-mode {
+			background-color: $dark500;
+		}
+	}
 	.header--up {
 		display: flex;
 		position: fixed;
@@ -47,16 +63,6 @@ header {
 					}
 				}
 			}
-		.burger-menu {
-			font-size: 30px;
-			padding: 5px;
-			border-radius: 50%;
-			color:$white;
-				background-color: $blue500;
-			@include dark-mode {
-				background-color: $dark500;
-			}
-		}
 	}
 	.header {
 		display: hidden;
@@ -114,20 +120,6 @@ header {
 				}
 			}
 		}
-		.burger-menu {
-			display: none;
-			position: absolute;
-			right: 20px;
-			top: 20px;
-			padding: 5px;
-			border-radius: 50%;
-			font-size: 30px;
-			color:$white;
-			background-color: $blue500;
-			@include dark-mode {
-				background-color: $dark500;
-			}
-		}
 		.imagotipo {
 			display: none;
 			justify-content: flex-end;
@@ -164,6 +156,10 @@ header {
 
 @include tablet {
 	header {
+		.burger-menu {
+			font-size: 37.5px;
+			padding: 6.25px;
+		}
 		.header--up {
 			top: 30px;
 			height: 75px;
@@ -171,10 +167,7 @@ header {
 			&__logo {
 				width: 243px;
 			}
-			.burger-menu {
-				font-size: 37.5px;
-				padding: 6.25px;
-			}
+
 		}
 		
 		.header {

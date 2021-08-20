@@ -245,6 +245,24 @@ body {
 
 header {
   width: 100vw;
+  position: relative;
+}
+header .burger-menu {
+  position: fixed;
+  z-index: 3;
+  right: 20px;
+  top: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #FFF;
+  background-color: #03658C;
+  cursor: pointer;
+}
+@media (prefers-color-scheme: dark) {
+  header .burger-menu {
+    background-color: #012E40;
+  }
 }
 header .header--up {
   display: flex;
@@ -295,18 +313,6 @@ header .header--up__nav--desktop .header__menu--desktop li a {
 }
 header .header--up__nav--desktop .header__menu--desktop li a:hover {
   color: #5C8EF2;
-}
-header .header--up .burger-menu {
-  font-size: 30px;
-  padding: 5px;
-  border-radius: 50%;
-  color: #FFF;
-  background-color: #03658C;
-}
-@media (prefers-color-scheme: dark) {
-  header .header--up .burger-menu {
-    background-color: #012E40;
-  }
 }
 header .header {
   display: hidden;
@@ -367,22 +373,6 @@ header .header__menu--secondary li a {
 header .header__menu--secondary li a:hover {
   color: #FFF;
 }
-header .header .burger-menu {
-  display: none;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  padding: 5px;
-  border-radius: 50%;
-  font-size: 30px;
-  color: #FFF;
-  background-color: #03658C;
-}
-@media (prefers-color-scheme: dark) {
-  header .header .burger-menu {
-    background-color: #012E40;
-  }
-}
 header .header .imagotipo {
   display: none;
   justify-content: flex-end;
@@ -414,6 +404,10 @@ header .header.is-active .imagotipo {
 }
 
 @media only screen and (min-width: 768px) {
+  header .burger-menu {
+    font-size: 37.5px;
+    padding: 6.25px;
+  }
   header .header--up {
     top: 30px;
     height: 75px;
@@ -421,10 +415,6 @@ header .header.is-active .imagotipo {
   }
   header .header--up__logo {
     width: 243px;
-  }
-  header .header--up .burger-menu {
-    font-size: 37.5px;
-    padding: 6.25px;
   }
   header .header {
     padding: 0 30px;
