@@ -65,20 +65,23 @@ header {
 			}
 	}
 	.header {
-		display: hidden;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		z-index: 2;
+		width: 100%;
+		padding: 0 20px;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 20px;
-		width: 100%;
 		font-family: $fuente1;
 		background-color: $blue500;
+		transform: translateX(100vw);
+		transition: transform 500ms ease-in-out;
 		@include dark-mode {
 			background-color: $dark500;
 		}
-		opacity: 0;
-		transition: .3s;
 		&__nav--mobile {
-			display: none;
+			display: flex;
 			flex-direction: column;
 			margin-top: 95px;
 			.header__menu--mobile {
@@ -121,7 +124,7 @@ header {
 			}
 		}
 		.imagotipo {
-			display: none;
+			display: flex;
 			justify-content: flex-end;
 			width: 100%;
 			margin-bottom: 84px;
@@ -133,24 +136,14 @@ header {
 	}
 	
 	.header--up.is-active {
-		display: none;
+		opacity: 0;
+		transition: opacity 200ms;
 	}
 	
 	.header.is-active {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		z-index: 2;
 		opacity: 1;
-		.header__nav--mobile {
-			display: flex;
-		}
-		.burger-menu {
-			display: block;
-		}
-		.imagotipo {
-			display: flex;
-		}
+		transform: translateX(0vw);
+		transition: transform 500ms ease-in-out;
 	}
 }
 
@@ -158,14 +151,14 @@ header {
 	header {
 		.burger-menu {
 			right: 55px;
-			top: 55px;
+			top: 42px;
 			font-size: 37.5px;
 			padding: 6.25px;
 		}
 		.header--up {
 			top: 30px;
 			height: 75px;
-			padding: 0 55px;
+			padding: 0 30px;
 			&__logo {
 				width: 243px;
 			}

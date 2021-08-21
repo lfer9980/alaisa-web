@@ -3,7 +3,7 @@ const header = document.querySelector('.header')
 const burgerButton = document.querySelector('#burger-menu')
 const burgerButtonActive = document.querySelector('.burger-menu')
 const link = document.querySelectorAll('.nav-item')
-const tablet = window.matchMedia('screen and (max-width:767px)')
+const tablet = window.matchMedia('screen and (max-width:768px)')
 
  //recorre todo los items de link, agregamos esta funcion a el prototipe
 NodeList.prototype.addEventListener = function (event_name, callback, useCapture)
