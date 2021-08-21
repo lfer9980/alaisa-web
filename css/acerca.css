@@ -109,6 +109,7 @@ div > p {
   bottom: 10px;
   align-self: center;
   font-size: 24px;
+  color: #00BB2D;
 }
 
 .fecha {
@@ -168,6 +169,23 @@ div > p {
   color: #5C8EF2;
 }
 
+/* Transiciones */
+.trans {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.trans--single {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.animate__animated {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   .wrapper {
     padding-top: 165px;
@@ -306,15 +324,18 @@ header .header--up__nav--desktop .header__menu--desktop li a:hover {
   color: #5C8EF2;
 }
 header .header {
-  display: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0 20px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  width: 100%;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #03658C;
-  opacity: 0;
-  transition: 0.3s;
+  transform: translateX(100vw);
+  transition: transform 500ms ease-in-out;
 }
 @media (prefers-color-scheme: dark) {
   header .header {
@@ -322,7 +343,7 @@ header .header {
   }
 }
 header .header__nav--mobile {
-  display: none;
+  display: flex;
   flex-direction: column;
   margin-top: 95px;
 }
@@ -365,7 +386,7 @@ header .header__menu--secondary li a:hover {
   color: #FFF;
 }
 header .header .imagotipo {
-  display: none;
+  display: flex;
   justify-content: flex-end;
   width: 100%;
   margin-bottom: 84px;
@@ -375,34 +396,26 @@ header .header .imagotipo img {
   height: 98px;
 }
 header .header--up.is-active {
-  display: none;
+  opacity: 0;
+  transition: opacity 200ms;
 }
 header .header.is-active {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 2;
   opacity: 1;
-}
-header .header.is-active .header__nav--mobile {
-  display: flex;
-}
-header .header.is-active .burger-menu {
-  display: block;
-}
-header .header.is-active .imagotipo {
-  display: flex;
+  transform: translateX(0vw);
+  transition: transform 500ms ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
   header .burger-menu {
+    right: 55px;
+    top: 42px;
     font-size: 37.5px;
     padding: 6.25px;
   }
   header .header--up {
     top: 30px;
     height: 75px;
-    padding: 0 55px;
+    padding: 0 30px;
   }
   header .header--up__logo {
     width: 243px;
@@ -427,12 +440,6 @@ header .header.is-active .imagotipo {
   header .header__menu--secondary li {
     margin-bottom: 10px;
   }
-  header .header .burger-menu {
-    right: 55px;
-    top: 55px;
-    padding: 6.25px;
-    font-size: 37.5px;
-  }
   header .header .imagotipo {
     margin-bottom: 0px;
   }
@@ -442,6 +449,9 @@ header .header.is-active .imagotipo {
   }
 }
 @media only screen and (min-width: 1024px) {
+  header .burger-menu {
+    display: none;
+  }
   header .header--up {
     top: 0;
     height: 75px;

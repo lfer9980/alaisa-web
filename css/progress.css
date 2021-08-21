@@ -109,6 +109,7 @@ div > p {
   bottom: 10px;
   align-self: center;
   font-size: 24px;
+  color: #00BB2D;
 }
 
 .fecha {
@@ -168,6 +169,23 @@ div > p {
   color: #5C8EF2;
 }
 
+/* Transiciones */
+.trans {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.trans--single {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.animate__animated {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   .wrapper {
     padding-top: 165px;
