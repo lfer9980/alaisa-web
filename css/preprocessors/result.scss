@@ -80,6 +80,11 @@
 				color: $blue400;
 			}
 		}
+		&__back:hover {
+			a {
+				color: $blue200;
+			}
+		}
 	}
 }
 .result::before {

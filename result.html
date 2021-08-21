@@ -7,6 +7,8 @@
     <link rel="icon" type="icono Alaisa" href="assets/icons/isotipo_alaisa--title.svg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/result.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>ALAISA | Resultado </title>
   </head>
   <body> <i class="material-icons button-theme">dark_mode</i>
@@ -14,25 +16,25 @@
       <div class="header--up"><a href="index.html">
           <figure class="header--up__logo"><img src="assets/icons/logo_tipografico_alaisa.svg" alt="logo principal alaisa"></figure></a>
         <nav class="header--up__nav--desktop">
-          <ul class="header__menu--desktop">
-            <li><a href="index.html#hero">Inicio </a></li>
+          <ul class="header__menu--desktop" id="myMenu">
+            <li data-menuanchor="1"><a href="#1">Inicio </a></li>
             <li><a href="model.html">Modelo</a></li>
             <li><a href="entrenamiento.html">Entrenamiento</a></li>
-            <li><a href="index.html#metricas">Rendimiento</a></li>
-            <li><a href="index.html#donativos">Donativos</a></li>
-            <li><a href="index.html#contacto">Contacto 	</a></li>
+            <li data-menuanchor="4"><a href="#4">Rendimiento</a></li>
+            <li data-menuanchor="5"><a href="#5">Donativos</a></li>
+            <li data-menuanchor="6"><a href="#6">Contacto 	</a></li>
           </ul>
         </nav>
       </div>
       <div class="header">
-        <nav class="header__nav--mobile">
-          <ul class="header__menu--mobile">
-            <li><a class="nav-item" href="index.html#hero">Inicio </a></li>
+        <nav class="header__nav--mobile"> 
+          <ul class="header__menu--mobile" id="myMenu">
+            <li data-menuanchor="1"><a class="nav-item" href="#1">Inicio </a></li>
             <li><a class="nav-item" href="model.html">Modelo Alaisa</a></li>
             <li><a class="nav-item" href="entrenamiento.html">Entrenamiento</a></li>
-            <li><a class="nav-item" href="index.html#metricas">Estadisticas de Rendimiento</a></li>
-            <li><a class="nav-item" href="index.html#donativos">Donativos</a></li>
-            <li><a class="nav-item" href="index.html#contacto">Contacto desarrolladores</a></li>
+            <li data-menuanchor="4"><a class="nav-item" href="#4">Estadisticas de Rendimiento</a></li>
+            <li data-menuanchor="5"><a class="nav-item" href="#5">Donativos</a></li>
+            <li data-menuanchor="6"><a class="nav-item" href="#6">Contacto desarrolladores</a></li>
           </ul>
           <ul class="header__menu--secondary">
             <li><a class="nav-item" href="privacidad.html">Aviso de privacidad</a></li>
@@ -56,11 +58,11 @@
         <div class="result__main__parrafo">
           <p>Gracias por utilizar nuestro servicio, es un placer ayudar.</p>
         </div>
-        <div class="button--green"> <a href="./predict.html">Hacer otra predicción</a><i class="material-icons">arrow_forward</i></div>
+        <div class="button--green trans"><a href="./predict.html">Hacer otra predicción</a><i class="material-icons">arrow_forward</i></div>
         <div class="result__main__back"><a href="index.html">Regresar al inicio</a></div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer section fp-auto-height">
       <div class="footer__main">
         <figure><img src="assets/icons/imagotipo_alaisa--white.svg" alt="alaisa logo"></figure>
         <div class="footer__main__container">
@@ -78,6 +80,6 @@
         </ul>
       </div>
     </footer>
+    <script async src="js/burgerButton.js"> </script>
   </body>
-  <script async src="js/burgerButton.js"> </script>
 </html>
