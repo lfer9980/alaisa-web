@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
 	return (
 		<section className="Layout">
 			{children}
