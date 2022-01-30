@@ -41,6 +41,14 @@ module.exports = {
 				}
 			},
 			{
+				test: /\.html$/,
+				use: [
+					{
+						loader: 'html-loader'
+					}
+				]
+			},
+			{
 				test: /\.css|.styles|.scss$/i,
 				use: [
 					'style-loader',
@@ -64,7 +72,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			inject: 'body',
-			template: 'public/index.html',
+			template: './public/index.html',
 			filename: './index.html',
 			favicon:'./src/assets/icons/isotipo_alaisa--title.svg',
 		}),
