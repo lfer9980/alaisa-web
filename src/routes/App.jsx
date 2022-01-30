@@ -15,6 +15,7 @@ import { Prediccion } from "@pages/Prediccion";
 import { Privacidad } from "@pages/Privacidad";
 import { Progreso } from "@pages/Progreso";
 import { Resultado } from "@pages/Resultado";
+import { Publicaciones } from "@pages/Publicaciones";
 
 import { Layout } from "@containers/Layout";
 
@@ -37,6 +38,7 @@ function App() {
 						<Route path="privacidad" element={<Privacidad />} />
 						<Route path="progreso" element={<Progreso />} />
 						<Route path="resultado" element={<Resultado />} />
+						<Route path="publicaciones" element={<Publicaciones />} />
 						<Route path="*" element={<NotFound />} />
 					</Routes>
 				</BrowserRouter>
