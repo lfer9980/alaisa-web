@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Header } from "@components/Header";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { HomeModelo } from "@containers/HomeModelo"
 import { HomeHero} from "@containers/HomeHero"
@@ -14,7 +13,6 @@ function Home() {
 	
 	return(
 		<>
-			<Header></Header>
 			<HomeHero></HomeHero>
 			<HomeModelo ></HomeModelo>	
 			<HomeEntrenamiento></HomeEntrenamiento>

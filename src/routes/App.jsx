@@ -18,6 +18,7 @@ import { Resultado } from "@pages/Resultado";
 import { Publicaciones } from "@pages/Publicaciones";
 
 import { Layout } from "@containers/Layout";
+import { Header } from "@components/Header";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
 		<AppContext.Provider value={initialState}>
 			<Layout>
 				<BrowserRouter>
+					<Header></Header>
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="acerca" element={<Acerca />} />

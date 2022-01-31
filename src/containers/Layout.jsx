@@ -2,9 +2,9 @@ import React from 'react';
 
 function Layout({ children }) {
 	return (
-		<section className="Layout">
+		<div className="Layout">
 			{children}
-		</section>
+		</div>
 	);
 }
 
