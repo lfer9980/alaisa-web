@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Breadcrumbs({url, section}) {
+function Breadcrumbs({url, section }) {
 	return (
 		<div className="breadcrumbs">
 			<nav className="breadcrumbs__nav">

@@ -1,13 +1,16 @@
 import React from "react";
 import AlaisaWhite from "@icons/imagotipo_alaisa--white.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
 	return (
 		<footer className="footer section">
 			<div className="footer__main">
-				<figure>
-					<img src={AlaisaWhite} alt="alaisa logo" />
-				</figure>
+				<Link to="/modelo">
+					<figure>
+						<img src={AlaisaWhite} alt="alaisa logo" />
+					</figure>
+				</Link>
 				<div className="footer__main__container">
 					<h4>Modelo neuronal Alaisa </h4>
 					<p>Un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2.</p>
@@ -18,8 +21,16 @@ function Footer() {
 					Desarrollado con <span>HEART</span> por INARI ABS
 				</div>
 				<ul className="footer__links">
-					<li><a href="acerca.html"> Acerca de</a></li>
-					<li><a href="privacidad.html"> Aviso de Privacidad</a></li>
+					<li>
+						<Link to="/acerca">
+								<span> Acerca de</span>
+						</Link>
+					</li>
+					<li>
+						<Link to="/privacidad">
+							<span> Aviso de Privacidad</span>
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</footer>
