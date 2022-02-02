@@ -1,10 +1,10 @@
 import React from "react";
 import { ButtonGreen } from "@components/ButtonGreen";
 
-function HomeHero({ children }) {
+function HomeHero() {
 	return (
-		<section className="hero wrapper section" id="hero">
-			<div className="hero__title .trans">
+		<section className="wrapper" id="hero">
+			<div className="title-h1">
 				<h1>
 					Evaluación
 					<br />
@@ -12,13 +12,13 @@ function HomeHero({ children }) {
 					.
 				</h1>
 			</div>
-			<div className="hero__saludo">
+			<div className="subtitle--background">
 				<h2>¡Hola! Soy Alaisa</h2>
 			</div>
-			<div className="hero__subtitle">
+			<div className="paragraph--bold">
 				<h3>Fui creado con la idea de ayudar en los hospitales.</h3>
 			</div>
-			<div className="hero__parrafo--button">
+			<div className="paragraph">
 				<p>
 					Me enseñaron a identificar características en los personas con{" "}
 					<strong>COVID-19</strong> para saber si los pacientes tienen más
@@ -26,7 +26,7 @@ function HomeHero({ children }) {
 				</p>
 			</div>
 			<ButtonGreen text="Comienza aquí" link="modelo"/>
-			<div className="hero-inari">
+			<div className="paragraph--bold inari">
 				desarrollador por INARI ABS
 			</div>
 		</section>

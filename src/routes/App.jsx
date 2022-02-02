@@ -13,7 +13,6 @@ import { Modelo } from "@pages/Modelo";
 import { NotFound } from "@pages/NotFound";
 import { Prediccion } from "@pages/Prediccion";
 import { Privacidad } from "@pages/Privacidad";
-import { Progreso } from "@pages/Progreso";
 import { Resultado } from "@pages/Resultado";
 import { Publicaciones } from "@pages/Publicaciones";
 
@@ -38,7 +37,6 @@ function App() {
 						<Route path="modelo" element={<Modelo />} />
 						<Route path="prediccion" element={<Prediccion />} />
 						<Route path="privacidad" element={<Privacidad />} />
-						<Route path="progreso" element={<Progreso />} />
 						<Route path="resultado" element={<Resultado />} />
 						<Route path="publicaciones" element={<Publicaciones />} />
 						<Route path="*" element={<NotFound />} />

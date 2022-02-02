@@ -1,33 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { Content } from "@containers/Content";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { Footer } from "@components/Footer";
 import { ButtonGreen } from "@components/ButtonGreen";
 
 function Gracias() {
 	useDocumentTitle("Muchas gracias");
+	
 	return (
 		<>
-			<main className="gracias">
+			<Content>
 				<Breadcrumbs url="entrenamiento" section="finalizar"/>
-				<section className="gracias__main">
-					<div className="alaisa__isotipo">
+				<section className="main">
+					<figure className="logo"> 
+						<img className="logo--isotype"/>
+					</figure>
+					<div className="title-h2">
+						<h2>
+							¡Muchas gracias!
+						</h2>
 					</div>
-					<div className="gracias__main__title">
-						<h2>¡Muchas gracias!</h2>
-					</div>
-					<div className="gracias__main__parrafo">
+					<div className="paragraph--bold">
 						<p>Con tu contribución, lograremos grandes cosas...</p>
 					</div>
 					<ButtonGreen text="Hacer otra contribución" link="anadir"/>
-					<div className="gracias__main__back">
+					<div className="link">
 						<Link to="/">
 							<span >Regresar a la página principal</span>
 						</Link>
 					</div>
 				</section>
-			</main>
+			</Content>
 			<Footer />
 		</>
 	);

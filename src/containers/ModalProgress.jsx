@@ -1,8 +1,13 @@
 import React from "react";
+import { Content } from "@containers/Content";
 
 function ModalProgress() {
 	return(
-		<div class="alaisa__isotipo" />
+		<Content>
+			<figure className="logo"> 
+				<img className="logo--isotype"/>
+			</figure>
+		</Content>
 	);
 }
 

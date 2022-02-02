@@ -1,5 +1,6 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { Content } from "@containers/Content";
 import { Footer } from "@components/Footer";
 import { Breadcrumbs } from "@components/Breadcrumbs"; 
 import { ButtonGreen } from "@components/ButtonGreen";
@@ -9,27 +10,31 @@ function Resultado() {
 	useDocumentTitle("resultado listo")
 	return (
 		<>
-			<main className="result">
+			<Content>
 				<Breadcrumbs url="modelo" section="resultado"/>
-				<section className="result__main">
-					<div className="alaisa__isotipo"> </div>
-					<div className="result__main__title">
-						<h2>La predicción para el paciente ingresado es:</h2>
+				<section className="main">
+					<figure className="logo"> 
+						<img className="logo--isotype"/>
+					</figure>
+					<div className="title-h2">
+						<h2>
+							La predicción para el paciente ingresado es:
+						</h2>
 					</div>
-					<div className="result__main__result">
+					<div className="paragraph--result">
 						<span>RESULTADO</span>
 					</div>
-					<div className="result__main__parrafo">
+					<div className="paragraph">
 						<p>Gracias por utilizar nuestro servicio, es un placer ayudar.</p>
 					</div>
 					<ButtonGreen text="Hacer otra contribución" link="anadir"/>
-					<div className="gracias__main__back">
+					<div className="link">
 						<Link to="/">
 							<span >Regresar a la página principal</span>
 						</Link>
 					</div>
 				</section>
-			</main>
+			</Content>
 			<Footer />
 		</>
 	);

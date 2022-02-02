@@ -1,5 +1,6 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { Content } from "@containers/Content";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { InputSelect } from "@components/InputSelect";
 import { Input } from "@components/Input";
@@ -16,13 +17,13 @@ function Prediccion() {
 
 	return (
 		<>
-			<main className="predict">
-				<Breadcrumbs url="Modelo" section="Prediccion"/>
-				<section className="predict__main">
-					<div className="predict__main__title">
+			<Content>
+				<Breadcrumbs url="modelo" section="prediccion"/>
+				<section className="main">
+					<div className="title-h3">
 						<h3>Datos generales del paciente</h3>
 					</div>
-					<form className="formulario" method="POST" autoComplete="off">
+					<form className="form" method="POST" autoComplete="off">
 						<input type="hidden" name="crsf_token" defaultValue="" />
 						<InputSelect name="desenlace" text="Desenlace del paciente" options={options} />
 						<Input name="edad" text="Edad" placeholder="Edad" />
@@ -31,8 +32,7 @@ function Prediccion() {
 						<FormButton name="guardar" defaultValue="Enviar contribución" />
 					</form>
 				</section>
-			</main>
-
+			</Content>
 		</>
 	);
 }

@@ -1,31 +1,31 @@
 import React from 'react';
 import { ButtonGreen } from '@components/ButtonGreen';
 
-function HomeEntrenamiento({ children }) {
+function HomeEntrenamiento() {
 	return (
-		<section className="entrenamiento wrapper section" id="entrenamiento">
-			<div className="entrenamiento__title trans">
+		<section className="wrapper" id="entrenamiento">
+			<div className="title-main">
 				<h2>
 					Ayuda a <span>Alaisa</span> a mejorar en sus predicciones
 				</h2>
 			</div>
-			<div className="entrenamiento__main">
-				<div className="entrenamiento__main__parrafo one">
+			<div className="container">
+				<div className="subtitle">
 					<p>
 						Se parte de los <span>profesionales de la salud</span> que ayudan a mejorar las predicciones del modelo.
 					</p>
 				</div>
-				<div className="entrenamiento__main__parrafo two">
+				<div className="paragraph">
 					<p>
 						¡Tu contribución, acelera exponencialmente la recolección de datos que sirven para <span>entrenar</span> a la red neuronal y <span>mejorar</span> la calidad de sus predicciones!
 					</p>
 				</div>
-				<div className="entrenamiento__main__parrafo three">
+				<div className="paragraph--bold">
 					<p>
 						Para <span>contribuir</span>, solo debes entrar al entrenamiento
 					</p>
 				</div>
-				<div className="entrenamiento__main__parrafo four">
+				<div className="paragraph">
 					<p>
 						No te preocupes, el proceso es el mismo a cuando utilizas el modelo para recibir predicciones.
 					</p>

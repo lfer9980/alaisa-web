@@ -3,13 +3,15 @@ import Alan from '@images/alan-dev.jpg';
 import Github from '@icons/github_logo.svg'
 import { CardContacto } from '@components/CardContacto';
 
-function HomeContacto({ children }) {
+function HomeContacto() {
 	return (
-		<section className='contacto wrapper section' id='contacto'>
-			<div className="contacto__title trans">
-				<h2>Conoce a los <span>contribuidores</span> de este proyecto:</h2>
+		<section className='wrapper' id='contacto'>
+			<div className="title-main">
+				<h2>
+					Conoce a los <span>contribuidores</span> de este proyecto:
+				</h2>
 			</div>
-			<div className="contacto__cards slide">
+			<div className="card-wrapper">
 				<CardContacto 
 					name="Alan Hernadez" 
 					job="desarrollador" 

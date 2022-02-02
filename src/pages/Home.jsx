@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { Content } from "@containers/Content";
 import { HomeModelo } from "@containers/HomeModelo"
 import { HomeHero} from "@containers/HomeHero"
 import { HomeEntrenamiento} from "@containers/HomeEntrenamiento"
@@ -13,13 +14,15 @@ function Home() {
 	
 	return(
 		<>
-			<HomeHero></HomeHero>
-			<HomeModelo ></HomeModelo>	
-			<HomeEntrenamiento></HomeEntrenamiento>
-			<HomeDesarrollador></HomeDesarrollador>
-			<HomeDonativos></HomeDonativos>
-			<HomeContacto></HomeContacto>
-			<Footer></Footer>
+			<Content>
+				<HomeHero></HomeHero>
+				<HomeModelo ></HomeModelo>	
+				<HomeEntrenamiento></HomeEntrenamiento>
+				<HomeDesarrollador></HomeDesarrollador>
+				<HomeDonativos></HomeDonativos>
+				<HomeContacto></HomeContacto>
+				<Footer></Footer>
+			</Content>
 		</>
 	);
 }
