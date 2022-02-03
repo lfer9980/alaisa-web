@@ -1,14 +1,14 @@
 import React from "react";
-import AlaisaWhite from "@icons/imagotipo_alaisa--white.svg";
+import isologotypeWhite from "@icons/isologotype-white.svg";
 import { Link } from "react-router-dom";
 
 function Footer() {
 	return (
-		<footer className="footer section">
+		<footer className="footer">
 			<div className="footer__main">
 				<Link to="/modelo">
 					<figure>
-						<img src={AlaisaWhite} alt="alaisa logo" />
+						<img src={isologotypeWhite} alt="alaisa logo" />
 					</figure>
 				</Link>
 				<div className="footer__main__container">

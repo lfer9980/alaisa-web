@@ -4,7 +4,7 @@ function FormButton({name, defaultValue}) {
 	return(
 		<>
 			<input 
-				className="formulario__button" 
+				className="form-button" 
 				type="submit" 
 				id={name}
 				name={name}

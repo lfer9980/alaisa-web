@@ -1,14 +1,11 @@
 import React from 'react';
 import { ButtonGreen } from '@components/ButtonGreen';
+import { Title } from "@components/Title";
 
 function HomeEntrenamiento() {
 	return (
 		<section className="wrapper" id="entrenamiento">
-			<div className="title-main">
-				<h2>
-					Ayuda a <span>Alaisa</span> a mejorar en sus predicciones
-				</h2>
-			</div>
+			<Title type="main" text="Ayuda a Alaisa a mejorar en sus predicciones"/>
 			<div className="container">
 				<div className="subtitle">
 					<p>

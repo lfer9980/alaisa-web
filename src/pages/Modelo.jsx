@@ -5,6 +5,8 @@ import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Link } from "react-router-dom";
 
+import { Title } from "@components/Title";
+
 function Modelo() {
 	useDocumentTitle("Modelo Alaisa")
 
@@ -24,11 +26,7 @@ function Modelo() {
 					<figure className="logo"> 
 						<img className="logo--isotype"/>
 					</figure>
-					<div className="title-h3">
-						<h3>
-							¡Comencemos!
-						</h3>
-					</div>
+					<Title type="h3" text="¡Comencemos!" />
 					<div className="paragraph--bold">
 						<p>Recuerda que yo no doy diagnósticos ni tratamientos. </p>
 					</div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import BanderaUsa from '@icons/bandera_usa.svg';
-import BanderaMx from '@icons/bandera_mx.svg';
-import LogoAlaisa from '@icons/logo_tipografico_alaisa.svg';
-import IsotipoAlaisa from '@icons/isotipo_alaisa--white.svg';
+import flagUs from '@icons/flag-us.svg';
+import flagMx from '@icons/flag-mx.svg';
+import logotypeWhite from '@icons/logotype-white.svg';
+import isotypeWhite from '@icons/isotype-white.svg';
 
 function Header() {
 	return (
@@ -12,7 +12,7 @@ function Header() {
 			<div className="header--up">
 				<Link to="/">
 					<figure className="header--up__logo">
-						<img src={LogoAlaisa} alt="logo principal alaisa" />
+						<img src={logotypeWhite} alt="logo principal alaisa" />
 					</figure>
 				</Link>
 				<nav className="header--up__nav--desktop">
@@ -49,9 +49,9 @@ function Header() {
 						</li>
 					</ul>
 				</nav>
-				<div className="header--up__idioma">
+				<div className="header--up__language">
 					<span>EN</span>
-					<img src={BanderaUsa}/>
+					<img src={flagUs}/>
 				</div>
 			</div>
 			<div className="header">
@@ -102,7 +102,7 @@ function Header() {
 					</ul>
 				</nav>
 				<div className="imagotipo">
-					<img src={IsotipoAlaisa} alt=" imagen virus Alaisa" />
+					<img src={isotypeWhite} alt=" imagen virus Alaisa" />
 				</div>
 			</div>
 		</header>

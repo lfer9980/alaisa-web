@@ -9,6 +9,7 @@ import { HomeDesarrollador } from "@containers/HomeDesarrollador"
 import { HomeContacto } from "@containers/HomeContacto"
 import { Footer } from "@components/Footer";
 
+
 function Home() {
 	useDocumentTitle("Evaluación efectiva del covid en CUU");
 	

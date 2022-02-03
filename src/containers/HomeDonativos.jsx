@@ -1,15 +1,14 @@
 import React from 'react';
 import { CardDonativo } from '@components/CardDonativo';
-import CoffeeLogo from '@icons/coffee_logo.png';
+
+import { Title } from "@components/Title";
+
+import CoffeeLogo from '@icons/coffee.png';
 
 function HomeDonativos() {
 	return (
 		<section className="wrapper" id="donativos">
-			<div className="title-main">
-				<h2>
-					<span>Ayúdanos</span> a crear más cosas <span>increíbles</span>...
-				</h2>
-			</div>
+			<Title type="main" text="Ayúdanos a crear más cosas increíbles..." />	
 			<div className="paragraph--bold">
 				<p>Puedes ayudarnos muchísimo, aportando a través de:</p>
 			</div>

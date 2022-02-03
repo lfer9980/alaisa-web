@@ -77,7 +77,7 @@ module.exports = {
 			inject: 'body',
 			template: './public/index.html',
 			filename: './index.html',
-			favicon:'./src/assets/icons/isotipo_alaisa--title.svg',
+			favicon:'./src/assets/icons/isotype-mini.svg',
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'assets/[name].[contenthash].css'

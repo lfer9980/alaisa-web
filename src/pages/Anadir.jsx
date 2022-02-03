@@ -7,6 +7,8 @@ import { Input } from "@components/Input";
 import { FormTitle } from "@components/FormTitle";
 import { FormButton } from "@components/FormButton";
 
+import { Title } from "@components/Title";
+
 function Anadir() {
 	useDocumentTitle("Entrenar");
 
@@ -20,9 +22,7 @@ function Anadir() {
 			<Content>
 				<Breadcrumbs url="entrenamiento" section="anadir"/>
 				<section className="main"> 
-					<div className="title-h3">
-						<h3>Datos generales del paciente</h3>
-					</div>
+					<Title type="h3" text="Datos generales del paciente" />
 					<form className="form" method="POST" autoComplete="off">
 						<input type="hidden" name="crsf_token" defaultValue="" />
 						<InputSelect name="desenlace" text="Desenlace del paciente" options={options} />

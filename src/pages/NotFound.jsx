@@ -3,18 +3,16 @@ import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { Footer } from "@components/Footer";
 
+import { Title } from "@components/Title";
+
 function NotFound() {
 	useDocumentTitle(":( No encontrado")
 	return (
 		<>
 			<Content>
-				<div className="title-h2">
-					<h2> 404 </h2>
-				</div>
+				<Title type="h2" text="404" />	
 				<section className="main">
-					<div className="title-h3">
-						<h3> 404 No Encontrado: La URL solicitada no fue encontrada en el servidor. Si entro la URL manualmente, porfavor verifique que sea correcta e intentelo de nuevo. </h3>
-					</div>
+					<Title type="h3" text=" 404 No Encontrado: La URL solicitada no fue encontrada en el servidor. Si entro la URL manualmente, porfavor verifique que sea correcta e intentelo de nuevo." />	
 					<figure className="logo">
 						<img className="logo--imagotype"/>
 					</figure>

@@ -1,21 +1,20 @@
 import React from "react";
+import { Title } from "@components/Title";
 
 function CardContacto(props) {
 	return (
-		<article className="card--contacto transContacto--single">
-			<div className="card--contacto__main">
-				<div className="card--contacto__title">
-					<p>{props.name}</p>
-				</div>
-				<div className="card--contacto__parrafo">
+		<article className="card-contacto">
+			<div className="card-contacto__main">
+				<Title type="p" text={props.name} /> 
+				<div className="card-contacto__paragraph">
 					<p>{props.job}</p>
 				</div>
-				<div className="card--contacto__correo">
+				<div className="link">
 					<a href={`mailto:${props.mail}`}>
 					{props.mail}
 					</a>
 				</div>
-				<div className="card--contacto__redes">
+				<div className="card-contacto__media">
 					<a href={`https://${props.urlRed1}`}>
 						<img src={props.imgRed1} alt="red social del contribuidor"/>
 					</a>
@@ -24,7 +23,7 @@ function CardContacto(props) {
 					</a>
 				</div>
 			</div>
-			<div className="card--contacto__image">
+			<div className="card-contacto__image">
 				<img src={props.src} at= "imagen del contribuidor"/>
 			</div>
 		</article>

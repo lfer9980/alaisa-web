@@ -6,12 +6,16 @@ function Breadcrumbs({url, section }) {
 		<div className="breadcrumbs">
 			<nav className="breadcrumbs__nav">
 				<Link to="/">
-					<span>Inicio</span>
+					<span className="bread">
+						Inicio
+					</span>
 				</Link>
 				<Link to={`/${url}`}>
-					<span>{url}</span>
+					<span className="bread">
+						{url}
+					</span>
 				</Link>
-				<span>
+				<span className="bread">
 					{section}
 				</span>			
 			</nav>

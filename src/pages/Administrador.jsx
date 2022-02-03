@@ -1,6 +1,7 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
+import { Title } from "@components/Title";
 
 function Administrador() {
 	useDocumentTitle("administrador")
@@ -8,11 +9,7 @@ function Administrador() {
 	return(
 		<>
 			<Content>
-				<div className="title-h2">
-					<h2>
-						Administrador
-					</h2>
-				</div>
+				<Title type="h2" text="Administrador" />
 			</Content>
 		</>
 	);

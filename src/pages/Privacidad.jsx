@@ -3,22 +3,16 @@ import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { Footer } from "@components/Footer";
 
+import { Title } from "@components/Title";
+
 
 function Privacidad() {
 	useDocumentTitle("privacidad")
 	return (
 		<>
 			<Content>
-				<div className="title-h2">
-					<h2>
-						Tu privacidad es muy <span>importante</span> y nosotros lo sabemos.
-					</h2>
-				</div>
-				<div className="title-h4">
-					<h4>
-						Consulta nuestro aviso de privacidad
-					</h4>
-				</div>
+				<Title type="h2" text="Tu privacidad es muy importante y nosotros lo sabemos." />	
+				<Title type="h4" text="Consulta nuestro aviso de privacidad" />	
 				<div className="paragraph">
 					<p>Hospital Central Universitario, con domicilio en No. 3302, calle Rosales, Roma Sur, C. P. 31350, Chihuahua, México, teléfono (614)-180-0800, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:</p>
 				</div>

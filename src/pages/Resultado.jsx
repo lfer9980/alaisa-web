@@ -6,6 +6,8 @@ import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Link } from "react-router-dom";
 
+import { Title } from "@components/Title";
+
 function Resultado() {
 	useDocumentTitle("resultado listo")
 	return (
@@ -16,11 +18,7 @@ function Resultado() {
 					<figure className="logo"> 
 						<img className="logo--isotype"/>
 					</figure>
-					<div className="title-h2">
-						<h2>
-							La predicción para el paciente ingresado es:
-						</h2>
-					</div>
+					<Title type="h2" text="	La predicción para el paciente ingresado es:" />
 					<div className="paragraph--result">
 						<span>RESULTADO</span>
 					</div>

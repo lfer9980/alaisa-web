@@ -1,16 +1,14 @@
 import React from 'react';
 import Alan from '@images/alan-dev.jpg';
-import Github from '@icons/github_logo.svg'
+import Github from '@icons/github.svg'
 import { CardContacto } from '@components/CardContacto';
+
+import { Title } from "@components/Title";
 
 function HomeContacto() {
 	return (
 		<section className='wrapper' id='contacto'>
-			<div className="title-main">
-				<h2>
-					Conoce a los <span>contribuidores</span> de este proyecto:
-				</h2>
-			</div>
+			<Title type="main" text="Conoce a los contribuidores de este proyecto:" />	
 			<div className="card-wrapper">
 				<CardContacto 
 					name="Alan Hernadez" 

@@ -6,6 +6,9 @@ import { Breadcrumbs } from "@components/Breadcrumbs";
 import { Footer } from "@components/Footer";
 import { ButtonGreen } from "@components/ButtonGreen";
 
+import { Title } from "@components/Title";
+
+
 function Gracias() {
 	useDocumentTitle("Muchas gracias");
 	
@@ -17,11 +20,7 @@ function Gracias() {
 					<figure className="logo"> 
 						<img className="logo--isotype"/>
 					</figure>
-					<div className="title-h2">
-						<h2>
-							¡Muchas gracias!
-						</h2>
-					</div>
+					<Title type="h2" text="	¡Muchas gracias!" />
 					<div className="paragraph--bold">
 						<p>Con tu contribución, lograremos grandes cosas...</p>
 					</div>

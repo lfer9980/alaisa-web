@@ -1,13 +1,11 @@
 import React from 'react';
 
+import { Title } from "@components/Title";
+
 function HomeDesarrollador() {
 	return (
 		<section className="wrapper" id="metricas">
-			<div className="title-main">
-				<h2>
-					Un <span>modelo</span> efectivo y <span>preciso.</span>
-				</h2>
-			</div>
+			<Title type="main" text="Un modelo efectivo y preciso." />	
 			<div className="paragraph--subtitle">
 				<p>Conoce los resultados de las pruebas de rendimiento hechas por los desarrolladores de Alaisa</p>
 			</div>

@@ -3,17 +3,16 @@ import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { Footer } from "@components/Footer";
 
+import { Title } from "@components/Title";
+import { Logo } from "@components/Logo";
+
 function Acerca() {
 	useDocumentTitle("Acerca de");
 
 	return (
 		<>
 			<Content>
-				<div className="title-h2">
-					<h2>
-						¿Qué es <span>Alaisa</span>? 
-					</h2>
-				</div>
+				<Title type="h2" text="¿Qué es Alaisa?" />
 				<div className="paragraph">
 					<p>ALAISA es un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2 a través de un modelo de predicción de desenlace de Machine learning.</p>
 				</div>
@@ -23,9 +22,7 @@ function Acerca() {
 				<div className="link">
 					<a href="*">Algoritmos y Covid 19</a>
 				</div>
-				<figure className="logo">
-					<img className="logo--imagotype"/>
-				</figure>
+				<Logo type="imagotype" color="black"/> 
 			</Content>
 			<Footer />
 		</>

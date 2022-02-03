@@ -5,6 +5,9 @@ import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Link } from "react-router-dom";
 
+import { Title } from "@components/Title";
+
+
 function Entrenamiento() {
 	useDocumentTitle("Entrenamiento");
 
@@ -24,11 +27,7 @@ function Entrenamiento() {
 					<figure className="logo"> 
 						<img className="logo--isotype"/>
 					</figure>
-					<div className="title-h3">
-						<h3>
-							Tu contribución nos ayuda a <span>mejorar</span> y ser más <span>precisos</span>
-						</h3>
-					</div>
+					<Title type="h3" text="Tu contribución nos ayuda a mejorar y ser más precisos"/>
 					<div className="paragraph--background">
 						<p>
 							El proceso es identico a cuando utilizas el modelo para recibir predicciones. Los <span>datos</span> que ingreses durante el <span>entrenamiento</span> serán la base para que el modelo <span>identifique</span> eficientemente los patrones que determinan el desenlace de tu paciente durante la <span>predicción</span>.
