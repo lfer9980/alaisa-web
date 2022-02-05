@@ -2,12 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
-import { Breadcrumbs } from "@components/Breadcrumbs";
-import { Footer } from "@components/Footer";
-import { ButtonGreen } from "@components/ButtonGreen";
-
 import { Title } from "@components/Title";
-
+import { Breadcrumbs } from "@components/Breadcrumbs";
+import { ButtonGreen } from "@components/ButtonGreen";
+import { Footer } from "@components/Footer";
+import "@styles/Gracias.scss";
 
 function Gracias() {
 	useDocumentTitle("Muchas gracias");

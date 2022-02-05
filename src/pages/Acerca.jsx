@@ -1,10 +1,10 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
-import { Footer } from "@components/Footer";
-
 import { Title } from "@components/Title";
 import { Logo } from "@components/Logo";
+import { Footer } from "@components/Footer";
+import "@styles/Acerca.scss";
 
 function Acerca() {
 	useDocumentTitle("Acerca de");

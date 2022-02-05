@@ -1,12 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
+import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
-import { Link } from "react-router-dom";
-
-import { Title } from "@components/Title";
-
+import "@styles/Entrenamiento.scss";
 
 function Entrenamiento() {
 	useDocumentTitle("Entrenamiento");

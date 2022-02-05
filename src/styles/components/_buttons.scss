@@ -1,0 +1,53 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.button-theme {
+	display: none;
+}
+
+.button--green {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 40px;
+	margin: 15px 20px 10px 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+	color: v.$white;
+	background-color: v.$green400;
+	@include dark-mode {
+		box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+		background-color: v.$green500;
+	}
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: inherit;
+		font-family: v.$fuente1;
+		font-size: 2.133rem;
+		font-weight: bold;
+		text-decoration: none;
+		color: v.$white;
+	}
+	i {
+		position: absolute;
+		right: 40px;
+	}
+}
+.button--green:hover {
+	background-color: v.$green200;
+	@include dark-mode {
+		background-color: v.$green600;
+	}
+}
+
+.arrow-drop-down {
+	position: absolute;
+	bottom: 10px;
+	align-self: center;
+	font-size: 24px;
+	color: v.$green400;
+}

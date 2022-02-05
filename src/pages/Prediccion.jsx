@@ -1,13 +1,13 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
+import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { InputSelect } from "@components/InputSelect";
 import { Input } from "@components/Input";
 import { FormTitle } from "@components/FormTitle";
 import { FormButton } from "@components/FormButton";
-
-import { Title } from "@components/Title";
+import "@styles/Prediccion.scss";
 
 function Prediccion() {
 	useDocumentTitle('Modelo de IA');

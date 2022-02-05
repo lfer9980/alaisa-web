@@ -1,9 +1,9 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
-import { Footer } from "@components/Footer";
-
 import { Title } from "@components/Title";
+import { Footer } from "@components/Footer";
+import "@styles/NotFound.scss";
 
 function NotFound() {
 	useDocumentTitle(":( No encontrado")

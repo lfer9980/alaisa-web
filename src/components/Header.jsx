@@ -16,38 +16,36 @@ function Header() {
 					</figure>
 				</Link>
 				<nav className="header--up__nav--desktop">
-					<ul className="header__menu--desktop">
-						<li>
-							<Link to="/modelo">
-								<span>Modelo</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/entrenamiento">
-								<span>Entrenamiento</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/#metricas">
-								<span>Rendimiento</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/#donativos">
-								<span>Donativos</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/#contacto">
-								<span>Contacto</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/publicaciones">
-								<span>publicaciones</span>
-							</Link>
-						</li>
-					</ul>
+					<li>
+						<Link to="/modelo">
+							<span>Modelo</span>
+						</Link>
+					</li>
+					<li>
+						<Link to="/entrenamiento">
+							<span>Entrenamiento</span>
+						</Link>
+					</li>
+					<li>
+						<Link to="/#metricas">
+							<span>Rendimiento</span>
+						</Link>
+					</li>
+					<li>
+						<Link to="/#donativos">
+							<span>Donativos</span>
+						</Link>
+					</li>
+					<li>
+						<Link to="/#contacto">
+							<span>Contacto</span>
+						</Link>
+					</li>
+					<li>
+						<Link to="/publicaciones">
+							<span>publicaciones</span>
+						</Link>
+					</li>
 				</nav>
 				<div className="header--up__language">
 					<span>EN</span>
@@ -55,6 +53,10 @@ function Header() {
 				</div>
 			</div>
 			<div className="header">
+				<div className="header__language">
+						<span>EN</span>
+						<img src={flagUs}/>
+					</div>
 				<nav className="header__nav--mobile">
 					<ul className="header__menu--mobile">
 						<li>

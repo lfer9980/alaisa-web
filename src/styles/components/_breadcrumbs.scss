@@ -1,0 +1,33 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.breadcrumbs {
+	display: inline-block;
+	margin: 75px 0 5px 0;
+	padding-left: 20px;
+	&__nav {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		a {
+			text-decoration: none;
+			font-family: v.$fuente1;
+			font-size: 1.4rem;
+			font-weight: bold;
+			color: v.$white;
+			cursor: pointer;
+		}
+		a::after {
+			content: "►";
+			font-size: 1.2rem;
+			margin: 0 5px;
+		}
+		a:last-child::after {
+			display: none;
+		}
+	}
+	a:hover {
+		color: v.$blue400;
+	}
+}

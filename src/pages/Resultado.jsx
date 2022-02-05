@@ -1,12 +1,12 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { Link } from "react-router-dom";
 import { Content } from "@containers/Content";
+import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
 import { Breadcrumbs } from "@components/Breadcrumbs"; 
 import { ButtonGreen } from "@components/ButtonGreen";
-import { Link } from "react-router-dom";
-
-import { Title } from "@components/Title";
+import "@styles/Resultado.scss";
 
 function Resultado() {
 	useDocumentTitle("resultado listo")

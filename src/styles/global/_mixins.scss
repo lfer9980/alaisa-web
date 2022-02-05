@@ -1,0 +1,25 @@
+@use "./vars" as v;
+
+@mixin tablet {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media only screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media only screen and (min-width: 1280px) {
+		@content;
+	}
+}
+
+@mixin dark-mode {
+	@media (prefers-color-scheme: dark) {
+		@content;
+	}
+}

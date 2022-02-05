@@ -1,0 +1,26 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.date {
+	position: relative;
+	margin-top: 10px;
+	font-family: v.$fuente1;
+	font-weight: bold;
+	p {
+		margin-bottom: 5px;
+		padding: 0 20px;
+		font-size: 1.8rem;
+		color: v.$blue400;
+	}
+	&__main {
+		padding: 5px 0;
+		font-size: 1.8rem;
+		background-color: v.$blue500;
+		@include dark-mode {
+			background-color: v.$gray600;
+		}
+		span {
+			color: v.$white;
+		}
+	}
+}
