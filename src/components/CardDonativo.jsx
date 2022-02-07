@@ -1,6 +1,8 @@
 import React from "react";
 import { ButtonAncla } from "@components/ButtonAncla"
 
+import "@styles/components/cards.scss";
+
 function CardDonativo({ image, url, cssButton }) {
 	return (
 		<article className="card-donativo">

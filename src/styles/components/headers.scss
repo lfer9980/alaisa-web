@@ -25,7 +25,7 @@ header {
 		top: 15px;
 		z-index: 1;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		width: 100%;
 		height: 50px;
 		padding: 0 20px;
@@ -69,6 +69,7 @@ header {
 			font-weight: 600;
 			color: v.$white;
 			cursor: pointer;
+			margin-right: 80px;
 			img {
 				margin-left: 10px;
 				width: 40px;
@@ -180,6 +181,10 @@ header {
 			&__logo {
 				width: 243px;
 			}
+			&__language {
+				width: 80px;
+				margin-right: 110px;
+			}
 		}
 		
 		.header {
@@ -229,6 +234,9 @@ header {
 			}
 			.burger-menu {
 				display: none;
+			}
+			&__language {
+				margin-right: 0px;
 			}
 		}
 		.header {

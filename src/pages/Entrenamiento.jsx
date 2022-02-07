@@ -5,7 +5,8 @@ import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
-import "@styles/Entrenamiento.scss";
+
+import "@styles/pages/entrenamiento.scss";
 
 function Entrenamiento() {
 	useDocumentTitle("Entrenamiento");

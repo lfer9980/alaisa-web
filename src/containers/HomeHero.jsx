@@ -1,6 +1,8 @@
 import React from "react";
 import { ButtonGreen } from "@components/ButtonGreen";
 
+import "@styles/containers/homeContacto.scss";
+
 function HomeHero() {
 	return (
 		<section className="wrapper" id="hero">

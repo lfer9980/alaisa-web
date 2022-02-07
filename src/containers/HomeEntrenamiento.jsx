@@ -2,6 +2,8 @@ import React from 'react';
 import { ButtonGreen } from '@components/ButtonGreen';
 import { Title } from "@components/Title";
 
+import "@styles/containers/homeEntrenamiento.scss";
+
 function HomeEntrenamiento() {
 	return (
 		<section className="wrapper" id="entrenamiento">

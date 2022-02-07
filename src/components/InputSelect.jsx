@@ -1,5 +1,7 @@
 import React from "react";
 
+import "@styles/components/inputs.scss";
+
 function InputSelect({ name, text, options }) {
 	return (
 		<>

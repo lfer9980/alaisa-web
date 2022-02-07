@@ -1,5 +1,7 @@
 import React from "react";
 
+import "@styles/components/buttons.scss";
+
 function ButtonAncla({ text, cssName, url }) {
 	return(
 		<div className={`$button--${cssName}`}>

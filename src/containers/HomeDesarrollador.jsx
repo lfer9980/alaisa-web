@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Title } from "@components/Title";
 
+import "@styles/containers/homeDesarrollador.scss";
+
 function HomeDesarrollador() {
 	return (
 		<section className="wrapper" id="metricas">

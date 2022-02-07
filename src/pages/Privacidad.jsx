@@ -3,7 +3,8 @@ import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
-import "@styles/Privacidad.scss";
+
+import "@styles/pages/privacidad.scss";
 
 function Privacidad() {
 	useDocumentTitle("privacidad")

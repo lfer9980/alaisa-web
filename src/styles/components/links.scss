@@ -1,0 +1,22 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.link {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	font-family: v.$fuente1;
+	font-size: 1.8rem;
+	font-weight: bold;
+	a {
+		color: v.$blue600;
+		@include dark-mode {
+			color: v.$white;
+		}
+	}
+}
+.link {
+	a:hover {
+		color: v.$blue400;
+	}
+}

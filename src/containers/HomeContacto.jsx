@@ -5,6 +5,8 @@ import { CardContacto } from '@components/CardContacto';
 
 import { Title } from "@components/Title";
 
+import "@styles/containers/homeContacto.scss";
+
 function HomeContacto() {
 	return (
 		<section className='wrapper' id='contacto'>

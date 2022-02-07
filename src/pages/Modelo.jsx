@@ -5,7 +5,8 @@ import { Content } from "@containers/Content";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Title } from "@components/Title";
-import "@styles/Modelo.scss";
+
+import "@styles/pages/modelo.scss";
 
 function Modelo() {
 	useDocumentTitle("Modelo Alaisa")

@@ -1,6 +1,8 @@
 import React from "react";
 import { Title } from "@components/Title";
 
+import "@styles/components/cards.scss";
+
 function CardContacto(props) {
 	return (
 		<article className="card-contacto">

@@ -1,5 +1,7 @@
 import React from "react";
 
+import "@styles/components/forms.scss";
+
 function FormTitle({title}) {
 	return(
 		<>

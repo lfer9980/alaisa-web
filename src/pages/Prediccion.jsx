@@ -7,7 +7,8 @@ import { InputSelect } from "@components/InputSelect";
 import { Input } from "@components/Input";
 import { FormTitle } from "@components/FormTitle";
 import { FormButton } from "@components/FormButton";
-import "@styles/Prediccion.scss";
+
+import "@styles/pages/prediccion.scss";
 
 function Prediccion() {
 	useDocumentTitle('Modelo de IA');

@@ -1,0 +1,16 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.paragraph {
+	position: relative;
+	margin-bottom: 15px;
+	font-size: 1.6rem;
+	line-height: 140%;
+}
+.paragraph--bold {
+	margin: 15px 0;
+	font-family: v.$fuente1;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 140%;
+}

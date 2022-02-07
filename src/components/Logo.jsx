@@ -1,8 +1,10 @@
 import React from "react";
 
-function Logo({ type, color }) {
+import "@styles/components/logos.scss";
+
+function Logo({ type }) {
 	return(
-		<div className={`logo__${type} logo--${color}`} />
+		<div className={`logo logo__${type}`} />
 	);
 }
 

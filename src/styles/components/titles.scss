@@ -1,0 +1,13 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.title-h2 {
+	position: relative;
+	padding: 0 20px;
+	margin-bottom: 15px;
+	font-family: v.$fuente1;
+	h2 {
+		font-size: 3.79rem;
+		line-height: 120%;
+	}
+}

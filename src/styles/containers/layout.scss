@@ -1,5 +1,6 @@
-@use "./vars" as v;
-@use "./mixins" as *;
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
 
 * {
 	box-sizing: border-box;
@@ -10,10 +11,11 @@ html {
 	font-size: 62.5%;
 	font-family: v.$fuente2;
 	scroll-behavior: smooth;
-}
-
-main {	
-	height: auto;
+	background-color: v.$white;
+	@include dark-mode {
+		color: v.$white;
+		background-color: v.$dark600;
+	}
 }
 
 h2 > span {

@@ -5,6 +5,8 @@ import { Title } from "@components/Title";
 
 import CoffeeLogo from '@icons/coffee.png';
 
+import "@styles/containers/homeDonativos.scss";
+
 function HomeDonativos() {
 	return (
 		<section className="wrapper" id="donativos">

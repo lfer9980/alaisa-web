@@ -7,7 +7,8 @@ import { Input } from "@components/Input";
 import { FormTitle } from "@components/FormTitle";
 import { FormButton } from "@components/FormButton";
 import { Title } from "@components/Title";
-import "@styles/Anadir.scss";
+
+import "@styles/pages/anadir.scss";
 
 function Anadir() {
 	useDocumentTitle("Entrenar");

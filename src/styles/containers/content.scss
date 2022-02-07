@@ -1,0 +1,45 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.content {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-content: center;
+	height: auto;
+	text-align: center;
+	padding-top: 90px;
+	margin: 0 20px;
+}
+
+.content::before {
+	content: "";
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.15;
+}
+
+@include tablet {
+	.content {
+		padding-top: 165px;
+		margin: 0 30px;
+	}
+}
+
+@include desktop {
+	.content {
+		padding-top: 100px;
+		margin: 0 42px;
+	}
+}
+
+@include large {
+	.content {
+		padding-top: 0 95px;
+	}
+}

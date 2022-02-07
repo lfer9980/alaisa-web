@@ -1,5 +1,3 @@
-@use "./vars" as v;
-
 @mixin tablet {
 	@media only screen and (min-width: 768px) {
 		@content;

@@ -5,6 +5,8 @@ import flagMx from '@icons/flag-mx.svg';
 import logotypeWhite from '@icons/logotype-white.svg';
 import isotypeWhite from '@icons/isotype-white.svg';
 
+import "@styles/components/headers.scss";
+
 function Header() {
 	return (
 		<header>
@@ -53,10 +55,6 @@ function Header() {
 				</div>
 			</div>
 			<div className="header">
-				<div className="header__language">
-						<span>EN</span>
-						<img src={flagUs}/>
-					</div>
 				<nav className="header__nav--mobile">
 					<ul className="header__menu--mobile">
 						<li>

@@ -2,7 +2,8 @@ import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
-import "@styles/Administrador.scss";
+
+import "@styles/pages/administrador.scss";
 
 function Administrador() {
 	useDocumentTitle("administrador")

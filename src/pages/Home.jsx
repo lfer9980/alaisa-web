@@ -8,8 +8,8 @@ import { HomeDonativos } from "@containers/HomeDonativos"
 import { HomeDesarrollador } from "@containers/HomeDesarrollador"
 import { HomeContacto } from "@containers/HomeContacto"
 import { Footer } from "@components/Footer";
-import "@styles/Home.scss";
 
+import "@styles/pages/home.scss";
 
 function Home() {
 	useDocumentTitle("Evaluación efectiva del covid en CUU");

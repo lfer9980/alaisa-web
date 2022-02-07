@@ -1,5 +1,7 @@
 import React from "react";
 
+import "@styles/components/titles.scss";
+
 /* logica para crear titulos en el landingPage */
 const typeOfElement = (typeElement, textElement) => {
 	if(typeElement==="main") {

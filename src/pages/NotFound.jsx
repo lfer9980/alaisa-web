@@ -3,7 +3,8 @@ import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
-import "@styles/NotFound.scss";
+
+import "@styles/pages/notFound.scss";
 
 function NotFound() {
 	useDocumentTitle(":( No encontrado")

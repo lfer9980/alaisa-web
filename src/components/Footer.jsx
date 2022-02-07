@@ -2,6 +2,8 @@ import React from "react";
 import isologotypeWhite from "@icons/isologotype-white.svg";
 import { Link } from "react-router-dom";
 
+import "@styles/components/footers.scss";
+
 function Footer() {
 	return (
 		<footer className="footer">
@@ -18,7 +20,11 @@ function Footer() {
 			</div>
 			<div className="footer__secondary">
 				<div className="footer__inari">
-					Desarrollado con <span>HEART</span> por INARI ABS
+					<p>
+						Desarrollado con 
+						<span className="heart"></span> 
+						por INARI ABS
+					</p>
 				</div>
 				<ul className="footer__links">
 					<li>

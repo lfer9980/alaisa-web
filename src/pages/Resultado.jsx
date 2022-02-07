@@ -6,7 +6,8 @@ import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
 import { Breadcrumbs } from "@components/Breadcrumbs"; 
 import { ButtonGreen } from "@components/ButtonGreen";
-import "@styles/Resultado.scss";
+
+import "@styles/pages/resultado.scss";
 
 function Resultado() {
 	useDocumentTitle("resultado listo")

@@ -1,5 +1,7 @@
 import React from "react";
 
+import "@styles/components/forms.scss";
+
 function FormButton({name, defaultValue}) {
 	return(
 		<>

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "@styles/components/breadcrumbs.scss";
+
 function Breadcrumbs({url, section }) {
 	return (
 		<div className="breadcrumbs">
