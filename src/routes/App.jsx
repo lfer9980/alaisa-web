@@ -19,6 +19,8 @@ import { Publicaciones } from "@pages/Publicaciones";
 import { Layout } from "@containers/Layout";
 import { Header } from "@components/Header";
 
+import "@styles/app.scss";
+
 
 function App() {
 	const initialState = useInitialState();

@@ -1,0 +1,35 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.logo {
+	position: relative;
+	display: inline-block;
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	&__imagotype {
+		background-image: url("@icons/imagotype-black.svg");
+		margin: 0 auto 30px auto;
+		padding: 100px;
+		@include dark-mode {
+			background-image: url("@icons/imagotype-white.svg");
+		}
+	}
+	&__isotype {
+		background-image: url("@icons/isotype-shadow.svg");
+		margin: 0 auto 15px auto;
+		padding: 50px;
+		@include dark-mode {
+			background-image: url("@icons/isotype-white.svg");
+		}
+	}
+}
+
+
+@include tablet {
+	.logo__imagotype {
+		padding: 200px;
+	}
+}

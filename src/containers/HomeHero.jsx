@@ -1,19 +1,20 @@
 import React from "react";
 import { ButtonGreen } from "@components/ButtonGreen";
+import { Title } from "@components/Title";
 
-import "@styles/containers/homeContacto.scss";
+
 
 function HomeHero() {
 	return (
 		<section className="wrapper" id="hero">
-			<div className="title-h1">
+			<Title type="h1">
 				<h1>
 					Evaluación
 					<br />
 					<span> efectiva </span>del COVID-19 con tecnología en <span>CUU</span>
 					.
 				</h1>
-			</div>
+			</Title>
 			<div className="subtitle--background">
 				<h2>¡Hola! Soy Alaisa</h2>
 			</div>

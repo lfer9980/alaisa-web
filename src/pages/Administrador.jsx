@@ -3,7 +3,6 @@ import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 
-import "@styles/pages/administrador.scss";
 
 function Administrador() {
 	useDocumentTitle("administrador")
@@ -11,7 +10,11 @@ function Administrador() {
 	return(
 		<>
 			<Content>
-				<Title type="h2" text="Administrador" />
+				<Title type="h2">
+					<h2>
+						Administrador
+					</h2>
+				</Title>
 			</Content>
 		</>
 	);

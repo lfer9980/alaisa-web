@@ -2,12 +2,16 @@ import React from 'react';
 import { ButtonGreen } from '@components/ButtonGreen';
 import { Title } from "@components/Title";
 
-import "@styles/containers/homeEntrenamiento.scss";
+
 
 function HomeEntrenamiento() {
 	return (
 		<section className="wrapper" id="entrenamiento">
-			<Title type="main" text="Ayuda a Alaisa a mejorar en sus predicciones"/>
+			<Title type="main">
+				<h2>
+					Ayuda a Alaisa a mejorar en sus predicciones
+				</h2>
+			</Title>
 			<div className="container">
 				<div className="subtitle">
 					<p>

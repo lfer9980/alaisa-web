@@ -1,6 +1,6 @@
 import React from "react";
 
-import "@styles/components/inputs.scss";
+
 
 function Input({ name, text, placeholder }) {
 	return (

@@ -5,12 +5,16 @@ import { CardContacto } from '@components/CardContacto';
 
 import { Title } from "@components/Title";
 
-import "@styles/containers/homeContacto.scss";
+
 
 function HomeContacto() {
 	return (
 		<section className='wrapper' id='contacto'>
-			<Title type="main" text="Conoce a los contribuidores de este proyecto:" />	
+			<Title type="main">
+				<h2>
+					Conoce a los contribuidores de este proyecto:
+				</h2>
+			</Title>
 			<div className="card-wrapper">
 				<CardContacto 
 					name="Alan Hernadez" 

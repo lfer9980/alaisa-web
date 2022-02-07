@@ -6,7 +6,6 @@ import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Title } from "@components/Title";
 
-import "@styles/pages/modelo.scss";
 
 function Modelo() {
 	useDocumentTitle("Modelo Alaisa")
@@ -27,7 +26,9 @@ function Modelo() {
 					<figure className="logo"> 
 						<img className="logo--isotype"/>
 					</figure>
-					<Title type="h3" text="¡Comencemos!" />
+					<Title type="h3">
+						<h3>¡Comencemos!</h3>
+					</Title>
 					<div className="paragraph--bold">
 						<p>Recuerda que yo no doy diagnósticos ni tratamientos. </p>
 					</div>
@@ -38,13 +39,13 @@ function Modelo() {
 						<h5>Es un placer para mí estar a tus órdenes.</h5>
 					</div>
 					<div className="link">
-							<span>		
-								Consulta los		
-								<Link to="/privacidad">
-									<span> términos y condiciones</span>
-								</Link>
-							</span>
-						</div>
+						<span>		
+							Consulta los		
+							<Link to="/privacidad">
+								<span> términos y condiciones</span>
+							</Link>
+						</span>
+					</div>
 					<ButtonGreen link="prediccion" text="Comenzar" />
 					<div className="link--white">
 						<Link to="/privacidad">

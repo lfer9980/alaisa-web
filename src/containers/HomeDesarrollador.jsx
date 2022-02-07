@@ -2,12 +2,16 @@ import React from 'react';
 
 import { Title } from "@components/Title";
 
-import "@styles/containers/homeDesarrollador.scss";
+
 
 function HomeDesarrollador() {
 	return (
 		<section className="wrapper" id="metricas">
-			<Title type="main" text="Un modelo efectivo y preciso." />	
+			<Title type="main">
+				<h2>
+					Un modelo efectivo y preciso.	
+				</h2>
+			</Title>
 			<div className="paragraph--subtitle">
 				<p>Conoce los resultados de las pruebas de rendimiento hechas por los desarrolladores de Alaisa</p>
 			</div>

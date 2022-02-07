@@ -1,6 +1,34 @@
 @use "../global/vars" as v;
 @use "../global/mixins" as *;
 
+.back-button {
+	position: sticky;
+	top: 95px;
+	left: 20px;
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		color: v.$white;
+		i {
+			font-size: 28px;
+		}
+	}
+	background-color: v.$blue500;
+	@include dark-mode {
+		background-color: v.$dark500;
+	}
+	opacity: 75%;
+}
+
+
 .button-theme {
 	display: none;
 }
@@ -51,3 +79,5 @@
 	font-size: 24px;
 	color: v.$green400;
 }
+
+

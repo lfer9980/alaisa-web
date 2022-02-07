@@ -2,13 +2,17 @@ import React from 'react';
 import { ButtonGreen } from '@components/ButtonGreen';
 import { Title } from "@components/Title";
 
-import "@styles/containers/homeModelo.scss";
+
 
 function HomeModelo() {
 	return (
 		<section className='wrapper' id='modelo'>
 			<div>
-				<Title type="main" text="Alaisa puede ayudarte a tomar mejores decisiones para el paciente" />	
+				<Title type="main">
+					<h2>
+						Alaisa puede ayudarte a tomar mejores decisiones para el paciente
+					</h2>
+				</Title>
 				<div className="container">
 					<div className="paragraph--background">
 						<p>Sobre todo si tienes muchos y tienes que decidir si alguno necesita más atención, recursos o una cama en UCI.</p>

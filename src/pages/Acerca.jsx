@@ -7,7 +7,6 @@ import { Paragraph } from "@components/Paragraph";
 import { LinkAnchor } from "@components/LinkAnchor";
 import { Footer } from "@components/Footer";
 
-import "@styles/pages/acerca.scss";
 
 function Acerca() {
 	useDocumentTitle("Acerca de");
@@ -15,7 +14,9 @@ function Acerca() {
 	return (
 		<>
 			<Content>
-				<Title type="h2" text="¿Qué es Alaisa?" />
+				<Title type="h2">
+					<h2>¿Qué es <span>Alaisa</span>?</h2>
+				</Title>
 				<Paragraph type="normal">
 					ALAISA es un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2 a través de un modelo de predicción de desenlace de Machine learning.
 				</Paragraph>

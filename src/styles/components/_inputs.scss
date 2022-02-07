@@ -1,0 +1,84 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.input {
+	margin-bottom: 15px;
+
+	&__title {
+		display: block;
+		font-size: 1.6rem;
+		margin-bottom: 5px;
+	}
+
+	&__select {
+		display: block;
+		width: 90%;
+		height: 25px;
+		padding: 0 10px;
+		font-weight: 700;
+		border: 1px solid v.$gray400;
+		border-radius: 4px;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+		color: v.$dark600;
+	
+		@include dark-mode {
+			border: 1px solid v.$gray600;
+			color: v.$white;
+			background-color: v.$gray900;
+		}
+	}
+	
+	&__select:focus {
+		box-shadow: 0 4px 4px rgba(3, 101, 140, 0.30);
+	}
+	
+	&__select::placeholder {
+		font-weight: 200;
+		font-style: italic;
+		color: v.$blue500;
+	
+		@include dark-mode {
+			color: v.$blue400;
+		}
+	}
+	
+	&__select__place {
+		display: block;
+		width: 50%;
+		height: 25px;
+		padding: 0 10px;
+		font-weight: 700;
+		border: 1px solid v.$gray400;
+		border-radius: 4px;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+		color: v.$blue500;
+	
+		@include dark-mode {
+			color: v.$blue400;
+			border: 1px solid v.$gray600;
+			background-color: v.$gray900;
+		}
+	}
+	
+	&__check {
+		display: flex;
+		margin: 20px 0 0 0;
+		align-items: center;
+		justify-content: left;
+
+		input {
+			margin-right: 5px;
+		}
+
+		span {
+			font-family: v.$fuente1;
+			font-size: 1.2rem;
+			font-weight: 500;
+
+			a {
+				color: v.$blue300;
+			}
+		}
+	}
+}
+

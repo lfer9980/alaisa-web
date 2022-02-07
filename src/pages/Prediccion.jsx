@@ -8,7 +8,6 @@ import { Input } from "@components/Input";
 import { FormTitle } from "@components/FormTitle";
 import { FormButton } from "@components/FormButton";
 
-import "@styles/pages/prediccion.scss";
 
 function Prediccion() {
 	useDocumentTitle('Modelo de IA');
@@ -23,7 +22,11 @@ function Prediccion() {
 			<Content>
 				<Breadcrumbs url="modelo" section="prediccion"/>
 				<section className="main">
-					<Title type="h3" text="Datos generales del paciente" />	
+					<Title type="h3">
+						<h3>
+							Datos generales del paciente
+						</h3>
+					</Title>
 					<form className="form" method="POST" autoComplete="off">
 						<input type="hidden" name="crsf_token" defaultValue="" />
 						<InputSelect name="desenlace" text="Desenlace del paciente" options={options} />

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "@styles/components/links.scss";
+
 
 
 function LinkAnchor({children, href}) {

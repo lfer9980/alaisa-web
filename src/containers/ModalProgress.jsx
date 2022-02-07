@@ -1,7 +1,7 @@
 import React from "react";
 import { Content } from "@containers/Content";
 
-import "@styles/containers/modalProgress.scss";
+
 
 function ModalProgress() {
 	return(

@@ -4,7 +4,6 @@ import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
 
-import "@styles/pages/publicaciones.scss";
 
 function Publicaciones() {
 	useDocumentTitle("Publicaciones")
@@ -16,7 +15,11 @@ function Publicaciones() {
 					<h2>Publicaciones</h2>
 				</div>
 				<section className="main">
-					<Title type="h3" text="2022" />	
+					<Title type="h3">
+						<h3>
+							2022
+						</h3>
+					</Title>
 					<div className="paragraph">
 						<span className="paragraph__span">
 							Referencia a publicacion 1,
@@ -31,7 +34,11 @@ function Publicaciones() {
 					<h2>Ultimas actualizaciones</h2>
 				</div>
 				<section className="main">
-					<Title type="h3" text="v1.0.0" />	
+				<Title type="h3">
+						<h3>
+							v1.0.0
+						</h3>
+					</Title>	
 					<div className="paragraph">
 						<span className="paragraph__span">
 							Referencia a publicacion 1,

@@ -1,6 +1,5 @@
 import React from "react";
 
-import "@styles/components/paragraphs.scss";
 
 function Paragraph({children, type}) {
 	return (

@@ -7,7 +7,6 @@ import { Footer } from "@components/Footer";
 import { Breadcrumbs } from "@components/Breadcrumbs"; 
 import { ButtonGreen } from "@components/ButtonGreen";
 
-import "@styles/pages/resultado.scss";
 
 function Resultado() {
 	useDocumentTitle("resultado listo")
@@ -19,7 +18,11 @@ function Resultado() {
 					<figure className="logo"> 
 						<img className="logo--isotype"/>
 					</figure>
-					<Title type="h2" text="	La predicción para el paciente ingresado es:" />
+					<Title type="h2">
+						<h2>
+							La predicción para el paciente ingresado es:
+						</h2>
+					</Title>
 					<div className="paragraph--result">
 						<span>RESULTADO</span>
 					</div>

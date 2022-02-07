@@ -2,7 +2,6 @@ import React from "react";
 import isologotypeWhite from "@icons/isologotype-white.svg";
 import { Link } from "react-router-dom";
 
-import "@styles/components/footers.scss";
 
 function Footer() {
 	return (

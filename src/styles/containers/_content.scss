@@ -2,14 +2,12 @@
 @use "../global/mixins" as *;
 
 .content {
-	position: absolute;
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
 	align-content: center;
-	height: auto;
 	text-align: center;
-	padding-top: 90px;
+	padding-top: 80px;
 	margin: 0 20px;
 }
 
@@ -24,10 +22,15 @@
 	opacity: 0.15;
 }
 
+.content::before {
+	background-image: url('@images/mobile_gray@2x.png');
+}
+
 @include tablet {
 	.content {
 		padding-top: 165px;
 		margin: 0 30px;
+		background-image: url('@images/tablet_gray@2x.png');
 	}
 }
 
@@ -35,6 +38,7 @@
 	.content {
 		padding-top: 100px;
 		margin: 0 42px;
+		background-image: url('@images/desktop_gray@2x.png');
 	}
 }
 

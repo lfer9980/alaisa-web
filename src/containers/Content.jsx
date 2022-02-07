@@ -1,10 +1,10 @@
 import React from 'react';
 
-import "@styles/containers/content.scss";
 
-function Content({ children }) {
+
+function Content({ children, className }) {
 	return (
-		<div className='content'>
+		<div className={`content ${className}`}>
 			{children}
 		</div>
 	);

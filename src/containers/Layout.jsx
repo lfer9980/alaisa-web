@@ -1,6 +1,5 @@
 import React from 'react';
 
-import "@styles/containers/layout.scss";
 
 function Layout({ children }) {
 	return (

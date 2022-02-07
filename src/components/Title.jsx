@@ -1,22 +1,10 @@
 import React from "react";
+	
 
-import "@styles/components/titles.scss";
-
-/* logica para crear titulos en el landingPage */
-const typeOfElement = (typeElement, textElement) => {
-	if(typeElement==="main") {
-		return React.createElement("h2", {}, textElement);
-	}
-	return React.createElement(typeElement, {}, textElement);
-}	
-
-
-function Title({ type , text }) {
-	const element = typeOfElement(type, text)
-
+function Title({ type , children }) {
 	return(
 		<div className={`title-${type}`} > 
-			{element}
+			{children}
 		</div>
 	);
 }

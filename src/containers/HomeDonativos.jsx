@@ -5,12 +5,16 @@ import { Title } from "@components/Title";
 
 import CoffeeLogo from '@icons/coffee.png';
 
-import "@styles/containers/homeDonativos.scss";
+
 
 function HomeDonativos() {
 	return (
 		<section className="wrapper" id="donativos">
-			<Title type="main" text="Ayúdanos a crear más cosas increíbles..." />	
+			<Title type="main">
+				<h2>
+					Ayúdanos a crear más cosas increíbles...
+				</h2>
+			</Title>
 			<div className="paragraph--bold">
 				<p>Puedes ayudarnos muchísimo, aportando a través de:</p>
 			</div>

@@ -1,0 +1,30 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.title-h2 {
+	position: relative;
+	padding: 0 20px;
+	margin-bottom: 15px;
+	font-family: v.$fuente1;
+	h2 {
+		font-size: 3.79rem;
+		line-height: 120%;
+	}
+}
+
+
+.title-h3 {
+	position: relative;
+	padding: 0 20px;
+	margin: 10px 0;
+	text-align: center;
+	h3 {
+		font-family: v.$fuente1;
+		font-size: 2.1rem;
+		color: v.$dark600;
+
+		@include dark-mode {
+			color: v.$white;
+		}
+	}
+}

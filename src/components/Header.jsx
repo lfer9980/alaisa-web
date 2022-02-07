@@ -5,7 +5,7 @@ import flagMx from '@icons/flag-mx.svg';
 import logotypeWhite from '@icons/logotype-white.svg';
 import isotypeWhite from '@icons/isotype-white.svg';
 
-import "@styles/components/headers.scss";
+
 
 function Header() {
 	return (

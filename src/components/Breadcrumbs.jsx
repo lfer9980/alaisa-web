@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "@styles/components/breadcrumbs.scss";
 
-function Breadcrumbs({url, section }) {
+
+function Breadcrumbs({ url, children }) {
 	return (
 		<div className="breadcrumbs">
 			<nav className="breadcrumbs__nav">
@@ -12,13 +12,16 @@ function Breadcrumbs({url, section }) {
 						Inicio
 					</span>
 				</Link>
-				<Link to={`/${url}`}>
-					<span className="bread">
-						{url}
-					</span>
-				</Link>
+				{
+					url &&
+					<Link to={`/${url}`}>
+						<span className="bread">
+							{url}
+						</span>
+					</Link>
+				}
 				<span className="bread">
-					{section}
+					{children}
 				</span>			
 			</nav>
 		</div>
