@@ -1,2 +1,31 @@
 @use "../global/vars" as v;
 @use "../global/mixins" as *;
+
+.modelo::before {
+	background-image: url('@images/esteto-mobile@2x-80.jpg');
+	opacity: 50%;
+}
+
+@include tablet {
+	.modelo::before {
+		background-image: url('@images/esteto-tablet@2x-80.jpg');
+	}
+}
+
+@include desktop {
+	.modelo::before {
+		background-image: url('@images/esteto-desktop@2x-80.jpg');
+	}
+}
+
+@include tablet {
+
+}
+
+@include desktop {
+
+}
+
+@include large {
+	
+}

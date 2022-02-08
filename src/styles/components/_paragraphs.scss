@@ -7,6 +7,10 @@
 	line-height: 140%;
 	margin-bottom: 15px;
 
+	&__span {
+		display:block;
+	}
+
 	&--bold {
 		font-family: v.$fuente1;
 		font-size: 1.8rem;
@@ -61,5 +65,50 @@
 			line-height: 120%;
 		}
 	}
+	&--list {
+		display: inline-flex;
+		width: 100%;
+		justify-content: left;
+		margin-bottom: 15px;
+		flex-direction: column;
+		font-size: 1.4rem;
+		list-style: none;
+		li {
+			text-align: left;
+			color: v.$blue400;
+		}
+		li::before {
+			content: "►";
+			padding-right: 5px;
+		}
+	}
+	&--result {
+		margin: 40px 0;
+		padding: 0 20px;
+		span {
+			font-family: v.$fuente1;
+			font-size: 5.52rem;
+			font-weight: bold;
+			color: v.$blue500;
+			@include dark-mode {
+				color: v.$white;
+			}
+	}
+	}
 }
 
+.align-left {
+	text-align: left;
+}
+
+@include tablet {
+
+}
+
+@include desktop {
+
+}
+
+@include large {
+	
+}

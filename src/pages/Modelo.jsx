@@ -7,15 +7,17 @@ import { Paragraph } from "@components/Paragraph";
 import { Subtitle } from "@components/Subtitle";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Title } from "@components/Title";
-
+import { Logo } from "@components/Logo";
 
 function Modelo() {
 	useDocumentTitle("Modelo Alaisa")
 
 	return (
 		<>
-			<Content>
-				<Breadcrumbs url="/" section="Modelo" />
+			<Content type="margin modelo">
+				<Breadcrumbs>
+					Modelo
+				</Breadcrumbs>
 				<div className="back-button">
 					<Link to="/">
 						<span> 
@@ -25,11 +27,9 @@ function Modelo() {
 				</div>
 
 				<section className="main">
-					<figure className="logo"> 
-						<img className="logo--isotype"/>
-					</figure>
-					<Title type="h3">
-						<h3>¡Comencemos!</h3>
+					<Logo type="isotype"/>
+					<Title type="h2">
+						<h2>¡Comencemos!</h2>
 					</Title>
 					<Paragraph type="bold">
 						Recuerda que yo no doy diagnósticos ni tratamientos.
@@ -37,11 +37,9 @@ function Modelo() {
 					<Paragraph type="background">
 						Soy una herramienta para que, junto con tu <span>criterio médico</span>, puedas saber la tendencia del desenlace de tu paciente y puedas actuar a partir de eso. Espero poder <span>ayudarte</span> y que al mismo tiempo me ayudes a mí a <span>aprender</span> más.<br />Así, yo voy a poder ayudar a más pacientes y médicos que me necesiten.
 					</Paragraph>
-					<Subtitle type="">
-						<h5>
+					<Paragraph type="bold blue">
 							Es un placer para mí estar a tus órdenes.
-						</h5>
-					</Subtitle>
+					</Paragraph>
 					<div className="link">
 						<span>		
 							Consulta los		

@@ -32,3 +32,17 @@
 		color: v.$blue400;
 	}
 }
+
+@include tablet {
+	.breadcrumbs {
+		margin-bottom: 20px;
+		&__nav {
+			.bread {
+				font-size: 2.1rem;
+			}
+			a::after {
+				font-size: 2rem;
+			}
+		}
+	}
+}

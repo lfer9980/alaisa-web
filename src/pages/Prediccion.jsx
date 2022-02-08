@@ -4,9 +4,11 @@ import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { InputSelect } from "@components/InputSelect";
+import { InputCheck } from "@components/InputCheck";
 import { Input } from "@components/Input";
 import { FormTitle } from "@components/FormTitle";
 import { FormButton } from "@components/FormButton";
+import { Form } from "@components/Form";
 
 
 function Prediccion() {
@@ -19,9 +21,11 @@ function Prediccion() {
 
 	return (
 		<>
-			<Content>
-				<Breadcrumbs url="modelo" section="prediccion"/>
-				<section className="main">
+			<Content type="margin">
+				<Breadcrumbs url="modelo">
+					Predicción
+				</Breadcrumbs>
+				<Form>
 					<Title type="h3">
 						<h3>
 							Datos generales del paciente
@@ -32,10 +36,12 @@ function Prediccion() {
 						<InputSelect name="desenlace" text="Desenlace del paciente" options={options} />
 						<Input name="edad" text="Edad" placeholder="Edad" />
 						<FormTitle title="variables fisiólogicas"/>
-
+						<InputCheck>
+							He leído y acepto los términos y condiciones del aviso legal.
+						</InputCheck>
 						<FormButton name="guardar" defaultValue="Enviar contribución" />
 					</form>
-				</section>
+				</Form>
 			</Content>
 		</>
 	);

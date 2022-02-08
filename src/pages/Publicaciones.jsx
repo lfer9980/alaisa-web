@@ -5,26 +5,29 @@ import { Paragraph } from "@components/Paragraph";
 import { Subtitle } from "@components/Subtitle";
 import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
-
+import { Breadcrumbs } from "@components/Breadcrumbs";
 
 function Publicaciones() {
 	useDocumentTitle("Publicaciones")
 
 	return(
 		<> 
-			<Content>
+			<Content type="margin">
+				<Breadcrumbs>
+					Publicaciones
+				</Breadcrumbs>
 				<section className="main">
 					<Subtitle type="background">
-						<h2>Publiaciones</h2>
+						<h2>Publicaciones</h2>
 					</Subtitle>
 					<Title type="h3">
 						<h3>
 							2022
 						</h3>
 					</Title>
-					<Paragraph type="">
+					<Paragraph type=" align-left">
 						<span className="paragraph__span">
-							Referencia a publicacion 1,
+							Referencia a publicacion 1: 
 						</span>
 							breve descripción de la publicación para llegar al link de la publicacion
 					</Paragraph>
@@ -39,9 +42,9 @@ function Publicaciones() {
 							v1.0.0
 						</h3>
 					</Title>	
-					<Paragraph type="">
+					<Paragraph type=" align-left">
 						<span className="paragraph__span">
-							Referencia a publicacion 1,
+							Referencia a publicacion 1: 
 						</span>
 							breve descripción de la publicación para llegar al link de la publicacion
 					</Paragraph>
