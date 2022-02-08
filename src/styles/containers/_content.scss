@@ -40,6 +40,8 @@
 	.content {
 		padding-top: 165px;
 		margin: 0 30px;
+	}
+	.content::before {
 		background-image: url('@images/tablet_gray@2x.png');
 	}
 }
@@ -48,6 +50,8 @@
 	.content {
 		padding-top: 100px;
 		margin: 0 42px;
+	}
+	.content::before {
 		background-image: url('@images/desktop_gray@2x.png');
 	}
 }

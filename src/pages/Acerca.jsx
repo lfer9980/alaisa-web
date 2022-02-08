@@ -6,14 +6,18 @@ import { Logo } from "@components/Logo";
 import { Paragraph } from "@components/Paragraph";
 import { LinkAnchor } from "@components/LinkAnchor";
 import { Footer } from "@components/Footer";
+import { Breadcrumbs } from "@components/Breadcrumbs";
 
 
 function Acerca() {
-	useDocumentTitle("Acerca de");
+	useDocumentTitle("Acerca de ALAISA");
 
 	return (
 		<>
 			<Content type="margin">
+				<Breadcrumbs>
+					Acerca de ALAISA
+				</Breadcrumbs>
 				<Title type="h2">
 					<h2>¿Qué es <span>Alaisa</span>?</h2>
 				</Title>

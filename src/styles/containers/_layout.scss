@@ -20,12 +20,18 @@ html {
 h2 > span {
 	color: v.$blue400;
 }
+h3 > span {
+	color: v.$blue400;
+}
 p > span {
 	color: v.$blue400;
 }
 div > p {
 	position: relative;
 	line-height: 140%;
+}
+hr {
+	margin: 10px 0;
 }
 
 /* contenedor general */

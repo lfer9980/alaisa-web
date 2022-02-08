@@ -15,13 +15,15 @@ function Resultado() {
 	return (
 		<>
 			<Content>
-				<Breadcrumbs url="modelo" section="resultado"/>
+				<Breadcrumbs url="modelo">
+					Resultado
+				</Breadcrumbs>
 				<section className="main">
 					<Logo type="isotype"/>
-					<Title type="h2">
-						<h2>
+					<Title type="h3">
+						<h3>
 							La predicción para el paciente ingresado es:
-						</h2>
+						</h3>
 					</Title>
 					<Paragraph type="result">
 						<span>RESULTADO</span>
@@ -37,7 +39,6 @@ function Resultado() {
 					</div>
 				</section>
 			</Content>
-			<Footer />
 		</>
 	);
 }
