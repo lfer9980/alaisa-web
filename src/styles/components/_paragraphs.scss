@@ -3,14 +3,63 @@
 
 .paragraph {
 	position: relative;
-	margin-bottom: 15px;
 	font-size: 1.6rem;
 	line-height: 140%;
+	margin-bottom: 15px;
+
+	&--bold {
+		font-family: v.$fuente1;
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+	&--background {
+		margin-bottom: 20px;
+		p {
+			max-width: 100%;
+			padding: 20px;
+			font-size: 1.6rem;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+			background-color: rgba(3, 101, 140, 0.75);
+			@include dark-mode {
+				box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+				background-color: rgba(14, 14, 14, 0.75);
+			}
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+
+	&--rounded {
+		padding: 20px;
+		border-radius: 10px;
+		margin: 0 20px 15px 20px; 
+		background: rgb(3,101,140);
+		background: linear-gradient(180deg, rgba(3,101,140,0.3) 0%, rgba(3,101,140,0) 100%);
+		@include dark-mode {
+			background: rgb(175,175,175);
+			background: linear-gradient(180deg, rgba(175,175,175,0.3) 0%, rgba(175,175,175,0) 100%);
+		}
+		p {
+			font-size: 1.6rem;
+			text-align: center;
+			line-height: 140%;
+		}
+	}
+	&--mini {
+		margin-bottom: 20px;
+		p {
+			font-size: 1.2rem;
+		}
+	}
+	&--info {
+		margin: 0;
+		padding-right: 5px;
+		p {
+			font-size: 1.2rem;
+			line-height: 120%;
+		}
+	}
 }
-.paragraph--bold {
-	margin: 15px 0;
-	font-family: v.$fuente1;
-	font-size: 1.8rem;
-	font-weight: bold;
-	line-height: 140%;
-}
+

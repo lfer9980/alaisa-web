@@ -13,7 +13,7 @@ function Acerca() {
 
 	return (
 		<>
-			<Content>
+			<Content type="margin">
 				<Title type="h2">
 					<h2>¿Qué es <span>Alaisa</span>?</h2>
 				</Title>
@@ -27,8 +27,8 @@ function Acerca() {
 					Algoritmos y Covid 19
 				</LinkAnchor>
 				<Logo type="imagotype" color="black"/> 
-				<Footer />
 			</Content>
+			<Footer />
 		</>
 	);
 }

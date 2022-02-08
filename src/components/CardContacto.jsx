@@ -1,20 +1,25 @@
 import React from "react";
 import { Title } from "@components/Title";
+import { Paragraph } from "@components/Paragraph";
+import { Subtitle } from "@components/Subtitle";
+import { LinkAnchor } from "@components/LinkAnchor";
 
 
 function CardContacto(props) {
 	return (
-		<article className="card-contacto">
+		<article className="card-contacto margin">
 			<div className="card-contacto__main">
-				<Title type="p" text={props.name} /> 
-				<div className="card-contacto__paragraph">
-					<p>{props.job}</p>
-				</div>
-				<div className="link">
-					<a href={`mailto:${props.mail}`}>
+				<Title type="h4">
+					<h4>
+						{props.name}
+					</h4>
+				</Title>
+				<Paragraph type="info">
+					{props.job}
+				</Paragraph>
+				<LinkAnchor type="mail" href={`mailto:${props.mail}`} >
 					{props.mail}
-					</a>
-				</div>
+				</LinkAnchor>
 				<div className="card-contacto__media">
 					<a href={`https://${props.urlRed1}`}>
 						<img src={props.imgRed1} alt="red social del contribuidor"/>

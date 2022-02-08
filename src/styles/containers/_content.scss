@@ -8,7 +8,6 @@
 	align-content: center;
 	text-align: center;
 	padding-top: 80px;
-	margin: 0 20px;
 }
 
 .content::before {
@@ -24,6 +23,17 @@
 
 .content::before {
 	background-image: url('@images/mobile_gray@2x.png');
+}
+
+.margin {
+	margin: 0 20px;
+}
+.no-padding-top {
+	padding-top: 0;
+}
+
+.no-background::before {
+	background-image: none;
 }
 
 @include tablet {

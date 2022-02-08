@@ -3,6 +3,8 @@ import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Link } from "react-router-dom";
 import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
+import { Logo } from "@components/Logo";
+import { Paragraph } from "@components/Paragraph";
 import { Footer } from "@components/Footer";
 import { Breadcrumbs } from "@components/Breadcrumbs"; 
 import { ButtonGreen } from "@components/ButtonGreen";
@@ -15,20 +17,18 @@ function Resultado() {
 			<Content>
 				<Breadcrumbs url="modelo" section="resultado"/>
 				<section className="main">
-					<figure className="logo"> 
-						<img className="logo--isotype"/>
-					</figure>
+					<Logo type="isotype"/>
 					<Title type="h2">
 						<h2>
 							La predicción para el paciente ingresado es:
 						</h2>
 					</Title>
-					<div className="paragraph--result">
+					<Paragraph type="result">
 						<span>RESULTADO</span>
-					</div>
-					<div className="paragraph">
-						<p>Gracias por utilizar nuestro servicio, es un placer ayudar.</p>
-					</div>
+					</Paragraph>
+					<Paragraph type="">
+						Gracias por utilizar nuestro servicio, es un placer ayudar.
+					</Paragraph>
 					<ButtonGreen text="Hacer otra contribución" link="anadir"/>
 					<div className="link">
 						<Link to="/">

@@ -1,2 +1,45 @@
-@use "../global/vars" as v;
-@use "../global/mixins" as *;
+@use "../global/vars"as v;
+@use "../global/mixins"as *;
+
+#metricas::before {
+	background-image: url('@images/quirofano-mobile@2x-80.jpg');
+	opacity: 50%;
+}
+
+.table-wrapper {
+	position: relative;
+	margin: 0 20px;
+	font-size: 1.6rem;
+
+	.table {
+		width: 100%;
+		padding: 5px;
+		border-radius: 8px;
+		border-collapse: separate;
+		border-spacing: 0 10px;
+		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+		background-color: v.$blue500;
+
+		@include dark-mode {
+			box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+			background-color: v.$gray900;
+		}
+
+		thead tr th {
+			font-family: v.$fuente1;
+		}
+
+		tbody tr>th {
+			text-align: right;
+		}
+	}
+
+	&--side {
+		text-align: left;
+		margin-block-start: 5px;
+		margin-block-end: 20px;
+		p {
+			font-weight: 100;
+		}
+	}
+}

@@ -3,8 +3,7 @@
 
 .link {
 	position: relative;
-	display: block;
-	margin-bottom: 15px;
+	margin: 20px 0;
 	font-family: v.$fuente1;
 	font-size: 1.8rem;
 	font-weight: bold;
@@ -14,9 +13,47 @@
 			color: v.$white;
 		}
 	}
-}
-.link {
 	a:hover {
 		color: v.$blue400;
 	}
+	&--terms {
+		position: relative;
+		margin: 20px 0;
+		font-family: v.$fuente1;
+		font-size: 1.4rem;
+		a {
+			font-weight: 500;			
+			color: v.$blue300;
+		}
+		a:hover {
+			color: v.$white;
+		}
+	}
+	&--white { 
+		position: relative;
+		margin: 20px 0;
+		font-family: v.$fuente1;
+		font-size: 1.4rem;
+		a {
+			font-weight: 500;
+			color: v.$blue300;
+		}
+		a:hover {
+			color: v.$white;
+		}
+	}
+	&--mail {
+		margin: 10px 0;
+		a {
+			font-family: v.$fuente1;
+			font-size: 1.2rem;
+			font-weight: bold;
+			text-decoration: none;
+			color: v.$blue400;
+		}
+		a:hover {
+			color: v.$blue200;
+		}
+	}
 }
+

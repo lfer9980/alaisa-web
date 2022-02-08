@@ -1,2 +1,8 @@
 @use "../global/vars" as v;
 @use "../global/mixins" as *;
+
+
+#modelo::before {
+	background-image: url('@images/medicos-mobile@2x-80.jpg');
+	opacity: 50%;
+}

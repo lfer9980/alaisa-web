@@ -1,2 +1,7 @@
 @use "../global/vars" as v;
 @use "../global/mixins" as *;
+
+#entrenamiento::before {
+	background-image: url('@images/mobile_gray@2x.png');
+	opacity: 15%;
+}

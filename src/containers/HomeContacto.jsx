@@ -12,17 +12,17 @@ function HomeContacto() {
 		<section className='wrapper' id='contacto'>
 			<Title type="main">
 				<h2>
-					Conoce a los contribuidores de este proyecto:
+					Conoce a los <span>contribuidores</span> de este proyecto:
 				</h2>
 			</Title>
 			<div className="card-wrapper">
 				<CardContacto 
-					name="Alan Hernadez" 
-					job="desarrollador" 
-					mail="ejemplo@hotmail.com" 
+					name="Alan Hernández" 
+					job="Desarrollador de la red neuronal Alaisa." 
+					mail="alanhernandezgalvan@gmail.com" 
 					src={Alan}
-					urlRed1={"github.com"} 
-					urlRed2={"github.com"} 
+					urlRed1={"https://github.com/unlikeghost"} 
+					urlRed2={"https://github.com/unlikeghost"} 
 					imgRed1={Github} 
 					imgRed2={Github} 
 				/>

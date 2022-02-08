@@ -1,20 +1,20 @@
 import React from 'react';
 
 import { Title } from "@components/Title";
-
-
+import { Paragraph } from "@components/Paragraph";
+import { Subtitle } from "@components/Subtitle";
 
 function HomeDesarrollador() {
 	return (
 		<section className="wrapper" id="metricas">
 			<Title type="main">
 				<h2>
-					Un modelo efectivo y preciso.	
+					Un <span>modelo</span> efectivo y <span>preciso</span>.	
 				</h2>
 			</Title>
-			<div className="paragraph--subtitle">
+			<Subtitle type=" margin">
 				<p>Conoce los resultados de las pruebas de rendimiento hechas por los desarrolladores de Alaisa</p>
-			</div>
+			</Subtitle>
 			<div className="table-wrapper">
 				<table className="table">
 					<thead> 
@@ -70,9 +70,9 @@ function HomeDesarrollador() {
 					<p><b>*WAVG</b> = Weight Average</p>
 				</div>
 			</div>
-			<div className="date-wrapper">
+			<div className="date">
 				<p>Fecha de la ultima actualización:</p>
-				<div className="date">
+				<div className="date__main">
 					<span>30 de jun 2021</span>
 				</div>
 			</div>

@@ -1,2 +1,122 @@
 @use "../global/vars" as v;
 @use "../global/mixins" as *;
+
+
+.card-donativo {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+	background-color: v.$blue500;
+	@include dark-mode {
+		box-shadow: 0 4px 4px rgba(175, 175, 175, 0.3);
+		background-color: v.$gray900;
+	}
+	&__image {
+		width: 30%;
+		height: auto;
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+	}
+	&__main {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 70%;
+		margin: 0 10px;
+	}
+	&__title {
+		font-family: v.$fuente1;
+		font-size: 2.1rem;
+		font-weight: bold;
+		text-align: center;
+	}
+	&__paragraph {
+		font-size: 1.2rem;
+	}
+}
+
+.button--donativos {
+	width: 130px;
+	height: 20px;
+	margin-top: 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+	background-color: #FFDD00;
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		text-decoration: none;
+		font-family: v.$fuente1;
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: v.$dark600;
+		i {
+			display: none;
+		}
+	}
+}
+.button--donativos:hover {
+	background-color: #B9A314;
+}
+
+.card-wrapper {
+	position: relative;
+	width: 100%;
+	.card-contacto {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px;
+		margin-bottom: 20px;
+		text-align: left;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+		background-color: v.$blue500;
+		@include dark-mode {
+			background-color: v.$gray900;
+		}
+		&__main {
+			display: inherit;
+			flex-direction: column;
+			width: 70%;
+		}
+		&__image {
+			width: 30%;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+			overflow: hidden;
+			img {
+				width: 100%;
+				align-self: center;
+				justify-self: center;
+			}	
+		}
+		&__media {
+			display: flex;
+			a {
+				font-size: 1.2rem;
+				font-weight: bold;
+				text-decoration: none;
+				color: v.$blue400;
+				img {
+					width: 30px;
+					height: 30px;
+					margin-right: 25px;
+				}
+			}
+		}
+	}
+	.card-contacto:last-of-type {
+		margin-bottom: 0;
+	}
+}

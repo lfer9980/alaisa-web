@@ -5,7 +5,9 @@ import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
+import { Paragraph } from "@components/Paragraph";
 import { Footer } from "@components/Footer";
+import { Logo } from "@components/Logo";
 
 
 function Gracias() {
@@ -13,29 +15,28 @@ function Gracias() {
 	
 	return (
 		<>
-			<Content>
-				<Breadcrumbs url="entrenamiento" section="finalizar"/>
+			<Content type="margin">
+				<Breadcrumbs url="entrenamiento">
+					finalizar
+				</Breadcrumbs>
 				<section className="main">
-					<figure className="logo"> 
-						<img className="logo--isotype"/>
-					</figure>
-					<Title type="h2">
+					<Logo type="isotype" />
+					<Title type="h2 blue">
 						<h2>
 							¡Muchas gracias!
 						</h2>
 					</Title>
-					<div className="paragraph--bold">
-						<p>Con tu contribución, lograremos grandes cosas...</p>
-					</div>
+					<Paragraph type="bold">
+						Con tu contribución, lograremos grandes cosas..
+					</Paragraph>
 					<ButtonGreen text="Hacer otra contribución" link="anadir"/>
-					<div className="link">
+					<div className="link--terms">
 						<Link to="/">
 							<span >Regresar a la página principal</span>
 						</Link>
 					</div>
 				</section>
 			</Content>
-			<Footer />
 		</>
 	);
 }

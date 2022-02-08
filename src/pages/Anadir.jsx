@@ -20,7 +20,7 @@ function Anadir() {
 
 	return (
 		<>
-			<Content>
+			<Content type="margin">
 				<Breadcrumbs url="entrenamiento" section="anadir">
 					Añadir
 				</Breadcrumbs>

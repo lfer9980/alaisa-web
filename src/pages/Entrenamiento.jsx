@@ -13,7 +13,7 @@ function Entrenamiento() {
 
 	return(
 		<>
-			<Content className="entrenamiento">
+			<Content type="margin entrenamiento">
 				<Breadcrumbs>
 					Entrenamiento
 				</Breadcrumbs>
@@ -27,22 +27,15 @@ function Entrenamiento() {
 
 				<section className="main">
 					<Logo type="isotype"/>
-					<Title type="h3">
-						<h3>Tu contribución nos ayuda a mejorar y ser más precisos</h3>
+					<Title type="h2">
+						<h2>Tu contribución nos ayuda a <span>mejorar</span> y ser más <span>precisos</span></h2>
 					</Title>
-					<Paragraph>
+					<Paragraph type="background">
 						El proceso es identico a cuando utilizas el modelo para recibir predicciones. Los <span>datos</span> que ingreses durante el <span>entrenamiento</span> serán la base para que el modelo <span>identifique</span> eficientemente los patrones que determinan el desenlace de tu paciente durante la <span>predicción</span>.
 					</Paragraph>
-					<div className="paragraph--background">
-						<p>
-						
-						</p>
-					</div>
-					<div className="paragraph--bold">
-						<p>
-							Estamos muy agradecidos contigo, tu ayuda hace la diferencia.
-						</p>
-					</div>
+					<Paragraph type="bold">
+						Estamos muy agradecidos contigo, tu ayuda hace la diferencia.
+					</Paragraph>
 					<div className="link--terms">
 						<span>		
 							Consulta los		

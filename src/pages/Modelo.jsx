@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { Breadcrumbs } from "@components/Breadcrumbs";
+import { Paragraph } from "@components/Paragraph";
+import { Subtitle } from "@components/Subtitle";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Title } from "@components/Title";
 
@@ -29,15 +31,17 @@ function Modelo() {
 					<Title type="h3">
 						<h3>¡Comencemos!</h3>
 					</Title>
-					<div className="paragraph--bold">
-						<p>Recuerda que yo no doy diagnósticos ni tratamientos. </p>
-					</div>
-					<div className="paragraph--background">
-						<p>Soy una herramienta para que, junto con tu <span>criterio médico</span>, puedas saber la tendencia del desenlace de tu paciente y puedas actuar a partir de eso. Espero poder <span>ayudarte</span> y que al mismo tiempo me ayudes a mí a <span>aprender</span> más.<br />Así, yo voy a poder ayudar a más pacientes y médicos que me necesiten.</p>
-					</div>
-					<div className="paragraph--subtitle">
-						<h5>Es un placer para mí estar a tus órdenes.</h5>
-					</div>
+					<Paragraph type="bold">
+						Recuerda que yo no doy diagnósticos ni tratamientos.
+					</Paragraph>
+					<Paragraph type="background">
+						Soy una herramienta para que, junto con tu <span>criterio médico</span>, puedas saber la tendencia del desenlace de tu paciente y puedas actuar a partir de eso. Espero poder <span>ayudarte</span> y que al mismo tiempo me ayudes a mí a <span>aprender</span> más.<br />Así, yo voy a poder ayudar a más pacientes y médicos que me necesiten.
+					</Paragraph>
+					<Subtitle type="">
+						<h5>
+							Es un placer para mí estar a tus órdenes.
+						</h5>
+					</Subtitle>
 					<div className="link">
 						<span>		
 							Consulta los		

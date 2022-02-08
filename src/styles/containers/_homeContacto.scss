@@ -1,2 +1,8 @@
 @use "../global/vars" as v;
 @use "../global/mixins" as *;
+
+
+#contacto::before {
+	background-image: url('@images/cama-mobile@2x-80.jpg');
+	opacity: 0.5;
+}

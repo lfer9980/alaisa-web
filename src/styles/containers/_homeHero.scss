@@ -1,2 +1,25 @@
 @use "../global/vars" as v;
 @use "../global/mixins" as *;
+
+#hero {
+	padding-top: 0;
+}
+#hero::before {
+	background-image: url('@images/mobile_gray@2x.png');
+	opacity: 0.15;
+}
+
+.inari {
+	display: inline-block;
+	font-size: 1.4rem;
+	font-weight: bold;
+	.heart {
+		content: "";
+		background-image: url('@icons/heart.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 0 5px;
+		padding: 7px;
+	}
+}

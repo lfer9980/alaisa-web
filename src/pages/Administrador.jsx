@@ -9,7 +9,7 @@ function Administrador() {
 	
 	return(
 		<>
-			<Content>
+			<Content type="margin">
 				<Title type="h2">
 					<h2>
 						Administrador

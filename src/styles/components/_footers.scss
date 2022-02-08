@@ -2,7 +2,7 @@
 @use "../global/mixins" as *;
 
 .footer {
-	position: relative;
+	position: absolute;
 	height: auto;
 	padding: 10px 20px;
 	color: v.$white;

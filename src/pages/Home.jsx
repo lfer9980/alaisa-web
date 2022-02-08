@@ -15,15 +15,15 @@ function Home() {
 	
 	return(
 		<>
-			<Content>
+			<Content type="no-padding-top no-background">
 				<HomeHero></HomeHero>
 				<HomeModelo ></HomeModelo>	
 				<HomeEntrenamiento></HomeEntrenamiento>
 				<HomeDesarrollador></HomeDesarrollador>
 				<HomeDonativos></HomeDonativos>
 				<HomeContacto></HomeContacto>
-				<Footer></Footer>
 			</Content>
+			<Footer></Footer>
 		</>
 	);
 }
