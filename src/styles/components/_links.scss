@@ -58,13 +58,17 @@
 }
 
 @include tablet {
-
+	.link {
+		margin-bottom: 40px;
+		&--terms {
+			margin-bottom: 30px;
+			font-size: 2.1rem;
+		}
+		&--white {
+			margin: 0;
+			font-size: 1.8rem;
+		}
+	}
 }
 
-@include desktop {
 
-}
-
-@include large {
-	
-}

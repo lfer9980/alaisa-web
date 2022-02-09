@@ -38,7 +38,7 @@ function Anadir() {
 						<InputCheck>
 							He leído y acepto los términos y condiciones del aviso legal.
 						</InputCheck>
-						<FormButton name="guardar" defaultValue="Enviar contribución" />
+						<FormButton name="guardar" value="Enviar contribución" />
 					</form>
 				</Form>
 			</Content>

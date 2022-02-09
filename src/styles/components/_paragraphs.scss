@@ -1,6 +1,12 @@
 @use "../global/vars" as v;
 @use "../global/mixins" as *;
 
+.align-left {
+	p {
+		text-align: left;
+	}
+}
+
 .paragraph {
 	position: relative;
 	font-size: 1.6rem;
@@ -94,28 +100,34 @@
 				color: v.$white;
 			}
 	}
-	}
-<<<<<<< HEAD
-}
-
-.align-left {
-	text-align: left;
+	}		
 }
 
 @include tablet {
+	.paragraph {
+		margin-bottom: 30px;
+		p {
+			font-size: 2.4rem;
+		}
 
-}
-
-@include desktop {
-
-}
-
-@include large {
-	
-=======
-}
-
-.align-left {
-	text-align: left;
->>>>>>> 2cd72f5d910ebfdf5296b2326cfa2b14bb999e29
+		&--bold {
+			margin-bottom: 30px;
+			p {
+				font-size: 2.843rem;
+			}
+		}
+		&--background {
+			p {
+				background-color: transparent;
+				box-shadow: none;
+			}
+		}
+		&--list {
+			margin-bottom: 15px;
+			font-size: 2.1rem;
+			li {
+				margin-bottom: 5px;
+			}
+		}
+	}
 }

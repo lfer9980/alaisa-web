@@ -98,6 +98,11 @@
 	.back-button {
 		display: none;
 	}
+	.button--green {
+		width: 70%;
+		height: 50px;
+		margin: inherit;
+	}
 }
 
 @include large {

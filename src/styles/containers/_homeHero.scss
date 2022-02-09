@@ -25,11 +25,16 @@
 }
 
 @include tablet {
+	#hero::before {
+		background-image: url('@images/tablet_gray@2x.png');
+	}
 
 }
 
 @include desktop {
-
+	#hero::before {
+		background-image: url('@images/desktop_gray@2x.png');
+	}
 }
 
 @include large {

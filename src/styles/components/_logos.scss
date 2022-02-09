@@ -29,8 +29,13 @@
 
 
 @include tablet {
-	.logo__imagotype {
-		padding: 200px;
+	.logo {
+		&__imagotype {
+			padding: 200px;
+		}
+		&__isotype {
+			display: none;
+		}
 	}
 }
 

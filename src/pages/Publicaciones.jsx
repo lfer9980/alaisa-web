@@ -16,7 +16,7 @@ function Publicaciones() {
 				<Breadcrumbs>
 					Publicaciones
 				</Breadcrumbs>
-				<section className="main">
+				<section className="main-publications">
 					<Subtitle type="background">
 						<h2>Publicaciones</h2>
 					</Subtitle>
@@ -33,7 +33,7 @@ function Publicaciones() {
 					</Paragraph>
 					<hr /> 
 				</section>
-				<section className="main">
+				<section className="main-publications">
 					<Subtitle type="background">
 						<h2>Ultimas actualizaciones</h2>
 					</Subtitle>

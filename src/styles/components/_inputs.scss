@@ -84,13 +84,40 @@
 
 
 @include tablet {
-
+	.input {
+		margin-bottom: 20px;
+		&__title {
+			font-size: 1.8rem;
+		}
+		&__select {
+			width: 75%;
+			height: 30px;
+			font-size: 1.6rem;
+		}
+		&__select__place {
+			height: 30px;
+			font-size: 1.6rem;
+		}
+		&__check {
+			margin: 20px 0 0 0;
+			justify-content: center;
+			input {
+				margin-right: 15px;
+			}
+			span {
+				font-size: 1.8rem;
+			}
+		}
+	}
 }
 
 @include desktop {
-
-}
-
-@include large {
-	
+	.input {
+		&__select {
+			width: 100%;
+		}
+		&__title {
+			font-size: 1.8rem;
+		}
+	}
 }

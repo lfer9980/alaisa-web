@@ -7,11 +7,15 @@
 }
 
 @include tablet {
-
+	#entrenamiento::before {
+		background-image: url('@images/tablet_gray@2x.png');
+	}
 }
 
 @include desktop {
-
+	#entrenamiento::before {
+		background-image: url('@images/tablet_gray@2x.png');
+	}
 }
 
 @include large {

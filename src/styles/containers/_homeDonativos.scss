@@ -7,13 +7,13 @@
 }
 
 @include tablet {
-
+	#donativos::before {
+		background-image: url('@images/tablet_gray@2x.png');
+	}
 }
 
 @include desktop {
-
-}
-
-@include large {
-	
+	#donativos::before {
+		background-image: url('@images/desktop_gray@2x.png');
+	}
 }

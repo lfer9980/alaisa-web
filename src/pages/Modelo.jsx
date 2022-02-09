@@ -40,7 +40,7 @@ function Modelo() {
 					<Paragraph type="bold blue">
 							Es un placer para mí estar a tus órdenes.
 					</Paragraph>
-					<div className="link">
+					<div className="link--terms">
 						<span>		
 							Consulta los		
 							<Link to="/privacidad">

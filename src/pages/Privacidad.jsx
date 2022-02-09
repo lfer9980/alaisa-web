@@ -25,13 +25,13 @@ function Privacidad() {
 						Consulta nuestro aviso de privacidad
 					</h3>
 				</Subtitle>
-				<Paragraph type="">
+				<Paragraph type=" align-left">
 					Hospital Central Universitario, con domicilio en No. 3302, calle Rosales, Roma Sur, C. P. 31350, Chihuahua, México, teléfono (614)-180-0800, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:
 				</Paragraph>
 				<Subtitle type="bold">
 					<h3>¿Para qué fines utilizaremos sus datos personales?</h3>
 				</Subtitle>
-				<Paragraph type="">
+				<Paragraph type=" align-left">
 					Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:
 				</Paragraph>
 				<ul className="paragraph--list">
@@ -51,7 +51,7 @@ function Privacidad() {
 				<Subtitle type="bold">
 					<h3>¿Dónde puedo consultar el aviso de privacidad integral?</h3>
 				</Subtitle>
-				<Paragraph type="">
+				<Paragraph type=" align-left">
 					Para conocer mayor información sobre los términos y condiciones en que serán tratados sus datos personales, como los terceros con quienes compartimos su información personal y la forma en que podrá ejercer sus derechos ARCO, puede consultar el aviso de privacidad integral con una petición vía correo electrónico:
 				</Paragraph>
 				<div className="link">

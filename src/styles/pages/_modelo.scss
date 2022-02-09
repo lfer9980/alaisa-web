@@ -9,26 +9,13 @@
 @include tablet {
 	.modelo::before {
 		background-image: url('@images/esteto-tablet@2x-80.jpg');
+		opacity: 30%;
 	}
 }
 
 @include desktop {
 	.modelo::before {
 		background-image: url('@images/esteto-desktop@2x-80.jpg');
+		opacity: 100%;
 	}
-<<<<<<< HEAD
-}
-
-@include tablet {
-
-}
-
-@include desktop {
-
-}
-
-@include large {
-	
-=======
->>>>>>> 2cd72f5d910ebfdf5296b2326cfa2b14bb999e29
 }

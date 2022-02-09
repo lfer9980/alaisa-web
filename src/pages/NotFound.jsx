@@ -15,7 +15,7 @@ function NotFound() {
 						404
 					</h2>
 				</Title>	
-				<section className="main">
+				<section className="main no-background">
 					<Title type="h3">
 						<h3>
 							<span>404 No Encontrado</span><br/> La URL solicitada no fue encontrada en el servidor. Si entro la URL manualmente, porfavor verifique que sea correcta e intentelo de nuevo.

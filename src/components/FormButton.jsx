@@ -1,6 +1,6 @@
 import React from "react";
 
-function FormButton({name, defaultValue}) {
+function FormButton({name, value}) {
 	return(
 		<>
 			<input 
@@ -8,7 +8,7 @@ function FormButton({name, defaultValue}) {
 				type="submit" 
 				id={name}
 				name={name}
-				defaultValue={defaultValue}	
+				value={value}	
 			/>
 		</>
 	);

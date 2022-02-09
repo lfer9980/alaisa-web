@@ -14,11 +14,11 @@ function Resultado() {
 	useDocumentTitle("resultado listo")
 	return (
 		<>
-			<Content>
+			<Content type="margin">
 				<Breadcrumbs url="modelo">
 					Resultado
 				</Breadcrumbs>
-				<section className="main">
+				<section className="main no-background">
 					<Logo type="isotype"/>
 					<Title type="h3">
 						<h3>

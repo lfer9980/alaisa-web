@@ -28,6 +28,7 @@
 .margin {
 	margin: 0 20px;
 }
+
 .no-padding-top {
 	padding-top: 0;
 }
@@ -39,25 +40,36 @@
 @include tablet {
 	.content {
 		padding-top: 140px;
-		margin: 0 30px;
 	}
 	.content::before {
 		background-image: url('@images/tablet_gray@2x.png');
+	}
+
+	.no-background::before {
+		background-image: none;
+	}
+	.margin {
+		margin: 0 30px;
 	}
 }
 
 @include desktop {
 	.content {
-		padding-top: 100px;
-		margin: 0 42px;
+		padding-top: 80px;
 	}
 	.content::before {
 		background-image: url('@images/desktop_gray@2x.png');
+	}
+	.no-background::before {
+		background-image: none;
+	}
+	.margin {
+		margin: 0 42px;
 	}
 }
 
 @include large {
 	.content {
-		padding-top: 0 95px;
+		padding-top: 95px;
 	}
 }
