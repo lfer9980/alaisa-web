@@ -34,6 +34,21 @@ hr {
 	margin: 10px 0;
 }
 
+/* estilos a la barra de scroll */
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba($color: v.$blue500, $alpha: 0.5)
+}
+::-webkit-scrollbar-thumb:hover {
+	background: v.$blue400;
+}
+
+
 /* contenedor general */
 
 .wrapper {
@@ -43,6 +58,7 @@ hr {
 	justify-content: center;
 	height: 100vh;
 	color: v.$white;
+	padding-top: 90px;
 }
 .wrapper::before {
 	content: "";

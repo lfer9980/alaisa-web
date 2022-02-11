@@ -46,10 +46,57 @@
 
 
 @include tablet {
+	
+	#metricas::before {
+		background-image: url('@images/quirofano-tablet@2x-80.jpg');
+	}
+
+	.table-wrapper {
+		margin: 0 80px;
+		font-size: 2.1rem;
+		.table {
+			padding: 10px;
+			border-spacing: 0 15px;
+			thead tr th {
+				font-size: 2.8rem;
+			}
+		}
+		&--side {
+			p {
+				margin-block-start: 5px;
+				font-size: 1.8rem;
+			}
+		}
+	}
 
 }
 
 @include desktop {
+	#metricas::before {
+		background-image: url('@images/quirofano-desktop@2x-80.jpg');
+	}
+
+	.table-wrapper {
+		display: flex;
+		width: 786px;
+		flex-direction: row-reverse;
+		font-size: 1.8rem;
+		margin: 0 auto 20px;
+		.table {
+			padding: 5px;
+			border-spacing: 0 10px;
+			thead tr th {
+				font-size: 2.1rem;
+			}
+		}
+		&--side {
+			writing-mode: vertical-lr;
+			p {
+				margin-block-start: 10px;
+				font-size: 1.6rem;
+			}
+		}
+	}
 
 }
 

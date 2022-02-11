@@ -10,9 +10,6 @@ function Administrador() {
 	return(
 		<>
 			<Content type="margin">
-				<Breadcrumbs>
-					Iniciar sesión
-				</Breadcrumbs>
 				<Title type="h2">
 					<h2>
 						Administrador

@@ -3,15 +3,24 @@
 
 #contacto::before {
 	background-image: url('@images/cama-mobile@2x-80.jpg');
-	opacity: 0.5;
+	opacity: 50%;
 }
 
 @include tablet {
-
+	#contacto::before {
+		background-image: url('@images/cama-tablet@2x-80.jpg');
+	}
 }
 
 @include desktop {
-
+	#contacto {
+		position: relative;
+		flex-direction: row;
+		align-items: center;
+	}
+	#contacto::before {
+		background-image: url('@images/cama-desktop@2x-80.jpg');
+	}
 }
 
 @include large {

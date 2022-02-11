@@ -7,7 +7,7 @@ import { LinkAnchor } from "@components/LinkAnchor";
 
 function CardContacto(props) {
 	return (
-		<article className="card-contacto margin">
+		<article className="card-contacto">
 			<div className="card-contacto__main">
 				<Title type="h4">
 					<h4>

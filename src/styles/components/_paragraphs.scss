@@ -5,6 +5,9 @@
 	p {
 		text-align: left;
 	}
+	h2 {
+		text-align: left;
+	}
 }
 
 .paragraph {
@@ -43,8 +46,7 @@
 
 	&--rounded {
 		padding: 20px;
-		border-radius: 10px;
-		margin: 0 20px 15px 20px; 
+		border-radius: 10px; 
 		background: rgb(3,101,140);
 		background: linear-gradient(180deg, rgba(3,101,140,0.3) 0%, rgba(3,101,140,0) 100%);
 		@include dark-mode {
@@ -107,17 +109,18 @@
 	.paragraph {
 		margin-bottom: 30px;
 		p {
-			font-size: 2.4rem;
+			font-size: 2.1rem;
 		}
 
 		&--bold {
 			margin-bottom: 30px;
 			p {
-				font-size: 2.843rem;
+				font-size: 2.1rem;
 			}
 		}
 		&--background {
 			p {
+				font-size: 2.1rem;
 				background-color: transparent;
 				box-shadow: none;
 			}
@@ -127,6 +130,47 @@
 			font-size: 2.1rem;
 			li {
 				margin-bottom: 5px;
+			}
+		}
+		&--info {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@include desktop {
+	.paragraph {
+		p {
+			font-size: 1.8rem;
+		}
+
+		&--bold {
+			p {
+				font-size: 1.8rem;
+			}
+		}
+		&--background {
+			p {
+				padding: 0;
+				background-color: transparent;
+				box-shadow: none;
+			}
+		}
+		&--list {
+			font-size: 1.8rem;
+		}
+		&--rounded {
+			background: none;
+			margin-bottom: 0;
+			padding: 0;
+			p {
+				font-size: 1.8rem;
+			}
+		}
+		&--info {
+			margin: 0;
+			p {
+				font-size: 1.6rem;
 			}
 		}
 	}

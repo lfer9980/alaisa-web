@@ -41,7 +41,12 @@
 
 
 @include desktop {
-
+	.logo {
+		&__imagotype {
+			padding: 150px;
+			margin-bottom: 0;
+		}
+	}
 }
 
 @include large {

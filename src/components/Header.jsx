@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import flagUs from '@icons/flag-us.svg';
 import flagMx from '@icons/flag-mx.svg';
 import logotypeWhite from '@icons/logotype-white.svg';
@@ -19,34 +19,34 @@ function Header() {
 				</Link>
 				<nav className="header--up__nav--desktop">
 					<li>
-						<Link to="/modelo">
+						<NavLink to="/modelo">
 							<span>Modelo</span>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/entrenamiento">
+						<NavLink to="/entrenamiento">
 							<span>Entrenamiento</span>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/#metricas">
+						<NavLink to="/#metricas">
 							<span>Rendimiento</span>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/#donativos">
+						<NavLink to="/#donativos">
 							<span>Donativos</span>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/#contacto">
+						<NavLink to="/#contacto">
 							<span>Contacto</span>
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/publicaciones">
+						<NavLink to="/publicaciones">
 							<span>publicaciones</span>
-						</Link>
+						</NavLink>
 					</li>
 				</nav>
 				<div className="header--up__language">
@@ -58,34 +58,34 @@ function Header() {
 				<nav className="header__nav--mobile">
 					<ul className="header__menu--mobile">
 						<li>
-							<Link to="/modelo">
+							<NavLink to="/modelo">
 								<span>Modelo Alaisa</span>
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to="/entrenamiento">
+							<NavLink to="/entrenamiento">
 								<span>Entrenamiento</span>
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to="/#metricas">
+							<NavLink to="/#metricas">
 								<span>Estadisiticas de Rendimiento</span>
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to="/#donativos">
+							<NavLink to="/#donativos">
 								<span>Donativos</span>
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to="/#contacto">
+							<NavLink to="/#contacto">
 								<span>Contacto del equipo</span>
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to="/publicaciones">
+							<NavLink to="/publicaciones">
 								<span>publicaciones</span>
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 					<ul className="header__menu--secondary">

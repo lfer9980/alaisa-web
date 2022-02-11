@@ -13,11 +13,12 @@
 }
 
 @include desktop {
+	#entrenamiento {
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+	}
 	#entrenamiento::before {
 		background-image: url('@images/tablet_gray@2x.png');
 	}
-}
-
-@include large {
-	
 }

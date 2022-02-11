@@ -34,6 +34,31 @@ function Anadir() {
 						<input type="hidden" name="crsf_token" defaultValue="" />
 						<InputSelect name="desenlace" text="Desenlace del paciente" options={options} />
 						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
+						<Input name="edad" text="Edad" placeholder="Edad" />
 						<FormTitle title="variables fisiólogicas"/>
 						<InputCheck>
 							He leído y acepto los términos y condiciones del aviso legal.

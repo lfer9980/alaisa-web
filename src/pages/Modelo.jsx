@@ -37,7 +37,7 @@ function Modelo() {
 					<Paragraph type="background">
 						Soy una herramienta para que, junto con tu <span>criterio médico</span>, puedas saber la tendencia del desenlace de tu paciente y puedas actuar a partir de eso. Espero poder <span>ayudarte</span> y que al mismo tiempo me ayudes a mí a <span>aprender</span> más.<br />Así, yo voy a poder ayudar a más pacientes y médicos que me necesiten.
 					</Paragraph>
-					<Paragraph type="bold blue">
+					<Paragraph type="bold">
 							Es un placer para mí estar a tus órdenes.
 					</Paragraph>
 					<div className="link--terms">

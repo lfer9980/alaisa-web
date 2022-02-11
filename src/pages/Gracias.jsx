@@ -19,7 +19,7 @@ function Gracias() {
 				<Breadcrumbs url="entrenamiento">
 					finalizar
 				</Breadcrumbs>
-				<section className="main">
+				<section className="main no-background">
 					<Logo type="isotype" />
 					<Title type="h2 blue">
 						<h2>

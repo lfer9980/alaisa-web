@@ -68,7 +68,21 @@
 			margin: 0;
 			font-size: 1.8rem;
 		}
+		&--mail {
+			margin-bottom: 20px;
+			a {
+				font-size: 1.8rem;
+			}
+		}
 	}
 }
 
-
+@include desktop {
+	.link {
+		&--mail {
+			a {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

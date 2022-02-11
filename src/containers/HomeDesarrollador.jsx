@@ -7,7 +7,7 @@ import { Subtitle } from "@components/Subtitle";
 function HomeDesarrollador() {
 	return (
 		<section className="wrapper" id="metricas">
-			<Title type="main">
+			<Title type="main margin">
 				<h2>
 					Un <span>modelo</span> efectivo y <span>preciso</span>.	
 				</h2>

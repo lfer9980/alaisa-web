@@ -23,9 +23,9 @@ function HomeHero() {
 			<Subtitle type="bold margin">
 				<h3>Fui creado con la idea de ayudar en los hospitales.</h3>
 			</Subtitle>
-			<Paragraph type="rounded">
-				Me enseñaron a identificar características en los personas con
-				<strong>COVID-19</strong> para saber si los pacientes tienen más
+			<Paragraph type="rounded margin">
+				Me enseñaron a identificar características en los personas con 
+				<strong> COVID-19</strong> para saber si los pacientes tienen más
 				posibilidades de darse de alta o de fallecer por esta enfermedad.
 			</Paragraph>
 			<ButtonGreen text="Comienza aquí" link="modelo"/>

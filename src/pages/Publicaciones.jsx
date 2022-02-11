@@ -30,8 +30,7 @@ function Publicaciones() {
 							Referencia a publicacion 1: 
 						</span>
 							breve descripción de la publicación para llegar al link de la publicacion
-					</Paragraph>
-					<hr /> 
+					</Paragraph> 
 				</section>
 				<section className="main-publications">
 					<Subtitle type="background">
@@ -48,7 +47,7 @@ function Publicaciones() {
 						</span>
 							breve descripción de la publicación para llegar al link de la publicacion
 					</Paragraph>
-					<hr /> 
+
 				</section>
 			</Content>
 			<Footer />

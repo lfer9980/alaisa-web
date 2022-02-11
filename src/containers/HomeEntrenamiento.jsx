@@ -9,7 +9,7 @@ import { Subtitle } from "@components/Subtitle";
 function HomeEntrenamiento() {
 	return (
 		<section className="wrapper" id="entrenamiento">
-			<Title type="main">
+			<Title type="main margin">
 				<h2>
 					Ayuda a <span>ALAISA</span> a mejorar en sus predicciones
 				</h2>
@@ -29,8 +29,8 @@ function HomeEntrenamiento() {
 				<Paragraph type="">
 					No te preocupes, el proceso es el mismo a cuando utilizas el modelo para recibir predicciones.
 				</Paragraph>
+				<ButtonGreen text="Entrar al entrenamiento" link="entrenamiento"/>
 			</div>
-			<ButtonGreen text="Entrar al entrenamiento" link="entrenamiento"/>
 		</section>
 	);
 }

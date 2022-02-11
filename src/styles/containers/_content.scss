@@ -4,8 +4,7 @@
 .content {
 	display: flex;
 	flex-direction: column;
-	justify-items: center;
-	align-content: center;
+	justify-content: center;
 	text-align: center;
 	padding-top: 80px;
 }
@@ -51,6 +50,9 @@
 	.margin {
 		margin: 0 30px;
 	}
+	.no-padding-top {
+		padding-top: 0;
+	}
 }
 
 @include desktop {
@@ -66,10 +68,16 @@
 	.margin {
 		margin: 0 42px;
 	}
+	.no-padding-top {
+		padding-top: 0;
+	}
 }
 
 @include large {
 	.content {
 		padding-top: 95px;
+	}
+	.no-padding-top {
+		padding-top: 0;
 	}
 }

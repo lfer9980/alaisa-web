@@ -1,9 +1,6 @@
 @use "../global/vars" as v;
 @use "../global/mixins" as *;
 
-#hero {
-	padding-top: 0;
-}
 #hero::before {
 	background-image: url('@images/mobile_gray@2x.png');
 	opacity: 0.15;

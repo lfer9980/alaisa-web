@@ -11,7 +11,7 @@ import CoffeeLogo from '@icons/coffee.png';
 function HomeDonativos() {
 	return (
 		<section className="wrapper" id="donativos">
-			<Title type="main">
+			<Title type="main margin">
 				<h2>
 					<span>Ayúdanos</span> a crear más cosas <span>increíbles</span>...
 				</h2>
