@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { AppContext } from "@context/AppContext";
 
 import { Title } from "@components/Title";
 import { Paragraph } from "@components/Paragraph";
 import { Subtitle } from "@components/Subtitle";
 
 function HomeDesarrollador() {
+	const {
+		desarrolladorVisible,
+		desarrollador,
+		animateFadeInUp,
+		animateFlipInY,
+		animateFadeInLeft,
+		animateFadeInRight,
+	} = useContext(AppContext);
+
+
 	return (
-		<section className="wrapper" id="metricas">
-			<Title type="main margin">
+		<section className="wrapper" id="metricas" ref={desarrollador}>
+			<Title type={`main margin ${desarrolladorVisible? animateFadeInUp : 'trans'}`}>
 				<h2>
 					Un <span>modelo</span> efectivo y <span>preciso</span>.	
 				</h2>
@@ -16,7 +27,7 @@ function HomeDesarrollador() {
 				<p>Conoce los resultados de las pruebas de rendimiento hechas por los desarrolladores de Alaisa</p>
 			</Subtitle>
 			<div className="table-wrapper">
-				<table className="table">
+				<table className={`table ${desarrolladorVisible? animateFadeInRight : 'trans'}`}>
 					<thead> 
 						<tr>
 						<th> </th>

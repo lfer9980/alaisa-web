@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { AppContext } from "@context/AppContext";
+
 import Alan from '@images/alan-dev.jpg';
 import Github from '@icons/github.svg'
 import { CardContacto } from '@components/CardContacto';
@@ -8,9 +10,16 @@ import { Title } from "@components/Title";
 
 
 function HomeContacto() {
+	const {
+		contactoVisible,
+		contacto,
+		animateFadeInUp,
+		animateFlipInY,
+	} = useContext(AppContext);
+
 	return (
-		<section className='wrapper' id='contacto'>
-			<Title type="main margin align-left">
+		<section className='wrapper' id='contacto' ref={contacto}>
+			<Title type={`main margin align-left ${contactoVisible? animateFlipInY : 'trans'}`}>
 				<h2>
 					Conoce a los <span>contribuidores</span> de este proyecto:
 				</h2>

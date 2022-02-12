@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "@context/AppContext";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Title } from "@components/Title";
 import { Paragraph } from "@components/Paragraph";
@@ -7,9 +8,18 @@ import { Subtitle } from "@components/Subtitle";
 
 
 function HomeHero() {
+	const {
+		heroVisible,
+		hero,
+		animateFadeInUp,
+		animateFlipInY,
+		animateFadeInLeft,
+		animateFadeInRight,
+	} = useContext(AppContext);
+
 	return (
-		<section className="wrapper" id="hero">
-			<Title type="h1 margin">
+		<section className="wrapper" id="hero" ref={hero}>
+			<Title type={`h1 margin ${heroVisible? animateFadeInLeft : 'trans' }`}>
 				<h1>
 					Evaluación
 					<br />
@@ -28,7 +38,11 @@ function HomeHero() {
 				<strong> COVID-19</strong> para saber si los pacientes tienen más
 				posibilidades de darse de alta o de fallecer por esta enfermedad.
 			</Paragraph>
-			<ButtonGreen text="Comienza aquí" link="modelo"/>
+			<ButtonGreen 
+				text="Comienza aquí" 
+				link="modelo" 
+				animation={`${heroVisible? animateFadeInUp : 'trans' }`}
+			/>
 			<div className="inari">
 				<p>
 					Desarrollado con 

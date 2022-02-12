@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { AppContext } from "@context/AppContext";
 import { ButtonGreen } from '@components/ButtonGreen';
 import { Title } from "@components/Title";
 import { Paragraph } from "@components/Paragraph";
@@ -7,9 +8,18 @@ import { Subtitle } from "@components/Subtitle";
 
 
 function HomeEntrenamiento() {
+	const {
+		entrenamientoVisible,
+		entrenamiento,
+		animateFadeInUp,
+		animateFlipInY,
+		animateFadeInLeft,
+		animateFadeInRight,
+	} = useContext(AppContext);
+
 	return (
-		<section className="wrapper" id="entrenamiento">
-			<Title type="main margin">
+		<section className="wrapper" id="entrenamiento" ref={entrenamiento}>
+			<Title type={`main margin ${entrenamientoVisible? animateFadeInUp : 'trans'} `}>
 				<h2>
 					Ayuda a <span>ALAISA</span> a mejorar en sus predicciones
 				</h2>
@@ -29,7 +39,11 @@ function HomeEntrenamiento() {
 				<Paragraph type="">
 					No te preocupes, el proceso es el mismo a cuando utilizas el modelo para recibir predicciones.
 				</Paragraph>
-				<ButtonGreen text="Entrar al entrenamiento" link="entrenamiento"/>
+				<ButtonGreen 
+					text="Entrar al entrenamiento" 
+					link="entrenamiento"
+					animation={`${entrenamientoVisible? animateFadeInUp : 'trans' }`}
+					/>
 			</div>
 		</section>
 	);

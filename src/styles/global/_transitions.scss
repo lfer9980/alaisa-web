@@ -1,13 +1,18 @@
 /* Transiciones */
 .trans {
-	opacity: 0;
-	transition: opacity 0.5s;
+	animation: hide-show 1s;
 }
-.trans--single {
-	opacity: 0;
-	transition: opacity 0.5s;
-}
+
 .animate__animated {
-	opacity: 1;
-	transition: opacity 0.5s;
+	animation: hide-show 0.1s;
 }
+
+@keyframes hide-show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+

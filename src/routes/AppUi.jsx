@@ -19,6 +19,7 @@ import { Layout } from "@containers/Layout";
 import { Header } from "@components/Header";
 
 import "@styles/app.scss";
+import "animate.css";
 
 
 function AppUi() {

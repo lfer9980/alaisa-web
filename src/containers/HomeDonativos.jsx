@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { AppContext } from "@context/AppContext";
+
 import { CardDonativo } from '@components/CardDonativo';
 
 import { Title } from "@components/Title";
@@ -9,9 +11,18 @@ import CoffeeLogo from '@icons/coffee.png';
 
 
 function HomeDonativos() {
+	const {
+		donativosVisible,
+		donativos,
+		animateFadeInUp,
+		animateFlipInY,
+		animateFadeInLeft,
+		animateFadeInRight,
+	} = useContext(AppContext);
+
 	return (
-		<section className="wrapper" id="donativos">
-			<Title type="main margin">
+		<section className="wrapper" id="donativos" ref={donativos}>
+			<Title type={`main margin ${donativosVisible? animateFadeInRight : 'trans'} `}>
 				<h2>
 					<span>Ayúdanos</span> a crear más cosas <span>increíbles</span>...
 				</h2>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AppContext } from "@context/AppContext";
 
@@ -14,10 +14,8 @@ function Header() {
 	const {
 		toggleHeaderMobile,
 		headerState,
-		isActiveClass,
-	} = React.useContext(AppContext);
+	} = useContext(AppContext);
 
-	const isActive = isActiveClass(headerState);
 
 	return (
 		<header>
@@ -27,7 +25,7 @@ function Header() {
 				id="burger-menu">
 				menu
 			</i>
-			<div className={`header--up ${isActive}`}>
+			<div className={`header--up ${headerState? 'is-active': ''}`}>
 				<Link to="/">
 					<figure className="header--up__logo">
 						<img src={logotypeWhite} alt="logo principal alaisa" />
@@ -70,7 +68,7 @@ function Header() {
 					<img src={flagUs}/>
 				</div>
 			</div>
-			<div className={`header ${isActive}`}>
+			<div className={`header ${headerState? 'is-active': ''}`}>
 				<nav className="header__nav--mobile">
 					<ul className="header__menu--mobile">
 						<li onClick={ toggleHeaderMobile } >

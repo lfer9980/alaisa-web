@@ -9,17 +9,9 @@ const useInitialState = () => {
 		setHeaderState(!headerState);
 	}
 
-	const isActiveClass = (test) => {
-		if(test) {
-			return "is-active";
-		}
-		return "";
-	}
-
 	return {
 		toggleHeaderMobile,
 		headerState,
-		isActiveClass,
 	};
 }
 
