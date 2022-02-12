@@ -1,36 +1,44 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { Link } from "react-router-dom";
+import { Content } from "@containers/Content";
+import { Title } from "@components/Title";
+import { Logo } from "@components/Logo";
+import { Paragraph } from "@components/Paragraph";
 import { Footer } from "@components/Footer";
 import { Breadcrumbs } from "@components/Breadcrumbs"; 
 import { ButtonGreen } from "@components/ButtonGreen";
-import { Link } from "react-router-dom";
+
 
 function Resultado() {
 	useDocumentTitle("resultado listo")
 	return (
 		<>
-			<main className="result">
-				<Breadcrumbs url="modelo" section="resultado"/>
-				<section className="result__main">
-					<div className="alaisa__isotipo"> </div>
-					<div className="result__main__title">
-						<h2>La predicción para el paciente ingresado es:</h2>
-					</div>
-					<div className="result__main__result">
+			<Content type="margin">
+				<Breadcrumbs url="modelo">
+					Resultado
+				</Breadcrumbs>
+				<section className="main no-background">
+					<Logo type="isotype"/>
+					<Title type="h3">
+						<h3>
+							La predicción para el paciente ingresado es:
+						</h3>
+					</Title>
+					<Paragraph type="result">
 						<span>RESULTADO</span>
-					</div>
-					<div className="result__main__parrafo">
-						<p>Gracias por utilizar nuestro servicio, es un placer ayudar.</p>
-					</div>
+					</Paragraph>
+					<Paragraph type="">
+						Gracias por utilizar nuestro servicio, es un placer ayudar.
+					</Paragraph>
 					<ButtonGreen text="Hacer otra contribución" link="anadir"/>
-					<div className="gracias__main__back">
+					<div className="link">
 						<Link to="/">
 							<span >Regresar a la página principal</span>
 						</Link>
 					</div>
 				</section>
-			</main>
-			<Footer />
+			</Content>
 		</>
 	);
 }

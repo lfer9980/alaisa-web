@@ -3,7 +3,7 @@ import React from "react";
 function FormTitle({title}) {
 	return(
 		<>
-			<h4 className="formulario__title">{title}</h4>
+			<h4 className="form__title">{title}</h4>
 		</>
 	);
 }

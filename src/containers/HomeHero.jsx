@@ -1,33 +1,40 @@
 import React from "react";
 import { ButtonGreen } from "@components/ButtonGreen";
+import { Title } from "@components/Title";
+import { Paragraph } from "@components/Paragraph";
+import { Subtitle } from "@components/Subtitle";
 
-function HomeHero({ children }) {
+
+
+function HomeHero() {
 	return (
-		<section className="hero wrapper section" id="hero">
-			<div className="hero__title .trans">
+		<section className="wrapper" id="hero">
+			<Title type="h1 margin">
 				<h1>
 					Evaluación
 					<br />
 					<span> efectiva </span>del COVID-19 con tecnología en <span>CUU</span>
 					.
 				</h1>
-			</div>
-			<div className="hero__saludo">
-				<h2>¡Hola! Soy Alaisa</h2>
-			</div>
-			<div className="hero__subtitle">
+			</Title>
+			<Subtitle type="background">
+				<h2>¡Hola! Soy ALAISA</h2>
+			</Subtitle>
+			<Subtitle type="bold margin">
 				<h3>Fui creado con la idea de ayudar en los hospitales.</h3>
-			</div>
-			<div className="hero__parrafo--button">
-				<p>
-					Me enseñaron a identificar características en los personas con{" "}
-					<strong>COVID-19</strong> para saber si los pacientes tienen más
-					posibilidades de darse de alta o de fallecer por esta enfermedad.
-				</p>
-			</div>
+			</Subtitle>
+			<Paragraph type="rounded margin">
+				Me enseñaron a identificar características en los personas con 
+				<strong> COVID-19</strong> para saber si los pacientes tienen más
+				posibilidades de darse de alta o de fallecer por esta enfermedad.
+			</Paragraph>
 			<ButtonGreen text="Comienza aquí" link="modelo"/>
-			<div className="hero-inari">
-				desarrollador por INARI ABS
+			<div className="inari">
+				<p>
+					Desarrollado con 
+					<span className="heart"></span> 
+					por INARI ABS
+				</p>
 			</div>
 		</section>
 	);

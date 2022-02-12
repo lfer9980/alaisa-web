@@ -1,34 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { Content } from "@containers/Content";
+import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";
-import { Footer } from "@components/Footer";
 import { ButtonGreen } from "@components/ButtonGreen";
+import { Paragraph } from "@components/Paragraph";
+import { Footer } from "@components/Footer";
+import { Logo } from "@components/Logo";
+
 
 function Gracias() {
 	useDocumentTitle("Muchas gracias");
+	
 	return (
 		<>
-			<main className="gracias">
-				<Breadcrumbs url="entrenamiento" section="finalizar"/>
-				<section className="gracias__main">
-					<div className="alaisa__isotipo">
-					</div>
-					<div className="gracias__main__title">
-						<h2>¡Muchas gracias!</h2>
-					</div>
-					<div className="gracias__main__parrafo">
-						<p>Con tu contribución, lograremos grandes cosas...</p>
-					</div>
+			<Content type="margin">
+				<Breadcrumbs url="entrenamiento">
+					finalizar
+				</Breadcrumbs>
+				<section className="main no-background">
+					<Logo type="isotype" />
+					<Title type="h2 blue">
+						<h2>
+							¡Muchas gracias!
+						</h2>
+					</Title>
+					<Paragraph type="bold">
+						Con tu contribución, lograremos grandes cosas..
+					</Paragraph>
 					<ButtonGreen text="Hacer otra contribución" link="anadir"/>
-					<div className="gracias__main__back">
+					<div className="link--terms">
 						<Link to="/">
 							<span >Regresar a la página principal</span>
 						</Link>
 					</div>
 				</section>
-			</main>
-			<Footer />
+			</Content>
 		</>
 	);
 }

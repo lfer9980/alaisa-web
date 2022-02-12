@@ -1,26 +1,29 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
-import { Footer } from "@components/Footer";
+import { Content } from "@containers/Content";
+import { Title } from "@components/Title";
+import { Logo } from "@components/Logo";
+
 
 function NotFound() {
 	useDocumentTitle(":( No encontrado")
 	return (
 		<>
-			<main className="acerca">
-				<div className="acerca__title">
-					<h2> 404 </h2>
-				</div>
-				<div className="acerca__main">
-					<div className="acerca__main__parrafo">
-						<p> 404 No Encontrado: La URL solicitada no fue encontrada en el servidor. Si entro la URL manualmente, porfavor verifique que sea correcta e intentelo de nuevo. </p>
-					</div>
-					<div className="acerca__main__logo">
-						<div className="acerca__main__logo--imagotipo"> </div>
-						<div className="acerca__main__logo--tipografico" />
-					</div>
-				</div>
-			</main>
-			<Footer />
+			<Content type="margin">
+				<Title type="h2">
+					<h2>
+						404
+					</h2>
+				</Title>	
+				<section className="main no-background">
+					<Title type="h3">
+						<h3>
+							<span>404 No Encontrado</span><br/> La URL solicitada no fue encontrada en el servidor. Si entro la URL manualmente, porfavor verifique que sea correcta e intentelo de nuevo.
+						</h3>
+					</Title>
+					<Logo type="imagotype" />
+				</section>
+			</Content>
 		</>
 	);
 }

@@ -1,44 +1,57 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { Content } from "@containers/Content";
+import { Paragraph } from "@components/Paragraph";
+import { Subtitle } from "@components/Subtitle";
+import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
+import { Breadcrumbs } from "@components/Breadcrumbs";
 
 function Publicaciones() {
 	useDocumentTitle("Publicaciones")
+
 	return(
 		<> 
-			<main className="publicaciones">
-				<section className="publicaciones__year">
-					<h4 className="title--blue">
-						2022
-					</h4>
-					<div className="publicaciones__content">
-						<span>
-							Referencia a publicacion 1,
+			<Content type="margin">
+				<Breadcrumbs>
+					Publicaciones
+				</Breadcrumbs>
+				<section className="main-publications">
+					<Subtitle type="background">
+						<h2>Publicaciones</h2>
+					</Subtitle>
+					<Title type="h3">
+						<h3>
+							2022
+						</h3>
+					</Title>
+					<Paragraph type=" align-left">
+						<span className="paragraph__span">
+							Referencia a publicacion 1: 
 						</span>
-						<p>
 							breve descripción de la publicación para llegar al link de la publicacion
-						</p>
-						<hr /> 
-					</div>
+					</Paragraph> 
 				</section>
-				<section className="publicaciones__updates">
-					<h4 className="title--blue">
-						v1.0.0
-					</h4>
-					<div className="publicaciones__content">
-						<span>
-							Referencia a publicacion 1,
+				<section className="main-publications">
+					<Subtitle type="background">
+						<h2>Ultimas actualizaciones</h2>
+					</Subtitle>
+					<Title type="h3">
+						<h3>
+							v1.0.0
+						</h3>
+					</Title>	
+					<Paragraph type=" align-left">
+						<span className="paragraph__span">
+							Referencia a publicacion 1: 
 						</span>
-						<p>
 							breve descripción de la publicación para llegar al link de la publicacion
-						</p>
-						<hr /> 
-					</div>
+					</Paragraph>
+
 				</section>
-			</main>
+			</Content>
 			<Footer />
 		</>
-
 	);
 }
 

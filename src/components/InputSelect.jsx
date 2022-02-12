@@ -5,12 +5,13 @@ function InputSelect({ name, text, options }) {
 		<>
 			<label
 				className="input"
-				htmlFor={name}>
-				<span className="input__title">
-					{text}
-				</span>
+				htmlFor={name}
+				>
+					<span className="input__title">
+						{text}
+					</span>
 				<select
-					className="input-select__place"
+					className="input__select__place"
 					name={name}
 					id={name}
 				>

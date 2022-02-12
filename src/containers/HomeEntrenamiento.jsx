@@ -1,35 +1,34 @@
 import React from 'react';
 import { ButtonGreen } from '@components/ButtonGreen';
+import { Title } from "@components/Title";
+import { Paragraph } from "@components/Paragraph";
+import { Subtitle } from "@components/Subtitle";
 
-function HomeEntrenamiento({ children }) {
+
+
+function HomeEntrenamiento() {
 	return (
-		<section className="entrenamiento wrapper section" id="entrenamiento">
-			<div className="entrenamiento__title trans">
+		<section className="wrapper" id="entrenamiento">
+			<Title type="main margin">
 				<h2>
-					Ayuda a <span>Alaisa</span> a mejorar en sus predicciones
+					Ayuda a <span>ALAISA</span> a mejorar en sus predicciones
 				</h2>
-			</div>
-			<div className="entrenamiento__main">
-				<div className="entrenamiento__main__parrafo one">
+			</Title>
+			<div className="container margin">
+				<Subtitle type="">
 					<p>
 						Se parte de los <span>profesionales de la salud</span> que ayudan a mejorar las predicciones del modelo.
 					</p>
-				</div>
-				<div className="entrenamiento__main__parrafo two">
-					<p>
-						¡Tu contribución, acelera exponencialmente la recolección de datos que sirven para <span>entrenar</span> a la red neuronal y <span>mejorar</span> la calidad de sus predicciones!
-					</p>
-				</div>
-				<div className="entrenamiento__main__parrafo three">
-					<p>
-						Para <span>contribuir</span>, solo debes entrar al entrenamiento
-					</p>
-				</div>
-				<div className="entrenamiento__main__parrafo four">
-					<p>
-						No te preocupes, el proceso es el mismo a cuando utilizas el modelo para recibir predicciones.
-					</p>
-				</div>
+				</Subtitle>
+				<Paragraph type="">
+					¡Tu contribución, acelera exponencialmente la recolección de datos que sirven para <span>entrenar</span> a la red neuronal y <span>mejorar</span> la calidad de sus predicciones!
+				</Paragraph>
+				<Paragraph type="bold">
+					Para <span>contribuir</span>, solo debes entrar al entrenamiento
+				</Paragraph>
+				<Paragraph type="">
+					No te preocupes, el proceso es el mismo a cuando utilizas el modelo para recibir predicciones.
+				</Paragraph>
 				<ButtonGreen text="Entrar al entrenamiento" link="entrenamiento"/>
 			</div>
 		</section>

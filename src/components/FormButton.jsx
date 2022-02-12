@@ -1,14 +1,14 @@
 import React from "react";
 
-function FormButton({name, defaultValue}) {
+function FormButton({name, value}) {
 	return(
 		<>
 			<input 
-				className="formulario__button" 
+				className="form__button" 
 				type="submit" 
 				id={name}
 				name={name}
-				defaultValue={defaultValue}	
+				value={value}	
 			/>
 		</>
 	);

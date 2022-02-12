@@ -1,100 +1,116 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import BanderaUsa from '@icons/bandera_usa.svg';
-import BanderaMx from '@icons/bandera_mx.svg';
-import LogoAlaisa from '@icons/logo_tipografico_alaisa.svg';
-import IsotipoAlaisa from '@icons/isotipo_alaisa--white.svg';
+import { Link, NavLink } from "react-router-dom";
+import { AppContext } from "@context/AppContext";
+
+import flagUs from '@icons/flag-us.svg';
+import flagMx from '@icons/flag-mx.svg';
+import logotypeWhite from '@icons/logotype-white.svg';
+import isotypeWhite from '@icons/isotype-white.svg';
+
+
 
 function Header() {
+		
+	const {
+		toggleHeaderMobile,
+		headerState,
+		isActiveClass,
+	} = React.useContext(AppContext);
+
+	const isActive = isActiveClass(headerState);
+
 	return (
 		<header>
-			<i className="material-icons burger-menu" id="burger-menu">menu</i>
-			<div className="header--up">
+			<i 
+				onClick={ toggleHeaderMobile } 
+				className="material-icons burger-menu"
+				id="burger-menu">
+				menu
+			</i>
+			<div className={`header--up ${isActive}`}>
 				<Link to="/">
 					<figure className="header--up__logo">
-						<img src={LogoAlaisa} alt="logo principal alaisa" />
+						<img src={logotypeWhite} alt="logo principal alaisa" />
 					</figure>
 				</Link>
 				<nav className="header--up__nav--desktop">
-					<ul className="header__menu--desktop">
-						<li>
-							<Link to="/modelo">
-								<span>Modelo</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/entrenamiento">
-								<span>Entrenamiento</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/#metricas">
-								<span>Rendimiento</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/#donativos">
-								<span>Donativos</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/#contacto">
-								<span>Contacto</span>
-							</Link>
-						</li>
-						<li>
-							<Link to="/publicaciones">
-								<span>publicaciones</span>
-							</Link>
-						</li>
-					</ul>
+					<li>
+						<NavLink to="/modelo">
+							<span>Modelo</span>
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/entrenamiento">
+							<span>Entrenamiento</span>
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/#metricas">
+							<span>Rendimiento</span>
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/#donativos">
+							<span>Donativos</span>
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/#contacto">
+							<span>Contacto</span>
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/publicaciones">
+							<span>publicaciones</span>
+						</NavLink>
+					</li>
 				</nav>
-				<div className="header--up__idioma">
+				<div className="header--up__language">
 					<span>EN</span>
-					<img src={BanderaUsa}/>
+					<img src={flagUs}/>
 				</div>
 			</div>
-			<div className="header">
+			<div className={`header ${isActive}`}>
 				<nav className="header__nav--mobile">
 					<ul className="header__menu--mobile">
-						<li>
-							<Link to="/modelo">
+						<li onClick={ toggleHeaderMobile } >
+							<NavLink to="/modelo">
 								<span>Modelo Alaisa</span>
-							</Link>
+							</NavLink>
 						</li>
-						<li>
-							<Link to="/entrenamiento">
+						<li onClick={ toggleHeaderMobile } >
+							<NavLink to="/entrenamiento">
 								<span>Entrenamiento</span>
-							</Link>
+							</NavLink>
 						</li>
-						<li>
-							<Link to="/#metricas">
+						<li onClick={ toggleHeaderMobile } >
+							<NavLink to="/#metricas">
 								<span>Estadisiticas de Rendimiento</span>
-							</Link>
+							</NavLink>
 						</li>
-						<li>
-							<Link to="/#donativos">
+						<li onClick={ toggleHeaderMobile } >
+							<NavLink to="/#donativos">
 								<span>Donativos</span>
-							</Link>
+							</NavLink>
 						</li>
-						<li>
-							<Link to="/#contacto">
+						<li onClick={ toggleHeaderMobile } >
+							<NavLink to="/#contacto">
 								<span>Contacto del equipo</span>
-							</Link>
+							</NavLink>
 						</li>
-						<li>
-							<Link to="/publicaciones">
+						<li	onClick={ toggleHeaderMobile } >
+							<NavLink to="/publicaciones">
 								<span>publicaciones</span>
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 					<ul className="header__menu--secondary">
-						<li>
+						<li	onClick={ toggleHeaderMobile } >
 							<Link to="/privacidad">
 								<span>Aviso de privacidad</span>
 							</Link>
 						</li>
-						<li>
+						<li	onClick={ toggleHeaderMobile } >
 							<Link to="/acerca">
 								<span>Acerca de</span>
 							</Link>
@@ -102,7 +118,7 @@ function Header() {
 					</ul>
 				</nav>
 				<div className="imagotipo">
-					<img src={IsotipoAlaisa} alt=" imagen virus Alaisa" />
+					<img src={isotypeWhite} alt=" imagen virus Alaisa" />
 				</div>
 			</div>
 		</header>
