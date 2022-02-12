@@ -10,7 +10,7 @@ html {
 	font-size: 62.5%;
 	font-family: v.$fuente2;
 	scroll-behavior: smooth;
-	background-color: v.$white;
+	background-color: v.$blue600;
 	@include dark-mode {
 		color: v.$white;
 		background-color: v.$dark600;

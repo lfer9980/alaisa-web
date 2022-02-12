@@ -1,5 +1,7 @@
 import React from "react";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from "react-router-dom";
+import { AppContext } from "@context/AppContext";
+
 import flagUs from '@icons/flag-us.svg';
 import flagMx from '@icons/flag-mx.svg';
 import logotypeWhite from '@icons/logotype-white.svg';
@@ -8,10 +10,24 @@ import isotypeWhite from '@icons/isotype-white.svg';
 
 
 function Header() {
+		
+	const {
+		toggleHeaderMobile,
+		headerState,
+		isActiveClass,
+	} = React.useContext(AppContext);
+
+	const isActive = isActiveClass(headerState);
+
 	return (
 		<header>
-			<i className="material-icons burger-menu" id="burger-menu">menu</i>
-			<div className="header--up">
+			<i 
+				onClick={ toggleHeaderMobile } 
+				className="material-icons burger-menu"
+				id="burger-menu">
+				menu
+			</i>
+			<div className={`header--up ${isActive}`}>
 				<Link to="/">
 					<figure className="header--up__logo">
 						<img src={logotypeWhite} alt="logo principal alaisa" />
@@ -54,47 +70,47 @@ function Header() {
 					<img src={flagUs}/>
 				</div>
 			</div>
-			<div className="header">
+			<div className={`header ${isActive}`}>
 				<nav className="header__nav--mobile">
 					<ul className="header__menu--mobile">
-						<li>
+						<li onClick={ toggleHeaderMobile } >
 							<NavLink to="/modelo">
 								<span>Modelo Alaisa</span>
 							</NavLink>
 						</li>
-						<li>
+						<li onClick={ toggleHeaderMobile } >
 							<NavLink to="/entrenamiento">
 								<span>Entrenamiento</span>
 							</NavLink>
 						</li>
-						<li>
+						<li onClick={ toggleHeaderMobile } >
 							<NavLink to="/#metricas">
 								<span>Estadisiticas de Rendimiento</span>
 							</NavLink>
 						</li>
-						<li>
+						<li onClick={ toggleHeaderMobile } >
 							<NavLink to="/#donativos">
 								<span>Donativos</span>
 							</NavLink>
 						</li>
-						<li>
+						<li onClick={ toggleHeaderMobile } >
 							<NavLink to="/#contacto">
 								<span>Contacto del equipo</span>
 							</NavLink>
 						</li>
-						<li>
+						<li	onClick={ toggleHeaderMobile } >
 							<NavLink to="/publicaciones">
 								<span>publicaciones</span>
 							</NavLink>
 						</li>
 					</ul>
 					<ul className="header__menu--secondary">
-						<li>
+						<li	onClick={ toggleHeaderMobile } >
 							<Link to="/privacidad">
 								<span>Aviso de privacidad</span>
 							</Link>
 						</li>
-						<li>
+						<li	onClick={ toggleHeaderMobile } >
 							<Link to="/acerca">
 								<span>Acerca de</span>
 							</Link>

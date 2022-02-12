@@ -86,15 +86,15 @@ header {
 		position: fixed;
 		top: 0;
 		bottom: 0;
-		left: 100vw;
+		left: -100vw;
 		z-index: 2;
-		width: 100%;
+		width: 100vw;
 		padding: 0 20px;
 		align-items: center;
 		justify-content: space-between;
 		font-family: v.$fuente1;
 		background-color: v.$blue500;
-		transition: left 500ms ease-in-out;
+		transition: left 300ms ease-in-out;
 		@include dark-mode {
 			background-color: v.$dark500;
 		}
@@ -161,7 +161,7 @@ header {
 	.header.is-active {
 		opacity: 1;
 		left: 0;
-		transition: left 500ms ease-in-out;
+		transition: left 300ms ease-in-out;
 	}
 }
 

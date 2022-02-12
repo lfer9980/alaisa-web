@@ -45,6 +45,8 @@
 
 .card-wrapper {
 	position: relative;
+	height: 70%;
+	overflow-y: scroll;
 	.card-contacto {
 		display: flex;
 		align-items: center;
@@ -148,7 +150,6 @@
 	.card-wrapper {
 		height: 70%;
 		margin-left: 0;
-		overflow-y: scroll;
 		.card-contacto {
 			height: 190px;
 			padding: 15px;
