@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useGetDataLanguage } from "@hooks/useGetDataLanguage";
+import { useGetData } from "@hooks/useGetData";
 
 
 const useInitialState = () => {

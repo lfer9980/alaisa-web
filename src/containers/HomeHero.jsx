@@ -13,7 +13,7 @@ function HomeHero() {
 		animateFadeInUp,
 		animateFadeInLeft,
 	} = useContext(AppContext);
-
+	
 	const heroText = text[0];
 
 	return (
