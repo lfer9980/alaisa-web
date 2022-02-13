@@ -16,10 +16,9 @@ function useElementOnScreen(options, targetRef) {
 		const observer = new IntersectionObserver(intersectingFunction, optionsMemo);
 		const currentTarget = targetRef.current;
 		if(currentTarget) observer.observe(currentTarget);
-		console.log(currentTarget)
+		
 		return () => {
 			if(currentTarget) observer.unobserve(currentTarget);
-			console.log(currentTarget)
 		}
 	});
 

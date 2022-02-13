@@ -7,15 +7,14 @@ import flagMx from '@icons/flag-mx.svg';
 import logotypeWhite from '@icons/logotype-white.svg';
 import isotypeWhite from '@icons/isotype-white.svg';
 
-
-
 function Header() {
 		
 	const {
 		toggleHeaderMobile,
 		headerState,
+		language,
+		toggleLanguage,
 	} = useContext(AppContext);
-
 
 	return (
 		<header>
@@ -63,9 +62,12 @@ function Header() {
 						</NavLink>
 					</li>
 				</nav>
-				<div className="header--up__language">
-					<span>EN</span>
-					<img src={flagUs}/>
+				<div 
+					className="header--up__language"
+					onClick={ toggleLanguage }
+					>
+					<span>{language? 'ES':'EN'}</span>
+					<img src={language? flagMx: flagUs}/>
 				</div>
 			</div>
 			<div className={`header ${headerState? 'is-active': ''}`}>
