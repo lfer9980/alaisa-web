@@ -1,0 +1,140 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+
+.title-main {
+	position: relative;
+	margin-bottom: 20px;
+	text-align: center;
+	h2 {
+		font-family: v.$fuente1;
+		font-size: 3.316rem;
+		line-height: 120%;
+	}
+	span {
+		color: v.$blue400;
+	}
+}
+
+.title-h1 {
+	position: relative;
+	margin-bottom: 20px;
+	text-align: left;
+	h1 {
+		font-family: v.$fuente1;
+		font-size: 3.79rem;
+		font-weight: bold;
+		line-height: 120%;
+	}
+	span {
+		color: v.$blue400;
+	}
+}
+
+.title-h2 {
+	position: relative;
+	margin-bottom: 20px;
+	font-family: v.$fuente1;
+	h2 {
+		font-size: 3.79rem;
+		line-height: 120%;
+	}
+}
+.blue {
+	color: v.$blue400;
+}
+
+
+.title-h3 {
+	position: relative;
+	margin-bottom: 20px;
+	text-align: center;
+	h3 {
+		font-family: v.$fuente1;
+		font-size: 2.1rem;
+		color: v.$dark600;
+
+		@include dark-mode {
+			color: v.$white;
+		}
+	}
+}
+
+.title-h4 {
+	position: relative;
+	margin-bottom: 5px;
+	text-align: left;
+	h4 {
+		font-family: v.$fuente1;
+		font-size: 2.1rem;
+		font-weight: bold;
+	}
+}
+
+
+@include tablet {
+	.title-main {
+		h2 {
+			font-size: 6.734rem;
+		}
+	}
+	.title-h1 {
+		margin-bottom: 60px;
+		h1 {
+			font-size: 6.734rem;
+		}
+	}
+	.title-h2 {
+		h2 {
+			font-size: 5.0517rem;
+		}
+	}
+	.title-h3 {
+		h3 {
+			font-size: 2.843rem;
+		}
+	}
+	.title-h4 {
+		h4 {
+			font-size: 2.843rem;
+		}
+	}
+}
+
+@include desktop {
+	.title-main {
+		h2 {
+			font-size: 5.017rem;
+		}
+
+	}
+	.title-h1 {
+		max-width: 1000px;
+		margin-bottom: 20px;
+		h1 {
+			font-size: 5.017rem;
+		}
+	}
+	.title-h2 {
+		&__title {
+			padding: 0 42px;
+		}
+	}
+	.title-h3 {
+		margin-bottom: 20px;
+	}
+}
+
+@include large {
+	.title-main {
+		h2 {
+			font-size: 6.739rem;
+		}
+
+	}
+	.title-h1 {
+		h1 {
+			font-size: 6.734rem;
+		}
+	}
+}

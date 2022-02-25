@@ -1,0 +1,24 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+#entrenamiento::before {
+	background-image: url('@images/mobile_gray@2x.png');
+	opacity: 15%;
+}
+
+@include tablet {
+	#entrenamiento::before {
+		background-image: url('@images/tablet_gray@2x.png');
+	}
+}
+
+@include desktop {
+	#entrenamiento {
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	#entrenamiento::before {
+		background-image: url('@images/tablet_gray@2x.png');
+	}
+}

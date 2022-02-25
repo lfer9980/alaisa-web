@@ -1,0 +1,22 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+
+.entrenamiento::before {
+	background-image: url('@images/virus-mobile@2x-80.jpg');
+	opacity: 50%;
+}
+
+@include tablet {
+	.entrenamiento::before {
+		background-image: url('@images/virus-tablet@2x-80.jpg');
+		opacity: 30%
+	}
+}
+
+@include desktop {
+	.entrenamiento::before {
+		background-image: url('@images/virus-desktop@2x-80.jpg');
+		opacity: 100%;
+	}
+}

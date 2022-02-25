@@ -1,0 +1,90 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	font-family: v.$fuente2;
+	scroll-behavior: smooth;
+	background-color: v.$blue600;
+	@include dark-mode {
+		color: v.$white;
+		background-color: v.$dark600;
+	}
+}
+
+h2 > span {
+	color: v.$blue400;
+}
+h3 > span {
+	color: v.$blue400;
+}
+p > span {
+	color: v.$blue400;
+}
+div > p {
+	position: relative;
+	line-height: 140%;
+}
+hr {
+	margin: 10px 0;
+}
+
+/* estilos a la barra de scroll */
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba($color: v.$blue500, $alpha: 0.5)
+}
+::-webkit-scrollbar-thumb:hover {
+	background: v.$blue400;
+}
+
+
+/* contenedor general */
+
+.wrapper {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
+	color: v.$white;
+	padding-top: 90px;
+}
+.wrapper::before {
+	content: "";
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+@include tablet {
+	.wrapper {
+		padding-top: 130px;
+	}
+}
+@include desktop {
+	.wrapper {
+		justify-content: flex-start;
+		padding-top: 100px;
+	}
+}
+@include large {
+	.wrapper {
+		padding-top: 95px;
+	}
+}

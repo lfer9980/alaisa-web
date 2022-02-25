@@ -1,0 +1,21 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	img {
+		width: 100px;
+		animation: spin 1.8s ease-in-out infinite alternate;
+	}
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+

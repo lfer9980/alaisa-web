@@ -1,0 +1,48 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.breadcrumbs {
+	display: inline-block;
+	margin-bottom: 10px;
+	&__nav {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		a {
+			text-decoration: none;
+			cursor: pointer;
+			color: v.$white;
+		}
+		.bread{
+			font-family: v.$fuente1;
+			font-size: 1.4rem;
+			font-weight: bold;
+		}
+		a::after {
+			content: "►";
+			font-size: 1.2rem;
+			margin: 0 5px;
+		}
+		a:last-child::after {
+			display: none;
+		}
+	}
+	a:hover {
+		color: v.$blue400;
+	}
+}
+
+@include tablet {
+	.breadcrumbs {
+		margin-bottom: 20px;
+		&__nav {
+			.bread {
+				font-size: 2.1rem;
+			}
+			a::after {
+				font-size: 2rem;
+			}
+		}
+	}
+}
