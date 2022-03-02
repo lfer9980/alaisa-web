@@ -4,7 +4,6 @@ import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Logo } from "@components/Logo";
 
-
 function NotFound() {
 	useDocumentTitle(":( No encontrado")
 	return (

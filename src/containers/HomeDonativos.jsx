@@ -1,22 +1,15 @@
 import React, { useContext } from "react";
 import { AppContext } from "@context/AppContext";
-
-import { CardDonativo } from '@components/CardDonativo';
-
 import { Title } from "@components/Title";
 import { Paragraph } from "@components/Paragraph";
-import { Subtitle } from "@components/Subtitle";
+import { CardDonativo } from '@components/CardDonativo';
 
 import CoffeeLogo from '@icons/coffee.png';
-
 
 function HomeDonativos() {
 	const {
 		donativosVisible,
 		donativos,
-		animateFadeInUp,
-		animateFlipInY,
-		animateFadeInLeft,
 		animateFadeInRight,
 	} = useContext(AppContext);
 

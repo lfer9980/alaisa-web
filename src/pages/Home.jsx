@@ -9,19 +9,18 @@ import { HomeDesarrollador } from "@containers/HomeDesarrollador"
 import { HomeContacto } from "@containers/HomeContacto"
 import { Footer } from "@components/Footer";
 
-
 function Home() {
 	useDocumentTitle("Evaluación efectiva del covid en CUU");
 	
 	return(
 		<>
 			<Content type="no-padding-top no-background">
-				<HomeHero></HomeHero>
-				<HomeModelo ></HomeModelo>	
-				<HomeEntrenamiento></HomeEntrenamiento>
-				<HomeDesarrollador></HomeDesarrollador>
-				<HomeDonativos></HomeDonativos>
-				<HomeContacto></HomeContacto>
+				<HomeHero />
+				<HomeModelo />
+				<HomeEntrenamiento />
+				<HomeDesarrollador />
+				<HomeDonativos />
+				<HomeContacto />
 			</Content>
 			<Footer></Footer>
 		</>

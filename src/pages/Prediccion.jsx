@@ -10,7 +10,6 @@ import { FormTitle } from "@components/FormTitle";
 import { FormButton } from "@components/FormButton";
 import { Form } from "@components/Form";
 
-
 function Prediccion() {
 	useDocumentTitle('Modelo de IA');
 

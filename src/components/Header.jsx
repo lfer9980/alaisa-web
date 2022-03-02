@@ -42,17 +42,17 @@ function Header() {
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/#metricas">
+						<NavLink to="/Rendimiento">
 							<span>Rendimiento</span>
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/#donativos">
+						<NavLink to="/Donativos">
 							<span>Donativos</span>
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/#contacto">
+						<NavLink to="/Contacto">
 							<span>Contacto</span>
 						</NavLink>
 					</li>
@@ -84,17 +84,17 @@ function Header() {
 							</NavLink>
 						</li>
 						<li onClick={ toggleHeaderMobile } >
-							<NavLink to="/#metricas">
+							<NavLink to="/Rendimiento">
 								<span>Estadisiticas de Rendimiento</span>
 							</NavLink>
 						</li>
 						<li onClick={ toggleHeaderMobile } >
-							<NavLink to="/#donativos">
+							<NavLink to="/Donativos">
 								<span>Donativos</span>
 							</NavLink>
 						</li>
 						<li onClick={ toggleHeaderMobile } >
-							<NavLink to="/#contacto">
+							<NavLink to="/Contacto">
 								<span>Contacto del equipo</span>
 							</NavLink>
 						</li>

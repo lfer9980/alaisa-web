@@ -1,9 +1,6 @@
 import React from "react";
-
 import isotypeWhite from "@icons/isotype-white.svg";
-
 import "@styles/components/_loading.scss";
-
 
 function Loading() {
 	return(

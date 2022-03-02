@@ -1,12 +1,10 @@
 import React from "react";
 
-
-
-function ButtonAncla({ text, cssName, url }) {
+function ButtonAncla({ texto, cssName, url }) {
 	return(
 		<div className={`button--${cssName}`}>
 			<a href={`https://www.${url}/`}>
-				{text}
+				{texto}
 				<i className="material-icons">
 					arrow_forward
 				</i>

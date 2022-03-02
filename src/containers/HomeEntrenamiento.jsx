@@ -1,20 +1,15 @@
 import React, { useContext } from "react";
 import { AppContext } from "@context/AppContext";
-import { ButtonGreen } from '@components/ButtonGreen';
 import { Title } from "@components/Title";
 import { Paragraph } from "@components/Paragraph";
 import { Subtitle } from "@components/Subtitle";
-
-
+import { ButtonGreen } from '@components/ButtonGreen';
 
 function HomeEntrenamiento() {
 	const {
 		entrenamientoVisible,
 		entrenamiento,
 		animateFadeInUp,
-		animateFlipInY,
-		animateFadeInLeft,
-		animateFadeInRight,
 	} = useContext(AppContext);
 
 	return (

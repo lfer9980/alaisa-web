@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AppContext } from "@context/AppContext";
 
 import { Acerca } from "@pages/Acerca";
 import { Administrador } from "@pages/Administrador";
@@ -14,6 +13,9 @@ import { Prediccion } from "@pages/Prediccion";
 import { Privacidad } from "@pages/Privacidad";
 import { Resultado } from "@pages/Resultado";
 import { Publicaciones } from "@pages/Publicaciones";
+import { Rendimiento } from "@pages/Rendimiento";
+import { Donativos } from "@pages/Donativos";
+import { Contacto } from "@pages/Contacto";
 
 import { Layout } from "@containers/Layout";
 import { Header } from "@components/Header";
@@ -40,6 +42,9 @@ function AppUi() {
 						<Route path="privacidad" element={<Privacidad />} />
 						<Route path="resultado" element={<Resultado />} />
 						<Route path="publicaciones" element={<Publicaciones />} />
+						<Route path="Rendimiento" element={<Rendimiento />} />
+						<Route path="Donativos" element={<Donativos />} />
+						<Route path="Contacto" element={<Contacto />} />
 						<Route path="*" element={<NotFound />} />
 					</Routes>
 				</BrowserRouter>

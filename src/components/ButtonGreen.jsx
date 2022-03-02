@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
-function ButtonGreen({ text, link, animation }) {
+function ButtonGreen({ texto, link, animation }) {
 	return(
 		<div className={`button--green ${animation}`}>
 			<Link to={`/${link}`}>
-					{text}
+					{texto}
 					<i className="material-icons">
 						arrow_forward
 					</i>

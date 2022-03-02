@@ -6,9 +6,7 @@ import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Paragraph } from "@components/Paragraph";
-import { Footer } from "@components/Footer";
 import { Logo } from "@components/Logo";
-
 
 function Gracias() {
 	useDocumentTitle("Muchas gracias");

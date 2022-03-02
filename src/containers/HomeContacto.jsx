@@ -1,13 +1,10 @@
 import React, { useContext } from "react";
 import { AppContext } from "@context/AppContext";
+import { CardContacto } from '@components/CardContacto';
+import { Title } from "@components/Title";
 
 import Alan from '@images/alan-dev.jpg';
 import Github from '@icons/github.svg'
-import { CardContacto } from '@components/CardContacto';
-
-import { Title } from "@components/Title";
-
-
 
 function HomeContacto() {
 	const {
