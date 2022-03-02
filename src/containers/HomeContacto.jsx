@@ -10,7 +10,6 @@ function HomeContacto() {
 	const {
 		contactoVisible,
 		contacto,
-		animateFadeInUp,
 		animateFlipInY,
 	} = useContext(AppContext);
 

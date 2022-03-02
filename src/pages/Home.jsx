@@ -9,18 +9,19 @@ import { HomeDesarrollador } from "@containers/HomeDesarrollador"
 import { HomeContacto } from "@containers/HomeContacto"
 import { Footer } from "@components/Footer";
 
-function Home() {
-	useDocumentTitle("Evaluación efectiva del covid en CUU");
+function Home({texto}) {
+	useDocumentTitle("Evaluación efectiva del covid en CUU")
+	console.log(texto)
 	
 	return(
 		<>
 			<Content type="no-padding-top no-background">
-				<HomeHero />
-				<HomeModelo />
-				<HomeEntrenamiento />
-				<HomeDesarrollador />
-				<HomeDonativos />
-				<HomeContacto />
+				<HomeHero homeTexto={texto["0"]}/>
+				<HomeModelo homeTexto={texto["1"]}/>
+				<HomeEntrenamiento homeTexto={texto["2"]}/>
+				<HomeDesarrollador homeTexto={texto["3"]}/>
+				<HomeDonativos homeTexto={texto["4"]}/>
+				<HomeContacto homeTexto={texto["5"]}/>
 			</Content>
 			<Footer></Footer>
 		</>

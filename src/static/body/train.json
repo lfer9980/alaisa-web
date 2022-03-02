@@ -1,0 +1,30 @@
+{
+    "BODY":{
+
+        "en":{
+
+            "1-en":[
+                "Your contribution helps us to improve and be more accurate.",
+                "The process is identical to when you use the model to receive predictions. The data you enter during training will be the basis for the model to efficiently identify the patterns that determine your patient's outcome during the prediction.",
+                "We are very grateful to you, your help makes a difference.", "We are very grateful to you, your help makes a difference.",
+                "See terms and conditions.",
+                "Get started.",
+                "Privacy Notice"
+            ]
+
+        },
+
+        "es":{
+
+            "1-es":[
+                "Tu contribución nos ayuda a mejorar y ser más precisos",
+                "El proceso es identico a cuando utilizas el modelo para recibir predicciones. Los datos que ingreses durante el entrenamiento serán la base para que el modelo identifique eficientemente los patrones que determinan el desenlace de tu paciente durante la predicción.",
+                "Estamos muy agradecidos contigo, tu ayuda hace la diferencia.",
+                "Consulta los términos y condiciones",
+                "Comenzar",
+                "Aviso de privacidad"
+            ]
+        
+        }
+    }
+}

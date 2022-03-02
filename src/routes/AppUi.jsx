@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AppContext } from "@context/AppContext";
 
 import { Acerca } from "@pages/Acerca";
 import { Administrador } from "@pages/Administrador";
@@ -19,36 +20,46 @@ import { Contacto } from "@pages/Contacto";
 
 import { Layout } from "@containers/Layout";
 import { Header } from "@components/Header";
+import { Loading } from "@containers/Loading";
 
 import "@styles/app.scss";
 import "animate.css";
 
 
 function AppUi() {
+	const {
+		loading,
+		textos,
+	} = useContext(AppContext)
+	
 	return (
 		<>
-			<Layout>
-				<BrowserRouter>
-					<Header />
-					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="acerca" element={<Acerca />} />
-						<Route path="administrador" element={<Administrador />} />
-						<Route path="anadir" element={<Anadir />} />
-						<Route path="entrenamiento" element={<Entrenamiento />} />
-						<Route path="gracias" element={<Gracias />} />
-						<Route path="modelo" element={<Modelo />} />
-						<Route path="prediccion" element={<Prediccion />} />
-						<Route path="privacidad" element={<Privacidad />} />
-						<Route path="resultado" element={<Resultado />} />
-						<Route path="publicaciones" element={<Publicaciones />} />
-						<Route path="Rendimiento" element={<Rendimiento />} />
-						<Route path="Donativos" element={<Donativos />} />
-						<Route path="Contacto" element={<Contacto />} />
-						<Route path="*" element={<NotFound />} />
-					</Routes>
-				</BrowserRouter>
-			</Layout>
+			{
+				loading ? 
+				(<Loading />) :
+				<Layout>
+					<BrowserRouter>
+						<Header />
+						<Routes>
+							<Route path="/" element={<Home texto={textos[0]} />} />
+							<Route path="Rendimiento" element={<Rendimiento texto={textos[0]}/>} />
+							<Route path="Donativos" element={<Donativos texto={textos[0]}/>} />
+							<Route path="Contacto" element={<Contacto texto={textos[0]}/>} />
+							<Route path="acerca" element={<Acerca texto={textos[1]} />} />
+							<Route path="anadir" element={<Anadir texto={textos[2]} />} />
+							<Route path="entrenamiento" element={<Entrenamiento texto={textos[3]} />} />
+							<Route path="privacidad" element={<Privacidad texto={textos[4]}/>} />
+							<Route path="modelo" element={<Modelo texto={textos[5]}/>} />
+							<Route path="prediccion" element={<Prediccion texto={textos[5]}/>} />
+							<Route path="gracias" element={<Gracias />} />
+							<Route path="resultado" element={<Resultado />} />
+							<Route path="publicaciones" element={<Publicaciones />} />
+							<Route path="administrador" element={<Administrador />} />
+							<Route path="*" element={<NotFound />} />
+						</Routes>
+					</BrowserRouter>
+				</Layout>
+			}
 		</>
 	);
 }

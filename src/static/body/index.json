@@ -1,0 +1,262 @@
+{
+    "BODY": {
+        "es": {
+            "0": [
+                "Evaluación efectiva del COVID-19 con tecnología en CUU",
+                "¡Hola! Soy Alaisa",
+                "Fui creado con la idea de ayudar en los hospitales",
+                "Me enseñaron a identificar características en los personas con COVID-19 para saber si los pacientes tienen más posibilidades de darse de alta o de fallecer por esta enfermedad",
+                "Comieza aquí"
+            ],
+            "1": [
+                "Alaisa puede ayudarte a tomar mejores decisiones para el paciente",
+                "Sobre todo si tienes muchos y tienes que decidir si alguno necesita más atención, recursos o una cama en UCI.",
+                "De hecho, en diferentes estudios se ha visto que los programas como yo llegan a ser más confiables que algunas escalas que usas como APACHE, qSOFA o CURB-65... por mencionar algunas.",
+                "¡Empieza a utilizar la herramienta!",
+                "Entrar al modelo"
+            ],
+            "2": [
+                "Se parte de la comunidad de usuarios que ayudan a mejorar las predicciones del modelo.",
+                "¡Tu contribución, acelera exponencialmente la recolección de datos que sirven para entrenar a la red neuronal y mejorar la calidad de sus predicciones!",
+                "¡Puedes ayudar a mejorar el modelo de forma gratuita!",
+                "No te preocupes, el proceso es el mismo a cuando utilizas el modelo para recibir predicciones.",
+                "Iniciar Entrenamiento",
+                "Ayuda a Alaisa a mejorar en sus predicciones"
+            ],
+            "3": [
+                "Un modelo efectivo y preciso.",
+                "Conoce los resultados de las pruebas de rendimiento hechas por los desarrolladores de Alaisa",
+                [
+                    "0.86",
+                    "0.86",
+                    "0.86",
+                    "30"
+                ],
+                [
+                    "0.86",
+                    "0.86",
+                    "0.86",
+                    "30"
+                ],
+                [
+                    "",
+                    "",
+                    "0.86",
+                    "60"
+                ],
+                [
+                    "0.86",
+                    "0.86",
+                    "0.86",
+                    "60"
+                ],
+                [
+                    "0.86",
+                    "0.86",
+                    "0.86",
+                    "60"
+                ],
+                "Fecha de la ultima actualización",
+                "25 de Febrero 2021"
+            ],
+            "4": [
+                "Ayúdanos a crear más cosas increíbles...",
+                "Puedes ayudarnos muchísimo, aportando a través de:",
+                "¡Invítanos un café!",
+                "Tus aportaciones serán de gran ayuda, gente como tú es capaz de cambiar al mundo...",
+                "Donar",
+                "Estamos muy agradecidos por tu apoyo.",
+                "Si no puedes donar no te preocupes, la labor que haces cada día como personal de salud es la que hace la diferencia",
+                "¡Ustedes son los Héroes!"
+            ],
+            "5": [
+                "Conoce a los contribuidores de este proyecto:",
+                [
+                    "Dr. Luis Enriquez",
+                    "Project manager",
+                    "investigacionhcu@gmail.com",
+                    "",
+                    "",
+                    "luisriquez"
+                ],
+                [
+                    "Alan Hernández",
+                    "Desarrollador de red neuronal ALAISA y backend",
+                    "alanhernandezgalvan@gmail.com",
+                    "https://www.linkedin.com/in/jesusalanhernandezgalvan/",
+                    "https://github.com/unlikeghost",
+                    "alan-hernandez"
+                ],
+                [
+                    "Luis Fernández",
+                    "Diseñador de la interfaz y frontend",
+                    "luis.fer9980@gmail.com",
+                    "https://www.linkedin.com/in/lfer9980/",
+                    "https://github.com/lfer9980",
+                    "luis-fernandez"
+                ],
+                [
+                    "Maria Saad",
+                    "Planeación y recolección de información",
+                    "mariasaad9@gmail.com",
+                    "",
+                    "",
+                    "maria-saad"
+                ],
+                [
+                    "Sofia González ",
+                    "Recoleccion la información para la base de datos del entrenamiento y validación",
+                    "sofia.gcristobal@gmail.com",
+                    "",
+                    "",
+                    "sofia-gonzalez"
+                ],
+                [
+                    "Walter Zúñiga",
+                    "Creacion y diseño del logo",
+                    "walterio_za94@hotmail.com",
+                    "",
+                    "",
+                    "walter-zuniga"
+                ],
+                [
+                    "Eliden Vázquez",
+                    "Recolección de información para  validación",
+                    "elidenvt@gmail.com",
+                    "",
+                    "",
+                    "eliden-vazquez"
+                ]
+            ]
+        },
+        "en": {
+            "0": [
+                "Evaluation of COVID-19 with technology in CUU",
+                "Hi! I'm Alaisa",
+                "I was created to help in the hospitals",
+                "I was taught to identify features in people with COVID-19 to know if the patients have more chances to survive or die by this disease",
+                "Start here"
+            ],
+            "1": [
+                "Alaisa can help you to make better decisions for the patient",
+                "In fact, in different studies, it has been seen that programs like me arrive to be more reliable than some scales that you use as APACHE, qSOFA or CURB-65... for some.",
+                "¡Start using the tool!",
+                "Enter the model",
+                "Help Alaisa to improve her predictions"
+            ],
+            "2": [
+                "Join the community of users that help to improve the predictions of the model.",
+                "Your contribution, accelerates exponentially the collection of data that is used to train the neural network and improve the quality of its predictions!",
+                "¡You can help us to improve the model for free!",
+                "Don't worry, the process is the same as when you use the model to receive predictions.",
+                "Start Training",
+                "Help Alaisa to improve her predictions"
+            ],
+            "3": [
+                "An effective and precise model.",
+                "Know the results of the performance tests made by the developers of Alaisa",
+                [
+                    "0.86",
+                    "0.86",
+                    "0.86",
+                    "30"
+                ],
+                [
+                    "0.86",
+                    "0.86",
+                    "0.86",
+                    "30"
+                ],
+                [
+                    "",
+                    "",
+                    "0.86",
+                    "60"
+                ],
+                [
+                    "0.86",
+                    "0.86",
+                    "0.86",
+                    "60"
+                ],
+                [
+                    "0.86",
+                    "0.86",
+                    "0.86",
+                    "60"
+                ],
+                "Date of the last update",
+                "February 25, 2021"
+            ],
+            "4": [
+                "Help us to create more amazing things...",
+                "You can help us much, by:",
+                "¡Invite us a coffee!",
+                "Your contributions will be of great help, people like you are capable of changing the world...",
+                "Donate",
+                "We are very grateful for your support.",
+                "If you can't donate, don't worry, the work that you do as a health care worker is the one that makes a difference.",
+                "¡You are the Heroes!"
+            ],
+            "5": [
+                "Know the contributors of this project:",
+                [
+                    "Dr. Luis Enriquez",
+                    "Project maager",
+                    "investigacionhcu@gmail.com",
+                    "",
+                    "",
+                    "luisriquez"
+                ],
+                [
+                    "Alan Hernández",
+                    "Developer of the neural network ALAISA and backend",
+                    "alanhernandezgalvan@gmail.com",
+                    "https://www.linkedin.com/in/jesusalanhernandezgalvan/",
+                    "https://github.com/unlikeghost",
+                    "alan-hernandez"
+                ],
+                [
+                    "Luis Fernández",
+                    "Designer of the interface and frontend",
+                    "luis.fer9980@gmail.com",
+                    "https://www.linkedin.com/in/lfer9980/",
+                    "https://github.com/lfer9980",
+                    "luis-fernandez"
+                ],
+                [
+                    "Maria Saad",
+                    "Planning and collection of information",
+                    "mariasaad9@gmail.com",
+                    "",
+                    "",
+                    "maria-saad"
+                ],
+                [
+                    "Sofia González ",
+                    "Collection of information for the database of training and validation",
+                    "sofia.gcristobal@gmail.com",
+                    "",
+                    "",
+                    "sofia-gonzalez"
+                ],
+                [
+                    "Walter Zúñiga",
+                    "Creation and design of the logo",
+                    "walterio_za94@hotmail.com",
+                    "",
+                    "",
+                    "walter-zuniga"
+                ],
+                [
+                    "Eliden Vázquez",
+                    "Collection of information for validation",
+                    "elidenvt@gmail.com",
+                    "",
+                    "",
+                    "eliden-vazquez"
+                ]
+            ]
+        }
+    }
+}

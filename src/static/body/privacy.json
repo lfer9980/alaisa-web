@@ -1,0 +1,42 @@
+{
+    "BODY":{
+
+        "es":{
+            "1-es": [
+                "Tu privacidad es muy importante y nosotros lo sabemos.",
+                "Consulta nuestro aviso de privacidad",
+                "Hospital Central Universitario, con domicilio en No. 3302, calle Rosales, Roma Sur, C. P. 31350, Chihuahua, México, teléfono (614)-180-0800, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:",
+                "¿Para qué fines utilizaremos sus datos personales?",
+                "Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:",
+                "Respuesta a mensajes del formulario de contacto.",
+                "Prestación de cualquier servicio solicitado.",
+                "Registro epidemiológico.",
+                "Investigación científica con fines estadísticos.",
+                "¿Dónde puedo consultar el aviso de privacidad integral?",
+                "Para conocer mayor información sobre los términos y condiciones en que serán tratados sus datos personales, como los terceros con quienes compartimos su información personal y la forma en que podrá ejercer sus derechos ARCO, puede consultar el aviso de privacidad integral con una petición vía correo electrónico:",
+                "alaisadnn@gmail.com",
+                "Última actualización de este aviso de privacidad:",
+                {}
+            ]
+        },
+
+        "en":{
+            "1-en": [
+                "Your privacy is very important and we know it.",
+                "Consult our privacy notice.",
+                "Hospital Central Universitario, with address at No. 3302, calle Rosales, Roma Sur, C. P. 31350, Chihuahua, Mexico, telephone (614)-180-0800, is responsible for the use and protection of your personal data, and in this regard we inform you of the following:",
+                "For what purposes will we use your personal data?",
+                "The personal data we collect from you, we will use them for the following purposes that are necessary for the service you request:",
+                "Responding to messages from the contact form.",
+                "Provision of any requested service.", "Provision of any requested service.", "Provision of any requested service.",
+                "Epidemiological registration.",
+                "Scientific research for statistical purposes.",
+                "Where can I consult the comprehensive privacy notice?", "Where can I consult the comprehensive privacy notice?", "Where can I consult the comprehensive privacy notice?",
+                "To learn more about the terms and conditions under which your personal data will be processed, such as the third parties with whom we share your personal information and how you can exercise your ARCO rights, you can consult the comprehensive privacy notice with a request via email:",
+                "alaisadnn@gmail.com",
+                "Last update of this privacy notice:",
+                {}
+            ]
+        }
+    }
+}

@@ -28,6 +28,7 @@ module.exports = {
 			'@scripts': path.resolve(__dirname, 'src/scripts'),
 			'@styles': path.resolve(__dirname, 'src/styles'),
 			'@languages': path.resolve(__dirname, 'src/languages'),
+			'@static': path.resolve(__dirname, 'src/static'),
 		}
 	},
 	module: {
@@ -65,6 +66,12 @@ module.exports = {
 				generator: {
 					filename: "assets/fonts//[name][contenthash].[ext]"
 				}
+			},
+		],
+		loaders: [
+			{
+				test: /\.json$/,
+				loader: 'json-loader',
 			}
 		],
 	},

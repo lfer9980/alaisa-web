@@ -1,24 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { AppUi } from "@routes/AppUi";
 import { AppProvider } from "@context/AppContext";
-import { Loading } from "@containers/Loading";
 
 function App () {
-	const [loading, setLoading ] = useState(true);
-
-	useEffect(() => {
-		setTimeout(() => setLoading(false),500)
-	},[]);
-
 	return(
 		<>
-			{loading === false ? (
-				<AppProvider>
-					<AppUi />
-				</AppProvider>
-			) : (
-				<Loading />
-			)}
+			<AppProvider>
+				<AppUi />
+			</AppProvider>
 		</>
 	);
 }
