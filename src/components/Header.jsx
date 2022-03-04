@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AppContext } from "@context/AppContext";
 
@@ -7,8 +7,7 @@ import flagMx from '@icons/flag-mx.svg';
 import logotypeWhite from '@icons/logotype-white.svg';
 import isotypeWhite from '@icons/isotype-white.svg';
 
-function Header() {
-		
+function Header({ headerTexto }) {
 	const {
 		toggleHeaderMobile,
 		headerState,
@@ -18,103 +17,164 @@ function Header() {
 
 	return (
 		<header>
-			<i 
-				onClick={ toggleHeaderMobile } 
+			<i
+				onClick={toggleHeaderMobile}
 				className="material-icons burger-menu"
 				id="burger-menu">
 				menu
 			</i>
-			<div className={`header--up ${headerState? 'is-active': ''}`}>
+			<div className={`header--up ${headerState ? 'is-active' : ''}`}>
 				<Link to="/">
 					<figure className="header--up__logo">
 						<img src={logotypeWhite} alt="logo principal alaisa" />
 					</figure>
 				</Link>
 				<nav className="header--up__nav--desktop">
-					<li>
-						<NavLink to="/modelo">
-							<span>Modelo</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to="/entrenamiento">
-							<span>Entrenamiento</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to="/Rendimiento">
-							<span>Rendimiento</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to="/Donativos">
-							<span>Donativos</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to="/Contacto">
-							<span>Contacto</span>
-						</NavLink>
-					</li>
-					<li>
-						<NavLink to="/publicaciones">
-							<span>publicaciones</span>
-						</NavLink>
-					</li>
+					{headerTexto ?
+						(
+							<>
+								{headerTexto["0"].map((item) => (
+									<li key={item}>
+										<NavLink to={`/${item}`}>
+											<span>{item}</span>
+										</NavLink>
+									</li>
+								))}
+							</>
+						)
+						: (
+							<>
+								<li>
+									<NavLink to="/modelo">
+										<span>Modelo</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/entrenamiento">
+										<span>Entrenamiento</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/Rendimiento">
+										<span>Rendimiento</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/Donativos">
+										<span>Donativos</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/Contacto">
+										<span>Contacto</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/publicaciones">
+										<span>publicaciones</span>
+									</NavLink>
+								</li>
+							</>
+						)
+					}
 				</nav>
-				<div 
+				<div
 					className="header--up__language"
-					onClick={ toggleLanguage }
-					>
-					<span>{language? 'ES':'EN'}</span>
-					<img src={language? flagMx: flagUs}/>
+					onClick={toggleLanguage}
+				>
+					<span>{language ? 'ES' : 'EN'}</span>
+					<img src={language ? flagMx : flagUs} />
 				</div>
 			</div>
-			<div className={`header ${headerState? 'is-active': ''}`}>
+			<div className={`header ${headerState ? 'is-active' : ''}`}>
 				<nav className="header__nav--mobile">
 					<ul className="header__menu--mobile">
-						<li onClick={ toggleHeaderMobile } >
-							<NavLink to="/modelo">
-								<span>Modelo Alaisa</span>
-							</NavLink>
-						</li>
-						<li onClick={ toggleHeaderMobile } >
-							<NavLink to="/entrenamiento">
-								<span>Entrenamiento</span>
-							</NavLink>
-						</li>
-						<li onClick={ toggleHeaderMobile } >
-							<NavLink to="/Rendimiento">
-								<span>Estadisiticas de Rendimiento</span>
-							</NavLink>
-						</li>
-						<li onClick={ toggleHeaderMobile } >
-							<NavLink to="/Donativos">
-								<span>Donativos</span>
-							</NavLink>
-						</li>
-						<li onClick={ toggleHeaderMobile } >
-							<NavLink to="/Contacto">
-								<span>Contacto del equipo</span>
-							</NavLink>
-						</li>
-						<li	onClick={ toggleHeaderMobile } >
-							<NavLink to="/publicaciones">
-								<span>publicaciones</span>
-							</NavLink>
-						</li>
+						{headerTexto ?
+							(
+								<>
+									{headerTexto["1"].map((item) => (
+										<li
+											key={item}
+											onClick={toggleHeaderMobile}
+										>
+											<NavLink to={`/${item}`}>
+												<span>
+													{item}
+												</span>
+											</NavLink>
+										</li>
+									))}
+								</>
+							)
+							: (
+								<>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/modelo">
+											<span>Modelo Alaisa</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/entrenamiento">
+											<span>Entrenamiento</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/Rendimiento">
+											<span>Estadisiticas de Rendimiento</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/Donativos">
+											<span>Donativos</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/Contacto">
+											<span>Contacto del equipo</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/publicaciones">
+											<span>publicaciones</span>
+										</NavLink>
+									</li>
+								</>
+							)
+						}
 					</ul>
 					<ul className="header__menu--secondary">
-						<li	onClick={ toggleHeaderMobile } >
+						{headerTexto ?
+						(
+							<>
+							{headerTexto["2"].map((item) => (
+										<li
+											key={item}
+											onClick={toggleHeaderMobile}
+										>
+											<Link to={`/${item}`}>
+												<span>
+													{item}
+												</span>
+											</Link>
+										</li>
+									))}
+							</>
+						)
+						:(
+							<>
+						<li onClick={toggleHeaderMobile} >
 							<Link to="/privacidad">
 								<span>Aviso de privacidad</span>
 							</Link>
 						</li>
-						<li	onClick={ toggleHeaderMobile } >
+						<li onClick={toggleHeaderMobile} >
 							<Link to="/acerca">
 								<span>Acerca de</span>
 							</Link>
 						</li>
+							</>
+						)
+						}
 					</ul>
 				</nav>
 				<div className="imagotipo">

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { HomeModelo } from "@containers/HomeModelo"
@@ -9,19 +9,18 @@ import { HomeDesarrollador } from "@containers/HomeDesarrollador"
 import { HomeContacto } from "@containers/HomeContacto"
 import { Footer } from "@components/Footer";
 
-function Home({texto}) {
+function Home({homeTexto}) {
 	useDocumentTitle("Evaluación efectiva del covid en CUU")
-	console.log(texto)
 	
 	return(
 		<>
 			<Content type="no-padding-top no-background">
-				<HomeHero homeTexto={texto["0"]}/>
-				<HomeModelo homeTexto={texto["1"]}/>
-				<HomeEntrenamiento homeTexto={texto["2"]}/>
-				<HomeDesarrollador homeTexto={texto["3"]}/>
-				<HomeDonativos homeTexto={texto["4"]}/>
-				<HomeContacto homeTexto={texto["5"]}/>
+				<HomeHero heroTexto={homeTexto["0"]}/>
+				<HomeModelo modeloTexto={homeTexto["1"]}/>
+				<HomeEntrenamiento trainTexto={homeTexto["2"]}/>
+				<HomeDesarrollador devTexto={homeTexto["3"]}/>
+				<HomeDonativos donativosTexto={homeTexto["4"]}/>
+				<HomeContacto contactoTexto={homeTexto["5"]}/>
 			</Content>
 			<Footer></Footer>
 		</>

@@ -7,7 +7,7 @@ function Footer() {
 	return (
 		<footer className="footer">
 			<div className="footer__main">
-				<Link to="/modelo">
+				<Link to="/">
 					<figure>
 						<img src={isologotypeWhite} alt="alaisa logo" />
 					</figure>

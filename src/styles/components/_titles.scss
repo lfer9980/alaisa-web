@@ -102,17 +102,11 @@
 }
 
 @include desktop {
-	.title-main {
-		h2 {
-			font-size: 5.017rem;
-		}
-
-	}
 	.title-h1 {
 		max-width: 1000px;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		h1 {
-			font-size: 5.017rem;
+			font-size: 5rem;
 		}
 	}
 	.title-h2 {
@@ -126,12 +120,6 @@
 }
 
 @include large {
-	.title-main {
-		h2 {
-			font-size: 6.739rem;
-		}
-
-	}
 	.title-h1 {
 		h1 {
 			font-size: 6.734rem;

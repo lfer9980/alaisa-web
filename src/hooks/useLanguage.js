@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const aboutJson = require("@static/body/about.json")
 const indexJson = require("@static/body/index.json")
@@ -6,6 +6,8 @@ const modelJson = require("@static/body/model.json")
 const privacyJson = require("@static/body/privacy.json")
 const trainJson = require("@static/body/train.json")
 const formJson = require("@static/forms/form.json")
+const headerJson = require("@static/body/header.json")
+const footerJson = require("@static/body/footer.json")
 
 const datosTemporales = [
 	{...indexJson},
@@ -14,6 +16,8 @@ const datosTemporales = [
 	{...trainJson},
 	{...privacyJson},
 	{...formJson},
+	{...headerJson},
+	{...footerJson},
 ];
 
 const changeLanguage = (data, language) => {
@@ -60,7 +64,6 @@ function useLanguage() {
 	const toggleLanguage = () => {
 		setLanguage(!language);
 		chooseTextLanguage();
-		console.log(textos)
 	}
 
 	const chooseTextLanguage = () => {

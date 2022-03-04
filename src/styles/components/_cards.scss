@@ -52,6 +52,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		height: 160px;
 		padding: 10px;
 		margin-bottom: 20px;
 		text-align: left;
@@ -64,10 +65,10 @@
 		&__main {
 			display: inherit;
 			flex-direction: column;
-			width: 70%;
+			width: 60%;
 		}
 		&__image {
-			width: 30%;
+			width: 40%;
 			border-radius: 8px;
 			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 			overflow: hidden;
@@ -117,6 +118,12 @@
 		.card-contacto {
 			padding: 20px;
 			margin-bottom: 30px;
+			&__main {
+				width: 70%;
+			}
+			&__image {
+				width: 30%;
+			}
 			&__media {
 				a {
 					font-size: 1.8rem;
@@ -130,19 +137,16 @@
 					}
 				}
 			}
+			
 		}
 	}
 }
 
 @include desktop {
-
 	.card-donativo {
 		width: 50%;
 		&__image {
 			width: 30%;
-		}
-		&__title {
-			font-size: 2.1rem;
 		}
 		&__paragraph {
 			font-size: 1.6rem;
@@ -150,7 +154,8 @@
 	}
 
 	.card-wrapper {
-		height: 70%;
+		width: 60%;
+		height: 80%;
 		margin-left: 0;
 		.card-contacto {
 			height: 190px;
@@ -167,10 +172,4 @@
 			}
 		}
 	}
-
-
-}
-
-@include large {
-	
 }

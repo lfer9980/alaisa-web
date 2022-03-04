@@ -68,12 +68,6 @@ module.exports = {
 				}
 			},
 		],
-		loaders: [
-			{
-				test: /\.json$/,
-				loader: 'json-loader',
-			}
-		],
 	},
 	devServer: {
 		static: path.join(__dirname, 'dist'),

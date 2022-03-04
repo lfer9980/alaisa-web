@@ -4,8 +4,7 @@
 .footer {
 	position: relative;
 	bottom: 0;
-	height: auto;
-	padding: 10px 20px;
+	padding: 20px;
 	color: v.$white;
 	background-color: v.$blue600;
 
@@ -78,14 +77,13 @@
 
 			li {
 				padding-bottom: 5px;
-
 				a {
 					color: v.$blue400;
 				}
 				a:hover {
 					color: v.$white;
 				}
-			}
+			}	
 		}
 	}
 }

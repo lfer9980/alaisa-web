@@ -39,9 +39,9 @@ function AppUi() {
 				(<Loading />) :
 				<Layout>
 					<BrowserRouter>
-						<Header />
+						<Header headerTexto={textos[6]}/>
 						<Routes>
-							<Route path="/" element={<Home texto={textos[0]} />} />
+							<Route path="/" element={<Home homeTexto={textos[0]} />} />
 							<Route path="Rendimiento" element={<Rendimiento texto={textos[0]}/>} />
 							<Route path="Donativos" element={<Donativos texto={textos[0]}/>} />
 							<Route path="Contacto" element={<Contacto texto={textos[0]}/>} />
@@ -56,6 +56,12 @@ function AppUi() {
 							<Route path="publicaciones" element={<Publicaciones />} />
 							<Route path="administrador" element={<Administrador />} />
 							<Route path="*" element={<NotFound />} />
+							<Route path="model" element={<Modelo texto={textos[5]}/>} />
+							<Route path="training" element={<Entrenamiento texto={textos[3]} />} />
+							<Route path="performance" element={<Rendimiento texto={textos[0]}/>} />
+							<Route path="donations" element={<Donativos texto={textos[0]}/>} />
+							<Route path="contact" element={<Contacto texto={textos[0]}/>} />
+							<Route path="publications" element={<Publicaciones />} />
 						</Routes>
 					</BrowserRouter>
 				</Layout>

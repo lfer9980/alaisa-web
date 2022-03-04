@@ -11,6 +11,7 @@
 		position: relative;
 		height: 45px;
 		margin-bottom: 20px;
+		padding: 10px 0;
 		place-items: center;
 		background-color: v.$blue500;
 		@include dark-mode {
