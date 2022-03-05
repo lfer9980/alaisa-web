@@ -1,10 +1,6 @@
-import React, {useContext} from "react";
-import {AppContext} from "@context/AppContext";
+import React from "react";
 
 function Title({ type , children }) {
-/* 	const {
-		targetRef
-	} = useContext(AppContext); */
 
 	return(
 		<div className={`title-${type}`} > 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+
 import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";

@@ -1,5 +1,6 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+
 import { Link } from "react-router-dom";
 import { Content } from "@containers/Content";
 import { Title } from "@components/Title";

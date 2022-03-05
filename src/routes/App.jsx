@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { AppUi } from "@routes/AppUi";
 import { AppProvider } from "@context/AppContext";
 

@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AppContext } from "@context/AppContext";
 
-import flagUs from '@icons/flag-us.svg';
-import flagMx from '@icons/flag-mx.svg';
+import flagUs from '@icons/flag-us.png';
+import flagMx from '@icons/flag-mx.png';
 import logotypeWhite from '@icons/logotype-white.svg';
 import isotypeWhite from '@icons/isotype-white.svg';
 

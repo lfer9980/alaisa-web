@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "@context/AppContext";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+
 import { Content } from "@containers/Content";
 import { Paragraph } from "@components/Paragraph";
 import { Subtitle } from "@components/Subtitle";

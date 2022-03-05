@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "@context/AppContext";
-import { CardContacto } from '@components/CardContacto';
+
 import { Title } from "@components/Title";
+import { CardContacto } from '@components/CardContacto';
 
 
 function HomeContacto({ contactoTexto }) {

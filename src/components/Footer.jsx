@@ -1,7 +1,7 @@
 import React from "react";
-import isologotypeWhite from "@icons/isologotype-white.svg";
 import { Link } from "react-router-dom";
 
+import isologotypeWhite from "@icons/isologotype-white.svg";
 
 function Footer({ footerTexto }) {
 	return (

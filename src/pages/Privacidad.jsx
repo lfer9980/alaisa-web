@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { AppContext } from "@context/AppContext";
+
 import { Content } from "@containers/Content";
 import { Paragraph } from "@components/Paragraph";
 import { Subtitle } from "@components/Subtitle";
 import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
 import { Breadcrumbs } from "@components/Breadcrumbs";
-import { AppContext } from "@context/AppContext";
 
 function Privacidad({ privTexto }) {
 	const {

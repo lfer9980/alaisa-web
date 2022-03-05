@@ -1,8 +1,8 @@
 import React from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
-import { Content } from "@containers/Content";
+
 import { Title } from "@components/Title";
-import { Breadcrumbs } from "@components/Breadcrumbs";
+import { Content } from "@containers/Content";
 
 function Administrador({ adminTexto }) {
 	useDocumentTitle("administrador")

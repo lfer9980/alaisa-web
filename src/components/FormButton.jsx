@@ -1,6 +1,6 @@
 import React from "react";
 
-function FormButton({name, value}) {
+function FormButton({ name, value }) {
 	return(
 		<>
 			<input 

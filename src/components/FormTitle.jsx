@@ -1,6 +1,6 @@
 import React from "react";
 
-function FormTitle({title}) {
+function FormTitle({ title }) {
 	return(
 		<>
 			<h4 className="form__title">{title}</h4>

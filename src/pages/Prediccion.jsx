@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { AppContext } from "@context/AppContext";
+
 import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";
@@ -8,7 +10,7 @@ import { InputCheck } from "@components/InputCheck";
 import { Input } from "@components/Input";
 import { FormButton } from "@components/FormButton";
 import { Form } from "@components/Form";
-import { AppContext } from "@context/AppContext";
+
 
 function Prediccion({ prediccionTexto }) {
 	const {
