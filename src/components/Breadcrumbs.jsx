@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AppContext } from "@context/AppContext";
 
 function Breadcrumbs({ url, children }) {
+	const {
+		language
+	} = useContext(AppContext)
+
 	return (
 		<div className="breadcrumbs">
 			<nav className="breadcrumbs__nav">
 				<Link to="/">
 					<span className="bread">
-						Inicio
+						{language ? "Home": "Inicio"}
 					</span>
 				</Link>
 				{

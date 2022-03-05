@@ -13,13 +13,23 @@ function HomeContacto({ contactoTexto }) {
 
 	return (
 		<section className='wrapper' id='contacto' ref={contacto}>
-			{contactoTexto ?
-				(
-					<>
-					<Title type={`main margin align-left ${contactoVisible ? animateFlipInY : 'trans'}`}>
-							<h2 dangerouslySetInnerHTML={{ __html: `${contactoTexto[0]}` }}/>
-						</Title>
-						<div className="card-wrapper margin">
+			<Title type={`main margin align-left ${contactoVisible ? animateFlipInY : 'trans'}`}>
+				{contactoTexto ?
+					(
+						<h2 dangerouslySetInnerHTML={{ __html: `${contactoTexto[0]}` }} />
+					)
+					: (
+						<h2>
+							Conoce a los <span>contribuidores</span> de este proyecto:
+						</h2>
+					)
+				}
+			</Title>
+
+			<div className="card-wrapper margin">
+				{contactoTexto ?
+					(
+						<>
 							{contactoTexto[1].map((item) => (
 								<CardContacto
 									key={item[0]}
@@ -31,17 +41,11 @@ function HomeContacto({ contactoTexto }) {
 									image={item[5]}
 								/>
 							))}
-						</div>
-					</>
-				)
-				: (
-					<>
-						<Title type={`main margin align-left ${contactoVisible ? animateFlipInY : 'trans'}`}>
-							<h2>
-								Conoce a los <span>contribuidores</span> de este proyecto:
-							</h2>
-						</Title>
-						<div className="card-wrapper margin">
+						</>
+
+					)
+					: (
+						<>
 							<CardContacto
 								name="Dr. Luis Enriquez"
 								job="Project manager"
@@ -98,10 +102,10 @@ function HomeContacto({ contactoTexto }) {
 								urlRed2=""
 								image="eliden-vazquez"
 							/>
-						</div>
-					</>
-				)
-			}
+						</>
+					)
+				}
+			</div>
 		</section>
 	);
 }

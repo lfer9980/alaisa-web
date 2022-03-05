@@ -1,30 +1,24 @@
 import React from "react";
 
-function InputSelect({ name, text, options }) {
+function InputSelect({ question, id, options }) {
 	return (
-		<>
-			<label
-				className="input"
-				htmlFor={name}
+		<label className="input" htmlFor={id} >
+			<span className="input__title">
+				{question}
+			</span>
+			<select
+				className="input__select__place"
+				name={id}
+				id={id}
 				>
-					<span className="input__title">
-						{text}
-					</span>
-				<select
-					className="input__select__place"
-					name={name}
-					id={name}
-				>
-					{options.map( (item)=> (
-						<option 
-							value={item.value}
-							key={item.value}>
-							{item.description}
-						</option>
-					))}	
-				</select>
-			</label>
-		</>
+				<option value={1}>
+					{options[0]}
+				</option>
+				<option value={0} selected="selected">
+					{options[1]}
+				</option>
+			</select>
+		</label>
 	);
 }
 

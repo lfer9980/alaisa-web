@@ -1,441 +1,47 @@
 {
     "BODY": {
-        "en": {
-            "1-en": {
-                "question": "Age",
-                "type": "number",
-                "id": "Age"
-            },
-            "2-en": {
-                "question": "Sex",
-                "type": "number",
-                "id": "Sex"
-            },
-            "3-en": {
-                "question": "Systolic blood pressure (mmHg)",
-                "type": "number",
-                "id": "Systolic blood pressure (mmHg)"
-            },
-            "4-en": {
-                "question": "Diastolic blood pressure (mmHg)",
-                "type": "number",
-                "id": "Diastolic blood pressure (mmHg)"
-            },
-            "5-en": {
-                "question": "Heart rate (bpm)",
-                "type": "number",
-                "id": "Heart rate (bpm)"
-            },
-            "6-en": {
-                "question": "Oxygen saturation (%)",
-                "type": "number",
-                "id": "Oxygen saturation (%)"
-            },
-            "7-en": {
-                "question": "Respiratory rate (rpm)",
-                "type": "number",
-                "id": "Respiratory rate (rpm)"
-            },
-            "8-en": {
-                "question": "Temperature (\u00b0C)",
-                "type": "number",
-                "id": "Temperature (\u00b0C)"
-            },
-            "9-en": {
-                "question": "Overweight",
-                "type": "select",
-                "id": "Overweight",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "10-en": {
-                "question": "Obesity",
-                "type": "select",
-                "id": "Obesity",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "11-en": {
-                "question": "DM",
-                "type": "select",
-                "id": "DM",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "12-en": {
-                "question": "HAS",
-                "type": "select",
-                "id": "HAS",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "13-en": {
-                "question": "COPD",
-                "type": "select",
-                "id": "COPD",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "14-en": {
-                "question": "CKD",
-                "type": "select",
-                "id": "CKD",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "15-en": {
-                "question": "Cancer",
-                "type": "select",
-                "id": "Cancer",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "16-en": {
-                "question": "Fever >38\u00baC",
-                "type": "select",
-                "id": "Fever >38\u00baC",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "17-en": {
-                "question": "Dyspnea",
-                "type": "select",
-                "id": "Dyspnea",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "18-en": {
-                "question": "Supplemental oxygen",
-                "type": "select",
-                "id": "Supplemental oxygen",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "19-en": {
-                "question": "Mechanical ventilation",
-                "type": "select",
-                "id": "Mechanical ventilation",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "20-en": {
-                "question": "Hemodynamic status",
-                "type": "select",
-                "id": "Hemodynamic status",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "21-en": {
-                "question": "Amine requirement",
-                "type": "select",
-                "id": "Amine requirement",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "22-en": {
-                "question": "Pharmacologic management [Symptomatic (NSAIDs",
-                "type": "select",
-                "id": "Pharmacologic management [Symptomatic (NSAIDs",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "23-en": {
-                "question": "salicylates",
-                "type": "select",
-                "id": "salicylates",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "24-en": {
-                "question": "etc. ). Pharmacological management [Antibiotic]",
-                "type": "select",
-                "id": "etc. ). Pharmacological management [Antibiotic]",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "25-en": {
-                "question": "Pharmacological management [Antivirals]",
-                "type": "select",
-                "id": "Pharmacological management [Antivirals]",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "26-en": {
-                "question": "Pharmacological management [Others]",
-                "type": "select",
-                "id": "Pharmacological management [Others]",
-                "options": [
-                    "Yes",
-                    "No"
-                ]
-            },
-            "27-en": {
-                "question": "pH",
-                "type": "number",
-                "id": "pH"
-            },
-            "28-en": {
-                "question": "Alveolar oxygen pressure - PaO2 (mmHg)",
-                "type": "number",
-                "id": "Alveolar oxygen pressure - PaO2 (mmHg)"
-            },
-            "29-en": {
-                "question": "Alveolar carbon dioxide pressure - PaCO2 (mmHg)",
-                "type": "number",
-                "id": "Alveolar carbon dioxide pressure - PaCO2 (mmHg)"
-            },
-            "30-en": {
-                "question": "HCO3 (mEq/L)",
-                "type": "number",
-                "id": "HCO3 (mEq/L)"
-            },
-            "31-en": {
-                "question": "Lactate (mmol/L)",
-                "type": "number",
-                "id": "Lactate (mmol/L)"
-            },
-            "32-en": {
-                "question": "Hemoglobin (g/dL)",
-                "type": "number",
-                "id": "Hemoglobin (g/dL)"
-            },
-            "33-en": {
-                "question": "Hematocrit (%)",
-                "type": "number",
-                "id": "Hematocrit (%)"
-            },
-            "34-en": {
-                "question": "Leukocytes (1000/mm3)",
-                "type": "number",
-                "id": "Leukocytes (1000/mm3)"
-            },
-            "35-en": {
-                "question": "Neutrophils (10^3/\u03bcl)",
-                "type": "number",
-                "id": "Neutrophils (10^3/\u03bcl)"
-            },
-            "36-en": {
-                "question": "Lymphocytes (10^3/\u03bcl)",
-                "type": "number",
-                "id": "Lymphocytes (10^3/\u03bcl)"
-            },
-            "37-en": {
-                "question": "Platelets (10^3/\u03bcl)",
-                "type": "number",
-                "id": "Platelets (10^3/\u03bcl)"
-            },
-            "38-en": {
-                "question": "Chloride (mEq/L)",
-                "type": "number",
-                "id": "Chloride (mEq/L)"
-            },
-            "39-en": {
-                "question": "Potassium (mEq/L)",
-                "type": "number",
-                "id": "Potassium (mEq/L)"
-            },
-            "40-en": {
-                "question": "Sodium (mEq/L)",
-                "type": "number",
-                "id": "Sodium (mEq/L)"
-            },
-            "41-en": {
-                "question": "Magnesium (mEq/L)",
-                "type": "number",
-                "id": "Magnesium (mEq/L)"
-            },
-            "42-en": {
-                "question": "Calcium (mEq/L)",
-                "type": "number",
-                "id": "Calcium (mEq/L)"
-            },
-            "43-en": {
-                "question": "Phosphorus (mEq/L)",
-                "type": "number",
-                "id": "Phosphorus (mEq/L)"
-            },
-            "44-en": {
-                "question": "Uric acid (mg/dL)",
-                "type": "number",
-                "id": "Uric acid (mg/dL)"
-            },
-            "45-en": {
-                "question": "BUN (mg/dL)",
-                "type": "number",
-                "id": "BUN (mg/dL)"
-            },
-            "46-en": {
-                "question": "Creatinine (mg/dL)",
-                "type": "number",
-                "id": "Creatinine (mg/dL)"
-            },
-            "47-en": {
-                "question": "Glucose (mg/dL)",
-                "type": "number",
-                "id": "Glucose (mg/dL)"
-            },
-            "48-en": {
-                "question": "Urea (mmol/L)",
-                "type": "number",
-                "id": "Urea (mmol/L)"
-            },
-            "49-en": {
-                "question": "Total Bilirubin (mg/dL)",
-                "type": "number",
-                "id": "Total Bilirubin (mg/dL)"
-            },
-            "50-en": {
-                "question": "Albumin (g/dL)",
-                "type": "number",
-                "id": "Albumin (g/dL)"
-            },
-            "51-en": {
-                "question": "Alkaline Phosphatase (IU/L)",
-                "type": "number",
-                "id": "Alkaline Phosphatase (IU/L)"
-            },
-            "52-en": {
-                "question": "TGP (IU/L)",
-                "type": "number",
-                "id": "TGP (IU/L)"
-            },
-            "53-en": {
-                "question": "TGO (IU/L)",
-                "type": "number",
-                "id": "TGO (IU/L)"
-            },
-            "54-en": {
-                "question": "GGT",
-                "type": "number",
-                "id": "GGT"
-            },
-            "55-en": {
-                "question": "CRP (mg/dL)",
-                "type": "number",
-                "id": "CRP (mg/dL)"
-            },
-            "56-en": {
-                "question": "ESR (mm/hr)",
-                "type": "number",
-                "id": "ESR (mm/hr)"
-            },
-            "57-en": {
-                "question": "PT (sec)",
-                "type": "number",
-                "id": "PT (sec)"
-            },
-            "58-en": {
-                "question": "TTP (sec)",
-                "type": "number",
-                "id": "TTP (sec)"
-            },
-            "59-en": {
-                "question": "INR",
-                "type": "number",
-                "id": "INR"
-            },
-            "60-en": {
-                "question": "D-Dimer (mm/hr)",
-                "type": "number",
-                "id": "D-Dimer (mm/hr)"
-            },
-            "61-en": {
-                "question": "PT (sec)",
-                "type": "number",
-                "id": "PT (sec)"
-            },
-            "62-en": {
-                "question": "TTP (sec)",
-                "type": "number",
-                "id": "TTP (sec)"
-            },
-            "63-en": {
-                "question": "INR",
-                "type": "number",
-                "id": "INR"
-            },
-            "64-en": {
-                "question": "D-dimer",
-                "type": "number",
-                "id": "D-dimer"
-            }
-        },
         "es": {
-            "1-es": {
+            "0": {
                 "question": "Edad",
                 "type": "number",
                 "id": "Edad"
             },
-            "2-es": {
+            "1": {
                 "question": "Sexo",
                 "type": "number",
                 "id": "Sexo"
             },
-            "3-es": {
+            "2": {
                 "question": "Presi\u00f3n arterial sist\u00f3lica (mmHg)",
                 "type": "number",
                 "id": "Presi\u00f3n arterial sist\u00f3lica (mmHg)"
             },
-            "4-es": {
+            "3": {
                 "question": "Presi\u00f3n arterial diast\u00f3lica (mmHg)",
                 "type": "number",
                 "id": "Presi\u00f3n arterial diast\u00f3lica (mmHg)"
             },
-            "5-es": {
+            "4": {
                 "question": "Frecuencia card\u00edaca (lpm)",
                 "type": "number",
                 "id": "Frecuencia card\u00edaca (lpm)"
             },
-            "6-es": {
+            "5": {
                 "question": "Saturaci\u00f3n de ox\u00edgeno (%)",
                 "type": "number",
                 "id": "Saturaci\u00f3n de ox\u00edgeno (%)"
             },
-            "7-es": {
+            "6": {
                 "question": "Frecuencia respiratoria (rpm)",
                 "type": "number",
                 "id": "Frecuencia respiratoria (rpm)"
             },
-            "8-es": {
+            "7": {
                 "question": "Temperatura (\u00b0C)",
                 "type": "number",
                 "id": "Temperatura (\u00b0C)"
             },
-            "9-es": {
+            "8": {
                 "question": "Sobrepeso",
                 "type": "select",
                 "id": "Sobrepeso",
@@ -444,7 +50,7 @@
                     "No"
                 ]
             },
-            "10-es": {
+            "9": {
                 "question": "Obesidad",
                 "type": "select",
                 "id": "Obesidad",
@@ -453,7 +59,7 @@
                     "No"
                 ]
             },
-            "11-es": {
+            "10": {
                 "question": "DM",
                 "type": "select",
                 "id": "DM",
@@ -462,7 +68,7 @@
                     "No"
                 ]
             },
-            "12-es": {
+            "11": {
                 "question": "HAS",
                 "type": "select",
                 "id": "HAS",
@@ -471,7 +77,7 @@
                     "No"
                 ]
             },
-            "13-es": {
+            "12": {
                 "question": "EPOC",
                 "type": "select",
                 "id": "EPOC",
@@ -480,7 +86,7 @@
                     "No"
                 ]
             },
-            "14-es": {
+            "13": {
                 "question": "ERC",
                 "type": "select",
                 "id": "ERC",
@@ -489,7 +95,7 @@
                     "No"
                 ]
             },
-            "15-es": {
+            "14": {
                 "question": "C\u00e1ncer",
                 "type": "select",
                 "id": "C\u00e1ncer",
@@ -498,7 +104,7 @@
                     "No"
                 ]
             },
-            "16-es": {
+            "15": {
                 "question": "Fiebre >38\u00baC",
                 "type": "select",
                 "id": "Fiebre >38\u00baC",
@@ -507,7 +113,7 @@
                     "No"
                 ]
             },
-            "17-es": {
+            "16": {
                 "question": "Disnea",
                 "type": "select",
                 "id": "Disnea",
@@ -516,7 +122,7 @@
                     "No"
                 ]
             },
-            "18-es": {
+            "17": {
                 "question": "Ox\u00edgeno suplementario",
                 "type": "select",
                 "id": "Ox\u00edgeno suplementario",
@@ -525,7 +131,7 @@
                     "No"
                 ]
             },
-            "19-es": {
+            "18": {
                 "question": "Ventilaci\u00f3n mec\u00e1nica",
                 "type": "select",
                 "id": "Ventilaci\u00f3n mec\u00e1nica",
@@ -534,7 +140,7 @@
                     "No"
                 ]
             },
-            "20-es": {
+            "19": {
                 "question": "Estado hemodin\u00e1mico",
                 "type": "select",
                 "id": "Estado hemodin\u00e1mico",
@@ -543,7 +149,7 @@
                     "No"
                 ]
             },
-            "21-es": {
+            "20": {
                 "question": "Requerimiento de aminas",
                 "type": "select",
                 "id": "Requerimiento de aminas",
@@ -552,8 +158,8 @@
                     "No"
                 ]
             },
-            "22-es": {
-                "question": "Manejo farmacol\u00f3gico [Sintom\u00e1tico (AINES",
+            "21": {
+                "question": "Manejo farmacol\u00f3gico [Sintom\u00e1tico (AINES salicilatos etc.).]",
                 "type": "select",
                 "id": "Manejo farmacol\u00f3gico [Sintom\u00e1tico (AINES",
                 "options": [
@@ -561,25 +167,7 @@
                     "No"
                 ]
             },
-            "23-es": {
-                "question": "salicilatos",
-                "type": "select",
-                "id": "salicilatos",
-                "options": [
-                    "Si",
-                    "No"
-                ]
-            },
-            "24-es": {
-                "question": "etc.).]",
-                "type": "select",
-                "id": "etc.).]",
-                "options": [
-                    "Si",
-                    "No"
-                ]
-            },
-            "25-es": {
+            "22": {
                 "question": "Manejo farmacol\u00f3gico [Antibi\u00f3tico]",
                 "type": "select",
                 "id": "Manejo farmacol\u00f3gico [Antibi\u00f3tico]",
@@ -588,7 +176,7 @@
                     "No"
                 ]
             },
-            "26-es": {
+            "23": {
                 "question": "Manejo farmacol\u00f3gico [Antivirales]",
                 "type": "select",
                 "id": "Manejo farmacol\u00f3gico [Antivirales]",
@@ -597,7 +185,7 @@
                     "No"
                 ]
             },
-            "27-es": {
+            "24": {
                 "question": "Manejo farmacol\u00f3gico [Otros]",
                 "type": "select",
                 "id": "Manejo farmacol\u00f3gico [Otros]",
@@ -606,175 +194,542 @@
                     "No"
                 ]
             },
-            "28-es": {
+            "25": {
                 "question": "pH",
                 "type": "number",
                 "id": "pH"
             },
-            "29-es": {
+            "26": {
                 "question": "Presi\u00f3n alveolar de ox\u00edgeno - PaO2 (mmHg)",
                 "type": "number",
                 "id": "Presi\u00f3n alveolar de ox\u00edgeno - PaO2 (mmHg)"
             },
-            "30-es": {
+            "27": {
                 "question": "Presi\u00f3n alveolar de di\u00f3xido de carbono - PaCO2 (mmHg)",
                 "type": "number",
                 "id": "Presi\u00f3n alveolar de di\u00f3xido de carbono - PaCO2 (mmHg)"
             },
-            "31-es": {
+            "28": {
                 "question": "HCO3 (mEq/L)",
                 "type": "number",
                 "id": "HCO3 (mEq/L)"
             },
-            "32-es": {
+            "29": {
                 "question": "Lactato (mmol/L)",
                 "type": "number",
                 "id": "Lactato (mmol/L)"
             },
-            "33-es": {
+            "30": {
                 "question": "Hemoglobina (g/dL)",
                 "type": "number",
                 "id": "Hemoglobina (g/dL)"
             },
-            "34-es": {
+            "31": {
                 "question": "Hematocrito (%)",
                 "type": "number",
                 "id": "Hematocrito (%)"
             },
-            "35-es": {
+            "32": {
                 "question": "Leucocitos (1000/mm3)",
                 "type": "number",
                 "id": "Leucocitos (1000/mm3)"
             },
-            "36-es": {
+            "33": {
                 "question": "Neutr\u00f3filos (10^3/\u03bcl)",
                 "type": "number",
                 "id": "Neutr\u00f3filos (10^3/\u03bcl)"
             },
-            "37-es": {
+            "34": {
                 "question": "Linfocitos (10^3/\u03bcl)",
                 "type": "number",
                 "id": "Linfocitos (10^3/\u03bcl)"
             },
-            "38-es": {
+            "35": {
                 "question": "Plaquetas (10^3/\u03bcl)",
                 "type": "number",
                 "id": "Plaquetas (10^3/\u03bcl)"
             },
-            "39-es": {
+            "36": {
                 "question": "Cloro (mEq/L)",
                 "type": "number",
                 "id": "Cloro (mEq/L)"
             },
-            "40-es": {
+            "37": {
                 "question": "Potasio (mEq/L)",
                 "type": "number",
                 "id": "Potasio (mEq/L)"
             },
-            "41-es": {
+            "38": {
                 "question": "Sodio (mEq/L)",
                 "type": "number",
                 "id": "Sodio (mEq/L)"
             },
-            "42-es": {
+            "39": {
                 "question": "Magnesio (mEq/L)",
                 "type": "number",
                 "id": "Magnesio (mEq/L)"
             },
-            "43-es": {
+            "40": {
                 "question": "Calcio (mEq/L)",
                 "type": "number",
                 "id": "Calcio (mEq/L)"
             },
-            "44-es": {
+            "41": {
                 "question": "F\u00f3sforo (mEq/L)",
                 "type": "number",
                 "id": "F\u00f3sforo (mEq/L)"
             },
-            "45-es": {
+            "42": {
                 "question": "\u00c1cido \u00farico (mg/dL)",
                 "type": "number",
                 "id": "\u00c1cido \u00farico (mg/dL)"
             },
-            "46-es": {
+            "43": {
                 "question": "BUN (mg/dL)",
                 "type": "number",
                 "id": "BUN (mg/dL)"
             },
-            "47-es": {
+            "44": {
                 "question": "Creatinina (mg/dL)",
                 "type": "number",
                 "id": "Creatinina (mg/dL)"
             },
-            "48-es": {
+            "45": {
                 "question": "Glucosa (mg/dl)",
                 "type": "number",
                 "id": "Glucosa (mg/dl)"
             },
-            "49-es": {
+            "46": {
                 "question": "Urea (mmol/L)",
                 "type": "number",
                 "id": "Urea (mmol/L)"
             },
-            "50-es": {
+            "47": {
                 "question": "Bilirrubina total (mg/dL)",
                 "type": "number",
                 "id": "Bilirrubina total (mg/dL)"
             },
-            "51-es": {
+            "48": {
                 "question": "Alb\u00famina (g/dL)",
                 "type": "number",
                 "id": "Alb\u00famina (g/dL)"
             },
-            "52-es": {
+            "49": {
                 "question": "Fosfatasa alcalina (UI/L)",
                 "type": "number",
                 "id": "Fosfatasa alcalina (UI/L)"
             },
-            "53-es": {
+            "50": {
                 "question": "TGP (UI/L)",
                 "type": "number",
                 "id": "TGP (UI/L)"
             },
-            "54-es": {
+            "51": {
                 "question": "TGO (UI/L)",
                 "type": "number",
                 "id": "TGO (UI/L)"
             },
-            "55-es": {
+            "52": {
                 "question": "GGT",
                 "type": "number",
                 "id": "GGT"
             },
-            "56-es": {
+            "53": {
                 "question": "PCR (mg/dL)",
                 "type": "number",
                 "id": "PCR (mg/dL)"
             },
-            "57-es": {
+            "54": {
                 "question": "VSG (mm/hr)",
                 "type": "number",
                 "id": "VSG (mm/hr)"
             },
-            "58-es": {
+            "55": {
                 "question": "TP (seg)",
                 "type": "number",
                 "id": "TP (seg)"
             },
-            "59-es": {
+            "56": {
                 "question": "TTP (seg)",
                 "type": "number",
                 "id": "TTP (seg)"
             },
-            "60-es": {
+            "57": {
                 "question": "INR",
                 "type": "number",
                 "id": "INR"
             },
-            "61-es": {
+            "58": {
                 "question": "D\u00edmero D",
                 "type": "number",
                 "id": "D\u00edmero D"
+            }
+        },
+        "en": {
+            "0": {
+                "question": "Age",
+                "type": "number",
+                "id": "Age"
+            },
+            "1": {
+                "question": "Sex",
+                "type": "number",
+                "id": "Sex"
+            },
+            "2": {
+                "question": "Systolic blood pressure (mmHg)",
+                "type": "number",
+                "id": "Systolic blood pressure (mmHg)"
+            },
+            "3": {
+                "question": "Diastolic blood pressure (mmHg)",
+                "type": "number",
+                "id": "Diastolic blood pressure (mmHg)"
+            },
+            "4": {
+                "question": "Heart rate (bpm)",
+                "type": "number",
+                "id": "Heart rate (bpm)"
+            },
+            "5": {
+                "question": "Oxygen saturation (%)",
+                "type": "number",
+                "id": "Oxygen saturation (%)"
+            },
+            "6": {
+                "question": "Respiratory rate (rpm)",
+                "type": "number",
+                "id": "Respiratory rate (rpm)"
+            },
+            "7": {
+                "question": "Temperature (\u00b0C)",
+                "type": "number",
+                "id": "Temperature (\u00b0C)"
+            },
+            "8": {
+                "question": "Overweight",
+                "type": "select",
+                "id": "Overweight",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "9": {
+                "question": "Obesity",
+                "type": "select",
+                "id": "Obesity",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "10": {
+                "question": "DM",
+                "type": "select",
+                "id": "DM",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "11": {
+                "question": "HAS",
+                "type": "select",
+                "id": "HAS",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "12": {
+                "question": "COPD",
+                "type": "select",
+                "id": "COPD",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "13": {
+                "question": "CKD",
+                "type": "select",
+                "id": "CKD",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "14": {
+                "question": "Cancer",
+                "type": "select",
+                "id": "Cancer",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "15": {
+                "question": "Fever >38\u00baC",
+                "type": "select",
+                "id": "Fever >38\u00baC",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "16": {
+                "question": "Dyspnea",
+                "type": "select",
+                "id": "Dyspnea",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "17": {
+                "question": "Supplemental oxygen",
+                "type": "select",
+                "id": "Supplemental oxygen",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "18": {
+                "question": "Mechanical ventilation",
+                "type": "select",
+                "id": "Mechanical ventilation",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "19": {
+                "question": "Hemodynamic status",
+                "type": "select",
+                "id": "Hemodynamic status",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "20": {
+                "question": "Amine requirement",
+                "type": "select",
+                "id": "Amine requirement",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "21": {
+                "question": "Pharmacologic management [Symptomatic (NSAIDs salicylates etc.)].",
+                "type": "select",
+                "id": "Pharmacologic management [Symptomatic (NSAIDs",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "22": {
+                "question": " Pharmacological management [Antibiotic]",
+                "type": "select",
+                "id": "etc. ). Pharmacological management [Antibiotic]",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "23": {
+                "question": "Pharmacological management [Antivirals]",
+                "type": "select",
+                "id": "Pharmacological management [Antivirals]",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "24": {
+                "question": "Pharmacological management [Others]",
+                "type": "select",
+                "id": "Pharmacological management [Others]",
+                "options": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "25": {
+                "question": "pH",
+                "type": "number",
+                "id": "pH"
+            },
+            "26": {
+                "question": "Alveolar oxygen pressure - PaO2 (mmHg)",
+                "type": "number",
+                "id": "Alveolar oxygen pressure - PaO2 (mmHg)"
+            },
+            "27": {
+                "question": "Alveolar carbon dioxide pressure - PaCO2 (mmHg)",
+                "type": "number",
+                "id": "Alveolar carbon dioxide pressure - PaCO2 (mmHg)"
+            },
+            "28": {
+                "question": "HCO3 (mEq/L)",
+                "type": "number",
+                "id": "HCO3 (mEq/L)"
+            },
+            "29": {
+                "question": "Lactate (mmol/L)",
+                "type": "number",
+                "id": "Lactate (mmol/L)"
+            },
+            "30": {
+                "question": "Hemoglobin (g/dL)",
+                "type": "number",
+                "id": "Hemoglobin (g/dL)"
+            },
+            "31": {
+                "question": "Hematocrit (%)",
+                "type": "number",
+                "id": "Hematocrit (%)"
+            },
+            "32": {
+                "question": "Leukocytes (1000/mm3)",
+                "type": "number",
+                "id": "Leukocytes (1000/mm3)"
+            },
+            "33": {
+                "question": "Neutrophils (10^3/\u03bcl)",
+                "type": "number",
+                "id": "Neutrophils (10^3/\u03bcl)"
+            },
+            "34": {
+                "question": "Lymphocytes (10^3/\u03bcl)",
+                "type": "number",
+                "id": "Lymphocytes (10^3/\u03bcl)"
+            },
+            "35": {
+                "question": "Platelets (10^3/\u03bcl)",
+                "type": "number",
+                "id": "Platelets (10^3/\u03bcl)"
+            },
+            "36": {
+                "question": "Chloride (mEq/L)",
+                "type": "number",
+                "id": "Chloride (mEq/L)"
+            },
+            "37": {
+                "question": "Potassium (mEq/L)",
+                "type": "number",
+                "id": "Potassium (mEq/L)"
+            },
+            "38": {
+                "question": "Sodium (mEq/L)",
+                "type": "number",
+                "id": "Sodium (mEq/L)"
+            },
+            "39": {
+                "question": "Magnesium (mEq/L)",
+                "type": "number",
+                "id": "Magnesium (mEq/L)"
+            },
+            "40": {
+                "es": {
+                    "question": "Calcium (mEq/L)",
+                    "type": "number",
+                    "id": "Calcium (mEq/L)"
+                },
+                "41": {
+                    "question": "Phosphorus (mEq/L)",
+                    "type": "number",
+                    "id": "Phosphorus (mEq/L)"
+                },
+                "42": {
+                    "question": "Uric acid (mg/dL)",
+                    "type": "number",
+                    "id": "Uric acid (mg/dL)"
+                },
+                "43": {
+                    "question": "BUN (mg/dL)",
+                    "type": "number",
+                    "id": "BUN (mg/dL)"
+                },
+                "44": {
+                    "question": "Creatinine (mg/dL)",
+                    "type": "number",
+                    "id": "Creatinine (mg/dL)"
+                },
+                "45": {
+                    "question": "Glucose (mg/dL)",
+                    "type": "number",
+                    "id": "Glucose (mg/dL)"
+                },
+                "46": {
+                    "question": "Urea (mmol/L)",
+                    "type": "number",
+                    "id": "Urea (mmol/L)"
+                },
+                "47": {
+                    "question": "Total Bilirubin (mg/dL)",
+                    "type": "number",
+                    "id": "Total Bilirubin (mg/dL)"
+                },
+                "48": {
+                    "question": "Albumin (g/dL)",
+                    "type": "number",
+                    "id": "Albumin (g/dL)"
+                },
+                "49": {
+                    "question": "Alkaline Phosphatase (IU/L)",
+                    "type": "number",
+                    "id": "Alkaline Phosphatase (IU/L)"
+                },
+                "50": {
+                    "question": "TGP (IU/L)",
+                    "type": "number",
+                    "id": "TGP (IU/L)"
+                },
+                "51": {
+                    "question": "TGO (IU/L)",
+                    "type": "number",
+                    "id": "TGO (IU/L)"
+                },
+                "52": {
+                    "question": "GGT",
+                    "type": "number",
+                    "id": "GGT"
+                },
+                "53": {
+                    "question": "CRP (mg/dL)",
+                    "type": "number",
+                    "id": "CRP (mg/dL)"
+                },
+                "54": {
+                    "question": "ESR (mm/hr)",
+                    "type": "number",
+                    "id": "ESR (mm/hr)"
+                },
+                "55": {
+                    "question": "PT (sec)",
+                    "type": "number",
+                    "id": "PT (sec)"
+                },
+                "56": {
+                    "question": "TTP (sec)",
+                    "type": "number",
+                    "id": "TTP (sec)"
+                },
+                "57": {
+                    "question": "INR",
+                    "type": "number",
+                    "id": "INR"
+                },
+                "58": {
+                    "question": "D-Dimer (mm/hr)",
+                    "type": "number",
+                    "id": "D-Dimer (mm/hr)"
+                }
             }
         }
     }

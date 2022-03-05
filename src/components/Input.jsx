@@ -1,20 +1,19 @@
 import React from "react";
 
-function Input({ name, text, placeholder }) {
+function Input({ id, question, type }) {
 	return (
 		<>
 			<label 
 				className="input" 
-				htmlFor={name}>
+				htmlFor={id}>
 				<span className="input__title">
-					{text}
+					{question}
 				</span>
 				<input 
 					className="input__select" 
-					type="text" 
-					id={name} 
-					name={name} 
-					placeholder={placeholder}
+					type={type} 
+					id={id} 
+					name={id} 
 					required="required"
 				/>
 			</label>

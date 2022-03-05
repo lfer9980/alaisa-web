@@ -9,7 +9,6 @@ import linkedin from '@icons/linkedin.svg'
 function CardContacto({ name, job, mail, urlRed1, urlRed2, image }) {
 
 	const nameOfSocialMedia = (url) => {
-		console.log(url)
 		if(url.includes("github")) {
 			return github
 		}

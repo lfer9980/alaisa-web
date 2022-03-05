@@ -4,7 +4,7 @@ import { Content } from "@containers/Content";
 import { Title } from "@components/Title";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 
-function Administrador() {
+function Administrador({ adminTexto }) {
 	useDocumentTitle("administrador")
 	
 	return(

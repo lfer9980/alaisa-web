@@ -92,18 +92,48 @@ function Header({ headerTexto }) {
 						{headerTexto ?
 							(
 								<>
-									{headerTexto["1"].map((item) => (
-										<li
-											key={item}
-											onClick={toggleHeaderMobile}
-										>
-											<NavLink to={`/${item}`}>
-												<span>
-													{item}
-												</span>
-											</NavLink>
-										</li>
-									))}
+								<li onClick={toggleHeaderMobile} >
+										<NavLink to="/modelo">
+											<span>
+												{headerTexto["1"][0]}
+											</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/entrenamiento">
+											<span>
+												{headerTexto["1"][1]}
+											</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/Rendimiento">
+											<span>
+												{headerTexto["1"][2]}
+											</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/Donativos">
+											<span>
+												{headerTexto["1"][3]}
+											</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/Contacto">
+											<span>
+												{headerTexto["1"][4]}
+											</span>
+										</NavLink>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<NavLink to="/publicaciones">
+											<span>
+												{headerTexto["1"][5]}
+											</span>
+										</NavLink>
+									</li>
 								</>
 							)
 							: (

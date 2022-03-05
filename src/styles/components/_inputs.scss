@@ -8,6 +8,7 @@
 		display: block;
 		font-size: 1.6rem;
 		margin-bottom: 5px;
+		text-align: left;
 	}
 
 	&__select {
@@ -20,7 +21,8 @@
 		border-radius: 4px;
 		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 		color: v.$dark600;
-	
+		-moz-appearance: textfield;
+		appearance: textfield;
 		@include dark-mode {
 			border: 1px solid v.$gray600;
 			color: v.$white;
@@ -36,11 +38,16 @@
 		font-weight: 200;
 		font-style: italic;
 		color: v.$blue500;
-	
 		@include dark-mode {
 			color: v.$blue400;
 		}
 	}
+
+	&__select::-webkit-inner-spin-button,
+	&__select::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+	}
+
 	
 	&__select__place {
 		display: block;

@@ -15,69 +15,101 @@ function HomeDonativos({ donativosTexto }) {
 
 	return (
 		<section className="wrapper" id="donativos" ref={donativos}>
+			<Title type={`main margin ${donativosVisible ? animateFadeInRight : 'trans'} `}>
+				{donativosTexto ?
+					(
+						<h2 dangerouslySetInnerHTML={{ __html: `${donativosTexto[0]}` }} />
+					)
+					: (
+						<h2>
+							<span>Ayúdanos</span> a crear más cosas <span>increíbles</span>...
+						</h2>
+					)
+				}
+			</Title>
+
+			<Paragraph type="bold">
+				{donativosTexto ?
+					(
+						<p>
+							{donativosTexto[1]}
+						</p>
+					)
+					: (
+						<p>
+							Puedes ayudarnos muchísimo, aportando a través de:
+						</p>
+					)
+				}
+			</Paragraph>
+
 			{donativosTexto ?
 				(
-					<>
-						<Title type={`main margin ${donativosVisible ? animateFadeInRight : 'trans'} `}>
-							<h2 dangerouslySetInnerHTML={{ __html: `${donativosTexto[0]}` }} />
-						</Title>
-						<Paragraph type="bold">
-							<p>
-								{donativosTexto[1]}
-							</p>
-						</Paragraph>
-						<CardDonativo
-							image={CoffeeLogo}
-							url="buymeacoffee.com"
-							cssName="donativos"
-							titulo={donativosTexto[2]}
-							parrafo={donativosTexto[3]}
-							textoButton={donativosTexto[4]}
-						/>
-						<Paragraph type="bold blue">
-							<p>
-								{donativosTexto[5]}
-							</p>
-						</Paragraph>
-						<Paragraph type="mini margin">
-							<p>
-								{donativosTexto[6]}
-							</p>
-						</Paragraph>
-					</>
+					<CardDonativo
+						image={CoffeeLogo}
+						url="buymeacoffee.com"
+						cssName="donativos"
+						titulo={donativosTexto[2]}
+						parrafo={donativosTexto[3]}
+						textoButton={donativosTexto[4]}
+					/>
 				)
 				: (
-					<>
-						<Title type={`main margin ${donativosVisible ? animateFadeInRight : 'trans'} `}>
-							<h2>
-								<span>Ayúdanos</span> a crear más cosas <span>increíbles</span>...
-							</h2>
-						</Title>
-						<Paragraph type="bold">
-							<p>
-								Puedes ayudarnos muchísimo, aportando a través de:
-							</p>
-						</Paragraph>
-						<CardDonativo
-							image={CoffeeLogo}
-							url="buymeacoffee.com"
-							cssName="donativos"
-							titulo="¡Invítanos un café!"
-							parrafo="Tus aportaciones serán de gran ayuda, gente como tú es capaz de cambiar al mundo..."
-							textoButton="Donar"
-						/>
-						<Paragraph type="bold blue">
-							<p>
-								Estamos muy agradecidos por tu apoyo.
-							</p>
-						</Paragraph>
-						<Paragraph type="mini margin">
-							<p>
-								Si no puedes donar no te preocupes, la labor que haces cada día como personal de salud es la que hace la diferencia <br /> <b>¡Ustedes son los Héroes!</b>
-							</p>
-						</Paragraph>
-					</>
-				)}
+					<CardDonativo
+						image={CoffeeLogo}
+						url="buymeacoffee.com"
+						cssName="donativos"
+						titulo="¡Invítanos un café!"
+						parrafo="Tus aportaciones serán de gran ayuda, gente como tú es capaz de cambiar al mundo..."
+						textoButton="Donar"
+					/>
+				)
+			}
+
+			<Paragraph type="bold blue">
+				{donativosTexto ?
+					(
+						<p>
+							{donativosTexto[5]}
+						</p>
+					)
+					: (
+						<p>
+							Estamos muy agradecidos por tu apoyo.
+						</p>
+					)
+				}
+			</Paragraph>
+
+			<Paragraph type="mini margin">
+				{donativosTexto ?
+					(
+						<p>
+							{donativosTexto[6]}
+						</p>
+					)
+					: (
+						<p>
+							Si no puedes donar no te preocupes, la labor que haces cada día como personal de salud es la que hace la diferencia
+						</p>
+					)
+				}
+			</Paragraph>
+
+			<Paragraph type="bold">
+				{donativosTexto ?
+					(
+						<p>
+							{donativosTexto[7]}
+						</p>
+					)
+					: (
+						<p>
+							<b>¡Ustedes son los Héroes!</b>
+						</p>
+					)
+				}
+			</Paragraph>
 		</section>
 	);
 }
