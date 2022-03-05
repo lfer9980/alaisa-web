@@ -47,7 +47,7 @@ function AppUi() {
 							<Route path="Rendimiento" element={ <Rendimiento rendimientoTexto={textos[0]["3"]} footerTexto={textos[7]}/>} />
 							<Route path="Donativos" element={ <Donativos donativosTexto={textos[0]["4"]} footerTexto={textos[7]}/>} />
 							<Route path="Contacto" element={ <Contacto contactoTexto={textos[0]["5"]} footerTexto={textos[7]}/>} />
-							<Route path="acerca" element={<Acerca acercaTexto={textos[1]} footerText={textos[7]} />} />
+							<Route path="acerca" element={<Acerca acercaTexto={textos[1]} footerTexto={textos[7]} />} />
 							<Route path="anadir" element={<Anadir anadirTexto={textos[5]} />} />
 							<Route path="entrenamiento" element={<Entrenamiento entrenamientoTexto={textos[3]} />} />
 							<Route path="privacidad" element={<Privacidad privTexto={textos[4]}/>} />

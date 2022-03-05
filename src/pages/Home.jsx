@@ -14,7 +14,7 @@ function Home({ homeTexto, footerTexto }) {
 	console.log(footerTexto)
 	return(
 		<>
-			<Content type="no-padding-top no-background">
+			<Content type="no-padding-top no-padding-bottom no-background">
 				<HomeHero heroTexto={homeTexto["0"]}/>
 				<HomeModelo modeloTexto={homeTexto["1"]}/>
 				<HomeEntrenamiento trainTexto={homeTexto["2"]}/>

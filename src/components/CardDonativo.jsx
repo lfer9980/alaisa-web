@@ -1,9 +1,9 @@
 import React from "react";
 import { ButtonAncla } from "@components/ButtonAncla"
 
-function CardDonativo({ titulo, parrafo, textoButton, image, url }) {
+function CardDonativo({ type, titulo, parrafo, textoButton, image, url }) {
 	return (
-		<article className="card-donativo margin">
+		<article className={`card-donativo margin ${type}`}>
 			<figure className="card-donativo__image">
 				<img src={image} alt="imagen donativos" />
 			</figure>

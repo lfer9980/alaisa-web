@@ -11,6 +11,7 @@ function HomeDonativos({ donativosTexto }) {
 		donativosVisible,
 		donativos,
 		animateFadeInRight,
+		animateFadeInLeft,
 	} = useContext(AppContext);
 
 	return (
@@ -48,20 +49,20 @@ function HomeDonativos({ donativosTexto }) {
 					<CardDonativo
 						image={CoffeeLogo}
 						url="buymeacoffee.com"
-						cssName="donativos"
 						titulo={donativosTexto[2]}
 						parrafo={donativosTexto[3]}
 						textoButton={donativosTexto[4]}
+						type={`${donativosVisible ? animateFadeInLeft : 'trans'} `}
 					/>
 				)
 				: (
 					<CardDonativo
 						image={CoffeeLogo}
 						url="buymeacoffee.com"
-						cssName="donativos"
 						titulo="¡Invítanos un café!"
 						parrafo="Tus aportaciones serán de gran ayuda, gente como tú es capaz de cambiar al mundo..."
 						textoButton="Donar"
+						type={`${donativosVisible ? animateFadeInLeft : 'trans'} `}
 					/>
 				)
 			}

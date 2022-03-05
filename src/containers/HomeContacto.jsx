@@ -8,12 +8,13 @@ function HomeContacto({ contactoTexto }) {
 	const {
 		contactoVisible,
 		contacto,
-		animateFlipInY,
+		animateFadeInLeft,
+		animateFadeInUp
 	} = useContext(AppContext);
 
 	return (
 		<section className='wrapper' id='contacto' ref={contacto}>
-			<Title type={`main margin align-left ${contactoVisible ? animateFlipInY : 'trans'}`}>
+			<Title type={`main margin align-left ${contactoVisible ? animateFadeInLeft : 'trans'}`}>
 				{contactoTexto ?
 					(
 						<h2 dangerouslySetInnerHTML={{ __html: `${contactoTexto[0]}` }} />
@@ -26,7 +27,7 @@ function HomeContacto({ contactoTexto }) {
 				}
 			</Title>
 
-			<div className="card-wrapper margin">
+			<div className={`card-wrapper margin ${contactoVisible ? animateFadeInUp : 'trans'}`}>
 				{contactoTexto ?
 					(
 						<>

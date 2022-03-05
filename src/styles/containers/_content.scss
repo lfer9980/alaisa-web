@@ -58,6 +58,7 @@
 @include desktop {
 	.content {
 		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 	.content::before {
 		background-image: url('@images/desktop_gray@2x.png');
@@ -70,6 +71,9 @@
 	}
 	.no-padding-top {
 		padding-top: 0;
+	}
+	.no-padding-bottom {
+		padding-bottom: 0;
 	}
 }
 

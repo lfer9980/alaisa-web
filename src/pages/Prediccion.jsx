@@ -19,7 +19,7 @@ function Prediccion({ prediccionTexto }) {
 
 	return (
 		<>
-			<Content type="margin">
+			<Content type="margin no-padding-bottom">
 				<Breadcrumbs url="entrenamiento">
 					{language ? "Predict" : "Predicción"}
 				</Breadcrumbs>

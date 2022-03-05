@@ -19,7 +19,7 @@ function Anadir({ anadirTexto }) {
 
 	return (
 		<>
-			<Content type="margin">
+			<Content type="margin no-padding-bottom">
 				<Breadcrumbs url="entrenamiento">
 					{language ? "Add": "Añadir"}
 				</Breadcrumbs>

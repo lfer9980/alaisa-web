@@ -6,7 +6,7 @@ import { Footer } from "@components/Footer";
 function Contacto({ contactoTexto, footerTexto }) {
 	return(
 		<>
-			<Content type="no-padding-top no-background">
+			<Content type="no-padding-top no-padding-bottom no-background">
 				<HomeContacto contactoTexto={contactoTexto}/>
 				<Footer footerTexto={footerTexto}/>
 			</Content>

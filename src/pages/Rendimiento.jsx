@@ -6,7 +6,7 @@ import { Footer } from "@components/Footer";
 function Rendimiento({ rendimientoTexto, footerTexto }) {
 	return(
 		<>
-			<Content type="no-padding-top no-background">
+			<Content type="no-padding-top no-padding-bottom no-background">
 				<HomeDesarrollador devTexto={rendimientoTexto}/>
 				<Footer footerTexto={footerTexto}/>
 			</Content>
