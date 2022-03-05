@@ -1,0 +1,28 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+#modelo::before {
+	background-image: url('@images/medicos-mobile@2x-80.jpg');
+	opacity: 50%;
+}
+
+@include tablet {
+	#modelo::before {
+		background-image: url('@images/medicos-tablet@2x-80.jpg');
+	}
+}
+
+
+@include desktop {
+	#modelo {
+		flex-direction: row;
+		align-items: center;
+	}
+	#modelo::before {
+		background-image: url('@images/medicos-desktop@2x-80.jpg');
+	}
+}
+
+@include large {
+	
+}

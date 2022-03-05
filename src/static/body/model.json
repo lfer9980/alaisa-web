@@ -1,0 +1,24 @@
+{
+    "BODY": {
+        "es": [
+            "¡Comencemos!",
+            "Recuerda que yo no doy diagnósticos ni tratamientos.",
+            "Soy una herramienta para que, junto con tu <span>criterio médico</span>, puedas saber la tendencia del desenlace de tu paciente y puedas actuar a partir de eso. Espero poder <span>ayudarte</span> y que al mismo tiempo me ayudes a mí a <span>aprender</span> más.",
+            "Así, yo voy a poder ayudar a más pacientes y médicos que me necesiten.",
+            "Es un placer para mí estar a tus órdenes.",
+            "términos y condiciones",
+            "Comenzar",
+            "Aviso de privacidad"
+        ],
+        "en": [
+            "Let's get started!",
+            "Remember that I don't give diagnostics or treatments.",
+            "I am a tool so that, together with your <span>medical criteria</span>, you can know the tendency of your patient's outcome and you can act from that. I hope I can <span>help</span> you and at the same time help me to <span>learn</span> more.",
+            "So, I can help more patients and doctors that need me.",
+            "It's a pleasure for me to be at your command.",
+            "Terms and conditions",
+            "Start",
+            "Privacy notice"
+        ]
+    }
+}

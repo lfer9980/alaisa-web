@@ -1,0 +1,87 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.content::before {
+	content: "";
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.15;
+}
+
+.content::before {
+	background-image: url('@images/mobile_gray@2x.png');
+}
+
+.margin {
+	margin: 0 20px;
+}
+
+.no-padding-top {
+	padding-top: 0;
+}
+
+.no-background::before {
+	background-image: none;
+}
+
+@include tablet {
+	.content {
+		padding-top: 140px;
+	}
+	.content::before {
+		background-image: url('@images/tablet_gray@2x.png');
+	}
+
+	.no-background::before {
+		background-image: none;
+	}
+	.margin {
+		margin: 0 30px;
+	}
+	.no-padding-top {
+		padding-top: 0;
+	}
+}
+
+@include desktop {
+	.content {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.content::before {
+		background-image: url('@images/desktop_gray@2x.png');
+	}
+	.no-background::before {
+		background-image: none;
+	}
+	.margin {
+		margin: 0 42px;
+	}
+	.no-padding-top {
+		padding-top: 0;
+	}
+	.no-padding-bottom {
+		padding-bottom: 0;
+	}
+}
+
+@include large {
+	.content {
+		padding-top: 95px;
+	}
+	.no-padding-top {
+		padding-top: 0;
+	}
+}

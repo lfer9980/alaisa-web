@@ -1,0 +1,20 @@
+{
+    "BODY": {
+        "es": [
+            "Tu contribución nos ayuda a <span>mejorar</span> y ser más <span>precisos</span>.",
+            "El proceso es identico a cuando utilizas el modelo para recibir predicciones. Los <span>datos</span> que ingreses durante el <span>entrenamiento</span> serán la base para que el modelo <span>identifique</span> eficientemente los patrones que determinan el desenlace de tu paciente durante la <span>predicción</span>.",
+            "Estamos muy agradecidos contigo, tu ayuda hace la diferencia.",
+            "Términos y condiciones",
+            "Comenzar",
+            "Aviso de privacidad"
+        ],
+        "en": [
+            "Your contribution helps us to <span>improve</span> and be more <span>accurate</span>.",
+            "The process is identical to when you use the model to receive predictions. The <span>data</span> you enter during <span>training</span> will be the basis for the model to efficiently <span>identify</span> the patterns that determine your patient's outcome during the <span>prediction</span>.",
+            "We are very grateful to you, your help makes a difference.",
+            "Terms and conditions",
+            "Get started.",
+            "Privacy Notice"
+        ]
+    }
+}

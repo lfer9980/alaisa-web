@@ -1,0 +1,31 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.main-publications {
+	margin-bottom: 20px;
+}
+
+.no-background {
+	background: transparent;
+}
+
+@include desktop {
+	.main {
+		position: relative;
+		display: inline-block;
+		max-width: 786px;
+		margin: 0 auto 40px auto;
+		padding: 20px;
+		border-radius: 8px;
+		background: rgba($color: #011526, $alpha: 0.80);
+		@include dark-mode {
+			background: rgba($color: #141414, $alpha: 0.80);
+		}
+	}
+	.main-publications {
+		margin-bottom: 40px;
+	}
+	.no-background {
+		background: transparent;
+	}
+}

@@ -3,8 +3,17 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^0.25.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,20 +26,19 @@
     "url": "https://github.com/lfer9980/alaisa-web/issues"
   },
   "homepage": "https://github.com/lfer9980/alaisa-web#readme",
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.10",
     "@babel/preset-env": "^7.16.8",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.3.1",
+    "dotenv-webpack": "^7.1.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "^2.4.6",
     "sass": "^1.47.0",
     "sass-loader": "^12.4.0",

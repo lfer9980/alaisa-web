@@ -1,0 +1,48 @@
+{
+	"BODY": {
+		"es": {
+			"0": [
+				"Modelo",
+				"Entrenamiento",
+				"Rendimiento",
+				"Donativos",
+				"Contacto",
+				"Publicaciones"
+			],
+			"1": [
+				"Modelo Alaisa",
+				"Entrenamiento",
+				"Estadisticas de Rendimiento",
+				"donativos",
+				"Contacto del equipo",
+				"Publicaciones"
+			],
+			"2": [
+				"Aviso de privacidad",
+				"Acerca de"
+			]
+		},
+		"en": {
+			"0": [
+				"Model",
+				"Training",
+				"Performance",
+				"Donations",
+				"Contact",
+				"Publications"
+			],
+			"1":[
+				"Alaisa Model",
+				"Training",
+				"Performance Statistics",
+				"Donations",
+				"Team Contact",
+				"Publications"
+			],
+			"2": [
+				"Privacy Notice",
+				"About"
+			]
+		}
+	}
+}

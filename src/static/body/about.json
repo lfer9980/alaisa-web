@@ -1,0 +1,16 @@
+{
+    "BODY": {
+        "es": [
+            "¿Qué es <span>ALAISA</span>?",
+            "ALAISA es un proyecto de Evaluación de las características sociales, demográficas y clínicas de la población de la ciudad de Chihuahua y su posible relación con la enfermedad causada por el SARS-CoV-2 a través de un modelo de predicción de desenlace de Machine learning.",
+            "Puedes encontrar la documentación sobre el concepto base para crear <span>ALAISA</span> en el siguiente enlace:",
+            "Algoritmos y Covid 19"
+        ],
+        "en": [
+            "What is <span>ALAISA</span>?",
+            "ALAISA is a project of evaluation of social characteristics, demographic and clinical population of the city of Chihuahua and its possible relation with the SARS-CoV-2 through a machine learning model of prediction of unlinkage.",
+            "You can find the documentation on the base concept for creating <span>ALAISA</span> in the following link:",
+            "Algorithms and Covid 19"
+        ]
+    }
+}

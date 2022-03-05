@@ -1,0 +1,88 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.link {
+	position: relative;
+	margin: 20px 0;
+	font-family: v.$fuente1;
+	font-size: 1.6rem;
+	font-weight: bold;
+	a {
+		color: v.$blue600;
+		@include dark-mode {
+			color: v.$white;
+		}
+	}
+	a:hover {
+		color: v.$blue400;
+	}
+	&--terms {
+		position: relative;
+		margin: 20px 0;
+		font-family: v.$fuente1;
+		font-size: 1.4rem;
+		a {
+			font-weight: 500;			
+			color: v.$blue300;
+		}
+		a:hover {
+			color: v.$white;
+		}
+	}
+	&--white { 
+		position: relative;
+		margin: 20px 0;
+		font-family: v.$fuente1;
+		font-size: 1.4rem;
+		a {
+			font-weight: 500;
+			color: v.$blue300;
+		}
+		a:hover {
+			color: v.$white;
+		}
+	}
+	&--mail {
+		margin: 10px 0;
+		a {
+			font-family: v.$fuente1;
+			font-size: 1.2rem;
+			font-weight: bold;
+			text-decoration: none;
+			color: v.$blue400;
+		}
+		a:hover {
+			color: v.$blue200;
+		}
+	}
+}
+
+@include tablet {
+	.link {
+		margin-bottom: 40px;
+		&--terms {
+			margin-bottom: 30px;
+			font-size: 2.1rem;
+		}
+		&--white {
+			margin: 0;
+			font-size: 1.8rem;
+		}
+		&--mail {
+			margin-bottom: 20px;
+			a {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+@include desktop {
+	.link {
+		&--mail {
+			a {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

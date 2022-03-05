@@ -1,0 +1,44 @@
+/* global */
+@forward "./global/transitions";
+
+/* containers */
+@forward "./containers/content";
+@forward "./containers/homeContacto";
+@forward "./containers/homeDesarrollador";
+@forward "./containers/homeDonativos";
+@forward "./containers/homeEntrenamiento";
+@forward "./containers/homeHero";
+@forward "./containers/homeModelo";
+@forward "./containers/layout";
+@forward "./containers/modalDonations";
+@forward "./containers/modalProgress";
+
+/* components */
+@forward "./components/breadcrumbs";
+@forward "./components/buttons";
+@forward "./components/cards";
+@forward "./components/dates";
+@forward "./components/footers";
+@forward "./components/forms";
+@forward "./components/headers";
+@forward "./components/inputs";
+@forward "./components/links";
+@forward "./components/logos";
+@forward "./components/mains";
+@forward "./components/paragraphs";
+@forward "./components/subtitles";
+@forward "./components/titles";
+
+/* pages */
+@forward "./pages/acerca";
+@forward "./pages/administrador";
+@forward "./pages/anadir";
+@forward "./pages/entrenamiento";
+@forward "./pages/gracias";
+@forward "./pages/home";
+@forward "./pages/modelo";
+@forward "./pages/notFound";
+@forward "./pages/prediccion";
+@forward "./pages/privacidad";
+@forward "./pages/publicaciones";
+@forward "./pages/resultado";

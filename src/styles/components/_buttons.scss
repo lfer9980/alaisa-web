@@ -1,0 +1,148 @@
+@use "../global/vars" as v;
+@use "../global/mixins" as *;
+
+.back-button {
+	position: sticky;
+	top: 120px;
+	left: 20px;
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		color: v.$white;
+		i {
+			font-size: 28px;
+		}
+	}
+	background-color: v.$blue500;
+	@include dark-mode {
+		background-color: v.$dark500;
+	}
+	opacity: 75%;
+}
+
+.button-theme {
+	display: none;
+}
+
+.button--green {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 335px;
+	height: 40px;
+	margin: 20px auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+	color: v.$white;
+	background-color: v.$green400;
+	@include dark-mode {
+		box-shadow: 0 4px 8px rgba(175, 175, 175, 0.3);
+		background-color: v.$green500;
+	}
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: inherit;
+		font-family: v.$fuente1;
+		font-size: 1.6rem;
+		font-weight: bold;
+		text-decoration: none;
+		color: v.$white;
+	}
+	i {
+		position: absolute;
+		right: 30px;
+	}
+}
+.button--green:hover {
+	background-color: v.$green200;
+	@include dark-mode {
+		background-color: v.$green600;
+	}
+}
+
+.arrow-drop-down {
+	position: absolute;
+	bottom: 10px;
+	align-self: center;
+	font-size: 24px;
+	color: v.$green400;
+}
+
+.button--donativos {
+	width: 130px;
+	height: 20px;
+	margin-top: 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
+	background-color: #FFDD00;
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		text-decoration: none;
+		font-family: v.$fuente1;
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: v.$dark600;
+		i {
+			display: none;
+		}
+	}
+}
+.button--donativos:hover {
+	background-color: #B9A314;
+}
+
+
+
+@include tablet {
+	.back-button {
+		position: fixed;
+		top: 200px;
+		left: 30px;
+		width: 50px;
+		height: 50px;
+		a {
+			i {
+				font-size: 40px;
+			}
+		}
+	}
+	.button--green {
+		a {
+			font-size: 2.1rem;
+		}
+	}
+
+	.button--donativos {
+		width: 221px;
+		height: 30px;
+		a {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@include desktop {
+	.back-button {
+		display: none;
+	}
+	.button--green {
+		width: 420px;
+	}
+}
