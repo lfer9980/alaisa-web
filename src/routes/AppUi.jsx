@@ -44,26 +44,20 @@ function AppUi() {
 						<Header headerTexto={textos[6]}/>
 						<Routes>
 							<Route path="/" element={ <Home homeTexto={textos[0]} footerTexto={textos[7]}/> } />
-							<Route path="Rendimiento" element={ <Rendimiento RendimientoTexto={textos[0]["3"]} footerTexto={textos[7]}/>} />
-							<Route path="Donativos" element={ <Donativos DonativosTexto={textos[0]["4"]} footerTexto={textos[7]}/>} />
-							<Route path="Contacto" element={ <Contacto ContactoTexto={textos[0]["5"]} footerTexto={textos[7]}/>} />
-							<Route path="acerca" element={<Acerca AcercaTexto={textos[1]} footerText={textos[7]} />} />
-							<Route path="anadir" element={<Anadir AnadirTexto={textos[5]} />} />
-							<Route path="entrenamiento" element={<Entrenamiento EntrenamientoTexto={textos[3]} />} />
-							<Route path="privacidad" element={<Privacidad PrivTexto={textos[4]}/>} />
-							<Route path="modelo" element={<Modelo ModeloTexto={textos[5]}/>} />
-							<Route path="prediccion" element={<Prediccion PrediccionTexto={textos[5]}/>} />
+							<Route path="Rendimiento" element={ <Rendimiento rendimientoTexto={textos[0]["3"]} footerTexto={textos[7]}/>} />
+							<Route path="Donativos" element={ <Donativos donativosTexto={textos[0]["4"]} footerTexto={textos[7]}/>} />
+							<Route path="Contacto" element={ <Contacto contactoTexto={textos[0]["5"]} footerTexto={textos[7]}/>} />
+							<Route path="acerca" element={<Acerca acercaTexto={textos[1]} footerText={textos[7]} />} />
+							<Route path="anadir" element={<Anadir anadirTexto={textos[5]} />} />
+							<Route path="entrenamiento" element={<Entrenamiento entrenamientoTexto={textos[3]} />} />
+							<Route path="privacidad" element={<Privacidad privTexto={textos[4]}/>} />
+							<Route path="modelo" element={<Modelo modeloTexto={textos[2]}/>} />
+							<Route path="prediccion" element={<Prediccion prediccionTexto={textos[5]}/>} />
 							<Route path="gracias" element={<Gracias />} />
 							<Route path="resultado" element={<Resultado />} />
-							<Route path="publicaciones" element={<Publicaciones />} />
+							<Route path="publicaciones" element={<Publicaciones publicacionesTexto={textos[8]} footerTexto={textos[7]}/>} />
 							<Route path="administrador" element={<Administrador />} />
 							<Route path="*" element={<NotFound />} />
-							<Route path="model" element={<Modelo ModeloTexto={textos[5]}/>} />
-							<Route path="training" element={<Entrenamiento EntrenamientoTexto={textos[3]} footerTexto={textos[7]}/>} />
-							<Route path="performance" element={<Rendimiento RendimeintoTexto={textos[0]["3"]} footerTexto={textos[7]}/>} />
-							<Route path="donations" element={<Donativos DonativosTexto={textos[0]["4"]} footerTexto={textos[7]}/>} />
-							<Route path="contact" element={<Contacto ContactoTexto={textos[0]["5"]} footerTexto={textos[7]}/>} />
-							<Route path="publications" element={<Publicaciones />} />
 						</Routes>
 					</BrowserRouter>
 				</Layout>

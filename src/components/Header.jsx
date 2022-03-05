@@ -33,13 +33,48 @@ function Header({ headerTexto }) {
 					{headerTexto ?
 						(
 							<>
-								{headerTexto["0"].map((item) => (
-									<li key={item}>
-										<NavLink to={`/${item}`}>
-											<span>{item}</span>
-										</NavLink>
-									</li>
-								))}
+								<li>
+									<NavLink to="/modelo">
+										<span>
+											{headerTexto["0"][0]}
+										</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/entrenamiento">
+										<span>
+											{headerTexto["0"][1]}
+										</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/Rendimiento">
+										<span>
+											{headerTexto["0"][2]}
+										</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/Donativos">
+										<span>
+											{headerTexto["0"][3]}
+										</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/Contacto">
+										<span>
+											{headerTexto["0"][4]}
+										</span>
+									</NavLink>
+								</li>
+								<li>
+									<NavLink to="/publicaciones">
+										<span>
+											{headerTexto["0"][5]}
+										</span>
+									</NavLink>
+								</li>
 							</>
 						)
 						: (
@@ -92,7 +127,7 @@ function Header({ headerTexto }) {
 						{headerTexto ?
 							(
 								<>
-								<li onClick={toggleHeaderMobile} >
+									<li onClick={toggleHeaderMobile} >
 										<NavLink to="/modelo">
 											<span>
 												{headerTexto["1"][0]}
@@ -174,36 +209,38 @@ function Header({ headerTexto }) {
 					</ul>
 					<ul className="header__menu--secondary">
 						{headerTexto ?
-						(
-							<>
-							{headerTexto["2"].map((item) => (
-										<li
-											key={item}
-											onClick={toggleHeaderMobile}
-										>
-											<Link to={`/${item}`}>
-												<span>
-													{item}
-												</span>
-											</Link>
-										</li>
-									))}
-							</>
-						)
-						:(
-							<>
-						<li onClick={toggleHeaderMobile} >
-							<Link to="/privacidad">
-								<span>Aviso de privacidad</span>
-							</Link>
-						</li>
-						<li onClick={toggleHeaderMobile} >
-							<Link to="/acerca">
-								<span>Acerca de</span>
-							</Link>
-						</li>
-							</>
-						)
+							(
+								<>
+									<li onClick={toggleHeaderMobile} >
+										<Link to="/privacidad">
+											<span>
+												{headerTexto["2"][0]}
+											</span>
+										</Link>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<Link to="/acerca">
+											<span>
+												{headerTexto["2"][1]}
+											</span>
+										</Link>
+									</li>
+								</>
+							)
+							: (
+								<>
+									<li onClick={toggleHeaderMobile} >
+										<Link to="/privacidad">
+											<span>Aviso de privacidad</span>
+										</Link>
+									</li>
+									<li onClick={toggleHeaderMobile} >
+										<Link to="/acerca">
+											<span>Acerca de</span>
+										</Link>
+									</li>
+								</>
+							)
 						}
 					</ul>
 				</nav>

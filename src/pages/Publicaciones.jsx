@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "@context/AppContext";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { Paragraph } from "@components/Paragraph";
@@ -7,50 +8,102 @@ import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 
-function Publicaciones() {
+function Publicaciones({ publicacionesTexto , footerTexto }) {
+	const {
+		language
+	} = useContext(AppContext)
+
 	useDocumentTitle("Publicaciones")
 
-	return(
-		<> 
+	return (
+		<>
 			<Content type="margin">
 				<Breadcrumbs>
-					Publicaciones
+					{language ? "Publications" : "Publicaciones"}
 				</Breadcrumbs>
+
 				<section className="main-publications">
 					<Subtitle type="background">
-						<h2>Publicaciones</h2>
+						<h2>
+							{language ? "Publications" : "Publicaciones"}
+						</h2>
 					</Subtitle>
-					<Title type="h3">
-						<h3>
-							2022
-						</h3>
-					</Title>
-					<Paragraph type=" align-left">
-						<span className="paragraph__span">
-							Referencia a publicacion 1: 
-						</span>
-							breve descripción de la publicación para llegar al link de la publicacion
-					</Paragraph> 
+					{publicacionesTexto ?
+						(
+							Object.entries(publicacionesTexto["publications"]).map((item) => (
+								<div key={item[0]}>
+									<Title type="h3">
+										<h3>
+											{item[0]}
+										</h3>
+									</Title>
+									{
+										item[1].map((entries) => (
+											<Paragraph type=" align-left">
+												<p>
+													<span className="paragraph__span">
+														{entries.name}
+													</span>
+													{entries.text}
+												</p>
+											</Paragraph>
+										))
+									}
+								</div>
+							))
+
+						)
+						: (
+							<Title type="h3">
+								<h3>
+									{language ? "There are not Publications yet" : "No hay publicaciones aun"}
+								</h3>
+							</Title>
+						)
+					}
 				</section>
+
 				<section className="main-publications">
 					<Subtitle type="background">
-						<h2>Ultimas actualizaciones</h2>
+						<h2>
+							{language ? "Last Updates" : "Ultimas actualizaciones"}
+						</h2>
 					</Subtitle>
-					<Title type="h3">
-						<h3>
-							v1.0.0
-						</h3>
-					</Title>	
-					<Paragraph type=" align-left">
-						<span className="paragraph__span">
-							Referencia a publicacion 1: 
-						</span>
-							breve descripción de la publicación para llegar al link de la publicacion
-					</Paragraph>
+
+					{publicacionesTexto ?
+						(
+							Object.entries(publicacionesTexto["release"]).map((item) => (
+								<div key={item[0]}>
+									<Title type="h3">
+										<h3>
+											{item[1].version}
+										</h3>
+									</Title>
+
+									<Paragraph type=" align-left">
+										<p>
+											<span className="paragraph__span">
+												{item[1].name}
+											</span>
+											{item[1].text}
+										</p>
+									</Paragraph>
+								</div>
+							))
+
+						)
+						: (
+							<Title type="h3">
+								<h3>
+									{language ? "There are not new releases yet" : "No hay nuevas versiones aún"}
+								</h3>
+							</Title>
+						)
+					}
 
 				</section>
-			</Content>
-			<Footer />
+			</Content >
+			<Footer  footerTexto={footerTexto}/>
 		</>
 	);
 }

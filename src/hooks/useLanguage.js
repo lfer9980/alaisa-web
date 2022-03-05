@@ -8,6 +8,7 @@ const trainJson = require("@static/body/train.json")
 const formJson = require("@static/forms/form.json")
 const headerJson = require("@static/body/header.json")
 const footerJson = require("@static/body/footer.json")
+const publicationsJson = require("@static/body/publications.json")
 
 const datosTemporales = [
 	{...indexJson},
@@ -18,6 +19,7 @@ const datosTemporales = [
 	{...formJson},
 	{...headerJson},
 	{...footerJson},
+	{...publicationsJson}
 ];
 
 const changeLanguage = (data, language) => {

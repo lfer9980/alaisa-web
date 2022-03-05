@@ -635,101 +635,99 @@
                 "id": "Magnesium (mEq/L)"
             },
             "40": {
-                "es": {
-                    "question": "Calcium (mEq/L)",
-                    "type": "number",
-                    "id": "Calcium (mEq/L)"
-                },
-                "41": {
-                    "question": "Phosphorus (mEq/L)",
-                    "type": "number",
-                    "id": "Phosphorus (mEq/L)"
-                },
-                "42": {
-                    "question": "Uric acid (mg/dL)",
-                    "type": "number",
-                    "id": "Uric acid (mg/dL)"
-                },
-                "43": {
-                    "question": "BUN (mg/dL)",
-                    "type": "number",
-                    "id": "BUN (mg/dL)"
-                },
-                "44": {
-                    "question": "Creatinine (mg/dL)",
-                    "type": "number",
-                    "id": "Creatinine (mg/dL)"
-                },
-                "45": {
-                    "question": "Glucose (mg/dL)",
-                    "type": "number",
-                    "id": "Glucose (mg/dL)"
-                },
-                "46": {
-                    "question": "Urea (mmol/L)",
-                    "type": "number",
-                    "id": "Urea (mmol/L)"
-                },
-                "47": {
-                    "question": "Total Bilirubin (mg/dL)",
-                    "type": "number",
-                    "id": "Total Bilirubin (mg/dL)"
-                },
-                "48": {
-                    "question": "Albumin (g/dL)",
-                    "type": "number",
-                    "id": "Albumin (g/dL)"
-                },
-                "49": {
-                    "question": "Alkaline Phosphatase (IU/L)",
-                    "type": "number",
-                    "id": "Alkaline Phosphatase (IU/L)"
-                },
-                "50": {
-                    "question": "TGP (IU/L)",
-                    "type": "number",
-                    "id": "TGP (IU/L)"
-                },
-                "51": {
-                    "question": "TGO (IU/L)",
-                    "type": "number",
-                    "id": "TGO (IU/L)"
-                },
-                "52": {
-                    "question": "GGT",
-                    "type": "number",
-                    "id": "GGT"
-                },
-                "53": {
-                    "question": "CRP (mg/dL)",
-                    "type": "number",
-                    "id": "CRP (mg/dL)"
-                },
-                "54": {
-                    "question": "ESR (mm/hr)",
-                    "type": "number",
-                    "id": "ESR (mm/hr)"
-                },
-                "55": {
-                    "question": "PT (sec)",
-                    "type": "number",
-                    "id": "PT (sec)"
-                },
-                "56": {
-                    "question": "TTP (sec)",
-                    "type": "number",
-                    "id": "TTP (sec)"
-                },
-                "57": {
-                    "question": "INR",
-                    "type": "number",
-                    "id": "INR"
-                },
-                "58": {
-                    "question": "D-Dimer (mm/hr)",
-                    "type": "number",
-                    "id": "D-Dimer (mm/hr)"
-                }
+                "question": "Calcium (mEq/L)",
+                "type": "number",
+                "id": "Calcium (mEq/L)"
+            },
+            "41": {
+                "question": "Phosphorus (mEq/L)",
+                "type": "number",
+                "id": "Phosphorus (mEq/L)"
+            },
+            "42": {
+                "question": "Uric acid (mg/dL)",
+                "type": "number",
+                "id": "Uric acid (mg/dL)"
+            },
+            "43": {
+                "question": "BUN (mg/dL)",
+                "type": "number",
+                "id": "BUN (mg/dL)"
+            },
+            "44": {
+                "question": "Creatinine (mg/dL)",
+                "type": "number",
+                "id": "Creatinine (mg/dL)"
+            },
+            "45": {
+                "question": "Glucose (mg/dL)",
+                "type": "number",
+                "id": "Glucose (mg/dL)"
+            },
+            "46": {
+                "question": "Urea (mmol/L)",
+                "type": "number",
+                "id": "Urea (mmol/L)"
+            },
+            "47": {
+                "question": "Total Bilirubin (mg/dL)",
+                "type": "number",
+                "id": "Total Bilirubin (mg/dL)"
+            },
+            "48": {
+                "question": "Albumin (g/dL)",
+                "type": "number",
+                "id": "Albumin (g/dL)"
+            },
+            "49": {
+                "question": "Alkaline Phosphatase (IU/L)",
+                "type": "number",
+                "id": "Alkaline Phosphatase (IU/L)"
+            },
+            "50": {
+                "question": "TGP (IU/L)",
+                "type": "number",
+                "id": "TGP (IU/L)"
+            },
+            "51": {
+                "question": "TGO (IU/L)",
+                "type": "number",
+                "id": "TGO (IU/L)"
+            },
+            "52": {
+                "question": "GGT",
+                "type": "number",
+                "id": "GGT"
+            },
+            "53": {
+                "question": "CRP (mg/dL)",
+                "type": "number",
+                "id": "CRP (mg/dL)"
+            },
+            "54": {
+                "question": "ESR (mm/hr)",
+                "type": "number",
+                "id": "ESR (mm/hr)"
+            },
+            "55": {
+                "question": "PT (sec)",
+                "type": "number",
+                "id": "PT (sec)"
+            },
+            "56": {
+                "question": "TTP (sec)",
+                "type": "number",
+                "id": "TTP (sec)"
+            },
+            "57": {
+                "question": "INR",
+                "type": "number",
+                "id": "INR"
+            },
+            "58": {
+                "question": "D-Dimer (mm/hr)",
+                "type": "number",
+                "id": "D-Dimer (mm/hr)"
             }
         }
     }
