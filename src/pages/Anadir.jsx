@@ -1,4 +1,6 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
+import * as tf from "@tensorflow/tfjs";
+
 import { AppContext } from "@context/AppContext";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 
@@ -11,10 +13,14 @@ import { Form } from "@components/Form";
 import { FormButton } from "@components/FormButton";
 import { Title } from "@components/Title";
 
+/* url del modelo */
+const url = {
+	model: '<your model location e.g https://orangerx.b-cdn.net/model/model.json>',
+};
 
 function Anadir({ anadirTexto }) {
 	const {
-		language
+		language,
 	} = useContext(AppContext)
 	
 	useDocumentTitle("Entrenar");
@@ -34,8 +40,8 @@ function Anadir({ anadirTexto }) {
 							}
 						</h3>
 					</Title>
-					<form className="form" method="POST" autoComplete="off">
-						<input type="hidden" name="crsf_token" defaultValue="" />
+					<form className="form" method="POST" autoComplete="off" action="">
+						<input type="hidden" name="crsf_token" value={""} />
 
 						{anadirTexto && Object.entries(anadirTexto).map((item) => (
 							item[1]["type"] === "select" ? 

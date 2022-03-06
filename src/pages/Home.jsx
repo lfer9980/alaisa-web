@@ -12,7 +12,6 @@ import { Footer } from "@components/Footer";
 
 function Home({ homeTexto, footerTexto }) {
 	useDocumentTitle("Evaluación efectiva del covid en CUU")
-	console.log(footerTexto)
 	return(
 		<>
 			<Content type="no-padding-top no-padding-bottom no-background">

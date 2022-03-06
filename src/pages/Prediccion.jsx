@@ -1,4 +1,6 @@
 import React, { useContext } from "react";
+import * as tf from "@tensorflow/tfjs";
+
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { AppContext } from "@context/AppContext";
 
@@ -11,12 +13,17 @@ import { Input } from "@components/Input";
 import { FormButton } from "@components/FormButton";
 import { Form } from "@components/Form";
 
+/* url del modelo */
+const url = {
+	model: '<your model location e.g https://orangerx.b-cdn.net/model/model.json>',
+};
+
 
 function Prediccion({ prediccionTexto }) {
 	const {
-		language
+		language,
 	} = useContext(AppContext)
-
+	
 	useDocumentTitle('Modelo de IA');
 
 	return (
@@ -35,8 +42,8 @@ function Prediccion({ prediccionTexto }) {
 							}
 						</h3>
 					</Title>
-					<form className="form" method="POST" autoComplete="off">
-						<input type="hidden" name="crsf_token" defaultValue="" />
+					<form className="form" method="POST" autoComplete="off" action="">
+						<input type="hidden" name="crsf_token" value={""} />
 
 						{prediccionTexto && Object.entries(prediccionTexto).map((item) => (
 							item[1]["type"] === "select" ?

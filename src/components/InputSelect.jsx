@@ -14,7 +14,7 @@ function InputSelect({ question, id, options }) {
 				<option value={1}>
 					{options[0]}
 				</option>
-				<option value={0} selected="selected">
+				<option value={0} defaultValue>
 					{options[1]}
 				</option>
 			</select>

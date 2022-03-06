@@ -32,8 +32,6 @@ function AppUi() {
 		textos,
 	} = useContext(AppContext)
 
-	console.log(textos)
-
 	return (
 		<>
 			{

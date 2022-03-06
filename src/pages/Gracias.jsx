@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 
@@ -8,30 +8,39 @@ import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
 import { Paragraph } from "@components/Paragraph";
 import { Logo } from "@components/Logo";
+import { AppContext } from "@context/AppContext";
 
 function Gracias() {
+	const {
+		language
+	} = useContext(AppContext)
+
 	useDocumentTitle("Muchas gracias");
 	
 	return (
 		<>
 			<Content type="margin">
 				<Breadcrumbs url="entrenamiento">
-					finalizar
+					{language ? "End": "finalizar" }
 				</Breadcrumbs>
 				<section className="main no-background">
 					<Logo type="isotype" />
 					<Title type="h2 blue">
 						<h2>
-							¡Muchas gracias!
+							{language ? "Thank You so Much!": "¡Muchas gracias!" }
 						</h2>
 					</Title>
 					<Paragraph type="bold">
-						Con tu contribución, lograremos grandes cosas..
+						<p>
+							{language ? "With your contribution, we will achieve great things...." : "Con tu contribución, lograremos grandes cosas.."}
+						</p>
 					</Paragraph>
-					<ButtonGreen text="Hacer otra contribución" link="anadir"/>
+					<ButtonGreen texto={language ? "Make another contribution": "Hacer otra contribución"} link="anadir"/>
 					<div className="link--terms">
 						<Link to="/">
-							<span >Regresar a la página principal</span>
+							<span>
+								{language ? "Back to home page" : "Regresar a la página principal"}
+							</span>
 						</Link>
 					</div>
 				</section>
