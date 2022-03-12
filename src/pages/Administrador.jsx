@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
+import { AppContext } from "@context/AppContext";
 
 import { Title } from "@components/Title";
 import { Content } from "@containers/Content";
 
-function Administrador({ adminTexto }) {
+function Administrador() {
 	useDocumentTitle("administrador")
-	
-	return(
+
+	return (
 		<>
 			<Content type="margin">
 				<Title type="h2">

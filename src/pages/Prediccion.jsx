@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { AppContext } from "@context/AppContext";
 
@@ -12,11 +13,12 @@ import { FormButton } from "@components/FormButton";
 import { Form } from "@components/Form";
 
 
-function Prediccion({ prediccionTexto }) {
+function Prediccion() {
 	const {
-		language
+		language,
+		formText
 	} = useContext(AppContext)
-
+	
 	useDocumentTitle('Modelo de IA');
 
 	return (
@@ -35,10 +37,10 @@ function Prediccion({ prediccionTexto }) {
 							}
 						</h3>
 					</Title>
-					<form className="form" method="POST" autoComplete="off">
-						<input type="hidden" name="crsf_token" defaultValue="" />
+					<form className="form" method="POST" autoComplete="off" action="">
+						<input type="hidden" name="crsf_token" value={""} />
 
-						{prediccionTexto && Object.entries(prediccionTexto).map((item) => (
+						{formText && Object.entries(formText).map((item) => (
 							item[1]["type"] === "select" ?
 								<InputSelect
 									key={item[1].id}

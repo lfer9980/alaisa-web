@@ -10,9 +10,10 @@ import { Paragraph } from "@components/Paragraph";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 import { ButtonGreen } from "@components/ButtonGreen";
 
-function Entrenamiento({ entrenamientoTexto }) {
+function Entrenamiento() {
 	const {
-		language
+		language,
+		trainText
 	} = useContext(AppContext)
 
 	useDocumentTitle("Entrenamiento");
@@ -36,75 +37,41 @@ function Entrenamiento({ entrenamientoTexto }) {
 					<Logo type="isotype" />
 
 					<Title type="h2">
-						{entrenamientoTexto ?
-							(
-								<h2 dangerouslySetInnerHTML={{ __html: `${entrenamientoTexto[0]}` }} />
-							)
-							: (
-								<h2>Tu contribución nos ayuda a <span>mejorar</span> y ser más <span>precisos</span></h2>
-							)
+						{trainText &&
+							<h2 dangerouslySetInnerHTML={{ __html: `${trainText[0]}` }} />
 						}
 					</Title>
 
 					<Paragraph type="background">
-						{entrenamientoTexto ?
-							(
-								<p dangerouslySetInnerHTML={{ __html: `${entrenamientoTexto[1]}` }} />
-							)
-							: (
-								<p>
-									El proceso es identico a cuando utilizas el modelo para recibir predicciones. Los <span>datos</span> que ingreses durante el <span>entrenamiento</span> serán la base para que el modelo <span>identifique</span> eficientemente los patrones que determinan el desenlace de tu paciente durante la <span>predicción</span>.
-								</p>
-							)
+						{trainText &&
+							<p dangerouslySetInnerHTML={{ __html: `${trainText[1]}` }} />
 						}
 					</Paragraph>
 
 					<Paragraph type="bold">
-						{entrenamientoTexto ?
-							(
-								<p>
-									{entrenamientoTexto[2]}
-								</p>
-							)
-							: (
-								<p>
-									Estamos muy agradecidos contigo, tu ayuda hace la diferencia.
-								</p>
-							)
+						{trainText &&
+							<p>
+								{trainText[2]}
+							</p>
 						}
 					</Paragraph>
 
 					<div className="link--terms">
 						<Link to="/privacidad">
-							{entrenamientoTexto ?
-								(
-									<span>{entrenamientoTexto[3]}</span>
-								)
-								: (
-									<span> términos y condiciones</span>
-								)
+							{trainText &&
+								<span>{trainText[3]}</span>
 							}
 						</Link>
 					</div>
 
-					{entrenamientoTexto ?
-						(
-							<ButtonGreen link="anadir" texto={entrenamientoTexto[4]} />
-						)
-						: (
-							<ButtonGreen link="anadir" texto="Comenzar" />
-						)
+					{trainText &&
+						<ButtonGreen link="anadir" texto={trainText[4]} />
 					}
 
 					<div className="link--white">
 						<Link to="/privacidad">
-							{entrenamientoTexto ?
-								(
-									<span>{entrenamientoTexto[5]}</span>
-								)
-								: (
-									<span>Aviso de privacidad</span>
-								)
+							{trainText &&
+								<span>{trainText[5]}</span>
 							}
 						</Link>
 					</div>

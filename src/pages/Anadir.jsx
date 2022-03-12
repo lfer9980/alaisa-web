@@ -12,56 +12,57 @@ import { FormButton } from "@components/FormButton";
 import { Title } from "@components/Title";
 
 
-function Anadir({ anadirTexto }) {
+function Anadir() {
 	const {
-		language
+		language,
+		formText,
 	} = useContext(AppContext)
-	
+
 	useDocumentTitle("Entrenar");
 
 	return (
 		<>
 			<Content type="margin no-padding-bottom">
 				<Breadcrumbs url="entrenamiento">
-					{language ? "Add": "Añadir"}
+					{language ? "Add" : "Añadir"}
 				</Breadcrumbs>
-				<Form> 
+				<Form>
 					<Title type="h3">
 						<h3>
-							{language ? 
+							{language ?
 								"Patient's general data"
 								: "Datos generales del paciente"
 							}
 						</h3>
 					</Title>
-					<form className="form" method="POST" autoComplete="off">
-						<input type="hidden" name="crsf_token" defaultValue="" />
+					<form className="form" method="POST" autoComplete="off" action="">
+						<input type="hidden" name="crsf_token" value={""} />
 
-						{anadirTexto && Object.entries(anadirTexto).map((item) => (
-							item[1]["type"] === "select" ? 
-								<InputSelect 
-									key={item[1].id} 
-									id={item[1].id} 
-									question={item[1].question} 
-									options={item[1].options} 
-									/>
-							:
-								<Input 
-									key={item[1].id} 
-									id={item[1].id} 
-									question={item[1].question} 
-									type={item[1].type} 
-									/>
+						{formText && Object.entries(formText).map((item) => (
+							item[1]["type"] === "select" ?
+								<InputSelect
+									key={item[1].id}
+									id={item[1].id}
+									question={item[1].question}
+									options={item[1].options}
+								/>
+								:
+								<Input
+									key={item[1].id}
+									id={item[1].id}
+									question={item[1].question}
+									type={item[1].type}
+								/>
 						))}
-						
+
 						<InputCheck>
-							{language ? 
+							{language ?
 								"I have read and accept the terms and conditions of the legal notice."
 								: "He leído y acepto los términos y condiciones del aviso legal."
-							}							
+							}
 						</InputCheck>
 
-						<FormButton name="guardar" value={language ? "Send Contribution": "Enviar contribución"} />
+						<FormButton name="guardar" value={language ? "Send Contribution" : "Enviar contribución"} />
 					</form>
 				</Form>
 			</Content>

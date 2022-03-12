@@ -15,7 +15,7 @@ function AppProvider(props) {
 				...language,
 				...animations,
 				...changeHeader,
-			}}
+				}}
 			>
 			{ props.children }
 		</AppContext.Provider>
