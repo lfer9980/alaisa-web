@@ -9,9 +9,10 @@ import { Title } from "@components/Title";
 import { Footer } from "@components/Footer";
 import { Breadcrumbs } from "@components/Breadcrumbs";
 
-function Publicaciones({ publicacionesTexto , footerTexto }) {
+function Publicaciones() {
 	const {
-		language
+		language,
+		publicationsText
 	} = useContext(AppContext)
 
 	useDocumentTitle("Publicaciones")
@@ -29,9 +30,9 @@ function Publicaciones({ publicacionesTexto , footerTexto }) {
 							{language ? "Publications" : "Publicaciones"}
 						</h2>
 					</Subtitle>
-					{publicacionesTexto ?
+					{publicationsText ?
 						(
-							Object.entries(publicacionesTexto["publications"]).map((item) => (
+							Object.entries(publicationsText["publications"]).map((item) => (
 								<div key={item[0]}>
 									<Title type="h3">
 										<h3>
@@ -40,7 +41,7 @@ function Publicaciones({ publicacionesTexto , footerTexto }) {
 									</Title>
 									{
 										item[1].map((entries) => (
-											<Paragraph type=" align-left">
+											<Paragraph type=" align-left" key={entries.name}>
 												<p>
 													<span className="paragraph__span">
 														{entries.name}
@@ -52,7 +53,6 @@ function Publicaciones({ publicacionesTexto , footerTexto }) {
 									}
 								</div>
 							))
-
 						)
 						: (
 							<Title type="h3">
@@ -71,24 +71,27 @@ function Publicaciones({ publicacionesTexto , footerTexto }) {
 						</h2>
 					</Subtitle>
 
-					{publicacionesTexto ?
+					{publicationsText ?
 						(
-							Object.entries(publicacionesTexto["release"]).map((item) => (
+							Object.entries(publicationsText["release"]).map((item) => (
 								<div key={item[0]}>
 									<Title type="h3">
 										<h3>
 											{item[1].version}
 										</h3>
 									</Title>
-
-									<Paragraph type=" align-left">
-										<p>
-											<span className="paragraph__span">
-												{item[1].name}
-											</span>
-											{item[1].text}
-										</p>
-									</Paragraph>
+									{
+										item.map((entries) => (
+											<Paragraph type=" align-left" key={entries}>
+												<p>
+													<span className="paragraph__span">
+														{item[1].name}
+													</span>
+													{item[1].text}
+												</p>
+											</Paragraph>
+										))
+									}
 								</div>
 							))
 
@@ -104,7 +107,7 @@ function Publicaciones({ publicacionesTexto , footerTexto }) {
 
 				</section>
 			</Content >
-			<Footer  footerTexto={footerTexto}/>
+			<Footer />
 		</>
 	);
 }

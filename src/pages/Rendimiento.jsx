@@ -3,12 +3,12 @@ import { Content } from "@containers/Content";
 import { HomeDesarrollador } from "@containers/HomeDesarrollador";
 import { Footer } from "@components/Footer";
 
-function Rendimiento({ rendimientoTexto, footerTexto }) {
-	return(
+function Rendimiento() {
+	return (
 		<>
 			<Content type="no-padding-top no-padding-bottom no-background">
-				<HomeDesarrollador devTexto={rendimientoTexto}/>
-				<Footer footerTexto={footerTexto}/>
+				<HomeDesarrollador />
+				<Footer />
 			</Content>
 		</>
 	);
