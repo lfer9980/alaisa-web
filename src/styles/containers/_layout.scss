@@ -11,6 +11,7 @@ html {
 	font-family: v.$fuente2;
 	scroll-behavior: smooth;
 	background-color: v.$blue600;
+	color: v.$white;
 	@include dark-mode {
 		color: v.$white;
 		background-color: v.$dark600;

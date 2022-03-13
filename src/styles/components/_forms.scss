@@ -7,7 +7,6 @@
 	.form {
 		display: flex;
 		flex-direction: column;
-		color: v.$dark600;
 		@include dark-mode {
 			color: v.$white;
 		}
@@ -26,7 +25,10 @@
 				font-size: 1.8rem;
 				font-weight: bold;
 				text-align: center;
-				color: v.$blue500;
+				color: v.$blue300;
+				@include dark-mode {
+					color: v.$blue500;
+				}
 			}
 		
 			.input__select__place {
@@ -71,7 +73,7 @@
 		padding: 35px 50px;
 		border-radius: 8px;
 		box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
-		background-color: rgba($color: #CEE8F2, $alpha: 0.5);
+		background-color: rgba($color: #CEE8F2, $alpha: 0.2);
 		@include dark-mode {
 			background-color: rgba($color: #141414, $alpha: 0.8);
 		}
@@ -98,7 +100,6 @@
 	.main-form {
 		width: 50%;
 		padding: 20px 30px;
-		background-color: rgba($color: #CEE8F2, $alpha: 0.8);
 		@include dark-mode {
 			background-color: rgba($color: #141414, $alpha: 0.9);
 		}
