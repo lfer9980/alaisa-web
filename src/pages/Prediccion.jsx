@@ -37,7 +37,7 @@ function Prediccion() {
 			data[item[1].id] = formData.get([item[1].id]);
 		});
 
-		console.log(data)
+		console.log(Object.values(data))
 		try {
 			let res = await fetch(URL_MODEL, {
 				method: "POST",
@@ -93,13 +93,13 @@ return (
 								type={item[1].type}
 							/>
 					))}
-
+{/* 
 					<InputCheck>
 						{language ?
 							"I have read and accept the terms and conditions of the legal notice."
 							: "He leído y acepto los términos y condiciones del aviso legal."
 						}
-					</InputCheck>
+					</InputCheck> */}
 
 					<button
 						className="form__button"
