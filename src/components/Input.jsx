@@ -15,6 +15,7 @@ function Input({ id, question, type }) {
 					id={id} 
 					name={id} 
 					required="required"
+					min="0"
 				/>
 			</label>
 		</>

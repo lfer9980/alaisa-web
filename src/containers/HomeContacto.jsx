@@ -4,6 +4,7 @@ import { AppContext } from "@context/AppContext";
 import { Title } from "@components/Title";
 import { CardContacto } from '@components/CardContacto';
 
+const API_IMAGES = process.env.API_IMAGES
 
 function HomeContacto() {
 	const {
@@ -35,7 +36,7 @@ function HomeContacto() {
 								mail={item[2]}
 								urlRed1={item[3]}
 								urlRed2={item[4]}
-								image={item[5]}
+								image={`${API_IMAGES}/${item[5]}`}
 							/>
 						))}
 					</>

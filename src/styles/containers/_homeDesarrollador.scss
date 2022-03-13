@@ -2,8 +2,8 @@
 @use "../global/mixins"as *;
 
 #metricas::before {
-	background-image: url('@images/quirofano-mobile@2x-80.jpg');
-	opacity: 50%;
+	background-image: url('@images/mobile_gray@2x.png');
+	opacity: 0.15;
 }
 
 .table-wrapper {
@@ -48,7 +48,7 @@
 @include tablet {
 	
 	#metricas::before {
-		background-image: url('@images/quirofano-tablet@2x-80.jpg');
+		background-image: url('@images/tablet_gray@2x.png');
 	}
 
 	.table-wrapper {
@@ -73,7 +73,7 @@
 
 @include desktop {
 	#metricas::before {
-		background-image: url('@images/quirofano-desktop@2x-80.jpg');
+		background-image: url('@images/desktop_gray@2x.png');
 	}
 
 	.table-wrapper {

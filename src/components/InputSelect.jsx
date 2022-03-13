@@ -10,11 +10,12 @@ function InputSelect({ question, id, options }) {
 				className="input__select__place"
 				name={id}
 				id={id}
+				defaultValue={0}
 				>
-				<option value={1}>
+				<option value={1} >
 					{options[0]}
 				</option>
-				<option value={0} defaultValue>
+				<option value={0} >
 					{options[1]}
 				</option>
 			</select>

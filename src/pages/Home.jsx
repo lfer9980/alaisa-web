@@ -4,7 +4,7 @@ import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { Content } from "@containers/Content";
 import { HomeModelo } from "@containers/HomeModelo"
 import { HomeHero } from "@containers/HomeHero"
-import { HomeEntrenamiento } from "@containers/HomeEntrenamiento"
+/* import { HomeEntrenamiento } from "@containers/HomeEntrenamiento" */
 import { HomeDonativos } from "@containers/HomeDonativos"
 import { HomeDesarrollador } from "@containers/HomeDesarrollador"
 import { HomeContacto } from "@containers/HomeContacto"
@@ -18,7 +18,6 @@ function Home() {
 			<Content type="no-padding-top no-padding-bottom no-background">
 				<HomeHero />
 				<HomeModelo />
-				<HomeEntrenamiento />
 				<HomeDesarrollador />
 				<HomeDonativos />
 				<HomeContacto />

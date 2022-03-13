@@ -43,13 +43,6 @@ function Header() {
 								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/entrenamiento">
-									<span>
-										{headerText["0"][1]}
-									</span>
-								</NavLink>
-							</li>
-							<li>
 								<NavLink to="/Rendimiento">
 									<span>
 										{headerText["0"][2]}
@@ -97,13 +90,6 @@ function Header() {
 									<NavLink to="/modelo">
 										<span>
 											{headerText["1"][0]}
-										</span>
-									</NavLink>
-								</li>
-								<li onClick={toggleHeaderMobile} >
-									<NavLink to="/entrenamiento">
-										<span>
-											{headerText["1"][1]}
 										</span>
 									</NavLink>
 								</li>

@@ -4,9 +4,7 @@ import { AppContext } from "@context/AppContext";
 
 import { Acerca } from "@pages/Acerca";
 import { Administrador } from "@pages/Administrador";
-import { Anadir } from "@pages/Anadir";
-import { Entrenamiento } from "@pages/Entrenamiento";
-import { Gracias } from "@pages/Gracias";
+/* import { Entrenamiento } from "@pages/Entrenamiento"; */
 import { Home } from "@pages/Home";
 import { Modelo } from "@pages/Modelo";
 import { NotFound } from "@pages/NotFound";
@@ -17,6 +15,7 @@ import { Publicaciones } from "@pages/Publicaciones";
 import { Rendimiento } from "@pages/Rendimiento";
 import { Donativos } from "@pages/Donativos";
 import { Contacto } from "@pages/Contacto";
+import { Error } from "@pages/Error";
 
 import { Layout } from "@containers/Layout";
 import { Loading } from "@containers/Loading";
@@ -47,15 +46,13 @@ function AppUi() {
 								<Route path="Donativos" element={<Donativos />} />
 								<Route path="Contacto" element={<Contacto />} />
 								<Route path="acerca" element={<Acerca />} />
-								<Route path="anadir" element={<Anadir />} />
-								<Route path="entrenamiento" element={<Entrenamiento />} />
 								<Route path="privacidad" element={<Privacidad />} />
 								<Route path="modelo" element={<Modelo />} />
 								<Route path="prediccion" element={<Prediccion />} />
-								<Route path="gracias" element={<Gracias />} />
 								<Route path="resultado" element={<Resultado />} />
 								<Route path="publicaciones" element={<Publicaciones />} />
 								<Route path="administrador" element={<Administrador />} />
+								<Route path="error" element={<Error />} />
 								<Route path="*" element={<NotFound />} />
 							</Routes>
 						</BrowserRouter>

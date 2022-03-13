@@ -2,18 +2,18 @@
 @use "../global/mixins" as *;
 
 #donativos::before {
-	background-image: url('@images/mobile_gray@2x.png');
-	opacity: 0.15;
+	background-image: url('@images/quirofano-mobile@2x-80.jpg');
+	opacity: 0.5;
 }
 
 @include tablet {
 	#donativos::before {
-		background-image: url('@images/tablet_gray@2x.png');
+		background-image: url('@images/quirofano-tablet@2x-80.jpg');
 	}
 }
 
 @include desktop {
 	#donativos::before {
-		background-image: url('@images/desktop_gray@2x.png');
+		background-image: url('@images/quirofano-desktop@2x-80.jpg');
 	}
 }
