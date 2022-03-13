@@ -49,7 +49,7 @@ function AppUi() {
 								<Route path="privacidad" element={<Privacidad />} />
 								<Route path="modelo" element={<Modelo />} />
 								<Route path="prediccion" element={<Prediccion />} />
-								<Route path="resultado" element={<Resultado />} />
+								<Route path="resultado/:result" element={<Resultado />} />
 								<Route path="publicaciones" element={<Publicaciones />} />
 								<Route path="administrador" element={<Administrador />} />
 								<Route path="error" element={<Error />} />

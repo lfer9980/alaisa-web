@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { useDocumentTitle } from "@hooks/useDocumentTitle";
 import { AppContext } from "@context/AppContext";
 
@@ -16,6 +17,8 @@ function Resultado() {
 		language
 	} = useContext(AppContext)
 
+	let { result } = useParams();
+
 	useDocumentTitle("resultado listo")
 	return (
 		<>
@@ -32,7 +35,7 @@ function Resultado() {
 					</Title>
 					<Paragraph type="result">
 						<span>
-							
+							{ result }
 						</span>
 					</Paragraph>
 					<Paragraph type="">

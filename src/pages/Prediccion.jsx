@@ -30,25 +30,29 @@ function Prediccion() {
 	/* manejador de datos del form */
 	const handleSubmit = async (event) => {
 		event.preventDefault();
-		console.log(URL_MODEL)
+
 		const formData = new FormData(form.current);
 		const data = {};
 		Object.entries(formText).map((item) => {
 			data[item[1].id] = formData.get([item[1].id]);
 		});
 
+		console.log(data)
 		try {
 			let res = await fetch(URL_MODEL, {
 				method: "POST",
-				body: JSON.stringify(data),
+				headers: {
+					"Content-Type": "multipart/form-data; boundary=<calculated when request is sent>",
+				},
+				body: data,
+				redirect: "follow"
 			})
 
 			let resJson = await res.json();
-			if (resJson.status === 200) {
-				navigate("/Resultado")
-			} else {
-				navigate("/Error")
-			}
+			/* if (resJson.code) {
+				navigate(`/Resultado/${resJson}}`)
+			}  */
+			console.log(resJson)
 		} catch(error) {
 			console.log(error)
 		}
