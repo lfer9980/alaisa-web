@@ -15,6 +15,7 @@ function Publicaciones() {
 		publicationsText
 	} = useContext(AppContext)
 
+
 	useDocumentTitle("Publicaciones")
 
 	return (
@@ -30,8 +31,15 @@ function Publicaciones() {
 							{language ? "Publications" : "Publicaciones"}
 						</h2>
 					</Subtitle>
-					{publicationsText ?
+					{publicationsText["publications"] === null ?
 						(
+							<Title type="h3">
+								<h3>
+									{language ? "There are not Publications yet" : "No hay publicaciones aun"}
+								</h3>
+							</Title>
+						)
+						: (
 							Object.entries(publicationsText["publications"]).map((item) => (
 								<div key={item[0]}>
 									<Title type="h3">
@@ -54,13 +62,7 @@ function Publicaciones() {
 								</div>
 							))
 						)
-						: (
-							<Title type="h3">
-								<h3>
-									{language ? "There are not Publications yet" : "No hay publicaciones aun"}
-								</h3>
-							</Title>
-						)
+
 					}
 				</section>
 
@@ -71,8 +73,15 @@ function Publicaciones() {
 						</h2>
 					</Subtitle>
 
-					{publicationsText ?
+					{publicationsText["release"] === null ?
 						(
+							<Title type="h3">
+								<h3>
+									{language ? "There are not new releases yet" : "No hay nuevas versiones aún"}
+								</h3>
+							</Title>
+						)
+						: (
 							Object.entries(publicationsText["release"]).map((item) => (
 								<div key={item[0]}>
 									<Title type="h3">
@@ -94,17 +103,8 @@ function Publicaciones() {
 									}
 								</div>
 							))
-
-						)
-						: (
-							<Title type="h3">
-								<h3>
-									{language ? "There are not new releases yet" : "No hay nuevas versiones aún"}
-								</h3>
-							</Title>
 						)
 					}
-
 				</section>
 			</Content >
 			<Footer />

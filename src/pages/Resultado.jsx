@@ -34,9 +34,11 @@ function Resultado() {
 						</h3>
 					</Title>
 					<Paragraph type="result">
-						<span>
-							{ result }
-						</span>
+						<p>
+							% <span>
+								{ result }
+							</span>
+						</p>
 					</Paragraph>
 					<Paragraph type="">
 						<p>

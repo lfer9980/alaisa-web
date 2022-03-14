@@ -52,8 +52,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 160px;
-		padding: 10px;
+		height: 150px;
+		padding: 0 10px;
 		margin-bottom: 20px;
 		text-align: left;
 		border-radius: 8px;
@@ -69,7 +69,6 @@
 		}
 		&__image {
 			width: 40%;
-			border-radius: 8px;
 			box-shadow: 0 4px 8px rgba(13, 13, 13, 0.4);
 			overflow: hidden;
 			img {
@@ -116,6 +115,7 @@
 	.card-wrapper {
 		height: 600px;
 		.card-contacto {
+			height: 280px;
 			padding: 20px;
 			margin-bottom: 30px;
 			&__main {
@@ -158,7 +158,7 @@
 		height: 80%;
 		margin-left: 0;
 		.card-contacto {
-			height: 190px;
+			height: 230px;
 			padding: 15px;
 			margin-bottom: 20px;
 			&__media {

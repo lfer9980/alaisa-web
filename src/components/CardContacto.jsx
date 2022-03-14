@@ -28,7 +28,9 @@ function CardContacto({ name, job, mail, urlRed1, urlRed2, image }) {
 					</h4>
 				</Title>
 				<Paragraph type="info">
-					{job}
+					<p>
+						{job}
+					</p>
 				</Paragraph>
 				<LinkAnchor type="mail" href={`mailto:${mail}`} >
 					{mail}
